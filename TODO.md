@@ -7,3 +7,5 @@
 [ ] Update about and get rid of all default Jekyll content
 [ ] Write something interesting. Maybe adapt some of the MoWs or
     use the presentation for 640.
+[ ] Maybe put some google analytics on the site before publishing
+    officially.
