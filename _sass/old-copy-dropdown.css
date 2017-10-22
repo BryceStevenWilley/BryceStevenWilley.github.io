@@ -30,9 +30,36 @@ body {
     opacity: 1;
     z-index: 1;
     transform: translateY(0%);
+    /* Removes the transition delay so the menu will be visible while the other styles transition. */
     transition-delay: 0s, 0s, 0.3s;
 }
 
+/* A E S T H E T I C S */
+nav a {
+    padding: 0.5em, 1em;
+    text-decoration: none;
+}
+
+nav {
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondary-color);
+    border-bottom-width: thick;
+}
+
+nav ul,
+nav ul li {
+    list-style-type: none; 
+    padding: 0.2em; 
+    margin: 0.1em;
+}
+
+nav > ul {
+    text-align: center;
+}
+
+.sub-menu {
+    background: var(--primary-color);
+}
 
 /* Handles layout of the menu: row, flex properties. */
 .menu {
@@ -46,8 +73,12 @@ body {
 .nav-pages {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-between; 
     flex-grow: 3;
+}
+
+.filler-space {
+    flex-grow: 2;
 }
 
 .nav-icons li {
