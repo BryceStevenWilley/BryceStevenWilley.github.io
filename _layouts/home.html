@@ -2,31 +2,20 @@
 layout: default
 ---
 
-<div class="home">
+<article class="c-article">
+  <header class="c-header c-article__header">
+    <div class="u-container">
+      <h1 class="c-header__title">Home</h1>
+    </div>
+  </header>
 
-  
-  {{ content }}
-  Hi, I'm Bryce, a Master's Student at Rice University working in the 
-  <a href="http://www.kavrakilab.org">Kavraki Lab</a> with 
-  <a href="https://www.cs.rice.edu/~kavraki/">Lydia Kavraki</a> and 
-  <a href="https://www.cs.rice.edu/~mmoll/">Mark Moll</a>
-  on autonomous robotic motion.
+  <div class="c-article__main">
+    {{ content }}
+    Hi, I'm Bryce, a Master's Student at Rice University working in the 
+    <a href="http://www.kavrakilab.org">Kavraki Lab</a> with  
+    <a href="https://www.cs.rice.edu/~kavraki/">Lydia Kavraki</a> and 
+    <a href="https://www.cs.rice.edu/~mmoll/">Mark Moll</a> 
+    on autonomous robotic motion.
 
-  <!-- Maybe uncomment when I actually have posts. For now, just throw in the About page. -->
-  <!--h1 class="page-heading">Posts</h1-->
-  <!--ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul-->
-
-  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p-->
-
-</div>
+  </div>
+</article>

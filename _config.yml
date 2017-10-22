@@ -23,9 +23,19 @@ github_username:  BryceStevenWilley
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
+
+#themeColor: purple # green, blue, orange, purple, grey
+fixedNav: 'true' # true or false
+
+permalink: /:year/:month/:title
+markdown: kramdown
+include: [_pages]
+exclude: [_site, vendor, LICENSE, README.md]
+sass:
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
