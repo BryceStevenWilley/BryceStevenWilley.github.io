@@ -4,11 +4,17 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
   
   {{ content }}
+  Hi, I'm Bryce, a Master's Student at Rice University working in the 
+  <a href="http://www.kavrakilab.org">Kavraki Lab</a> with 
+  <a href="https://www.cs.rice.edu/~kavraki/">Lydia Kavraki</a> and 
+  <a href="https://www.cs.rice.edu/~mmoll/">Mark Moll</a>
+  on autonomous robotic motion.
 
-  <ul class="post-list">
+  <!-- Maybe uncomment when I actually have posts. For now, just throw in the About page. -->
+  <!--h1 class="page-heading">Posts</h1-->
+  <!--ul class="post-list">
     {% for post in site.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -19,8 +25,8 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
+  </ul-->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p-->
 
 </div>
