@@ -13,6 +13,19 @@ co-designed some of the levels with Mei Tan.
 
 ## Forest
 
+<!--div class="gallery-wrap">
+  <div class="pictureBox">
+    <div class="innerBox">
+      <img src="/assets/Forest/Capture.PNG">
+      <div class="titleBox">Image 1</div>
+    </div>
+  </div>
+</div-->
+
+
+<!-- {% image_set assets/Forest --class=img-responsive %}
+-->
+
 [Forest](forest-repo) is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh5) and 
 I coded for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/BryceStevenWilley/oculus-hackrice16)).  It's working title was called "No Man's Forest", 
 and was pretty much just a chance for us to make a VR game, It ended up being a blast. 
