@@ -28,6 +28,7 @@ plugins:
   - jekyll-feed
 
 #themeColor: purple # green, blue, orange, purple, grey
+themeColor: 'blue'
 fixedNav: 'true' # true or false
 
 permalink: /:year/:month/:title
