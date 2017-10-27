@@ -38,6 +38,9 @@ exclude: [_site, vendor, LICENSE, README.md]
 sass:
   style: compressed
 
+date-format: "%b %-d, %Y"
+  
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
