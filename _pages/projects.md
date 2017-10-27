@@ -13,25 +13,25 @@ co-designed some of the levels with Mei Tan.
 
 ## Forest
 
-<!--div class="gallery-wrap">
-  <div class="pictureBox">
-    <div class="innerBox">
-      <img src="/assets/Forest/Capture.PNG">
-      <div class="titleBox">Image 1</div>
-    </div>
-  </div>
-</div-->
-
-
-<!-- Make this a liquid tag again eventually. -->
-<!-- image_set assets/Forest - - class=img-responsive -->
-
 [Forest](forest-repo) is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh5) and 
 I coded for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/BryceStevenWilley/oculus-hackrice16)).  It's working title was called "No Man's Forest", 
 and was pretty much just a chance for us to make a VR game, It ended up being a blast. 
 However, since I don't own a Rift, I had to port the game to Mac, which you can find
 [here](forest-repo)! The installation isn't general yet (library locations are hardcoded to my machine, etc),
 but feel free to open a Github issue if you want me to fix it/ a PR if you anything about CMake. 
+
+<div class="gallery-wrap">
+  {% for image in site.static_files %}
+    {% if image.path contains 'assets/Forest' %}
+        <div class="pictureBox">
+            <div class="innerBox">
+                <img src="{{ site.baseurl }}{{ image.path }}">
+                <!--div class="titleBox">Image 1</div-->
+            </div>
+        </div>
+     {% endif %}
+  {% endfor %}
+</div>
 
 
 ## Android Apps
@@ -45,9 +45,7 @@ so I don't know if they build for versions of android newer than L.
 
 ## Web Things
 
-My old website was built with Angular and Dart, so I took the chance to play around with
-some neat drawing demos. Since moving my site to Jekyll, there's not an easy way to port
-those demos along with it, but they're still avaliable at my achived old site.
+Just some neat drawing demos written in Angular2 and Dart.
 
 * [circle drawer](/personal-website/#/circles)
 * [Fractals with the Logo Turtle](/personal-website/#/logo)
