@@ -5,6 +5,10 @@ layout: default
   <header class="c-header c-article__header">
     <div class="u-container">
       <h1 class="c-header__title">{{ page.title }}</h1>
+      {% if page.headerImg %} 
+        <img class="headerImg" src="{{ page.headerImg }}"></img> 
+        <p></p>
+      {% endif %}
     </div>
   </header>
 

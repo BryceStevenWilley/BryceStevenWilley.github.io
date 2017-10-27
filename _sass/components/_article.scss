@@ -35,4 +35,14 @@
   ul, ol {
     margin-left: 40px;
   }
+
+  .post-list {
+    margin-left: 0;
+    list-style: none;
+  }
+
+  .post-link {
+    display: block;
+    @include relative-font-size(1.5);
+  }
 }
