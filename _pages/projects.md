@@ -41,7 +41,9 @@ so I don't know if they build for versions of android newer than L.
 
 * [Pacer](pacer-repo), an app that chooses music based on your running pace at the moment.
 * [Pandora's Pantry](pandora-repo), an app that gives you recipes you can make based off 
-  ingredients that you have in your fridge. The app was one of the finalists at HackRice 4.
+  ingredients that you have in your fridge. The app was one of the finalists at HackRice 4
+  and our resulting business proposal based on the app idea won 2nd place at the 2015
+  Owl Open Startup Competition at Rice.
 
 ## Web Things
 
