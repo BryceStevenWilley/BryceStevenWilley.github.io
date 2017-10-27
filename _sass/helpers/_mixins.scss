@@ -5,6 +5,7 @@
 // Font families
 
 $base-font-size: 1.8rem;
+$on-palm:   450px !default;
 
 @mixin ff--sans-serif($font-weight: normal) {
   font-family: 'Noto Sans', sans-serif;
@@ -45,4 +46,10 @@ $base-font-size: 1.8rem;
 // Borrowed from the Minima theme.
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
+}
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }

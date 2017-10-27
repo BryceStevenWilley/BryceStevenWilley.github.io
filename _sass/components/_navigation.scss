@@ -2,6 +2,11 @@
    Navigation
    ========================================================================== */
 
+.c-navigation__container {
+  //flex-grow: 1;
+}
+
+
 .c-navigation {
   position: absolute;
   top: 0;
@@ -24,6 +29,15 @@
   &.is-fixed {
     position: fixed;
     will-change: transform;
+  }
+
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
   }
 }
 
@@ -56,4 +70,46 @@
   &.is-active:after {
     background: $c__white;
   }
+}
+
+// Hide the page drawer we're noting using it.
+
+
+
+// Handle the page nav drawer.
+@include media-query($on-palm) {
+   label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+      padding-top: 2.5rem;
+    }
+
+    .c-navigation .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      //padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $c__white;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
 }
