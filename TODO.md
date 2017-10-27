@@ -1,4 +1,4 @@
-* [ ] Copy the images over from the old site.
+* [ ] Add site nav tiny trigger
 * [ ] Implement dropdowns for projects?
 * [ ] Write something interesting. Maybe adapt some of the MoWs or
       use the presentation for 640.

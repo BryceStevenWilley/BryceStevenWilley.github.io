@@ -12,6 +12,7 @@
           <a class="c-navigation__item {% if page.url == my.page.url %}is-activee{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
+        <a class="c-navigation__item" href="{{ site.baseurl | relative_url }}/assets/bryce_willey_resume.pdf">Resume</a>
       </div>
     </nav>
     {% endif %}
