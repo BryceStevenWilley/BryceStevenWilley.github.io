@@ -49,8 +49,8 @@ so I don't know if they build for versions of android newer than L.
 
 Just some neat drawing demos written in Angular2 and Dart.
 
-* [circle drawer](/personal-website/#/circles)
-* [Fractals with the Logo Turtle](/personal-website/#/logo)
+* [circle drawer](/dart-projects/#/circles)
+* [Fractals with the Logo Turtle](/dart-projects/#/logo)
 
 [bodhi-repo]: https://github.com/BryceStevenWilley/JTTW
 [forest-repo]: https://github.com/BryceStevenWilley/forest_game
