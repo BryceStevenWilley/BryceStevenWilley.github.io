@@ -5,6 +5,7 @@
     {% if page_paths %}
     <nav class="c-navigation spread">
       <a class="c-navigation__item {% if page.url == '/' %}is-active{% endif %}" href="{{ "/" | prepend: site.baseurl }}">{{site.title | escape}}</a>
+      <div class="spacer"></div>
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
           <span class="menu-icon">
