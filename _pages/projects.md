@@ -18,7 +18,7 @@ I coded for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/
 and was pretty much just a chance for us to make a VR game, It ended up being a blast. 
 However, since I don't own a Rift, I had to port the game to Mac, which you can find
 [here](forest-repo)! The installation isn't general yet (library locations are hardcoded to my machine, etc),
-but feel free to open a Github issue if you want me to fix it/ a PR if you anything about CMake. 
+but feel free to open a Github issue if you want me to fix it/ a PR if you know anything about CMake. 
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
