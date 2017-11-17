@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Projects
+front-page: true
 permalink: /projects/
 ---
 
-Here are some of my past projects: hope you can learn something from them or just enjoy them!
+Here are some of my current and past personal projects, both software and nonsoftware: hope you can learn something from them or just enjoy them!
+
+# Software Projects
+
 ## Bodhi
 
 [Bodhi][bodhi-repo] is a 2D platformer inspired by the Chinese novel, "Journey to the West". I handled
@@ -56,3 +60,25 @@ Just some neat drawing demos written in Angular2 and Dart.
 [forest-repo]: https://github.com/BryceStevenWilley/forest_game
 [pacer-repo]: https://github.com/jemitk/Pacer
 [pandora-repo]: https://github.com/BryceStevenWilley/PandorasPantry
+
+# Personal Projects
+
+## Photography
+
+I'm a volunteer photographer at BARC, and I've gathered a ton of beautiful pictures of some gourgeous pups while
+doing so. Some of my favorites are here, and the entire collection can be found [here](/barc-dogs). 
+
+<div class="gallery-wrap">
+  {% for image in site.static_files %}
+    {% if image.path contains 'assets/BARC/projects_subset' %}
+      <div class="pictureBox">
+        <div class="innerBox">
+            <img src="{{ site.baseurl }}{{ image.path }}">
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+Please please please, if you are live in the Houston area, and are considering adapting a dog, go give the
+good pups a BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)

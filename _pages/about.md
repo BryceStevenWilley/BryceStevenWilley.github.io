@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+front-page: true
 permalink: /about/
 ---
 
@@ -11,7 +12,7 @@ on autonomous robotic motion.
 I also have a side hobby of making video games: take a 
 look [here](/projects) to see more.
 
-I run, cycle, volunteer at [BARC](http://www.houstontx.gov/barc/), and take my own pup, Jackie, for lots of long walks. 
+I run, cycle, am a volunteer photographer at [BARC](http://www.houstontx.gov/barc/), and take my own pup, Jackie, for lots of long walks. 
 
 <img src="/assets/Jackie.jpg" alt="Jackie Boy" style="width: 60%;"/>
 
