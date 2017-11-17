@@ -2,7 +2,7 @@
 layout: page
 title: Dog Pictures
 permalink: /barc-dogs/
-headerImg: /assets/headers/Melody.jpg
+headerImg: /assets/headers/Melody-header.jpg
 ---
 
 A gallery of dogs that I've photographed from [BARC](http://www.houstontx.gov/barc/), the Houston City animal shelter.
