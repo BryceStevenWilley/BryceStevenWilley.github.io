@@ -18,11 +18,11 @@ co-designed some of the levels with Mei Tan.
 ## Forest
 
 [Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh5) and 
-I coded for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/BryceStevenWilley/oculus-hackrice16)).  It's working title was called "No Man's Forest", 
-and was pretty much just a chance for us to make a VR game, It ended up being a blast. 
+I made for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/BryceStevenWilley/oculus-hackrice16)).  The working title was "No Man's Forest", 
+and was just a chance for us to make a VR game, It ended up being a blast. 
 However, since I don't own a Rift, I had to port the game to Mac, which you can find
 [here][forest-repo]! The installation isn't general yet (library locations are hardcoded to my machine, etc),
-but feel free to open a Github issue if you want me to fix it/ a PR if you know anything about CMake. 
+but feel free to open a Github issue if you want me to fix it, or a pull request if you know anything about CMake. 
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
