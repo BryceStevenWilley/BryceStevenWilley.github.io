@@ -45,7 +45,7 @@ so I don't know if they build for versions of android newer than L.
 
 * [Pacer][pacer-repo], an app that chooses music based on your running pace at the moment.
 * [Pandora's Pantry][pandora-repo], an app that gives you recipes you can make based off 
-  ingredients that you have in your fridge. The app was one of the finalists at HackRice 4
+  ingredients that you have in your refrigerator. The app was one of the finalists at HackRice 4
   and our resulting business proposal based on the app idea won 2nd place at the 2015
   Owl Open Startup Competition at Rice.
 
@@ -65,7 +65,7 @@ Just some neat drawing demos written in Angular2 and Dart.
 
 ## Photography
 
-I'm a volunteer photographer at BARC, and I've gathered a ton of beautiful pictures of some gourgeous pups while
+I'm a volunteer photographer at BARC, and I've gathered a ton of beautiful pictures of some gorgeous pups while
 doing so. Some of my favorites are here, and the entire collection can be found [here](/barc-dogs). 
 
 <div class="gallery-wrap">
@@ -80,5 +80,5 @@ doing so. Some of my favorites are here, and the entire collection can be found 
   {% endfor %}
 </div>
 
-Please please please, if you are live in the Houston area, and are considering adapting a dog, go give the
-good pups a BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)
+Please please please, if you are live in the Houston area and are considering adopting a dog, go give the
+good pups at BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)
