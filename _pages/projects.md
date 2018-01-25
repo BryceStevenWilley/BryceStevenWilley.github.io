@@ -17,12 +17,11 @@ co-designed some of the levels with Mei Tan.
 
 ## Forest
 
-[Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh5) and 
+[Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh4) and 
 I made for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/BryceStevenWilley/oculus-hackrice16)).  The working title was "No Man's Forest", 
 and was just a chance for us to make a VR game, It ended up being a blast. 
 However, since I don't own a Rift, I had to port the game to Mac, which you can find
-[here][forest-repo]! The installation isn't general yet (library locations are hardcoded to my machine, etc),
-but feel free to open a Github issue if you want me to fix it, or a pull request if you know anything about CMake. 
+[here][forest-repo]! It also builds on Linux (Ubuntu 16.04, feel free to open an issue if it doesn't build on your machine). 
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
