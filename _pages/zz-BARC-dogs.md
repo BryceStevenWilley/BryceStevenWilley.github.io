@@ -19,5 +19,5 @@ A gallery of dogs that I've photographed from [BARC](http://www.houstontx.gov/ba
   {% endfor %}
 </div>
 
-Please please please, if you are live in the Houston area, and are considering adapting a dog, go give the
+Please please please, if you are living in the Houston area, and are considering adopting a dog, go give the
 good pups a BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)

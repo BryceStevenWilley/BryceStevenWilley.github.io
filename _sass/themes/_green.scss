@@ -16,4 +16,12 @@
   .c-footer a {
     color: $c__green;
   }
+  .headerImgW img {
+    border: 1px solid $c__green;
+  }
+  
+  .headerImgW:after {
+    background: radial-gradient(ellipse at center, rgba($c__white, 0) 50%,$c__green 90%,$c__green 100%);
+  }
 }
+

@@ -17,11 +17,11 @@ co-designed some of the levels with Mei Tan.
 
 ## Forest
 
-[Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh4) and 
-I made for the Oculus Rift at HackRice 6 ([original vesion](https://github.com/BryceStevenWilley/oculus-hackrice16)).  The working title was "No Man's Forest", 
-and was just a chance for us to make a VR game, It ended up being a blast. 
+[Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh4) and
+I made for the Oculus Rift at HackRice 6 ([original version](https://github.com/BryceStevenWilley/oculus-hackrice16)).  The working title was "No Man's Forest",
+and was just a chance for us to make a VR game, It ended up being a blast.
 However, since I don't own a Rift, I had to port the game to Mac, which you can find
-[here][forest-repo]! It also builds on Linux (Ubuntu 16.04, feel free to open an issue if it doesn't build on your machine). 
+[here][forest-repo]! It also builds on Linux (Ubuntu 16.04, feel free to open an issue if it doesn't build on your machine).
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
@@ -35,7 +35,6 @@ However, since I don't own a Rift, I had to port the game to Mac, which you can 
      {% endif %}
   {% endfor %}
 </div>
-
 
 ## Android Apps
 
@@ -52,7 +51,7 @@ so I don't know if they build for versions of android newer than L.
 
 Just some neat drawing demos written in Angular2 and Dart.
 
-* [circle drawer](/dart-projects/#/circles)
+* [Circle drawer](/dart-projects/#/circles)
 * [Fractals with the Logo Turtle](/dart-projects/#/logo)
 
 [bodhi-repo]: https://github.com/BryceStevenWilley/JTTW
@@ -65,7 +64,7 @@ Just some neat drawing demos written in Angular2 and Dart.
 ## Photography
 
 I'm a volunteer photographer at BARC, and I've gathered a ton of beautiful pictures of some gorgeous pups while
-doing so. Some of my favorites are here, and the entire collection can be found [here](/barc-dogs). 
+doing so. Some of my favorites are here, and the entire collection can be found [here](/barc-dogs).
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
@@ -79,5 +78,5 @@ doing so. Some of my favorites are here, and the entire collection can be found 
   {% endfor %}
 </div>
 
-Please please please, if you are live in the Houston area and are considering adopting a dog, go give the
+Please please please, if you are living in the Houston area and are considering adopting a dog, go give the
 good pups at BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)

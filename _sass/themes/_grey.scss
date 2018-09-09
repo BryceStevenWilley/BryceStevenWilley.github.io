@@ -15,5 +15,12 @@
 
   .c-footer a {
     color: $c__blue-grey;
+  }   
+  .headerImgW img {
+    border: 1px solid $c__blue-grey;
+  }
+  
+  .headerImgW:after {
+    background: radial-gradient(ellipse at center, rgba($c__white, 0) 50%,$c__blue-grey 90%,$c__blue-grey 100%);
   }
 }

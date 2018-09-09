@@ -6,14 +6,21 @@
 
   .c-navigation,
   .c-header {
-    background: $c__blue;
+    background: $c__mat_blue;
   }
 
   .c-article__main a:not(.c-btn) {
-    color: $c__blue;
+    color: $c__mat_blue;
   }
 
   .c-footer a {
-    color: $c__blue;
+    color: $c__mat_blue;
+  }
+  .headerImgW img {
+    border:1px solid $c__mat_blue;
+  }
+
+  .headerImgW:after {
+    background: radial-gradient(ellipse at center, rgba($c__white, 0) 50%,$c__mat_blue 90%,$c__mat_blue 100%);
   }
 }
