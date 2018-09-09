@@ -3,14 +3,33 @@
    ========================================================================== */
 
 .t-blue{
+  background: $c__mat_blue;
 
   .c-navigation,
   .c-header {
     background: $c__mat_blue;
   }
 
-  .c-article__main a:not(.c-btn) {
-    color: $c__mat_blue;
+  .c-article__main {
+    p {
+      color: $c__white; 
+    }
+
+    a:not(.c-btn) {
+        color: $c__yena_yellow;
+    }
+  }
+
+  .c-header__title {
+    color: $c__yena_yellow;
+  }
+
+  .c-navigation__item {
+    color: $c__yena_yellow;
+
+    &.is-active:after {
+      background: $c__yena_yellow;
+    }
   }
 
   .c-footer a {

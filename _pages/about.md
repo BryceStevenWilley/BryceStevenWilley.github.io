@@ -5,9 +5,13 @@ front-page: true
 permalink: /about/
 ---
 
-I'm Bryce, a Master's Student at Rice University working in the [Kavraki Lab](http://www.kavrakilab.org/)
+I'm Bryce, a robotics software engineer at [Realtime Robotics](https://rtr.ai).
+I received a BS in Computer Science and an BA in Theatre in 2017 from Rice University, and I defended my Master's Thesis also at Rice University.
+My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
 with [Lydia Kavraki](https://www.cs.rice.edu/~kavraki/) and [Mark Moll](https://www.cs.rice.edu/~mmoll/)
 on autonomous robotic motion.
+
+[//]: # (Add a lot more here about my )
 
 I also have a side hobby of making video games: take a
 look [here](/projects) to see more.
