@@ -12,7 +12,9 @@ A gallery of dogs that I've photographed from [BARC](http://www.houstontx.gov/ba
     {% if image.path contains 'assets/BARC' %}
       <div class="pictureBox">
         <div class="innerBox">
-            <img src="{{ site.baseurl }}{{ image.path }}">
+            <a href="{{site.baseurl}}{{image.path }}">
+              <img src="{{ site.baseurl }}{{ image.path }}">
+            </a>
         </div>
       </div>
     {% endif %}

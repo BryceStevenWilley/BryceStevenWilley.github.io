@@ -3,15 +3,17 @@ layout: page
 title: About
 front-page: true
 permalink: /about/
+headerImg: /assets/headers/cool_in_NY.jpg
 ---
 
-I'm Bryce, a robotics software engineer at [Realtime Robotics](https://rtr.ai).
+I'm Bryce, a robotics software engineer at [Realtime Robotics](https://rtr.ai) living in Boston, MA.
 I received a BS in Computer Science and an BA in Theatre in 2017 from Rice University, and I defended my Master's Thesis also at Rice University.
 My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
 with [Lydia Kavraki](https://www.cs.rice.edu/~kavraki/) and [Mark Moll](https://www.cs.rice.edu/~mmoll/)
 on autonomous robotic motion.
 
-[//]: # (Add a lot more here about my )
+[//]: # (TODO: Add MoveIt contributor)
+[//]: # (TODO: Add a lot more here about my mission statement)
 
 I also have a side hobby of making video games: take a
 look [here](/projects) to see more.
