@@ -5,8 +5,7 @@ title:How to Properly Clang Tidy
 
 Clang tidy is an awesome tool.
 
-Tried to follow http://www.labri.fr/perso/fleury/posts/programming/using-clang-tidy-and-clang-format.html, but didn't
-work on the scale of moveit.
+Tried to follow http://www.labri.fr/perso/fleury/posts/programming/using-clang-tidy-and-clang-format.html, but didn't work on the scale of moveit.
 
 Used run-clang-tidy-3.8.py.
 
