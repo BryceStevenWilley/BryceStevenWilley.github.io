@@ -27,6 +27,7 @@
   .c-navigation__item {
     color: $c__yena_yellow;
 
+    &:hover:after,
     &.is-active:after {
       background: $c__yena_yellow;
     }
