@@ -3,18 +3,42 @@
    ========================================================================== */
 
 .t-blue{
+  background: $c__mat_blue;
 
   .c-navigation,
   .c-header {
     background: $c__mat_blue;
   }
 
-  .c-article__main a:not(.c-btn) {
-    color: $c__mat_blue;
+  .c-article__main {
+    p, section, li, h2, h3, h1 {
+      color: $c__white; 
+    }
+
+    a:not(.c-btn) {
+        color: $c__yena_yellow;
+    }
   }
 
-  .c-footer a {
-    color: $c__mat_blue;
+  .c-header__title {
+    color: $c__yena_yellow;
+  }
+
+  .c-navigation__item {
+    color: $c__yena_yellow;
+
+    &:hover:after,
+    &.is-active:after {
+      background: $c__yena_yellow;
+    }
+  }
+
+  .c-footer {
+    background: $c__mat_blue;
+    color: $c__white;
+    a {
+      color: $c__yena_yellow;
+    }
   }
   .headerImgW img {
     border:1px solid $c__mat_blue;

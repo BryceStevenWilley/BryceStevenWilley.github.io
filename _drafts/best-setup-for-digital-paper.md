@@ -10,5 +10,3 @@ Outline:
 * The downsides
 * A working setup (Zotero, Google Drive and Sync folders)
 * Please Sony, Linux support
-
-

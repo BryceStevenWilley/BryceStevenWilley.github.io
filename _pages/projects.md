@@ -15,6 +15,8 @@ Here are some of my current and past personal projects, both software and nonsof
 coding for the entire game using [cocos2d-x](https://github.com/cocos2d/cocos2d-x), and
 co-designed some of the levels with Mei Tan.  
 
+[//]: # (TODO: add gifs of gameplay.)
+
 ## Forest
 
 [Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh4) and
@@ -28,13 +30,17 @@ However, since I don't own a Rift, I had to port the game to Mac, which you can 
     {% if image.path contains 'assets/Forest' %}
         <div class="pictureBox">
             <div class="innerBox">
+              <a href="{{ site.baseurl }}{{ image.path }}">
                 <img src="{{ site.baseurl }}{{ image.path }}">
+              </a>
                 <!--div class="titleBox">Image 1</div-->
             </div>
         </div>
      {% endif %}
   {% endfor %}
 </div>
+
+[//]: # (TODO: add gif of admittedly boring gameplay)
 
 ## Android Apps
 
@@ -49,7 +55,7 @@ so I don't know if they build for versions of android newer than L.
 
 ## Web Things
 
-Just some neat drawing demos written in Angular2 and Dart.
+Just some neat web-based drawing demos written in Angular2 and Dart.
 
 * [Circle drawer](/dart-projects/#/circles)
 * [Fractals with the Logo Turtle](/dart-projects/#/logo)
@@ -71,7 +77,9 @@ doing so. Some of my favorites are here, and the entire collection can be found 
     {% if image.path contains 'assets/BARC/projects_subset' %}
       <div class="pictureBox">
         <div class="innerBox">
+          <a href="{{ site.baseurl }}{{ image.path }}">
             <img src="{{ site.baseurl }}{{ image.path }}">
+          </a>
         </div>
       </div>
     {% endif %}
@@ -80,3 +88,5 @@ doing so. Some of my favorites are here, and the entire collection can be found 
 
 Please please please, if you are living in the Houston area and are considering adopting a dog, go give the
 good pups at BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)
+
+[//]: # (TODO: Add Theatre to personal projects: Put key points from Theatre resume here: Sound Design, Projection, etc)

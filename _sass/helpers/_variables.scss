@@ -11,6 +11,10 @@ $c__indigo: #3F51B5;
 $c__blue: #1565C0;
 
 $c__mat_blue: #0090EA;
+//$c__yena_yellow: #d8991a;
+$c__yena_yellow: #ffd90a;
+$c__yena_grey: #596b72;
+
 //$c__blue: #2196F3;
 $c__light-blue: #03A9F4;
 $c__cyan: #00BCD4;
@@ -29,5 +33,10 @@ $c__blue-grey: #607D8B;
 $c__black: #000000;
 $c__white: #ffffff;
 
-// Theme
-$t-theme: $c__indigo;
+// Theme: change this as well as the theme in config.yml.
+// Not yet implemented.
+$t-theme: $c__mat_blue;
+$t-headerTheme: $c__mat_blue;
+$t-bodyTheme: $c__mat_blue;
+$t-headerText: $c__yena_yellow;
+$t-bodyText: $c__white;
