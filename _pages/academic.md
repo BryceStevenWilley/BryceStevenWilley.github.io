@@ -3,6 +3,7 @@ layout: page
 title: Academic Work
 front-page: true
 permalink: /academic/
+headerImg: /assets/headers/sampling_optimization.png
 ---
 
 ## Master's Thesis
