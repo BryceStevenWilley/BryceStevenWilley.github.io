@@ -5,14 +5,23 @@ front-page: true
 permalink: /academic/
 ---
 
-## Motion Planning Background
+## Master's Thesis
 
-Getting robots to move is a more difficult problem than it might seem.
-Robots have to deal many different problems, including knowing what's around them (vision), knowing their location in a wider environment (mapping), determining how to move around by this wider environment (motion planning) and actually moving around in the environment (control and actuation).
+### Abstract
 
-## A Planning Pipeline
+Robotic path planning is a critical problem in autonomous robotics. Two common approaches to robotic path planning are sampling-based motion planners and
+continuous optimization methods. Sampling-based motion planners explore the
+search space effectively, but either return low quality paths or take a long time to initially find a path. Continuous optimization methods quickly find high-quality paths,
+but often return paths in collision with obstacles. This thesis combines sampling-
+based and continuous optimization techniques in order to improve the performance
+of these planning approaches. This thesis shows that the advantages and disadvantages of these approaches are complementary and proposes combining them into
+a pipeline. The proposed pipeline results in better path quality than either approach alone, providing a robust, efficient, and high-quality general path planning
+solution. The use of collision checking techniques introduced by continuous optimization methods in sampling-based planners is also analyzed and approximation
+error rates and timing results are provided.
 
+### Full Thesis
 
+[PDF version](/assets/willey-ms-thesis.pdf)
 
 ## Publications
 
