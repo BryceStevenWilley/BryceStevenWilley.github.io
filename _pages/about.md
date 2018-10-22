@@ -10,7 +10,7 @@ I'm Bryce, a robotics software engineer at [Realtime Robotics](https://rtr.ai) l
 I received a BS in Computer Science and a BA in Theatre in 2017 and defended my Master's Thesis in August 2018 at Rice University.
 My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
 with [Lydia Kavraki](https://www.cs.rice.edu/~kavraki/) and [Mark Moll](https://www.cs.rice.edu/~mmoll/)
-on autonomous robotic motion.
+on autonomous robotic and vehicle motion.
 
 [//]: # (TODO: Add MoveIt contributor)
 [//]: # (TODO: Add a lot more here about my mission statement)
