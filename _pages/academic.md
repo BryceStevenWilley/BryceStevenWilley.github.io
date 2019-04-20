@@ -24,9 +24,8 @@ error rates and timing results are provided.
 
 [PDF version](/assets/willey-ms-thesis.pdf)
 
-## Publications
-
-* "Combining Sampling and Optimization for Fast Path Planning", Willey, Moll, and Kavraki. _Under Review_.
+[//]: # (## Publications)
+[//]: # ("Combining Sampling and Optimization for Fast Path Planning", Willey, Moll, and Kavraki. _Under Review_.)
 
 ## Slides 
 

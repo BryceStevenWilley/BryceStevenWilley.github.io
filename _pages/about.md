@@ -7,16 +7,16 @@ headerImg: /assets/headers/cool_in_NY.jpg
 ---
 
 I'm Bryce, a robotics software engineer at [Realtime Robotics](https://rtr.ai) living in Boston, MA.
+My mission is to make robots (significantly more) useful, (trivially) usable, and (actually, widely) used.
+
+[//]: # (TODO: Write blog posts putting together my thoughts on all of these different aspects of robotics. Easiest one would be post-summer, talking about getting them to be used). 
+
 I received a BS in Computer Science and a BA in Theatre in 2017 and defended my Master's Thesis in August 2018 at Rice University.
 My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
 with [Lydia Kavraki](https://www.cs.rice.edu/~kavraki/) and [Mark Moll](https://www.cs.rice.edu/~mmoll/)
 on autonomous robotic and vehicle motion.
 
-I am a core contributor to [MoveIt](https://moveit.ros.org/about/).
-
-[//]: # (TODO: Add a lot more here about my mission statement)
-
-I also have a side hobby of making video games: take a
+I am a core contributor to [MoveIt](https://moveit.ros.org/about/), and I also have a side hobby of making video games: take a
 look [here](/projects) to see more.
 
 I rock climb, run, was a volunteer photographer at [BARC](http://www.houstontx.gov/barc/), and take my own pup, Jackie, for lots of long walks.
