@@ -14,7 +14,7 @@ Here are some of my current and past personal projects, both software and nonsof
 
 [Bodhi][bodhi-repo] is a 2D platformer inspired by the Chinese novel, "Journey to the West". I handled
 coding for the entire game using [cocos2d-x](https://github.com/cocos2d/cocos2d-x), and
-co-designed some of the levels with Mei Tan.
+co-designed some of the levels with [Mei Tan](https://www.linkedin.com/in/meiflwr).
 
 ![Bodhi's Main Menu](/assets/bodhi_menu.png)
 
