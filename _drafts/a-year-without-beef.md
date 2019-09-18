@@ -4,7 +4,7 @@ title: A Year without Beef
 ---
 
 I'm starting to write this as I approach a full year without eating beef. I forget the actually day I
-started, but sometime in January 2016, I stopped eating beef, followed a few weeks later by pork, and
+started, but sometime in January 2017, I stopped eating beef, followed a few weeks later by pork, and
 I officially went pescatarian in April.
 
 ### It makes you cook
