@@ -10,6 +10,12 @@ Here are some of my current and past personal projects, both software and nonsof
 
 # Software Projects
 
+## Visioning Texts
+
+[Visioning Texts][visioning_texts_page] is a data visualization tool for your conversations. It runs locally in your browser, giving you power over your information. It works with Signal, WhatsApp, and Facebook Messenger. Instructions on how to extract your data is [here](/visioning_texts/setup_instructions.html).
+
+![Visioning Texts Screenshot](/assets/visioning_texts.png)
+
 ## Bodhi
 
 [Bodhi][bodhi-repo] is a 2D platformer inspired by the Chinese novel, "Journey to the West". I handled
@@ -51,7 +57,7 @@ For earlier Hackathons, my teams and I made several android apps. They're all a 
 so I don't know if they build for versions of android newer than L.
 
 * [Pacer][pacer-repo], an app that chooses music based on your running pace at the moment.
-* [Pandora's Pantry][pandora-repo], an app that gives you recipes you can make based off 
+* [Pandora's Pantry][pandora-repo], an app that gives you recipes you can make based off
   ingredients that you have in your refrigerator. The app was one of the finalists at HackRice 4
   and our resulting business proposal based on the app idea won 2nd place at the 2015
   Owl Open Startup Competition at Rice.
@@ -64,6 +70,7 @@ Just some neat web-based drawing demos written in Angular2 and Dart.
 * [Fractals with the Logo Turtle](/dart-projects/#/logo)
 
 [bodhi-repo]: https://github.com/BryceStevenWilley/JTTW
+[visioning_texts_page]: https://BryceWilley.xyz/visioning_texts
 [forest-repo]: https://github.com/BryceStevenWilley/forest_game
 [pacer-repo]: https://github.com/jemitk/Pacer
 [pandora-repo]: https://github.com/BryceStevenWilley/PandorasPantry
