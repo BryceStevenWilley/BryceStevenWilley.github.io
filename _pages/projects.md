@@ -77,10 +77,16 @@ Just some neat web-based drawing demos written in Angular2 and Dart.
 
 # Personal Projects
 
+## 3d Art
+
+In my free time, I play around with the 3d animation software, Blender. When I make something good, I'll post it here in [my gallery](/image-gallery) and on [my Instagram](https://www.instagram.com/newbmakingart/).
+
+![A low-poly scene of a desert](/assets/blender/desert_low_poly.jpg)
+
 ## Photography
 
-I'm a volunteer photographer at BARC, and I've gathered a ton of beautiful pictures of some gorgeous pups while
-doing so. Some of my favorites are here, and the entire collection can be found [here](/barc-dogs).
+I used to be a volunteer photographer at [BARC](https://www.houstontx.gov/barc/), the City of Houston animal shelter, and I gathered a ton of beautiful pictures of some gorgeous pups.
+Some of my favorites are below, and the entire collection can be found [here](/image-gallery#dog-pictures).
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
