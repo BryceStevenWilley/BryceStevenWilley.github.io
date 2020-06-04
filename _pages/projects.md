@@ -12,7 +12,7 @@ Here are some of my current and past personal projects, both software and nonsof
 
 ## Visioning Texts
 
-[Visioning Texts][visioning_texts_page] is a data visualization tool for your conversations. It runs locally in your browser, giving you power over your information. It works with Signal, WhatsApp, and Facebook Messenger. Instructions on how to extract your data is [here](/visioning_texts/setup_instructions.html).
+[Visioning Texts][visioning_texts_page] is a data visualization tool for your conversations. It runs locally in your browser, giving you power over your information. It works with Signal, WhatsApp, and Facebook Messenger. Instructions on how to extract your data is [here](/visioning_texts/setup_instructions.html), and if you're too busy to try it yourself, you can see an example image of what it looks like [here](/assets/visioning_texts_full.png).
 
 ![Visioning Texts Screenshot](/assets/visioning_texts.png)
 
