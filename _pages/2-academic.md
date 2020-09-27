@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Academic Work
-front-page: true
+front-page: false
 permalink: /academic/
 headerImg: /assets/headers/sampling_optimization.png
 ---

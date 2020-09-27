@@ -26,3 +26,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+# Added at 2020-09-27 09:27:50 -0400 by brycew:
+gem "kramdown-parser-gfm", "~> 1.1"
