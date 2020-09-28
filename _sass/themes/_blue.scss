@@ -3,48 +3,53 @@
    ========================================================================== */
 
 .t-blue{
-  background: $c__mat_blue;
+  background: $t-background;
 
-  .c-navigation,
+  .c-navigation {
+    background: $t-nav-bg;
+  }
   .c-header {
-    background: $c__mat_blue;
+    background: $t-background;
   }
 
   .c-article__main {
     p, section, li, h2, h3, h1 {
-      color: $c__white; 
+      color: $t-bodyText; 
     }
 
     a:not(.c-btn) {
-        color: $c__yena_yellow;
+      color: $t-accent;
+    }
+    a:visited {
+      color: $t-accent-off;
     }
   }
 
   .c-header__title {
-    color: $c__yena_yellow;
+    color: $t-titleText; 
   }
 
   .c-navigation__item {
-    color: $c__yena_yellow;
+    color: $t-navText; 
 
     &:hover:after,
     &.is-active:after {
-      background: $c__yena_yellow;
+      background: $t-navText; 
     }
   }
 
   .c-footer {
-    background: $c__mat_blue;
-    color: $c__white;
+    background: $t-background;
+    color: $t-bodyText;
     a {
-      color: $c__yena_yellow;
+      color: $t-accent-off;
     }
   }
   .headerImgW img {
-    border:1px solid $c__mat_blue;
+    border:1px solid $t-background;
   }
 
   .headerImgW:after {
-    background: radial-gradient(ellipse at center, rgba($c__white, 0) 50%,$c__mat_blue 90%,$c__mat_blue 100%);
+    background: radial-gradient(ellipse at center, rgba($c__white, 0) 50%,$t-background 90%,$t-background 100%);
   }
 }

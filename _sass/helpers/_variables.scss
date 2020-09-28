@@ -11,7 +11,6 @@ $c__indigo: #3F51B5;
 $c__blue: #1565C0;
 
 $c__mat_blue: #0090EA;
-//$c__yena_yellow: #d8991a;
 $c__yena_yellow: #ffd90a;
 $c__yena_grey: #596b72;
 
@@ -33,10 +32,23 @@ $c__blue-grey: #607D8B;
 $c__black: #000000;
 $c__white: #ffffff;
 
+
+// Redesign
+$c__offwhite: #e3ddd4;//#e8dfcf;
+$c__blue_green: #468f32;
+$c__eva_purple: #7a68ac;
+$c__2049_orange: #ffb472;
+$c__dark_brown: #42292c;
+
 // Theme: change this as well as the theme in config.yml.
-// Not yet implemented.
-$t-theme: $c__mat_blue;
-$t-headerTheme: $c__mat_blue;
-$t-bodyTheme: $c__mat_blue;
-$t-headerText: $c__yena_yellow;
-$t-bodyText: $c__white;
+$t-theme: $c__blue_green; //$c__mat_blue;
+$t-headerTheme: $c__eva_purple; //$c__mat_blue;
+$t-bodyTheme: $c__offwhite; //$c__mat_blue;
+
+$t-background: $c__offwhite;
+$t-nav-bg: $c__eva_purple;
+$t-titleText: $c__eva_purple;
+$t-bodyText: $c__dark_brown; //$c__white;
+$t-navText: $c__2049_orange; //$c__yena_yellow;
+$t-accent: $c__blue_green;
+$t-accent-off: #800714;  
