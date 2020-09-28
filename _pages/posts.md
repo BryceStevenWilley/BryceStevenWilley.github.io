@@ -1,8 +1,9 @@
-#---
-#layout: page
-#title: Posts
-#permalink: /posts/
-#---
+---
+layout: page
+title: Blogs 
+front-page: true
+permalink: /blogs/
+---
 <ul class="post-list">
   {% for post in site.posts %}
   <li>
