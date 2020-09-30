@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blogs 
-front-page: true
+front-page: false 
 permalink: /blogs/
 ---
 <ul class="post-list">

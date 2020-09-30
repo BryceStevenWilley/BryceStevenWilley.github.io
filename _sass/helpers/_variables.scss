@@ -41,14 +41,14 @@ $c__2049_orange: #ffb472;
 $c__dark_brown: #42292c;
 
 // Theme: change this as well as the theme in config.yml.
-$t-theme: $c__blue_green; //$c__mat_blue;
-$t-headerTheme: $c__eva_purple; //$c__mat_blue;
-$t-bodyTheme: $c__offwhite; //$c__mat_blue;
+$t-theme: $c__mat_blue; //$c__blue_green; 
+$t-headerTheme: $c__mat_blue;  // $c__eva_purple; 
+$t-bodyTheme: $c__mat_blue; //$c__offwhite; 
 
-$t-background: $c__offwhite;
-$t-nav-bg: $c__eva_purple;
-$t-titleText: $c__eva_purple;
-$t-bodyText: $c__dark_brown; //$c__white;
-$t-navText: $c__2049_orange; //$c__yena_yellow;
-$t-accent: $c__blue_green;
-$t-accent-off: #800714;  
+$t-background: $c__mat_blue; //$c__offwhite;
+$t-nav-bg: $c__mat_blue; //$c__eva_purple;
+$t-titleText: $c__yena_yellow; //$c__eva_purple;
+$t-bodyText: $c__white; //$c__dark_brown; 
+$t-navText: $c__yena_yellow; //$c__2049_orange; 
+$t-accent: $c__yena_yellow; //$c__blue_green;
+$t-accent-off: #66298c; // #800714;  
