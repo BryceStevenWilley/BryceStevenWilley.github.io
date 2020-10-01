@@ -6,8 +6,8 @@ categories: design colors films
 ---
 
 I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049
-my favorite movie for a while because of its striking palettes. La La Land still is. But if you asked me 
-to come up with my own palettes, I'd either be baffeled, or would choose the loudest combinations you've seen.
+my favorite movie for a while because of its striking palettes. La La Land still is. But if you asked me
+to come up with my own palettes, I'd either be baffled, or would choose the loudest combinations you've seen.
 
 When I first started my website in late undergrad, I stuck with simple colors. White background, black text, supporting a dark blue <span style="color:#1565C0;">⬤</span>,
 heavily inspired by Google's [Material Design](https://material.io/design/).
@@ -29,7 +29,7 @@ The colors were:
 I honestly just went with these because:
 
 1. They stood out amid a web of black text on white backgrounds. I just wanted to be a bit more unique, the true snowflake I am
-2. They're fun! Bright colors are just fun for me! I'm by no means a designer by trade, just by hobby. Making my website appeal to anyone but myself wasn't necessary. 
+2. They're fun! Bright colors are just fun for me! I'm by no means a designer by trade, just by hobby. Making my website appeal to anyone but myself wasn't necessary.
 
 However, eventually the colors started to wear on me.
 
@@ -53,14 +53,14 @@ I found the idea of [copying palettes from Movies](https://blog.datawrapper.de/c
 
 I threw all of the screen shots into a collage, and was surprised with the results. I thought I had grabbed more scenes with blues in them, but the only one present was a scene from Evangelion.
 
-![A collage of screenshots from my favorite films](/assets/blogs/colors/film_collage.png)
+![A collage of screenshots from my favorite films](/assets/blogs/colors/film_collage.jpg)
 
 On a whim, I generated a palette from it (on [Canva](https://www.canva.com/colors/color-palette-generator/)), and got:
 
-* Woody brown: <span style="color:#442a2d;">⬤</span> 
-* Whiskey: <span style="color:#d0935d;">⬤</span> 
-* De York: <span style="color:#88c484;">⬤</span> 
-* Deluge: <span style="color:#7a68ac;">⬤</span> 
+* Woody brown: <span style="color:#442a2d;">⬤</span>
+* Whiskey: <span style="color:#d0935d;">⬤</span>
+* De York: <span style="color:#88c484;">⬤</span>
+* Deluge: <span style="color:#7a68ac;">⬤</span>
 
 I played around for a long time in [colorizer](http://colorizer.org/) and [coolors](https://coolors.co) adjusting brightness values and occasionally the cyan/yellow scales to make sure the colors would still be distinct for colorblind people and got ... something.
 
