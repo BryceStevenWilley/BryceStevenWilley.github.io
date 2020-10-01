@@ -1,68 +1,92 @@
 ---
 layout: post
 title: Choosing New Colors for my Website
-date:   2020-09-27 22:50:49 -0500
+date:   2020-09-30 20:50:49 -0500
 categories: design colors films
 ---
 
-Colors have almost always been just out of reach for me. They look wonderful! Blade Runner 2049
-was my favorite movie for a while because of the palettes. La La Land still is. But at the same
-time, if you'd ask me to come up with my own awesome colors, I'd either be baffeled, or I'd have the unearned confidence of a physisist entering a new field.
+I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049
+my favorite movie for a while because of its striking palettes. La La Land still is. But if you asked me 
+to come up with my own palettes, I'd either be baffeled, or would choose the loudest combinations you've seen.
 
-When I first started my website in late undergrad, I stayed simple. White background, black text, and dark blue theme color <span style="color:#1565C0;">⬤</span>,
+When I first started my website in late undergrad, I stuck with simple colors. White background, black text, supporting a dark blue <span style="color:#1565C0;">⬤</span>,
 heavily inspired by Google's [Material Design](https://material.io/design/).
 
 ![My original website design](/assets/blogs/colors/original_website.png)
 
-I then, for some reason, decided that I needed a 'brand', and part of that was maintaining consistent colors on everything I did. 
-I used these colors in some [presentations](https://brycewilley.xyz/comp600talk/) first, then eventualy redesigned the website around them.
+After a few years in grad school, I realized that I needed a 'brand': some consistent visual aspect to my online  and professional presence.
+I first started deciding on colors to use in my 'brand' in some [presentations](https://brycewilley.xyz/comp600talk/) , and then redesigned the website around them.
 
-The colors on my website were:
-* Primary, a bright blue: <span style="color:#0090EA;">⬤</span>
-* Secondary, a crazy bright yellow: <span style="color:#ffd90a;">⬤</span>
-* Tertiary, a dark purple <span style="color:#66298c;">⬤</span>
-* Text: white <span style="color:#ffffff;">⬤</span>
+The colors were:
+
+* a bright blue <span style="color:#0090EA;">⬤</span> used as the primary background and theme: 
+* a crazy bright yellow <span style="color:#ffd90a;">⬤</span> to counter the blue
+* a dark purple <span style="color:#66298c;">⬤</span> whenever an accent was needed
+* white <span style="color:#ffffff;">⬤</span> for text
 
 ![My website before the color redesign](/assets/blogs/colors/website_v2.png)
 
-Why the hell did I go with these? Because they were fun! I'm by no means a web developer by trade, so making a website arguably isn't necessary, and I just sorta use it to try out and play around.
-These colors were just me playing around, and choosing bright colors that match my personality.
-However, my personality and general readability were at odds.
+I honestly just went with these because:
 
-I posted [Visioning Texts](/visioning_texts/) on reddit with some of my data early this year, and got quite a bit more attention than I was expecting. While there was a lot of garbage comments, there were some constructive ones related to the color choice:
+1. They stood out amid a web of black text on white backgrounds. I just wanted to be a bit more unique, the true snowflake I am
+2. They're fun! Bright colors are just fun for me! I'm by no means a designer by trade, just by hobby. Making my website appeal to anyone but myself wasn't necessary. 
+
+However, eventually the colors started to wear on me.
+
+I posted [Visioning Texts](/visioning_texts/) on Reddit early this year, and got quite a bit more attention than I was expecting. While there were a lot of garbage comments, the most constructive ones were related to the color choice:
+
 * "The blue background is extremely hideous"
 * "It's just too much of a harsh contrast. Makes it difficult to focus on the data"
 * "Colour palette could do better. Blue and yellow remind me of IKEA"
 
-I definitely knew I needed to change. So I did.
+At first I brushed it off for the same reasons: it's my project, I can do what I want! And that's a perfectly valid response! I could have just left it. 
+But in the back of my head, I knew that I choose these colors knowing completely nothing about color theory, or even just the basics outside of RGB. I had no idea what HSV was, and my main color choosing method was the Material design website and fiddling with hex values.
 
-## Good color sources
-* https://blog.datawrapper.de/beautifulcolors
-* https://blog.datawrapper.de/colorguide
-* https://coolors.co
-* Captian Disillusion: https://www.youtube.com/watch?v=FTKP0Y9MVus
+After coming across [several](https://www.youtube.com/watch?v=FTKP0Y9MVus) 
+  [great](https://blog.datawrapper.de/beautifulcolors) [articles](https://blog.datawrapper.de/colorguide) and [videos](https://www.youtube.com/watch?v=cPeqyGig0vQ),
+I got the motivation push to actually put some effort into my colors this time.
 
-## The actual Research
+## The Actual Work
 
-After reading listening to the above, I got to work. I wanted to keep the same fun-aspect to my site, while maybe being a little easier to look at and read, maybe a bit more seriouus. So, I just went through some movies/TV shows, scrolled through the time bar to scenes I remembered/were striking, and grabbed a few screenshots:
-* Dark
-* Neon Genesis: Evangelion
-* Black Mirror (USS Calister)
-* Blade Runner 2049
-* Eternal Sunshine
+I wanted to keep the same amount of fun with my new color choice, while being a little easier to read and just a smidge more serious. 
+I found the idea of [copying palettes from Movies](https://blog.datawrapper.de/colorguide/#4) particularly interesting, so I skipped through some movies/TV shows on Netflix to scenes I remembered being striking, and grabbed a few screenshots [^1].
 
-I threw all of the sceen shots them together into some sort of collage really quick, and was surprised with the results. I thought I would have grabbed more scenes with blues in them, but the only one present was a scene from Evangelion, which has lots of bright blue skys in Tokyo-3.
+I threw all of the screen shots into a collage, and was surprised with the results. I thought I had grabbed more scenes with blues in them, but the only one present was a scene from Evangelion.
 
-![A collage of screenhots from my favorite films](/assets/blogs/colors/film_collage.png)
+![A collage of screenshots from my favorite films](/assets/blogs/colors/film_collage.png)
 
-I got a palette generated from it (on [Canva](https://www.canva.com/colors/color-palette-generator/)), and got:
-* Woody brown: #442a2d
-* Whiskey: #d0935d
-* De York: #88c484 (almost entirely from the EVA Unit-01)'s shoulders and arms
-* Deluge: #7a68ac
+On a whim, I generated a palette from it (on [Canva](https://www.canva.com/colors/color-palette-generator/)), and got:
 
-I then played around for a long time in http://colorizer.org/ and https://coolors.co, playing around with the brightness values, which can [help the most](https://www.youtube.com/watch?v=cPeqyGig0vQ) with distinguishing the colors on the page, and occasionally the cyan/yellow scales, to make sure that none of my colors would be indisguishable for colorblind people. 
+* Woody brown: <span style="color:#442a2d;">⬤</span> 
+* Whiskey: <span style="color:#d0935d;">⬤</span> 
+* De York: <span style="color:#88c484;">⬤</span> 
+* Deluge: <span style="color:#7a68ac;">⬤</span> 
 
-And here's the final result! 
+I played around for a long time in [colorizer](http://colorizer.org/) and [coolors](https://coolors.co) adjusting brightness values and occasionally the cyan/yellow scales to make sure the colors would still be distinct for colorblind people and got ... something.
 
-![The final color redesign](/assets/blogs/colors/final_redesign.png)
+![The first redesign](/assets/blogs/colors/redesign_v3_0.png)
+
+Which wasn't the worst, but still seemed disjoint. It clicked after my SO pointed out that the individual images didn't have that much in common. I was hoping that I'd just get colors that I liked by putting the images into a collage, but that wasn't the main point of choosing new colors. 
+
+I then just made color pallets of each individual image in the collage and came across a second issue of taking colors from stills of films: the [checkered shadow illusion](https://en.wikipedia.org/wiki/Checker_shadow_illusion): the actual color values in the image aren't colors that your brain is interpreting.
+For example, the bright yellow rain coat in Dark is a staple in the series. In my mind, it always seemed so bright, the only bold color in a sea of washed out grays.
+But the direct sample from the image was <span style="color:#a5884f;">⬤</span>. Ew.
+
+Not a ton of the screen shots worked when trying to extract a usable pallet, so I had to mix and match a bit. I combined some of the colors from Blade Runner: 2049 and Evangelion to get the final colors you see here:
+
+* A blue grey <span style="color:#d4e0e3;">⬤</span> background
+* A green <span style="color:#468f32;">⬤</span> and variant <span style="color:#0a3005;">⬤</span> for links (before and after visiting)
+* A dark purple <span style="color:#3e154f;">⬤</span> for the nav bar and body text
+* A lighter fuscia <span style="color:#e4b8da;">⬤</span> for nav bar text
+
+I also made the header images greyscale to make them smaller (faster load times) and to blend better with the grey background.
+
+![The final redesign](/assets/blogs/colors/redesign_v3_1.png)
+
+My main takeaways?:
+
+* Don't be afraid to copy color palettes.
+* Don't take too much inspiration from too many places.
+* As with everything, keep iterating til your happy, never just try one on two.
+
+[^1]: The list was Dark, Neon Genesis: Evangelion, Black Mirror (USS Calister), Blade Runner 2049, and Eternal Sunshine of the Spotless Mind. Took about 40 minutes to skip through the episodes/movies and grab the screen shots.
