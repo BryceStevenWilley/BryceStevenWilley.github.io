@@ -75,7 +75,7 @@ But the direct sample from the image was <span style="color:#a5884f;">⬤</span>
 Not a ton of the screen shots worked when trying to extract a usable pallet, so I had to mix and match a bit. I combined some of the colors from Blade Runner: 2049 and Evangelion to get the final colors you see here:
 
 * A blue grey <span style="color:#d4e0e3;">⬤</span> background
-* A green <span style="color:#468f32;">⬤</span> and variant <span style="color:#0a3005;">⬤</span> for links (before and after visiting)
+* A green <span style="color:#367026;">⬤</span> and variant <span style="color:#000000;">⬤</span> for links (before and after visiting)
 * A dark purple <span style="color:#3e154f;">⬤</span> for the nav bar and body text
 * A lighter fuscia <span style="color:#e4b8da;">⬤</span> for nav bar text
 

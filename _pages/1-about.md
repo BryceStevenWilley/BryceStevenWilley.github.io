@@ -4,6 +4,7 @@ title: About
 front-page: true
 permalink: /about/
 headerImg: /assets/headers/cool_in_NY.jpg
+headerImgAlt: A picture of Bryce, exploring NYC
 ---
 
 I'm Bryce, a robotics software engineer at [Realtime Robotics](https://rtr.ai) living in Boston, MA.
@@ -14,8 +15,7 @@ My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
 with [Lydia Kavraki](https://www.cs.rice.edu/~kavraki/) and [Mark Moll](https://www.cs.rice.edu/~mmoll/)
 on autonomous robotic and vehicle motion.
 
-I've contributed to [MoveIt](https://moveit.ros.org/about/), and I also have a side hobby of making video games: take a
-look [here](/projects) to see more.
+I've contributed to [MoveIt](https://moveit.ros.org/about/), and I also have a side hobby of making [video games](/projects).
 
 I run, read, bike, and advocate with [Dotbike](http://dotbike.org), the Dorchester Biking Club (I setup and designed their website).
 

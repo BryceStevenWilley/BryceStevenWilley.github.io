@@ -4,6 +4,7 @@ title: Projects
 front-page: true
 permalink: /projects/
 headerImg: /assets/headers/projects.png
+headerImgAlt: A collection of the different projects Bryce has made
 ---
 
 Here are some of my current and past personal projects, both software and nonsoftware: hope you can learn something from them or just enjoy them!
@@ -12,7 +13,7 @@ Here are some of my current and past personal projects, both software and nonsof
 
 ## Visioning Texts
 
-[Visioning Texts][visioning_texts_page] is a data visualization tool for your conversations. It runs locally in your browser, giving you power over your information. It works with Signal, WhatsApp, and Facebook Messenger. Instructions on how to extract your data is [here](/visioning_texts/setup_instructions.html), and if you're too busy to try it yourself, you can see an example image of what it looks like [here](/assets/visioning_texts_full.png).
+[Visioning Texts][visioning_texts_page] is a data visualization tool for your conversations. It runs locally in your browser, giving you power over your information. It works with Signal, WhatsApp, and Facebook Messenger. You can [extract your own data](/visioning_texts/setup_instructions.html), and if you're too busy to try it yourself, you can [view an example image](/assets/visioning_texts_full.png).
 
 ![Visioning Texts Screenshot](/assets/visioning_texts.png)
 
@@ -31,8 +32,7 @@ co-designed some of the levels with [Mei Tan](https://www.linkedin.com/in/meiflw
 [Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh4) and
 I made for the Oculus Rift at HackRice 6 ([original version](https://github.com/BryceStevenWilley/oculus-hackrice16)).  The working title was "No Man's Forest",
 and was just a chance for us to make a VR game, It ended up being a blast.
-However, since I don't own a Rift, I had to port the game to Mac, which you can find
-[here][forest-repo]! It also builds on Linux (Ubuntu 16.04, feel free to open an issue if it doesn't build on your machine).
+However, since I don't own a Rift, I had to [port the game to Mac][forest-repo]! It also builds on Linux (Ubuntu 16.04, feel free to open an issue if it doesn't build on your machine).
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
@@ -40,9 +40,8 @@ However, since I don't own a Rift, I had to port the game to Mac, which you can 
         <div class="pictureBox">
             <div class="innerBox">
               <a href="{{ site.baseurl }}{{ image.path }}">
-                <img src="{{ site.baseurl }}{{ image.path }}">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="A picture of the Forest game">
               </a>
-                <!--div class="titleBox">Image 1</div-->
             </div>
         </div>
      {% endif %}
@@ -86,7 +85,7 @@ In my free time, I play around with the 3d animation software, Blender. When I m
 ## Photography
 
 I used to be a volunteer photographer at [BARC](https://www.houstontx.gov/barc/), the City of Houston animal shelter, and I gathered a ton of beautiful pictures of some gorgeous pups.
-Some of my favorites are below, and the entire collection can be found [here](/image-gallery#dog-pictures).
+Some of my favorites are below, and you can also view the [entire collection](/image-gallery#dog-pictures).
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
@@ -94,7 +93,7 @@ Some of my favorites are below, and the entire collection can be found [here](/i
       <div class="pictureBox">
         <div class="innerBox">
           <a href="{{ site.baseurl }}{{ image.path }}">
-            <img src="{{ site.baseurl }}{{ image.path }}">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="some dogs that were in BARC">
           </a>
         </div>
       </div>

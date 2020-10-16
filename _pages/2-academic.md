@@ -4,6 +4,7 @@ title: Academic Work
 front-page: false
 permalink: /academic/
 headerImg: /assets/headers/sampling_optimization.png
+headerImgAlt: A Barrett WAM robot, with a visualization of multiple motion plans 
 ---
 
 ## Master's Thesis

@@ -39,19 +39,19 @@ $c__eva_purple: #7a68ac;
 // Redesign
 $c__offwhite: #d4e0e3; 
 $c__blue_green: #468f32;
-$c__kathleen_green:#0a3005;  
+$c__blue_green_mod: #367026;
 $c__grape: #3e154f;
 $c__fuscia: #e4b8da;
 
 // Theme: change this as well as the theme in config.yml.
 $t-theme: $c__blue_green; 
-$t-headerTheme: $c__eva_purple; 
+$t-headerTheme: $c__grape;
 $t-bodyTheme: $c__offwhite; 
 
-$t-background: $c__offwhite;
-$t-nav-bg: $c__eva_purple;
-$t-titleText: $c__eva_purple;
-$t-bodyText: $c__grape; 
+$t-nav-bg: $c__grape; 
 $t-navText: $c__fuscia;
-$t-accent: $c__blue_green;
-$t-accent-off: $c__kathleen_green;
+$t-background: $c__offwhite;
+$t-titleText: $c__grape; 
+$t-bodyText: $c__grape; 
+$t-accent: $c__blue_green_mod;
+$t-accent-off: $c__black; 

@@ -4,6 +4,7 @@ title: Image Gallery
 front-page: true
 permalink: /image-gallery
 headerImg: /assets/headers/Melody-header.jpg
+headerImgAlt: A picture of Melody, a dog from the BARC animal shelter in Houston
 ---
 
 Click on the images to see them in full resolution.
@@ -18,7 +19,7 @@ Click on the images to see them in full resolution.
       <div class="pictureBox">
         <div class="innerBox">
             <a href="{{site.baseurl}}/assets/full_res/blender/{{image.basename}}.png">
-              <img src="{{ site.baseurl }}{{ image.path }}">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="Some art made with Blender">
             </a>
         </div>
       </div>
@@ -29,8 +30,8 @@ Click on the images to see them in full resolution.
 <div class="gallery-wrap">
   {% for image in site.static_files %}
     {% if image.path contains 'blender' and image.extname == '.mp4' %}
-        <video muted autoplay loop width="720" height="480">
-            <source src="{{ site.baseurl }}{{ image.path }}" type="video/mp4"/>
+        <video muted loop width="720" height="480">
+            <source src="{{ site.baseurl }}{{ image.path }}" type="video/mp4" alt="a video made with Blender"/>
         </video>
     {% endif %}
   {% endfor %}
@@ -50,7 +51,7 @@ A gallery of dogs that I've photographed from [BARC](http://www.houstontx.gov/ba
       <div class="pictureBox">
         <div class="innerBox">
             <a href="{{site.baseurl}}{{image.path }}">
-              <img src="{{ site.baseurl }}{{ image.path }}">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="a dog, once at BARC">
             </a>
         </div>
       </div>
