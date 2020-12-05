@@ -30,7 +30,7 @@ Click on the images to see them in full resolution.
 <div class="gallery-wrap">
   {% for image in site.static_files %}
     {% if image.path contains 'blender' and image.extname == '.mp4' %}
-        <video muted loop width="720" height="480">
+        <video muted loop controls width="720" height="480">
             <source src="{{ site.baseurl }}{{ image.path }}" type="video/mp4" alt="a video made with Blender"/>
         </video>
     {% endif %}
