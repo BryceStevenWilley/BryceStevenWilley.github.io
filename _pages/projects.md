@@ -9,15 +9,15 @@ headerImgAlt: A collection of the different projects Bryce has made
 
 Here are some of my current and past personal projects, both software and nonsoftware: hope you can learn something from them or just enjoy them!
 
-# Software Projects
+## Software Projects
 
-## Visioning Texts
+### Visioning Texts
 
 [Visioning Texts][visioning_texts_page] is a data visualization tool for your conversations. It runs locally in your browser, giving you power over your information. It works with Signal, WhatsApp, and Facebook Messenger. You can [extract your own data](/visioning_texts/setup_instructions.html), and if you're too busy to try it yourself, you can [view an example image](/assets/visioning_texts_full.png).
 
 ![Visioning Texts Screenshot](/assets/visioning_texts.png)
 
-## Bodhi
+### Bodhi
 
 [Bodhi][bodhi-repo] is a 2D platformer inspired by the Chinese novel, "Journey to the West". I handled
 coding for the entire game using [cocos2d-x](https://github.com/cocos2d/cocos2d-x), and
@@ -27,7 +27,7 @@ co-designed some of the levels with [Mei Tan](https://www.linkedin.com/in/meiflw
 
 [//]: # (TODO: add gifs of gameplay.)
 
-## Forest
+### Forest
 
 [Forest][forest-repo] is a procedurally-generated VR 'game' that a [friend](https://github.com/pjh4) and
 I made for the Oculus Rift at HackRice 6 ([original version](https://github.com/BryceStevenWilley/oculus-hackrice16)).  The working title was "No Man's Forest",
@@ -50,7 +50,7 @@ However, since I don't own a Rift, I had to [port the game to Mac][forest-repo]!
 
 [//]: # (TODO: add gif of admittedly boring gameplay)
 
-## Android Apps
+### Android Apps
 
 For earlier Hackathons, my teams and I made several android apps. They're all a little old,
 so I don't know if they build for versions of android newer than L.
@@ -61,7 +61,7 @@ so I don't know if they build for versions of android newer than L.
   and our resulting business proposal based on the app idea won 2nd place at the 2015
   Owl Open Startup Competition at Rice.
 
-## Web Things
+### Web Things
 
 Just some neat web-based drawing demos written in Angular2 and Dart.
 
@@ -74,15 +74,15 @@ Just some neat web-based drawing demos written in Angular2 and Dart.
 [pacer-repo]: https://github.com/jemitk/Pacer
 [pandora-repo]: https://github.com/BryceStevenWilley/PandorasPantry
 
-# Personal Projects
+## Personal Projects
 
-## 3d Art
+### 3d Art
 
 In my free time, I play around with the 3d animation software, Blender. When I make something good, I'll post it here in [my gallery](/image-gallery) and on [my Instagram](https://www.instagram.com/newbmakingart/).
 
 ![A low-poly scene of a desert](/assets/blender/desert_low_poly.jpg)
 
-## Photography
+### Photography
 
 I used to be a volunteer photographer at [BARC](https://www.houstontx.gov/barc/), the City of Houston animal shelter, and I gathered a ton of beautiful pictures of some gorgeous pups.
 Some of my favorites are below, and you can also view the [entire collection](/image-gallery#dog-pictures).

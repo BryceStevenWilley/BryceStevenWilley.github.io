@@ -15,5 +15,3 @@ permalink: /blogs/
   </li>
   {% endfor %}
 </ul>
-
-

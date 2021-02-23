@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Academic Work
+title: Robotic Academic Work
 front-page: false
 permalink: /academic/
 headerImg: /assets/headers/sampling_optimization.png
@@ -25,10 +25,11 @@ error rates and timing results are provided.
 
 [PDF version](/assets/willey-ms-thesis.pdf)
 
-[//]: # (## Publications)
-[//]: # ("Combining Sampling and Optimization for Fast Path Planning", Willey, Moll, and Kavraki. _Under Review_.)
+## Publications
 
-## Slides 
+* Willey B., Zucker M. (2021) [Optimization-Based Planners](https://doi.org/10.1007/978-3-642-41610-1_173-1). In: Ang M.H., Khatib O., Siciliano B. (eds) Encyclopedia of Robotics. Springer, Berlin, Heidelberg. doi/10.1007/978-3-642-41610-1_173-1
+
+## Slides
 
 * An non technical [introduction](/engi600talk) to my master's research work
   * [PDF version](/assets/Optimization in Motion Planning.pdf)
