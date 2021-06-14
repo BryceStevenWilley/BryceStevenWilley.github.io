@@ -3,8 +3,12 @@ layout: page
 title: Projects
 front-page: true
 permalink: /projects/
-headerImg: /assets/headers/projects.png
-headerImgAlt: A collection of the different projects Bryce has made
+headerImg:
+  src: /assets/headers/projects.png
+  narrow: /assets/headers/projects-narrow.jpg
+  width: "500px"
+  height: "314px"
+  alt: A collection of the different projects Bryce has made
 ---
 
 Here are some of my current and past personal projects, both software and nonsoftware: hope you can learn something from them or just enjoy them!

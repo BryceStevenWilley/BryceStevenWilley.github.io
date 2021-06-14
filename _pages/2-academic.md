@@ -3,8 +3,12 @@ layout: page
 title: Robotic Academic Work
 front-page: false
 permalink: /academic/
-headerImg: /assets/headers/sampling_optimization.png
-headerImgAlt: A Barrett WAM robot, with a visualization of multiple motion plans 
+headerImg:
+  src: /assets/headers/sampling_optimization.png
+  narrow: /assets/headers/sampling_optimization-narrow.png
+  width: "500px"
+  height: "346px"
+  alt: A Barrett WAM robot, with a visualization of multiple motion plans 
 ---
 
 ## Master's Thesis

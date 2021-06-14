@@ -3,8 +3,12 @@ layout: page
 title: About
 front-page: true
 permalink: /about/
-headerImg: /assets/headers/cool_in_NY.jpg
-headerImgAlt: A picture of Bryce, exploring NYC
+headerImg: 
+  src: /assets/headers/cool_in_NY.jpg
+  narrow: /assets/headers/cool_in_NY-narrow.jpg
+  width: "538px"
+  height: "315px"
+  alt: A picture of Bryce, exploring NYC
 ---
 
 I'm Bryce, a clinical fellow at the [Suffolk LIT Lab](https://suffolklitlab.org/), living in Boston, MA.

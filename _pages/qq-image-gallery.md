@@ -3,8 +3,12 @@ layout: page
 title: Image Gallery
 front-page: true
 permalink: /image-gallery
-headerImg: /assets/headers/Melody-header.jpg
-headerImgAlt: A picture of Melody, a dog from the BARC animal shelter in Houston
+headerImg:
+  src: /assets/headers/Melody-header.jpg
+  narrow: /assets/headers/Melody-header.jpg
+  width: "538px"
+  height: "404px"
+  alt: A picture of Melody, a dog from the BARC animal shelter in Houston
 ---
 
 Click on the images to see them in full resolution.
