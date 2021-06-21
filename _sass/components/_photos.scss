@@ -1,8 +1,11 @@
 .headerImgW {
     border-radius: 50%;
-    display: inline-block;
+    //display: inline-block;
+    display: flex;
     position: relative;
+    justify-content: center;
 }
+
 .headerImgW img {
     border-radius: 50%;
     object-fit: contain;
