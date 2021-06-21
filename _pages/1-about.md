@@ -19,10 +19,10 @@ My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
 with [Lydia Kavraki](https://www.cs.rice.edu/~kavraki/) and [Mark Moll](https://www.cs.rice.edu/~mmoll/)
 on autonomous robotic motion planning algorithms. I then moved up to Boston and worked at [Realtime Robotics](https://rtr.ai), working on autonomous vehicle and industrial robot motion planning.
 
-In the Summer of 2020, with the George Floyd protests and COVID-19 present and exposing deficiencies in our social systems, I reevaluated my career path, and decided to pivot.
+In the Summer of 2020, with the George Floyd protests and COVID-19 exposing deficiencies in our social systems, I reevaluated my career path, and decided to pivot.
 I worked as a [Bluebonnet Data Fellow](https://www.bluebonnetdata.org/) with [Anthia Owens Carter](https://ballotpedia.org/Anthia_Carter) for Georgia, House District 47.
 I then started a Fellowship with Suffolk LIT Lab, working on the [Document Assembly Line Project](https://suffolklitlab.org/doc-assembly-line/).
-I am involved with [Code for Boston](https://www.codeforboston.org/) and [Code for America](https://www.codeforamerica.org/), specifically [GetYourRefund's](https://www.codeforamerica.org/programs/getyourrefund) volunteer experiment team.
+I've been involved with [Code for Boston](https://www.codeforboston.org/) and [Code for America](https://www.codeforamerica.org/), specifically [GetYourRefund's](https://www.codeforamerica.org/programs/getyourrefund) volunteer experiment team.
 
 I run, read, bike, and advocate with [Dotbike](http://dotbike.org), the Dorchester Biking Club (I setup and designed their website).
 

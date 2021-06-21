@@ -87,6 +87,6 @@ My main takeaways?:
 
 * Don't be afraid to copy color palettes.
 * Don't take too much inspiration from too many places.
-* As with everything, keep iterating til your happy, never just try one on two.
+* As with everything, keep iterating til your happy, never just try one or two.
 
 [^1]: The list was Dark, Neon Genesis: Evangelion, Black Mirror (USS Calister), Blade Runner 2049, and Eternal Sunshine of the Spotless Mind. Took about 40 minutes to skip through the episodes/movies and grab the screen shots.
