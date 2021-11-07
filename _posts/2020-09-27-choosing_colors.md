@@ -5,8 +5,8 @@ date:   2020-09-30 20:50:49 -0500
 categories: design colors films
 ---
 
-I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049
-my favorite movie for a while because of its striking palettes. La La Land still is. But if you asked me
+I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049 was
+my favorite movie for a while because of its striking palettes. La La Land still is my favorite for the same reason. But if you asked me
 to come up with my own palettes, I'd either be baffled, or would choose the loudest combinations you've seen.
 
 When I first started my website in late undergrad, I stuck with simple colors. White background, black text, supporting a dark blue <span style="color:#1565C0;">⬤</span>,
@@ -48,10 +48,10 @@ I got the motivation push to actually put some effort into my colors this time.
 
 ## The Actual Work
 
-I wanted to keep the same amount of fun with my new color choice, while being a little easier to read and just a smidge more serious. 
+I wanted to keep the same amount of fun with my new color choice, while being a little easier to read and just a simge more serious. 
 I found the idea of [copying palettes from Movies](https://blog.datawrapper.de/colorguide/#4) particularly interesting, so I skipped through some movies/TV shows on Netflix to scenes I remembered being striking, and grabbed a few screenshots [^1].
 
-I threw all of the screen shots into a collage, and was surprised with the results. I thought I had grabbed more scenes with blues in them, but the only one present was a scene from Evangelion.
+I threw all of the screen shots into a collage, and was surprised with the results. I thought I had grabbed more scenes with blues in them, but the only one present was a scene from Neon Genisis: Evangelion.
 
 ![A collage of screenshots from my favorite films](/assets/blogs/colors/film_collage.jpg)
 
@@ -66,7 +66,7 @@ I played around for a long time in [colorizer](http://colorizer.org/) and [coolo
 
 ![The first redesign](/assets/blogs/colors/redesign_v3_0.png)
 
-Which wasn't the worst, but still seemed disjoint. It clicked after my SO pointed out that the individual images didn't have that much in common. I was hoping that I'd just get colors that I liked by putting the images into a collage, but that wasn't the main point of choosing new colors. 
+Which wasn't the worst, but still seemed disjoint. It clicked after someone pointed out to me that the individual images didn't have that much in common. I was hoping that I'd just get colors that I liked by putting the images into a collage, but that wasn't the main point of choosing new colors. 
 
 I then just made color pallets of each individual image in the collage and came across a second issue of taking colors from stills of films: the [checkered shadow illusion](https://en.wikipedia.org/wiki/Checker_shadow_illusion): the actual color values in the image aren't colors that your brain is interpreting.
 For example, the bright yellow rain coat in Dark is a staple in the series. In my mind, it always seemed so bright, the only bold color in a sea of washed out grays.
@@ -79,7 +79,7 @@ Not a ton of the screen shots worked when trying to extract a usable pallet, so 
 * A dark purple <span style="color:#3e154f;">⬤</span> for the nav bar and body text
 * A lighter fuscia <span style="color:#e4b8da;">⬤</span> for nav bar text
 
-I also made the header images greyscale to make them smaller (faster load times) and to blend better with the grey background.
+I also made the header images grayscale to make them smaller (faster load times) and to blend better with the grey background.
 
 ![The final redesign](/assets/blogs/colors/redesign_v3_1.png)
 
