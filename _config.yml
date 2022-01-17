@@ -19,8 +19,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Bryce Willey- Access to Justice, Software for Humans
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://brycestevenwilley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  BryceStevenWilley
+github_username: BryceStevenWilley
+twitter_username: wowitisbryce
 gpg_keys: assets/gpg_key.gpg.txt
+show_rss: True
 
 # Build settings
 markdown: kramdown
@@ -32,7 +34,6 @@ themeColor: 'blue' # green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /:year/:month/:title
-markdown: kramdown
 include: [_pages]
 exclude: [_site, vendor, LICENSE, README.md]
 sass:
