@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Choosing New Colors for my Website
-date:   2020-09-30 20:50:49 -0500
+date: 2020-09-30 20:50:49 -0500
 categories: design colors films
 ---
 
