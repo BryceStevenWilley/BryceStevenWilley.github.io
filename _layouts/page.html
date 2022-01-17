@@ -19,6 +19,9 @@ layout: default
         </picture>
         <p></p>
       {% endif %}
+      {% if page.date %}
+      <p class="c-header__subtitle">{{ page.date | date_to_string: "ordinal", "US" }}</p>
+      {% endif %}
     </div>
   </header>
 
