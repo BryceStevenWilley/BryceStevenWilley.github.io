@@ -15,7 +15,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if page.headerImg.src %}{{ page.headerImg.src | prepend: site.baseurl | prepend: site.url }}{% else %}{{ 'assets/site-logo.svg' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+  <meta property="og:image" content="{% if page.headerImg.src %}{{ page.headerImg.src | prepend: site.baseurl | prepend: site.url }}{% else %}{{ 'assets/site-logo.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.headerImg.alt %}<meta property="og:image:alt" content="{{page.headerImg.alt}}" />{% endif %}
 
