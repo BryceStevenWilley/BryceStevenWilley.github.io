@@ -1,8 +1,15 @@
 #---
 #layout: post
 #title:  "Welcome to Jekyll!"
+#description: "A short tagline to be shown in social meta tags
 #date:   2017-10-21 22:50:49 -0500
 #categories: jekyll update
+#headerImg:
+  #src: /assets/path/to/img.png
+  #narrow: /assets/path/to/mobile.png
+  #width: 123px
+  #height: 456px  
+  #alt: "the alt text for the image"
 #---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

@@ -3,7 +3,7 @@ layout: post
 title: "Readability Scores Pt 1: Reference Guide"
 description: A big ol' list of readability scores, with more than just their formulas
 categories: civic a2j equity nlp
-date: 2022-01-16 23:12:49 -0500
+date: 2022-01-16 08:12:49 -0500
 use_math: true
 ---
 
