@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Readability Scores: Reference Guide"
+title: "Readability Scores Pt 1: Reference Guide"
+description: A big ol' list of readability scores, with more than just their formulas
 categories: civic a2j equity nlp
 date: 2022-01-16 23:12:49 -0500
 use_math: true
@@ -46,7 +47,7 @@ Interestingly, at one point Flesh used the number of personal pronouns (I, you, 
 However, the people computing the score on new texts disregarded those features and only computed sentence length.
 As a result, Flesch split the score into two parts, the one known today, and another one known as the "human interest" score, which focused on the number of personal pronouns.
 
-[Mary Ann Vienh's MA thesis](https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=1077&context=rtd) gives a great overview of Flesch's development of the reading ease score, and the academic context at the time.
+[Nancy Ann Vieth's MA thesis](https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=1077&context=rtd) gives a great overview of Flesch's development of the reading ease score, and the academic context at the time.
 
 ### Flesch-Kincaid Grade Level Evaluation
 
@@ -104,7 +105,7 @@ The Fry Readability Graph, developed by Edward Fry in 1968, is pretty straight f
 It was validated using "a lot of" book publisher grade level recommendations.
 The lack of an actual equation, deferring to the flexible but approximate graph, probably didn't help the score's usage.
 
-Fry does however illuminate to use why readability scores were developed in the 1950's - early 80's: 
+However, Fry does tell us why some many readability scores were developed in the 1950's - early 80's: 
 
 > Though readability formulas are used by some
  teachers, some librarians, and some publishers, their number is all
