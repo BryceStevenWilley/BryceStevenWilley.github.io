@@ -18,7 +18,7 @@ The score itself is an **equation** that takes as input the text, calculates som
 sometimes rounded to the closest whole number.
 
 Once you have a readability score, you have to verify that it is actually "correct", that it predicts what it says it does.
-Most readability scores predict the grade level of a particular text, i.e. the earliest grade level at which you might expect a child to be able to read that text (which I do have some problems with, but that's for the next post).
+Most readability scores predict the grade level of a particular text, i.e. the earliest grade level at which you might expect a child to be able to read that text (which I do have some problems with, but that's all in [the next post]({% post_url 2022-02-21-readability-scores-obs %})).
 So, to verify the score most researchers do one of three things:
 * grade texts using actual readers; if > 50% of a sample of 4th graders can read and correctly answer comprehension questions about the text, then that text is considered to be at a 4th grade reading level. Researchers then adjust the readability scores until it scores those texts to also be at a 4th grade level.
 * make experts (teachers, learning professionals, book publishers) guess the grade level of texts, and adjust the readability score until it matches the guesses
@@ -225,5 +225,8 @@ Other readability scores that I found in my research, but didn't write about her
 * [LIX (Läsbarhetsindex)](https://www.readabilityformulas.com/the-LIX-readability-formula.php), one of the few tests developed outside of the US, in Sweeden
 * [Xia et al., 2016](https://aclanthology.org/W16-0502/), another multi-feature approach for EFL
 
+## So, what now?
+
+So now that we know about many readability scores, what should we do with them? Which ones should we use, and which ones should we avoid? I try to address some of those question in [part 2 of this blog]({% post_url 2022-02-21-readability-scores-obs %})
 
 [^1]: When reading research papers, I always try to write something close to a background or previous work section of an academic paper. It forces me to try to understand what I'm writing about from different angles, and to do my best to cover the field I'm writing about (comparatively, since I do this in my free time, lol). But, a lot of that info doesn't really fit in the final article written, so I decided to try to summarize it somewhere else. This post is that "somewhere else".

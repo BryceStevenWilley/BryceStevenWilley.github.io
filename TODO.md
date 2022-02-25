@@ -7,9 +7,8 @@
   * The Industrial Robotics talk into a post?
   * Why I changed careers
 * Add Analytics:
-  * Try [Plasuible](https://github.com/plausible/analytics/) instead of Google Analytics
-    * Working on Jekyll with [this plugin](https://awesomeopensource.com/project/hendrikschneider/jekyll-analytics)
-  * Or [Gauges](https://get.gaug.es/)? Cheaper for 100k, but I might not ever even reach that.
+  * [Plasuible](https://github.com/plausible/analytics/) is in a working, but is it worth the price? Waiting out the trial for now. 
+  * Or [Gauges](https://get.gaug.es/)? Cheaper for < 100k, I def won't reach that. 
 
 
 * Figure out the aria-required-child-element error:
@@ -23,3 +22,4 @@
     * axe-core mentions that by default, ARIA roles 'doc-endnotes' should be marked as "Needs Review" rather than a violation if the element has no owned children.
     * the actual code that runs the check in aXe core
   * https://www.w3.org/WAI/standards-guidelines/act/rules/aria-required-owned-element-bc4a75/#background claims that actually `doc-endnotes` has issues with their use of role inheritance and all have no required owned elements
+  * might be the right one: https://github.com/gettalong/kramdown/pull/723
