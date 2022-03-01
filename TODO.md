@@ -23,3 +23,9 @@
     * the actual code that runs the check in aXe core
   * https://www.w3.org/WAI/standards-guidelines/act/rules/aria-required-owned-element-bc4a75/#background claims that actually `doc-endnotes` has issues with their use of role inheritance and all have no required owned elements
   * might be the right one: https://github.com/gettalong/kramdown/pull/723
+
+
+* Deep dive on reading speed:
+  * Is it really just 200 wpm? Does it vary based on reading level? Display? How much time do images add? Seems like there are deeper problems that no one talks about, and online calculators want to hide the complexity of
+  * https://ezinearticles.com/?What-is-the-Average-Reading-Speed-and-the-Best-Rate-of-Reading?&id=2298503
+  * https://www.sciencedirect.com/science/article/abs/pii/S0749596X19300786?via%3Dihub
