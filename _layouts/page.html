@@ -21,6 +21,7 @@ layout: default
       {% endif %}
       {% if page.date %}
       <p class="c-header__subtitle">{{ page.date | date_to_string: "ordinal", "US" }}</p>
+      <p class="c-header__subtitle">{{ page.content | number_of_words }} words (~{{ page.content | number_of_words | to_integer | divided_by: 199 }} minutes)</p>
       {% endif %}
     </div>
   </header>
