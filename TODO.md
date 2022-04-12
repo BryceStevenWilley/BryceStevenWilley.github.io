@@ -6,9 +6,6 @@
   * use the presentation for 640
   * The Industrial Robotics talk into a post?
   * Why I changed careers
-* Add Analytics:
-  * [Plasuible](https://github.com/plausible/analytics/) is in a working, but is it worth the price? Waiting out the trial for now. 
-  * Or [Gauges](https://get.gaug.es/)? Cheaper for < 100k, I def won't reach that. 
 
 
 * Figure out the aria-required-child-element error:
@@ -29,3 +26,7 @@
   * Is it really just 200 wpm? Does it vary based on reading level? Display? How much time do images add? Seems like there are deeper problems that no one talks about, and online calculators want to hide the complexity of
   * https://ezinearticles.com/?What-is-the-Average-Reading-Speed-and-the-Best-Rate-of-Reading?&id=2298503
   * https://www.sciencedirect.com/science/article/abs/pii/S0749596X19300786?via%3Dihub
+
+* ~Add Analytics~:
+  * Tried [Plasuible](https://github.com/plausible/analytics/), worked fine but it doesn't tell me much besides "ooh, numbers go up when post".  Could get
+    more info, but would be creepy.
