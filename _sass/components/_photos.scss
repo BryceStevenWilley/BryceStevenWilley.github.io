@@ -12,6 +12,10 @@
     height: auto;
 }
 
+.headerImgW img.no-radius {
+    border-radius: 0%;
+}
+
 .headerImgW:after {
     content: "";
     display: block;
@@ -20,6 +24,10 @@
     border-radius: 50%;
     position: absolute;
     top: 0; left: 0;
+}
+
+.headerImgW.no-radius {
+    border-radius: 0%;
 }
 
 /* Responsive Tiled Photo Gallery */

@@ -2,10 +2,6 @@
    Article
    ========================================================================== */
 
-.c-article {
-
-}
-
 .c-article__main {
   max-width: 76rem; // 760px;
   margin-right: auto;
@@ -30,6 +26,15 @@
     width: calc(100% + 5rem);
     padding: 2.5rem;
     background: $c__light-grey;
+  }
+
+  aside {
+    padding: 2.5rem;
+    background: $c__light-grey;
+  }
+
+  code {
+    font-family: monospace,monospace;
   }
 
   ul, ol {

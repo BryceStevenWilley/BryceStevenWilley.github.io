@@ -9,10 +9,10 @@ layout: default
            limit the size of the header banner. -->
       <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#art_direction -->
       {% if page.headerImg %} 
-        <picture class="headerImgW">
+        <picture class="headerImgW {{page.headerImg.class}}">
           <source media="(max-width: 799px)" srcset="{{ page.headerImg.narrow }}">
           <source media="(min-width: 800px)" srcset="{{ page.headerImg.src }}">
-          <img class="headerImg" src="{{ page.headerImg.src }}"
+          <img class="headerImg {{page.headerImg.class}}" src="{{ page.headerImg.src }}"
                width="{{ page.headerImg.width }}"
                height="{{ page.headerImg.height }}"
                alt="{{ page.headerImg.alt }}">
