@@ -2,7 +2,7 @@
 layout: post
 title: "Readability Scores Pt 2: Observations"
 description: "Asking about what readability scores are actually good for"
-categories: civic a2j equity nlp
+tags: civic a2j equity nlp
 date: 2022-02-21 10:00:00 -0500
 ---
 

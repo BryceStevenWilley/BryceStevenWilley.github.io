@@ -2,7 +2,7 @@
 layout: post
 title: Choosing New Colors for my Website
 date: 2020-09-30 20:50:49 -0500
-categories: design colors films
+tags: design colors films
 ---
 
 I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049 was
