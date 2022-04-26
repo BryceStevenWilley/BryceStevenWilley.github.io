@@ -4,6 +4,7 @@
     <p class="social-links">
       {% if site.email %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
       {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>{% endif %}
+      {% if site.mastodon_username %}<a rel="me" href="https://mastodon.social/@{{ site.mastodon_username }}">Mastodon</a>{% endif %}
       {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">Github</a>{% endif %}
       {% if site.gpg_keys %}<a href="{{ site.gpg_keys }}">GPG Keys</a>{% endif %}
       {% if site.dribbble_username %}<a href="https://dribbble.com/{{ site.dribbble_username }}">Dribbble</a>{% endif %}
