@@ -11,9 +11,17 @@ headerImg:
   alt: A collection of the different projects Bryce has made
 ---
 
-Here are some of my current and past personal projects, both software and nonsoftware: hope you can learn something from them or just enjoy them!
+Here are some of my current and past personal projects, both software and non-software: hope you can learn something from them or just enjoy them!
 
-## Software Projects (Chronological Order)
+## Talks
+
+* At the [LIT Lookahead event](https://suffolklitlab.org/events/lookahead/), I gave a summary of the LIT Lab's work from 2020-2022 [(slides)](/litlookahead-slides)
+* At [ITC 2022](https://www.lsc.gov/events/events/lscs-innovations-technology-conference) I partnered with [Quinten Steenhuis](https://www.nonprofittechy.com/), [Matt Newsted](https://www.illinoislegalaid.org/about/our-people/staff), and [Amanda Brown](https://lagniappelawlab.org/personnel/amanda-brown/) to talk about [our e-filing work](https://www.lsc.gov/2022-innovations-technology-conference-schedule)
+* At [docacon 2021](https://docacon.com/), I talked about my work with e-filing in docassemble [(slides)](/docacon-slides)
+
+## Software Projects 
+
+These are in reverse-chronological order (newest to oldest).
 
 ### Misc Smaller Projects
 
