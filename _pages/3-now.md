@@ -1,19 +1,18 @@
 ---
-#layout: page
-#title: Now
-#front-page: true
-#permalink: /now/
+layout: page
+title: Now
+front-page: true
+permalink: /now/
 ---
-
-# What I'm doing (updated roughly monthly)
-
-Last updated May 7th, 2022.
 
 ## What is this? 
 
 It's a now page: what I'm focused on at the moment, both professionally and personally.
 It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
+Trying to keep it updated at least monthly.
+
+Last updated May 7th, 2022.
 
 ## Professional
 
@@ -23,6 +22,16 @@ Inspired by [Derek Sivers](https://sive.rs/nowff).
 ### Latest Github Activity
 
 [//]: make an API call to see latest event and just display it
+
+<span id="if-updated"><span>
+
+<script type="text/javascript" src="/assets/js/now.js"></script>
+<h4 id="event-title">Push Event</h4>
+
+<p>In the <a id="event-repo" href="https://github.com/BryceStevenWilley/BryceStevenWilley.github.io">BryceStevenWilley/BryceStevenWilley.github.io</a> repo.</p>
+
+<blockquote id="event-desc"></blockquote>
+
 
 ### Longer-viewing Career Stuff
 
