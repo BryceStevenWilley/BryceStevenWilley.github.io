@@ -50,4 +50,42 @@
     display: block;
     @include relative-font-size(1.5);
   }
+
+  table.listening-to {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+
+    thead th:nth-child(1) {
+      width: 10%;
+    }
+
+    thead th:nth-child(2) {
+      width: 40%;
+    }
+
+    thead th:nth-child(3) {
+      width: 50%;
+    }
+    
+    th, td {
+      padding: 10px;
+    }
+
+    tr {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: $t-nav-bg;
+    }
+
+    tr:last-child {
+      border-bottom-style: none;
+    }
+
+    th:nth-child(1), td:nth-child(1) {
+      padding: 0px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+  }
 }

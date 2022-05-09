@@ -66,34 +66,34 @@ Not listening to anything super deeply right now, but am listening to a lot of b
   </thead>
   <tbody>
     <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d0000485180c6db47e75d58e25b72f2ca" alt="The album cover for King Gizzard and the Lizard Wizard's Omnium Gatherum"></td>
+      <td>The Dripping Tap</td>
+      <td><a href="https://open.spotify.com/artist/6XYvaoDGE0VmRt83Jss9Sn?si=91b63edc20d34603">King Gizzard &amp; The Lizard Wizard</a></td>
+    </tr>
+    <tr>
       <td><img src="https://i.scdn.co/image/ab67616d00004851d8041a531487d0e0e4cfb41f" alt="Album cover for Mitski's Laurel Hell"></td>
       <td>Love Me More</td>
-      <td>Mitski</td>
+      <td><a href="https://open.spotify.com/artist/2uYWxilOVlUdk4oV9DvwqK?si=8641909275fb4a83">Mitski</a></td>
     </tr>
     <tr>
-      <td><img src="" alt="Album cover for "></td>
-      <td>Plastic Boogie</td>
-      <td>King Gizzard &amp; the Lizard Wizard</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
+      <td><img src="https://i.scdn.co/image/ab67616d0000485122b9cdd0c4ce8cee5857f6a4" alt="The album cover for Tame Impala's The Slow Rush B-Sides and Remixes"></td>
       <td>The Boat I Row</td>
-      <td>Tame Impala</td>
+      <td><a href="https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb?si=bd2a61bbd9844fdf">Tame Impala</a></td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851f7ffbe10773c3f572b532cab" alt="The album cover for dodie's Build A Problem"></td>
+      <td>Guiltless (Bonus)</td>
+      <td><a href="https://open.spotify.com/artist/21TinSsF5ytwsfdyz5VSVS?si=d148f531f33348a3">dodie</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851adc69b1d4a910591f079fb0b" alt="Album cover for King Gizzard's Fishing for Fishies"></td>
+      <td>Plastic Boogie</td>
+      <td><a href="https://open.spotify.com/artist/6XYvaoDGE0VmRt83Jss9Sn?si=51867452463c43a6">King Gizzard &amp; The Lizard Wizard</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d000048514ab2520c2c77a1d66b9ee21d" alt="The album cover for the Weeknd's Dawn FM"></td>
       <td>Sacrifice</td>
-      <td>The Weeknd</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>Paprika</td>
-      <td>Japanese Breakfast</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>The Dripping Tap</td>
-      <td>King Gizzard &amp; The Lizard Wizard</td>
+      <td><a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ?si=420af17231784596">The Weeknd</a></td>
     </tr>
   </tbody>
 </table>
