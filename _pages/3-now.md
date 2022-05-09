@@ -18,6 +18,10 @@ Last updated May 7th, 2022.
 
 ### Work Stuff
 
+Still at [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/), working on court form software.
+My main focus right now is to get our [efile-proxy](https://github.com/SuffolkLITLab/EfileProxyServer) (and corresponding [docassemble library](https://github.com/SuffolkLITLab/docassemble-EFSPIntegration)) ready for a 1.0 release. That means I need to review and redo CI for testing, documentation, and some final security audits.
+
+It also means making sure that [docassemble](https://docassemble.org) and our guided interviews built on top of it are accessible. I've been reading up and using on a lot of accessibility standards and tools, and am starting to write a blog post about that experience.
 
 ### Latest Github Activity
 
@@ -35,9 +39,8 @@ Last updated May 7th, 2022.
 
 ### Longer-viewing Career Stuff
 
-Still at [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/),
-working on court forms. My position is grant funded, and ends in Q3 2023, so I'll be
-looking for a new gig around then, but not quite right now. I have a variety of different
+working on court forms. My position at the LIT Lab is grant funded, and ends in Q3 2023, so I'll be
+looking for a new gig around then! I have a variety of different
 tech skill sets, and am not concerned about developing a few more, and am more interested in making sure
 that I work at a place [helps under-served communities help themselves]({% post_url 2021-06-20-new_job %}).
 
@@ -45,9 +48,7 @@ that I work at a place [helps under-served communities help themselves]({% post_
 
 ### Doing
 
-Doing a lot of exploration of [Mastodon/Fediverse](), trying to figure out a way to enjoy non-corporate social
-media.
-
+Exploring [Mastodon/Fediverse](https://weirder.earth/@brycew/), trying to figure out a way to enjoy social media.
 
 ### Listening To
 
@@ -99,8 +100,9 @@ Not listening to anything super deeply right now, but am listening to a lot of b
 
 ## Gaming
 
-Played [minit]() recently, it was pretty short, has a neat gimmick, and was fun for the length 
-(beat it in about 90 minutes with 58% completion).
-
 Currently playing through Red Dead Redemption 2. Not my normal type of game, but I'm
 going through a list of all of the great games I've heard about on PS4.
+
+Played [minit](https://minitgame.com/) recently. It was pretty short, has a neat gimmick, and was fun for the length 
+(beat it in about 90 minutes with 58% completion).
+
