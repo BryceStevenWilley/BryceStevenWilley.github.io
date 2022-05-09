@@ -12,7 +12,7 @@ It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated at least monthly.
 
-Last updated May 7th, 2022.
+Last updated May 9th, 2022.
 
 ## Professional
 
@@ -33,9 +33,13 @@ It also means making sure that [docassemble](https://docassemble.org) and our gu
 
 <ul>
 <li>
-<p><span id="event-title">Push Event</span> in the <a id="event-repo" href="https://github.com/BryceStevenWilley/BryceStevenWilley.github.io">BryceStevenWilley/BryceStevenWilley.github.io</a> repo.</p>
+<p><span id="event-title">Made a pull request</span> in the <a id="event-repo" href="https://github.com/SuffolkLITLab/docassemble-ALToolbox">SuffolkLITLab/docassemble-ALToolbox</a> repo.</p>
 
-<blockquote id="event-desc"></blockquote>
+<blockquote id="event-desc"><p>Correct `aria-controls` to refernce correct id</p><p></p><p>Issue was caught by aXe-core testing: https://dequeuniversity.com/rules/axe/4.4/aria-valid-attr-value?application=axe-puppeteer
+</p><p>
+</p><p>The issue happened because `tag_group_name` was added to the beginning of each id / href, but not to aria-controls.
+</p><p>The `tab_id` was never used individually, so I just updated it to include both `tab_group_name` and `tab_id`,
+</p><p>and then replaced its used in the tabs and tab panels.</p></blockquote>
 </li>
 </ul>
 
