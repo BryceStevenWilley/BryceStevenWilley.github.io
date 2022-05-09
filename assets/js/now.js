@@ -9,8 +9,9 @@ fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
     event_repo = document.querySelector('#event-repo');
     event_repo.textContent = resp.repo.name;
     event_repo.setAttribute('href', 'https://github.com/' + resp.repo.name);
-    document.querySelector('#event-title').textContent = resp.type;
+    event_title = document.querySelector('#event-title');
     if (resp.type === 'PushEvent') {
+      event_title.textContent = 'Pushed a commit';
       commit = resp.payload.commits[resp.payload.commits.length - 1];
       lines = commit.message.split('\n');
 

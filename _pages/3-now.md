@@ -30,16 +30,19 @@ It also means making sure that [docassemble](https://docassemble.org) and our gu
 <span id="if-updated"><span>
 
 <script type="text/javascript" src="/assets/js/now.js"></script>
-<h4 id="event-title">Push Event</h4>
 
-<p>In the <a id="event-repo" href="https://github.com/BryceStevenWilley/BryceStevenWilley.github.io">BryceStevenWilley/BryceStevenWilley.github.io</a> repo.</p>
+<ul>
+<li>
+<p><span id="event-title">Push Event</span> in the <a id="event-repo" href="https://github.com/BryceStevenWilley/BryceStevenWilley.github.io">BryceStevenWilley/BryceStevenWilley.github.io</a> repo.</p>
 
 <blockquote id="event-desc"></blockquote>
+</li>
+</ul>
 
 
-### Longer-viewing Career Stuff
+### Long Term Career Stuff
 
-working on court forms. My position at the LIT Lab is grant funded, and ends in Q3 2023, so I'll be
+My position at the LIT Lab is grant funded, and ends in Q3 2023, so I'll be
 looking for a new gig around then! I have a variety of different
 tech skill sets, and am not concerned about developing a few more, and am more interested in making sure
 that I work at a place [helps under-served communities help themselves]({% post_url 2021-06-20-new_job %}).
