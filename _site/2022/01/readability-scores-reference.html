@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="t-blue">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0090EA">
+
+  
+  <!-- Thanks to https://benlansdell.github.io/computing/mathjax/ -->
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	    TeX: {
+	      equationNumbers: {
+		autoNumber: "AMS"
+	      }
+	    },
+	    tex2jax: {
+	    inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+	    displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+	    processEscapes: true,
+	  }
+	});
+	MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+		  alert("Math Processing Error: "+message[1]);
+		});
+	MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+		  alert("Math Processing Error: "+message[1]);
+		});
+</script>
+<script type="text/javascript" async
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  
+
+
+  <title>Readability Scores Pt 1: Reference Guide</title>
+  <meta name="description" content="A big ol' list of readability scores, with more than just their formulas">
+
+  <meta property="og:title" content="Readability Scores Pt 1: Reference Guide"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="I started looking into readability scores in mid-October 2021, and the first thing that struck me was that there are a lot of readability scores.Most use sim...">
+  <meta property="og:image" content="https://brycestevenwilley.github.io/assets/site-logo.png" />
+  <meta property="og:url" content="https://brycestevenwilley.github.io/2022/01/readability-scores-reference">
+  
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@WowItIsBryce" />
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon"  type="image/png" href="/favicon.png">
+  <link rel="canonical" href="https://brycestevenwilley.github.io/2022/01/readability-scores-reference">
+  <link rel="alternate" type="application/rss+xml" title="Bryce Willey" href="https://brycestevenwilley.github.io/feed.xml">
+</head>
+
+  <body>
+    <header class="site-header" role="banner">
+  <div class="wrapper">
+    
+    
+    
+    <nav class="c-navigation spread">
+      <a href="/">
+        <img src="/assets/site-logo.png" alt="Bryce's Website Logo" width="56px" height="40px" />
+        <div class="c-navigation__item ">Bryce Willey</div>
+      </a>
+      <div class="spacer"></div>
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+      </label>
+      <div class="c-navigation__container trigger">
+        
+          
+          
+               
+              <a class="c-navigation__item " href="/about/">About</a>
+              
+          
+        
+          
+          
+        
+          
+          
+               
+              <a class="c-navigation__item " href="/now/">Now</a>
+              
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+               
+              <a class="c-navigation__item " href="/blogs/">Blogs</a>
+              
+          
+        
+          
+          
+               
+              <a class="c-navigation__item " href="/projects/">Projects</a>
+              
+          
+        
+          
+          
+               
+              <a class="c-navigation__item " href="/image-gallery">Image Gallery</a>
+              
+          
+        
+          
+          
+        
+        <a class="c-navigation__item" href="/assets/bryce_willey_resume.pdf">Resume</a>
+      </div>
+    </nav>
+    
+
+  </div>
+</header>
+
+    <main>
+    <article class="c-article">
+  <header class="c-header c-article__header">
+    <div class="u-container">
+      <h1 class="c-header__title">Readability Scores Pt 1: Reference Guide</h1>
+      <!-- Note! Header images should try to be less than 315 height to
+           limit the size of the header banner. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#art_direction -->
+      
+      
+      <p class="c-header__subtitle">Jan 16th, 2022</p>
+      <p class="c-header__subtitle">3052 words (~15 minutes)</p>
+      
+    </div>
+  </header>
+
+  <div class="c-article__main">
+    <p>I started looking into readability scores in mid-October 2021, and the first thing that struck me was that there are a lot of readability scores.
+Most use similar methods to do the same thing, and most were verified in the same way.
+So, I’m compiling more a general overview and history of the more significant and interesting scores here <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<h2 id="what-is-a-readability-score">What is a readability score?</h2>
+
+<p>A <strong>readability score</strong> rates how difficult or easy a text is to read. They’re sometimes called formulas, indices, or measures; I’ll try to stick to “score” in this post, unless I’m giving the official name or quoting someone. A <strong>text</strong> can be pretty much anything: a chapter from a novel, an instruction manual, a website, a series of tweets, etc.
+The score itself is an <strong>equation</strong> that takes as input the text, calculates some <strong>features</strong> of the text (aspects of the text that can be turned into a number) and outputs a continuous number,
+sometimes rounded to the closest whole number.</p>
+
+<p>Once you have a readability score, you have to verify that it is actually “correct”, that it predicts what it says it does.
+Most readability scores predict the grade level of a particular text, i.e. the earliest grade level at which you might expect a child to be able to read that text (which I do have some problems with, but that’s all in <a href="/2022/02/readability-scores-obs">the next post</a>).
+So, to verify the score most researchers do one of three things:</p>
+<ul>
+  <li>grade texts using actual readers; if &gt; 50% of a sample of 4th graders can read and correctly answer comprehension questions about the text, then that text is considered to be at a 4th grade reading level. Researchers then adjust the readability scores until it scores those texts to also be at a 4th grade level.</li>
+  <li>make experts (teachers, learning professionals, book publishers) guess the grade level of texts, and adjust the readability score until it matches the guesses</li>
+  <li>make their new score correspond to existing reading scores. Researches calculate the “relative rankings” of scores, i.e. scoring and ordering texts according to each readability score. They then try to end up with the same ordering of texts between the different scores.</li>
+</ul>
+
+<p>Since most of these scores are <em>equations</em>, here are definitions of some commonly used variables in the scores:</p>
+<ul>
+  <li>$ words $ is the total number of words in the whole text</li>
+  <li>$ sents $ is the total number of sentences in the whole text</li>
+  <li>$ sylls $ is the total number of syllables in the whole text</li>
+</ul>
+
+<h2 id="simple-counts">Simple Counts</h2>
+
+<h3 id="flesch-reading-ease">Flesch Reading Ease</h3>
+
+<p>By far the most well known readability score (but not the most correct), the Flesch reading ease score is based on the average numbers of words per sentence and syllables per word.
+It was developed by Dr. Rudolf Flesch in the <a href="https://web.archive.org/web/20160712094308/http://www.mang.canterbury.ac.nz/writing_guide/writing/flesch.shtml">1940’s</a>.</p>
+
+<p>The Flesch reading ease’s equation is:</p>
+
+\[score = 206.835 - 1.015 ( \frac{words}{sents} ) - 84.6 ( \frac{sylls}{words} )\]
+
+<p>Most readability scores around in the 40’s were intended for use with children.
+Teachers would use scores to decide if a text was the appropriate grade for a child: challenging but not disheartening. Flesch however developed his score to be used for adults. He tested it using the <a href="https://www.google.com/books/edition/Standard_Test_Lessons_in_Reading/DdCgAAAAMAAJ?hl=en&amp;gbpv=1&amp;printsec=frontcover">McCall-Crabbs Standard Test Lessons in Reading</a>, which were passages graded by how well sample groups of children answered comprehension questions at the end of each passage.</p>
+
+<p>Interestingly, at one point Flesh used the number of personal pronouns (I, you, etc.) and the number of affixes to words (“anti-“ in “antitoxin” and “-able” and “-ity” in “readability”) to compute the score. 
+However, the people computing the score on new texts disregarded those features and only computed sentence length.
+As a result, Flesch split the score into two parts, the one known today, and another one known as the “human interest” score, which focused on the number of personal pronouns.</p>
+
+<p><a href="https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=1077&amp;context=rtd">Nancy Ann Vieth’s MA thesis</a> gives a great overview of Flesch’s development of the reading ease score, and the academic context at the time.</p>
+
+<h3 id="flesch-kincaid-grade-level-evaluation">Flesch-Kincaid Grade Level Evaluation</h3>
+
+<p>Like the reading ease score, the Flesch-Kincaid grade level evaluation is based on the average numbers of words per sentence and syllables per word.
+It was co-developed by Flesch and J. Peter Kincaid in the 70’s for the US Navy.</p>
+
+<p>The Flesch-Kincaid Grade Level Evaluation’s equation is:</p>
+
+\[grade = -15.59 + 0.39 ( \frac{words}{sents}) + 11.8 (\frac{sylls}{words})\]
+
+<p>The output is specifically the expected grade level of the text, which is why this equation looks to be the inverse of the reading ease score.</p>
+
+<p>The grade level evaluation has more of an emphasis on shorter words, penalizing each additional average syllable per word 2.75 more than the reading ease. The <a href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#/media/File:Flesch_Kincaid_readability_tests.svg">Wikipedia user Cmglee</a> made a good way to visualize this, shown below.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flesch_Kincaid_readability_tests.svg/1920px-Flesch_Kincaid_readability_tests.svg.png" alt="A 2 dimensional plot that shows how the reading ease score scales on it's 2 inputs compared to the grade level evaluation" /></p>
+
+<p>The grade level evaluation was validated using the Gates-MacGinitie Reading test.</p>
+
+<p>Kincaid himself has some interesting thoughts on readability scores, particularly that they shouldn’t be over applied by writers, given how easy it is to game most of them.</p>
+
+<blockquote>
+  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones. 
+This kind of chopping will indeed lower the readability level, but it’s often counter­ productive.</p>
+
+  <ul>
+    <li><a href="https://www.semanticscholar.org/paper/Readability-formulas%3A-Useful-or-useless-McClure/7c5a5c88214ead4552eded309ec26995013faac9">Dr. J Peter Kincaid</a></li>
+  </ul>
+</blockquote>
+
+<h3 id="gunning-fog-index">Gunning Fog index</h3>
+
+<p><a href="https://web.archive.org/web/20180912145342/http://journals.sagepub.com/doi/abs/10.1177/108056998504800203">The Gunning Fog index</a> was made by Robert Gunning, an American businessman in newspaper publishing, in 1952.
+His word to describe reading difficulty is “Fog”, thus the name, Gunning Fog.
+The score’s equation is:</p>
+
+\[grade = 0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}\]
+
+<p>The output is the grade level of the text. 
+Complex words are words that have more than 3 syllables, not including several common syllables such as -ing.</p>
+
+<p>It requires a minimum of 100 words in the text when calculating the score.
+It is important to note that most scores developed before 1990 were standardized and validated on longer prose, at least a paragraph or two of text. The scores that you get with shorter amounts of text are less likely to be the true readability of the text. This fact makes it difficult to apply the more commonly used readability scores to shorter amounts of text that you would find on a webpage, or in a tweet.</p>
+
+<h3 id="fry-readability-graph">Fry Readability Graph</h3>
+
+<p>The Fry Readability Graph, developed by Edward Fry in 1968, is pretty straight forward.</p>
+
+<ol>
+  <li>Sample several 100 word groups from the text</li>
+  <li>Calculate the number of syllables and sentences in those groups</li>
+  <li>Use those calculations to place a point on a “graph” (aka a plot with word length on the x-axis and average number of sentences on the y-axis).</li>
+</ol>
+
+<p><img src="/assets/blogs/readability/fry_readability.png" alt="The Fry Readability Graph itself. The x-axis of the plot measures the average number of syllables per 100 words and goes from 108 to 172. The y-axis of the plot measure the average number of sentences per 100 words, and goes from 3.6 at the bottom to 25.0. The approximate grade levels are delimited by diagonal lines, each spaced out between   the top left and the bottom right of the graph." /></p>
+
+<p>It was validated using “a lot of” book publisher grade level recommendations.
+The lack of an actual equation, deferring to the flexible but approximate graph, probably didn’t help the score’s usage.</p>
+
+<p>However, Fry does tell us why some many readability scores were developed in the 1950’s - early 80’s:</p>
+
+<blockquote>
+  <p>Though readability formulas are used by some
+ teachers, some librarians, and some publishers, their number is all
+ too few. Perhaps the sheer time it takes to apply these formulas
+ causes them mostly to languish in term papers and occasional magazine articles.</p>
+</blockquote>
+
+<h3 id="smog-simple-measure-of-gobbledegook">SMOG (Simple Measure of Gobbledegook)</h3>
+
+<p>G. Harry McLaughlin, the Editor at the Mirror newspaper and Doctor of Psycholinguistics at University of London, published his SMOG score at the University of Syracuse in 1969.
+Sold as a simpler version of the <a href="#fry-readability-graph">Fry Readability Graph</a>, it consists of three steps:</p>
+
+<ol>
+  <li>Count sentences (at least 30)</li>
+  <li>Count polysyllables (&gt;=3 syllables)</li>
+  <li>\(1.0430 \sqrt{polysyllables * (30 / sents)} + 3.1291\) gets you the grade level.</li>
+</ol>
+
+<p>An even simpler approximation of the last step is to take the square root of the nearest perfect square of the number of polysyllables. So if there are 95 polysyllables in the sample, you round to 100, and take the square root, which means the text is at a 10th grade level.</p>
+
+<p>McLaughlin also suggests that the text be at least 30 sentences (which he estimates to be 600 words), saying that a sample of 100 words “is so small that it may be quite uncharacteristic of the text being assessed.”</p>
+
+<h3 id="ari-automatic-readability-index">ARI (Automatic Readability Index)</h3>
+
+<p>The Automatic Readability Index (1967) is unique in this list because it was
+created in mind with real time type-writer readability monitoring.
+To do that in the 60’s, they used characters per word instead of the
+usual syllables per word.</p>
+
+\[4.71 \frac{characters}{words} + 0.5 \frac{words}{sents} - 21.43\]
+
+<h2 id="word-lists">Word Lists</h2>
+
+<p>All of the scores above tend to reduce text to two, maybe three numerical features such as syllable or word counts, and don’t consider the content of the text.
+<strong>Word lists</strong> attempt to fix this problem. They still reduce the text to some number, but this time if you changed every letter in every word, it <em>would</em> make a difference to the readability score.</p>
+
+<p>The two methods worth listing here are Thorndike’s word list, and the Dale-Chall readability formula.</p>
+
+<p><a href="https://www.jstor.org/stable/1471167">Thorndike’s word list</a>, first published in 1921, has about 20,000 words now, and isn’t exactly a readability measure on it’s own, but
+forms the basis of other readability scores based on word lists. Thorndike’s word list is mainly ordered by frequency of words in texts, and by assumption, familiarity.</p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Dale%E2%80%93Chall_readability_formula">Dale-Chall</a> formula was developed by Edgar Dale and Jeanne Chall in 1948. It used a list of 763 words that 4th grader were familiar with, and in 1995, was updated to include 3000 familiar words.
+Assuming that any word not on the list is considered to be a <em>hard word</em>, the equation is:</p>
+
+\[0.1579 (\frac{hardwords}{words} * 100) + 0.0496 (\frac{words}{sents})\]
+
+<p>These methods were generally used <em>before</em> the above counting methods were invented, and besides for Dale-Chall, they aren’t talked about much anymore.
+Some criticism of them were that:</p>
+<ul>
+  <li>the lists were too long to use by hand, which is a valid argument in 1940. Reading through an 8 page list for every word in the text is very tiresome (though I can’t tell how long some of those word lists got to be). Nowadays, this argument is less useful, as there’s no meaningful performance difference on modern computers between doing O(N) set existence queries vs simple counts.</li>
+  <li>the lists were very influenced by what materials the words were counted from. This is a valid point, and one that is still important today.</li>
+  <li>the lists only show familiarity with the words, as words can still be abstract, ambiguous, or vague, depending on the context in which they’re used.</li>
+</ul>
+
+<h2 id="multi-feature-methods">Multi-feature Methods</h2>
+
+<p>It might stand out that all of the readability scores above were created a while back: the latest is the Flesch-Kincaid score, from 1975. 
+Computing power, especially with regards to text and natural language processing (NLP), has significantly increased since the 70’s, as has the prevalence of personal computers. 
+With the development of NLP as a field in artificial intelligence, new methods have been used to compute readability scores.
+For the purposes of naming them, we’ll call these methods <strong>multi-feature methods</strong>.</p>
+
+<p>The key difference between multi-feature methods and the methods above are that multi-feature methods generally rely on many more features of the text. While scores like Dale-Chall and SMOG rely on 2 or 3 different features of the text like the number of sentences and the complexity of each word, multi-feature methods
+rely on many more features, including grammatical analysis, named entity counts, and deep-learned features. 
+Due to the high number of features, these methods need to be trained on specific datasets, sometimes called a corpus. This allows them to be more specific to a particular type of text, like texts from the healthcare or legal industries, though <a href="https://en.wikipedia.org/wiki/Overfitting">overfitting</a> should be avoided.</p>
+
+<p>Training on specific corpuses can get around a lot of the downsides mentioned in the <a href="#word-lists">word lists</a> section. The lists can’t get too long; that complexity is handled by the algorithm.</p>
+
+<h3 id="collins-thompson-callan-score">Collins-Thompson Callan Score</h3>
+
+<p>The Collins-Thompson-Callan score, introduced in 2004 in <a href="http://www.cs.cmu.edu/~callan/Papers/hlt04-kct.pdf">this paper</a>, outlined the basic gist of a multi-feature readability score algorithm:</p>
+<ul>
+  <li>gather a specific corpus of texts. Since the authors of this paper wanted to make a readability score made for web pages, they found 550 documents, each marked to a certain reading level grade by the website authors.</li>
+  <li>use a variant on a naive bayes classifier to predict the “class” (the reading grade level) based on the presence of certain words. Since each word in a document is considered without it’s surrounding context, i.e. one word at a time, the authors call it a unigram model.</li>
+  <li>Smooth it: the training words are smoothed across grade levels, across the language model (using Simple Good-Turing smoothing), and the final resulting grade level is the average for the top 2 predicted grades.</li>
+</ul>
+
+<h2 id="specific-target-audiences">Specific Target Audiences</h2>
+
+<p>All of the above readability scores try to target their output to the most people possible.
+However, not everyone struggles with reading comprehension for the same reasons. 
+Grade school students have different challenges with reading than people who are learning english as a second or third language, and people with intellectual disabilities have different challenges than either of those groups.
+Lumping these groups together to try to predict a single readability score isn’t going to be the most accurate for the groups individually. The next few scores, despite using different methods (counts vs multi-feature), target one of these subpopulations.</p>
+
+<h3 id="mcalpine-eflaw-readability-score">McAlpine EFLAW Readability Score</h3>
+
+<p>The <a href="https://web.archive.org/web/20050217042336/www.webpagecontent.com/arc_archive/139/5/">McAlpine EFLAW score</a> was made specifically for “Global English for Global Business”. The name is a combination of “EFL”, or “English as a Foreign Language”, and “flaw”, or flaws of writing for an English as a foreign language audience.
+It’s based on the idea that English learners have more trouble with clusters of shorter words of 1-3 letters, called miniwords. A phrase like “In relation to the date of a new time”, would have 7 miniwords.</p>
+
+<p>The score isn’t normalized to grade levels, but it still increases as its difficulty does.</p>
+
+\[(words + miniwords) / sents\]
+
+<!--   Also 
+  https://strainindex.wordpress.com/2009/04/30/mcalpine-eflaw-readability-score/
+-->
+
+<h3 id="multi-feature-scores-for-efl-learners">Multi-Feature Scores for EFL Learners</h3>
+
+<p>The <a href="https://aclanthology.org/2020.nlptea-1.3/">LXPER Index 2.0</a> is a “text readability assessment model”, built to work for non-native language learners (specifically Korean), similarly
+to the McAlipne EFLAW score above. However, it’s specifically targeted at texts in “foreign English language training curriculums”. The reading levels are targeted to grade levels so that texts will properly challenge students and improve their language learning. Additionally, it takes into account that student’s primary interaction with the language they are learning is through the curriculum. 
+Word lists like Dale-Chall and other readability scores assume that the reader will have broad and diverse exposure to the target language, but foreign language learners not immersed in the language will have a much more limited exposure.</p>
+
+<p>This method is a <a href="#multi-feature-methods">multi-feature readability score</a>. Several dozen different text features, including many of the ones mentioned in other readability scores like average words per sentence and percentage of “complicated” words are all included, as well as more detailed features such as the average number of verb phrases and other grammatical structures in the text, the number of entities and lexical chains in the text, and the number of pre-graded vocabulary words. 
+All of these features are used in a logistic regression model, which is trained on pre-graded text samples.</p>
+
+<h3 id="intellectual-disabilities">Intellectual Disabilities</h3>
+
+<p>Some more advanced scores attempt to find more features that are directly correlated
+to readability, like <a href="https://aclanthology.org/E09-1027/">Feng, Elhadad, and Huenerfauth</a>. Those authors focus on readability for people with intellectual disabilities, which gives some valuable insights into the actual process of readability that most readers subconsciously work with each time they read.</p>
+
+<p>Notable from the above paper is that entity density is important. Entity density is the number of things mentioned in a sentence, and how many times they were mentioned; essentially, how much your working memory is used when reading. 
+Earlier studies with the intellectually disabled population showed that “these users are better at decoding words than at comprehending text meaning.” So reading longer words isn’t super hard, but trying to create a “cohesive representation of discourse” can be. They also found was that “texts designed for children may not always lead to accurate models of the readability of texts for other groups of low-literacy users”. That insight is important for readability scores in general: most were made specifically for children grade levels!</p>
+
+<h2 id="misc-readability-scores">Misc Readability scores</h2>
+
+<p>Other readability scores that I found in my research, but didn’t write about here.</p>
+
+<ul>
+  <li><a href="https://readabilityformulas.com/spache-readability-formula.php">Spache</a></li>
+  <li><a href="https://www.jstor.org/stable/41387808">Botel</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index">Coleman-Liau</a>, also uses characters per word</li>
+  <li><a href="https://en.wikipedia.org/wiki/Linsear_Write">Linsear Write</a></li>
+  <li><a href="https://www.readabilityformulas.com/the-LIX-readability-formula.php">LIX (Läsbarhetsindex)</a>, one of the few tests developed outside of the US, in Sweeden</li>
+  <li><a href="https://aclanthology.org/W16-0502/">Xia et al., 2016</a>, another multi-feature approach for EFL</li>
+</ul>
+
+<h2 id="so-what-now">So, what now?</h2>
+
+<p>So now that we know about many readability scores, what should we do with them? Which ones should we use, and which ones should we avoid? I try to address some of those question in <a href="/2022/02/readability-scores-obs">part 2 of this blog</a></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>When reading research papers, I always try to write something close to a background or previous work section of an academic paper. It forces me to try to understand what I’m writing about from different angles, and to do my best to cover the field I’m writing about (comparatively, since I do this in my free time, lol). But, a lot of that info doesn’t really fit in the final article written, so I decided to try to summarize it somewhere else. This post is that “somewhere else”. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+  </div>
+</article>
+
+    </main>
+    <footer class="c-footer">
+  <div class="u-container c-footer__container">
+    <p>&copy; Bryce Willey 2022</p>
+    <p class="social-links">
+      <a href="mailto:bryce.steven.willey@gmail.com">bryce.steven.willey@gmail.com</a>
+      <a href="https://twitter.com/wowitisbryce">Twitter</a>
+      <a rel="me" href="https://weirder.earth/@brycew">Mastodon</a>
+      <a href="https://github.com/BryceStevenWilley">Github</a>
+      <a href="assets/gpg_key.gpg.txt">GPG Keys</a>
+      
+      
+      <a href="https://brycestevenwilley.github.io/feed.xml">RSS Feed</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
