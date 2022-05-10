@@ -38,7 +38,7 @@ It was developed by Dr. Rudolf Flesch in the [1940's](https://web.archive.org/we
 
 The Flesch reading ease's equation is:
 
-$$ score = 206.835 - 1.015 ( \frac{words}{sents} ) - 84.6 ( \frac{sylls}{words} ) $$
+$$ 206.835 - 1.015 ( \frac{words}{sents} ) \\ - 84.6 ( \frac{sylls}{words} ) $$
 
 Most readability scores around in the 40's were intended for use with children.
 Teachers would use scores to decide if a text was the appropriate grade for a child: challenging but not disheartening. Flesch however developed his score to be used for adults. He tested it using the [McCall-Crabbs Standard Test Lessons in Reading](https://www.google.com/books/edition/Standard_Test_Lessons_in_Reading/DdCgAAAAMAAJ?hl=en&gbpv=1&printsec=frontcover), which were passages graded by how well sample groups of children answered comprehension questions at the end of each passage. 
@@ -56,7 +56,7 @@ It was co-developed by Flesch and J. Peter Kincaid in the 70's for the US Navy.
 
 The Flesch-Kincaid Grade Level Evaluation's equation is:
 
-$$ grade = -15.59 + 0.39 ( \frac{words}{sents}) + 11.8 (\frac{sylls}{words}) $$
+$$ -15.59 + 0.39 ( \frac{words}{sents}) \\ + 11.8 (\frac{sylls}{words}) $$
 
 The output is specifically the expected grade level of the text, which is why this equation looks to be the inverse of the reading ease score.
 
@@ -81,7 +81,7 @@ His word to describe reading difficulty is "Fog", thus the name, Gunning Fog.
 The score's equation is:
 
 $$
-grade = 0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}
+0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}
 $$
 
 The output is the grade level of the text. 
@@ -119,7 +119,7 @@ Sold as a simpler version of the [Fry Readability Graph](#fry-readability-graph)
 
 1. Count sentences (at least 30)
 2. Count polysyllables (>=3 syllables)
-3. $$ 1.0430 \sqrt{polysyllables * (30 / sents)} + 3.1291 $$ gets you the grade level.
+3. $$ 1.043 \sqrt{polysyll (30 / sents)} \\ + 3.1291 $$ gets you the grade level.
 
 An even simpler approximation of the last step is to take the square root of the nearest perfect square of the number of polysyllables. So if there are 95 polysyllables in the sample, you round to 100, and take the square root, which means the text is at a 10th grade level.
 
@@ -132,7 +132,7 @@ created in mind with real time type-writer readability monitoring.
 To do that in the 60's, they used characters per word instead of the
 usual syllables per word.
 
-$$ 4.71 \frac{characters}{words} + 0.5 \frac{words}{sents} - 21.43 $$
+$$ 4.71 \frac{characters}{words} \\ + 0.5 \frac{words}{sents} - 21.43 $$
 
 ## Word Lists
 
@@ -147,7 +147,7 @@ forms the basis of other readability scores based on word lists. Thorndike's wor
 The [Dale-Chall](https://en.wikipedia.org/wiki/Dale%E2%80%93Chall_readability_formula) formula was developed by Edgar Dale and Jeanne Chall in 1948. It used a list of 763 words that 4th grader were familiar with, and in 1995, was updated to include 3000 familiar words.
 Assuming that any word not on the list is considered to be a _hard word_, the equation is:
 
-$$ 0.1579 (\frac{hardwords}{words} * 100) + 0.0496 (\frac{words}{sents}) $$
+$$ 0.1579 (\frac{hardwords}{words} * 100) \\ + 0.0496 (\frac{words}{sents}) $$
 
 These methods were generally used _before_ the above counting methods were invented, and besides for Dale-Chall, they aren't talked about much anymore.
 Some criticism of them were that:
