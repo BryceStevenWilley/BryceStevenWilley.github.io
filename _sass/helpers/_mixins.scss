@@ -4,7 +4,7 @@
 
 // Font families
 
-$base-font-size: 1.8rem;
+$base-font-size: 1.7rem;
 $on-palm:   535px !default;
 
 @mixin ff--sans-serif($font-weight: normal) {
@@ -20,22 +20,22 @@ $on-palm:   535px !default;
 // Font sizing
 @mixin fs--title {
   line-height: 1.5;
-  font-size: 4rem; // 40px
+  font-size: 3.2rem; // 40px
 }
 
 @mixin fs--subtitle {
   line-height: 1.5;
-  font-size: 2.5rem; 
+  font-size: 1.9rem; 
 }
 
 @mixin fs--heading-1 {
   line-height: 1.25;
-  font-size: 3.5rem; // 35px
+  font-size: 2.5rem; // 35px
 }
 
 @mixin fs--heading-2 {
   line-height: 1.25;
-  font-size: 3rem; // 30px
+  font-size: 2rem; // 30px
 }
 
 @mixin fs--body {

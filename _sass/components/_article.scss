@@ -22,9 +22,9 @@
   }
 
   blockquote {
-    margin-left: -2.5rem;
-    width: calc(100% + 5rem);
-    padding: 2.5rem;
+    margin-left: -2.2rem;
+    width: calc(100% + 4.4rem);
+    padding: 2.25rem;
     background: $c__light-grey;
   }
 
@@ -48,7 +48,7 @@
 
   .post-link {
     display: block;
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.4);
   }
 
   table.listening-to {
@@ -88,4 +88,10 @@
       padding-top: 5px;
     }
   }
+}
+
+blockquote {
+  border-style: double;
+  border-color: $t-headerTheme;
+  border-width: 4px;
 }
