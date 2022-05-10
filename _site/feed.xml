@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://brycestevenwilley.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brycestevenwilley.github.io/" rel="alternate" type="text/html" /><updated>2022-05-09T12:59:05-04:00</updated><id>https://brycestevenwilley.github.io/feed.xml</id><title type="html">Bryce Willey</title><subtitle>Bryce Willey- Access to Justice, Software for Humans</subtitle><entry><title type="html">Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G.</title><link href="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie" rel="alternate" type="text/html" title="Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G." /><published>2022-04-20T22:00:00-04:00</published><updated>2022-04-20T22:00:00-04:00</updated><id>https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie</id><content type="html" xml:base="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie"><![CDATA[<aside>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://brycestevenwilley.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brycestevenwilley.github.io/" rel="alternate" type="text/html" /><updated>2022-05-09T23:44:39-04:00</updated><id>https://brycestevenwilley.github.io/feed.xml</id><title type="html">Bryce Willey</title><subtitle>Bryce Willey- Access to Justice, Software for Humans</subtitle><entry><title type="html">Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G.</title><link href="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie" rel="alternate" type="text/html" title="Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G." /><published>2022-04-20T22:00:00-04:00</published><updated>2022-04-20T22:00:00-04:00</updated><id>https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie</id><content type="html" xml:base="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie"><![CDATA[<aside>
 This post was originally a <a href="https://twitter.com/wowitisbryce/status/1515794042444996610">tweet thread</a>.
 I've added more details and background explanations where possible, and rewritten it for the blog format.
 </aside>
@@ -268,7 +268,7 @@ It was developed by Dr. Rudolf Flesch in the <a href="https://web.archive.org/we
 
 <p>The Flesch reading ease’s equation is:</p>
 
-\[score = 206.835 - 1.015 ( \frac{words}{sents} ) - 84.6 ( \frac{sylls}{words} )\]
+\[206.835 - 1.015 ( \frac{words}{sents} ) \\ - 84.6 ( \frac{sylls}{words} )\]
 
 <p>Most readability scores around in the 40’s were intended for use with children.
 Teachers would use scores to decide if a text was the appropriate grade for a child: challenging but not disheartening. Flesch however developed his score to be used for adults. He tested it using the <a href="https://www.google.com/books/edition/Standard_Test_Lessons_in_Reading/DdCgAAAAMAAJ?hl=en&amp;gbpv=1&amp;printsec=frontcover">McCall-Crabbs Standard Test Lessons in Reading</a>, which were passages graded by how well sample groups of children answered comprehension questions at the end of each passage.</p>
@@ -286,7 +286,7 @@ It was co-developed by Flesch and J. Peter Kincaid in the 70’s for the US Navy
 
 <p>The Flesch-Kincaid Grade Level Evaluation’s equation is:</p>
 
-\[grade = -15.59 + 0.39 ( \frac{words}{sents}) + 11.8 (\frac{sylls}{words})\]
+\[-15.59 + 0.39 ( \frac{words}{sents}) \\ + 11.8 (\frac{sylls}{words})\]
 
 <p>The output is specifically the expected grade level of the text, which is why this equation looks to be the inverse of the reading ease score.</p>
 
@@ -313,7 +313,7 @@ This kind of chopping will indeed lower the readability level, but it’s often 
 His word to describe reading difficulty is “Fog”, thus the name, Gunning Fog.
 The score’s equation is:</p>
 
-\[grade = 0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}\]
+\[0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}\]
 
 <p>The output is the grade level of the text. 
 Complex words are words that have more than 3 syllables, not including several common syllables such as -ing.</p>
@@ -353,7 +353,7 @@ Sold as a simpler version of the <a href="#fry-readability-graph">Fry Readabilit
 <ol>
   <li>Count sentences (at least 30)</li>
   <li>Count polysyllables (&gt;=3 syllables)</li>
-  <li>\(1.0430 \sqrt{polysyllables * (30 / sents)} + 3.1291\) gets you the grade level.</li>
+  <li>\(1.043 \sqrt{polysyll (30 / sents)} \\ + 3.1291\) gets you the grade level.</li>
 </ol>
 
 <p>An even simpler approximation of the last step is to take the square root of the nearest perfect square of the number of polysyllables. So if there are 95 polysyllables in the sample, you round to 100, and take the square root, which means the text is at a 10th grade level.</p>
@@ -367,7 +367,7 @@ created in mind with real time type-writer readability monitoring.
 To do that in the 60’s, they used characters per word instead of the
 usual syllables per word.</p>
 
-\[4.71 \frac{characters}{words} + 0.5 \frac{words}{sents} - 21.43\]
+\[4.71 \frac{characters}{words} \\ + 0.5 \frac{words}{sents} - 21.43\]
 
 <h2 id="word-lists">Word Lists</h2>
 
@@ -382,7 +382,7 @@ forms the basis of other readability scores based on word lists. Thorndike’s w
 <p>The <a href="https://en.wikipedia.org/wiki/Dale%E2%80%93Chall_readability_formula">Dale-Chall</a> formula was developed by Edgar Dale and Jeanne Chall in 1948. It used a list of 763 words that 4th grader were familiar with, and in 1995, was updated to include 3000 familiar words.
 Assuming that any word not on the list is considered to be a <em>hard word</em>, the equation is:</p>
 
-\[0.1579 (\frac{hardwords}{words} * 100) + 0.0496 (\frac{words}{sents})\]
+\[0.1579 (\frac{hardwords}{words} * 100) \\ + 0.0496 (\frac{words}{sents})\]
 
 <p>These methods were generally used <em>before</em> the above counting methods were invented, and besides for Dale-Chall, they aren’t talked about much anymore.
 Some criticism of them were that:</p>
