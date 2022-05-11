@@ -7,8 +7,32 @@ function addIndividualLines(textStr, toElem) {
   let lines = textStr.split('\n');
 
   for (let line of lines) {
+    let md_link = /\[([^\]]+)\]\(([^\)]+)\)/g;
+    let match_obj = [...line.matchAll(md_link)];
     let line_elem = document.createElement('p');
-    line_elem.textContent = line;
+    console.log('line: %s', line);
+    console.log('match obj: %o', match_obj);
+    if (match_obj) {
+      let plain_split = /\[[^\]]+\]\([^\)]+\)/g;
+      let split_arr = line.split(plain_split);
+      console.log('split_arr: %o', split_arr);
+      for (let i = 0; i < split_arr.length; i++) {
+        if (split_arr[i]) {
+          let span = document.createElement('span');
+          span.textContent = split_arr[i];
+          line_elem.appendChild(span);
+        }
+
+        if (i < match_obj.length) {
+          let link = document.createElement('a');
+          link.textContent = match_obj[i][1];
+          link.setAttribute('href', match_obj[i][2]);
+          line_elem.appendChild(link);
+        }
+      }
+    } else {
+      line_elem.textContent = line;
+    }
     toElem.appendChild(line_elem);
   }
 }
@@ -33,7 +57,8 @@ fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
     resp = j[0];
     let event_repo = document.querySelector('#event-repo');
     event_repo.textContent = resp.repo.name;
-    event_repo.setAttribute('href', 'https://github.com/' + resp.repo.name);
+    const http_url = 'https://github.com/' + resp.repo.name;
+    event_repo.setAttribute('href', http_url);
 
     let event_title = document.querySelector('#event-title');
     let event_desc = document.querySelector('#event-desc');
@@ -42,11 +67,11 @@ fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
       commit = resp.payload.commits[resp.payload.commits.length - 1];
       addIndividualLines(commit.message, event_desc);
     } else if (resp.type === 'CreateEvent') {
-      addLinkToEvent(null, 'Created the ' + resp.payload.ref.ref + ' ' + resp.payload.ref_type, event_desc);
+      addLinkToEvent(null, 'Created the ' + resp.payload.ref + ' ' + resp.payload.ref_type, event_title);
     } else if (resp.type === 'DeleteEvent') {
-      addLinkToEvent(null, 'Deleted the ' + resp.payload.ref.ref + ' ' + resp.payload.ref_type, event_desc);
+      addLinkToEvent(null, 'Deleted the ' + resp.payload.ref + ' ' + resp.payload.ref_type, event_title);
     } else if (resp.type === 'ForkEvent') {
-      addLinkToEvent(null, 'Forked the ' + resp.payload.forkee.full_name + ' repo');
+      addLinkToEvent(null, 'Forked the ' + resp.payload.forkee.full_name + ' repo', event_title);
     } else if (resp.type === 'ReleaseEvent') {
       if (resp.payload.action === 'published') {
         release = resp.payload.release;
@@ -83,25 +108,26 @@ fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
       addLinkToEvent(resp.payload.comment.html_url, 'Made a comment', event_title);
       addIndividualLines(resp.payload.comment.body, event_desc);
     } else if (resp.type === 'PullRequestEvent') {
+      const pr_url = http_url + '/pull/' + resp.payload.number;
+      let pr = resp.payload.pull_request;
       if (resp.payload.action === 'opened') {
-        event_title.textContent = 'Made a pull request';
-        pr = resp.payload.pull_request;
-
-        // TODO: add the URL of the PR
+        addLinkToEvent(pr_url, 'Made a pull request', event_title);
         addIndividualLines(pr.title + '\n\n' + pr.body, event_desc);
       } else if (resp.payload.action === 'closed') {
-        event_title.textContent = 'Closed a pull request';
+        addLinkToEvent(pr_url, 'Closed a pull request', event_title);
       } else if (resp.payload.action === 'reopened') {
-        event_title.textContent = 'Reopened a pull request';
+        addLinkToEvent(pr_url, 'Reopened a pull request', event_title);
       } else if (resp.payload.action === 'assigned') {
-        event_title.textContent = 'Assigned a pull request to ' + resp.payload.pull_request.assignee;
+        addLinkToEvent(pr_url, 'Assigned a pull request to ' + resp.payload.pull_request.assignee, event_title);
       } else if (resp.payload.action === 'unassigned') {
-        event_title.textContent = 'Unassigned a pull request';
+        addLinkToEvent(pr_url, 'Unassigned a pull request', event_title);
       } else if (resp.payload.action == 'review_request') {
         // TODO: add what these things to do
       } else if (resp.payload.action === 'review_request_removed') {
       } else if (resp.payload.action === 'labeled') {
+        addLinkToEvent(pr_url, 'Labeled a pull request', event_title);
       } else if (resp.payload.action === 'unlabeled') {
+        addLinkToEvent(pr_url, 'Unlabeled a pull request', event_title);
       }
     } else if (resp.type === 'PullRequestReviewEvent') {
       event_title.textContent = 'Reviewed a pull request';
