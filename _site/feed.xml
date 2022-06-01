@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://brycestevenwilley.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brycestevenwilley.github.io/" rel="alternate" type="text/html" /><updated>2022-05-11T10:44:18-04:00</updated><id>https://brycestevenwilley.github.io/feed.xml</id><title type="html">Bryce Willey</title><subtitle>Bryce Willey- Access to Justice, Software for Humans</subtitle><entry><title type="html">Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G.</title><link href="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie" rel="alternate" type="text/html" title="Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G." /><published>2022-04-20T22:00:00-04:00</published><updated>2022-04-20T22:00:00-04:00</updated><id>https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie</id><content type="html" xml:base="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie"><![CDATA[<aside>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://brycestevenwilley.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://brycestevenwilley.github.io/" rel="alternate" type="text/html" /><updated>2022-05-31T23:58:04-04:00</updated><id>https://brycestevenwilley.github.io/feed.xml</id><title type="html">Bryce Willey</title><subtitle>Bryce Willey- Access to Justice, Software for Humans</subtitle><entry><title type="html">Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G.</title><link href="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie" rel="alternate" type="text/html" title="Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G." /><published>2022-04-20T22:00:00-04:00</published><updated>2022-04-20T22:00:00-04:00</updated><id>https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie</id><content type="html" xml:base="https://brycestevenwilley.github.io/2022/04/fpt_tts_biggie"><![CDATA[<aside>
 This post was originally a <a href="https://twitter.com/wowitisbryce/status/1515794042444996610">tweet thread</a>.
 I've added more details and background explanations where possible, and rewritten it for the blog format.
 </aside>
 
-<p>I love solving random bugs on the internet! 
+<p>I love solving random bugs on the internet!
 Recently, I’ve gotten more comfortable with browser development tools.
-Sometimes I’ll be on a website and realize, “Hey, I can open this up and see how it works!” 
+Sometimes I’ll be on a website and realize, “Hey, I can open this up and see how it works!”
 As a result, I’ve had a lot of fun finding bugs on random websites and figuring out why they happen.</p>
 
-<p>This post’s target bug is getting the landing page demo of <a href="https://fpt.ai/tts">FPT’s text-to-speech service</a> to play a mashup of Notorious B.I.G’s “Juicy” and the xx’s “VCR”. I’ll walk through all of the steps I took, explaining each the best I can. 
+<p>This post’s target bug is getting the landing page demo of <a href="https://fpt.ai/tts">FPT’s text-to-speech service</a> to play a mashup of Notorious B.I.G’s “Juicy” and the xx’s “VCR”. I’ll walk through all of the steps I took, explaining each the best I can.
 You shouldn’t need to know Javascript or web technologies to follow along. As long as you know the general ideas of what a web page is (and that Javascript is just the code that handles interactions on a web page) you’ll be good.</p>
 
 <h2 id="how-i-found-the-site-in-the-first-place">How I found the site in the first place</h2>
@@ -31,6 +31,7 @@ To make flash cards for vocabulary, I need the Vietnamese word, its English tran
 <h2 id="mystery-1-why-biggie">Mystery 1: Why Biggie?</h2>
 
 <p>First thing I always do when something unexpected happens on a website is to go to the dev tools! The keyboard shortcut to get there in either Firefox or Chrome is F12 or Control-Shift-J. There’s a whole lot going on in browser dev tools, but we’re only going to need 3 tabs:</p>
+
 <ul>
   <li>Console: shows any logs from the webpage, let’s you type Javascript to run</li>
   <li>Debugger (called “Sources” in Chrome): shows you all of the page’s Javascript code</li>
@@ -41,7 +42,7 @@ To make flash cards for vocabulary, I need the Vietnamese word, its English tran
 
 <p><img src="/assets/biggie-tts/https-warning.png" alt="A console log line that says: &quot;Loading mixed (insecure) display content “http://kolber.github.io/audiojs/demos/mp3/juicy.mp3” on a secure page&quot;" /></p>
 
-<p>This warning tells us that the audio playing is being served over HTTP, not HTTPS. Decomposing the jargon, HTTP (which stands for HyperText Transfer Protocol) is what the web runs on. Any time you visit a page on a website, your browser uses HTTP to ask the website for that specific page, and the website uses HTTP to send the page back to you. 
+<p>This warning tells us that the audio playing is being served over HTTP, not HTTPS. Decomposing the jargon, HTTP (which stands for HyperText Transfer Protocol) is what the web runs on. Any time you visit a page on a website, your browser uses HTTP to ask the website for that specific page, and the website uses HTTP to send the page back to you.
 HTTPS uses asymmetric key encryption to keep those pages secret from any one in the middle who might be listening.</p>
 
 <aside>
@@ -82,13 +83,14 @@ code itself is playing it. To answer this, we’d need to be able to search thro
 
 <h2 id="mystery-2-why-dạ">Mystery 2: Why “dạ”</h2>
 
-<p>We aren’t quite done yet: why did the input “dạ” trigger the bug, but not anything else? To figure this out, click over to the “Network” tab of the dev tools. 
+<p>We aren’t quite done yet: why did the input “dạ” trigger the bug, but not anything else? To figure this out, click over to the “Network” tab of the dev tools.
 This tab lets you look at all of the information going between your browser and the website your visiting (or other sites).
 When you get to the tab, refresh the page, wait for everything to load, then click the Trash can icon (in Chrome it’s the 🚫 icon) to clear up all of the irrelevant requests. Then, copy “dạ” in, and click “Generate Audio”. You’ll get a few new requests pop up.</p>
 
 <p><img src="/assets/biggie-tts/network-firefox.png" alt="The network tab of Firefox. There are three network requests, one to `kolber.github.io`, one to `www.google.com`, and one to `demo.fpt.ai`" />.</p>
 
 <p>I have an ad blocker on my browser; without it you’ll probably see a few more requests going to tracking sites and Facebook. These are the important ones:</p>
+
 <ul>
   <li>a GET for the <code class="language-plaintext highlighter-rouge">juicy.mp3</code> that starts playing. From our previous sleuthing that, we know this happens immediately when the button is clicked.</li>
   <li>a POST to <code class="language-plaintext highlighter-rouge">www.google.com</code>. We can see that the initiator is <code class="language-plaintext highlighter-rouge">recaptcha__en.js</code>. <a href="https://developers.google.com/recaptcha/">reCAPTCHA</a> is the “I’m not a robot” checkbox you see on a lot of pages, and in this case is here to make sure that we’re not a bot taking advantage of FPT’s API without making an account first.</li>
@@ -108,7 +110,7 @@ This post is a bit more wishy-washy than the last one; most of the info here is 
 
 <h2 id="why-are-there-so-many">Why are there so many?</h2>
 
-<p>One question that I wanted to answer when I started looking into readability scores: why are there so many different scores? 
+<p>One question that I wanted to answer when I started looking into readability scores: why are there so many different scores?
 A quote from Edward Fry <a href="/2022/01/readability-scores-reference#fry-readability-graph">when talking about the Fry Reading Graph score</a> helps us answer this question:</p>
 
 <blockquote>
@@ -126,6 +128,7 @@ I started at a random point in a paper I was reading, and timed myself to see ho
 It took me a 4 minutes and 22 seconds to count out 100 words and then to count the 5 sentences and 177 syllables in that 100 words.
 By far the longest part was counting the words and sounding out and counting the syllables.
 I then timed myself on the on-paper math calculations for Fry’s readability graph and Flesch-Kincaid.</p>
+
 <ul>
   <li>Fry’s graph took 15 seconds to locate the point (off the chart, lol).</li>
   <li>Flesch-Kincaid took me 2 minutes 42 seconds to calculate a grade level of 13.</li>
@@ -134,10 +137,10 @@ I then timed myself on the on-paper math calculations for Fry’s readability gr
 <p>This very much proves Fry’s point: the by-hand math calculations still took about ~40% of the time. I am a bit out of practice at calculation by-hand, but I’d guess that with some practice, about 20% of the time to calculate the Flesch-Kincaid grade would still be the math.
 Coming up with a new score that didn’t need exact calculations and saved 20% of the time to take to make the score would be a big improvement.</p>
 
-<p>But now, we have computers. All of the counting and calculations that I just did happens essentially instantaneously. 
+<p>But now, we have computers. All of the counting and calculations that I just did happens essentially instantaneously.
 Slightly faster scores like Fry’s or SMOG don’t have advantage of being that much faster anymore.</p>
 
-<p>There is a different reason why new readability scores are still being developed today though; different groups of people think and read differently. 
+<p>There is a different reason why new readability scores are still being developed today though; different groups of people think and read differently.
 Diversity has always been a good thing, and some of the research done on how <a href="/2022/01/readability-scores-reference#multi-feature-scores-for-efl-learners">English-as-an-additional-Language learners</a> or <a href="/2022/01/readability-scores-reference#intellectual-disabilities">people with intellectual disabilities</a> read shows that we all think and process the written word differently.
 Obviously a single formula that takes into account 2 shallow pieces of info about the text aren’t going to be great predictors when it comes to these different populations.</p>
 
@@ -155,26 +158,26 @@ They also hint that there seems to be only so much you can do to increase readab
 
 <h2 id="more-specific-validations">More specific validations</h2>
 
-<p>The grade levels of readability scores are kinda made up. 
+<p>The grade levels of readability scores are kinda made up.
 Yes, some of the scores are validated based on the grade level of their readers; if more than 50% of a sample of 4th graders
-could read a text, that text is considered to be 4th grade level. 
+could read a text, that text is considered to be 4th grade level.
 However, there are a lot of issues with the actual labeling of a text as “4th grade”.</p>
 
 <ul>
   <li>they were validated on 4th graders in 1975 (or whenever the score was last updated), not 4th graders today.</li>
-  <li>it implies that you need to write like you’re talking to a 9 year old, which implies that you need to dumb it down. You don’t need to dumb down your writing! 
-A great point that my colleague <a href="https://www.mlri.org/staff-member/caroline-robinson/">Caroline Robinson</a> has made is that <strong>a reading grade level isn’t a thinking grade level</strong>: an adult who reads at a lower than average grade level can talk about complicated topics and ideas. 
+  <li>it implies that you need to write like you’re talking to a 9 year old, which implies that you need to dumb it down. You don’t need to dumb down your writing!
+A great point that my colleague <a href="https://www.mlri.org/staff-member/caroline-robinson/">Caroline Robinson</a> has made is that <strong>a reading grade level isn’t a thinking grade level</strong>: an adult who reads at a lower than average grade level can talk about complicated topics and ideas.
 Additionally, people are often able to read above their average readability ! The <a href="/2022/01/readability-scores-reference#flesch-reading-ease">original Flesch score</a> tried to consider interest and appeal in the article topic into account in the score.</li>
-  <li>it implies that everyone who does read above a 4th grade level will be able to read the text. 
-People also often read below their readability score. Not everything that a college reading grade level person reads will be at a 13th grade level. 
-They’ll generally want to read easier text most of the time, since reading difficult texts is hard for everyone. 
+  <li>it implies that everyone who does read above a 4th grade level will be able to read the text.
+People also often read below their readability score. Not everything that a college reading grade level person reads will be at a 13th grade level.
+They’ll generally want to read easier text most of the time, since reading difficult texts is hard for everyone.
 Even if you read at a higher grade level, easier readability <a href="https://en.wikipedia.org/wiki/Readability#Readability_and_newspaper_readership">improves comprehension and reading speed</a>.</li>
 </ul>
 
 <p>I think that readability scores could be split into two things:</p>
 
 <ul>
-  <li>a score that is just a percentage of the population (maybe targeted to your specific population!) that could read your text. It’s judgement free, and you aren’t dumbing your content down. It could be actually validated as well: instead of only looking at 4th graders and seeing what percentage of them pass the comprehension tests, just sample 
+  <li>a score that is just a percentage of the population (maybe targeted to your specific population!) that could read your text. It’s judgement free, and you aren’t dumbing your content down. It could be actually validated as well: instead of only looking at 4th graders and seeing what percentage of them pass the comprehension tests, just sample
 the general population, and give a range of the percentage of the population that could read it. Many of the techniques that are used in electoral polling might be useful here.</li>
   <li>a score that shows how difficult it is to read your text. It might be accessible to 75% of the general population, but if it’s exhausting for 90% of the population to read, then that’s going to determine how many people read and comprehend your article more than the other score.</li>
 </ul>
@@ -188,13 +191,14 @@ the general population, and give a range of the percentage of the population tha
 <h2 id="readability-tools-and-plain-language">Readability Tools and Plain Language</h2>
 
 <p>This might over-complicate things, but hear me out: you can think of writing a readable text as an optimization problem.
-In optimization, you have a problem space, some constraints, a starting point, and some optimal solution, and some objective function to measure that optimal solution. 
+In optimization, you have a problem space, some constraints, a starting point, and some optimal solution, and some objective function to measure that optimal solution.
 For example, you have a car factory, and you want to optimize the process of assembling a car. The problem space is all of the different
 ways you can put together a car. The constraints are that you want to end up with a working, high quality car. The starting point is the current way
 you are putting together the car, and the optimal solution is a faster way to put together the car. The objective function is time: faster is better.
 You also have these 5 things with our readability problem: the problem space is the space of all english texts, the constraints are that you want to communicate a particular set of ideas and concepts, you have a first draft, and you have your goal text, that explains the same ideas but with a lower difficultly grade. Our objective function here is readability.</p>
 
 <p>In optimization, there’s generally two ways of improving your current point:</p>
+
 <ul>
   <li>you can use information about your current point to try to improve it slightly, known as hill-climbing (you want to go up the hill from where you are).</li>
   <li>you can jump to a random point to see if it’s better than your last guess.</li>
@@ -210,7 +214,7 @@ You can’t just take an existing text, shorten the sentences by replacing “, 
 words with shorter synonyms, and expect it to actually read easier.</p>
 
 <blockquote>
-  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones. 
+  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones.
 This kind of chopping will indeed lower the readability level, but it’s often counter­ productive.</p>
 
   <ul>
@@ -224,7 +228,7 @@ This kind of chopping will indeed lower the readability level, but it’s often 
 Plain language is essentially a list of guidelines that encourage you to write simpler. It’s not about dumbing down your writing, just about being clearer.
 If you work for the US federal government, you are <a href="https://www.plainlanguage.gov/law/">literally required</a> use plain language to improve readability.</p>
 
-<p>It’s possible that more modern readability scores (<a href="/2022/01/readability-scores-reference#multi-feature-methods">multi-feature methods</a>) are better suited as objective functions and for hill-climbing. 
+<p>It’s possible that more modern readability scores (<a href="/2022/01/readability-scores-reference#multi-feature-methods">multi-feature methods</a>) are better suited as objective functions and for hill-climbing.
 But I’d need to see some research on it before I believe it.</p>
 
 <div class="footnotes" role="doc-endnotes">
@@ -246,6 +250,7 @@ sometimes rounded to the closest whole number.</p>
 <p>Once you have a readability score, you have to verify that it is actually “correct”, that it predicts what it says it does.
 Most readability scores predict the grade level of a particular text, i.e. the earliest grade level at which you might expect a child to be able to read that text (which I do have some problems with, but that’s all in <a href="/2022/02/readability-scores-obs">the next post</a>).
 So, to verify the score most researchers do one of three things:</p>
+
 <ul>
   <li>grade texts using actual readers; if &gt; 50% of a sample of 4th graders can read and correctly answer comprehension questions about the text, then that text is considered to be at a 4th grade reading level. Researchers then adjust the readability scores until it scores those texts to also be at a 4th grade level.</li>
   <li>make experts (teachers, learning professionals, book publishers) guess the grade level of texts, and adjust the readability score until it matches the guesses</li>
@@ -253,6 +258,7 @@ So, to verify the score most researchers do one of three things:</p>
 </ul>
 
 <p>Since most of these scores are <em>equations</em>, here are definitions of some commonly used variables in the scores:</p>
+
 <ul>
   <li>$ words $ is the total number of words in the whole text</li>
   <li>$ sents $ is the total number of sentences in the whole text</li>
@@ -273,7 +279,7 @@ It was developed by Dr. Rudolf Flesch in the <a href="https://web.archive.org/we
 <p>Most readability scores around in the 40’s were intended for use with children.
 Teachers would use scores to decide if a text was the appropriate grade for a child: challenging but not disheartening. Flesch however developed his score to be used for adults. He tested it using the <a href="https://www.google.com/books/edition/Standard_Test_Lessons_in_Reading/DdCgAAAAMAAJ?hl=en&amp;gbpv=1&amp;printsec=frontcover">McCall-Crabbs Standard Test Lessons in Reading</a>, which were passages graded by how well sample groups of children answered comprehension questions at the end of each passage.</p>
 
-<p>Interestingly, at one point Flesh used the number of personal pronouns (I, you, etc.) and the number of affixes to words (“anti-“ in “antitoxin” and “-able” and “-ity” in “readability”) to compute the score. 
+<p>Interestingly, at one point Flesh used the number of personal pronouns (I, you, etc.) and the number of affixes to words (“anti-“ in “antitoxin” and “-able” and “-ity” in “readability”) to compute the score.
 However, the people computing the score on new texts disregarded those features and only computed sentence length.
 As a result, Flesch split the score into two parts, the one known today, and another one known as the “human interest” score, which focused on the number of personal pronouns.</p>
 
@@ -299,7 +305,7 @@ It was co-developed by Flesch and J. Peter Kincaid in the 70’s for the US Navy
 <p>Kincaid himself has some interesting thoughts on readability scores, particularly that they shouldn’t be over applied by writers, given how easy it is to game most of them.</p>
 
 <blockquote>
-  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones. 
+  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones.
 This kind of chopping will indeed lower the readability level, but it’s often counter­ productive.</p>
 
   <ul>
@@ -315,7 +321,7 @@ The score’s equation is:</p>
 
 \[0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}\]
 
-<p>The output is the grade level of the text. 
+<p>The output is the grade level of the text.
 Complex words are words that have more than 3 syllables, not including several common syllables such as -ing.</p>
 
 <p>It requires a minimum of 100 words in the text when calculating the score.
@@ -386,6 +392,7 @@ Assuming that any word not on the list is considered to be a <em>hard word</em>,
 
 <p>These methods were generally used <em>before</em> the above counting methods were invented, and besides for Dale-Chall, they aren’t talked about much anymore.
 Some criticism of them were that:</p>
+
 <ul>
   <li>the lists were too long to use by hand, which is a valid argument in 1940. Reading through an 8 page list for every word in the text is very tiresome (though I can’t tell how long some of those word lists got to be). Nowadays, this argument is less useful, as there’s no meaningful performance difference on modern computers between doing O(N) set existence queries vs simple counts.</li>
   <li>the lists were very influenced by what materials the words were counted from. This is a valid point, and one that is still important today.</li>
@@ -394,13 +401,13 @@ Some criticism of them were that:</p>
 
 <h2 id="multi-feature-methods">Multi-feature Methods</h2>
 
-<p>It might stand out that all of the readability scores above were created a while back: the latest is the Flesch-Kincaid score, from 1975. 
-Computing power, especially with regards to text and natural language processing (NLP), has significantly increased since the 70’s, as has the prevalence of personal computers. 
+<p>It might stand out that all of the readability scores above were created a while back: the latest is the Flesch-Kincaid score, from 1975.
+Computing power, especially with regards to text and natural language processing (NLP), has significantly increased since the 70’s, as has the prevalence of personal computers.
 With the development of NLP as a field in artificial intelligence, new methods have been used to compute readability scores.
 For the purposes of naming them, we’ll call these methods <strong>multi-feature methods</strong>.</p>
 
 <p>The key difference between multi-feature methods and the methods above are that multi-feature methods generally rely on many more features of the text. While scores like Dale-Chall and SMOG rely on 2 or 3 different features of the text like the number of sentences and the complexity of each word, multi-feature methods
-rely on many more features, including grammatical analysis, named entity counts, and deep-learned features. 
+rely on many more features, including grammatical analysis, named entity counts, and deep-learned features.
 Due to the high number of features, these methods need to be trained on specific datasets, sometimes called a corpus. This allows them to be more specific to a particular type of text, like texts from the healthcare or legal industries, though <a href="https://en.wikipedia.org/wiki/Overfitting">overfitting</a> should be avoided.</p>
 
 <p>Training on specific corpuses can get around a lot of the downsides mentioned in the <a href="#word-lists">word lists</a> section. The lists can’t get too long; that complexity is handled by the algorithm.</p>
@@ -408,6 +415,7 @@ Due to the high number of features, these methods need to be trained on specific
 <h3 id="collins-thompson-callan-score">Collins-Thompson Callan Score</h3>
 
 <p>The Collins-Thompson-Callan score, introduced in 2004 in <a href="http://www.cs.cmu.edu/~callan/Papers/hlt04-kct.pdf">this paper</a>, outlined the basic gist of a multi-feature readability score algorithm:</p>
+
 <ul>
   <li>gather a specific corpus of texts. Since the authors of this paper wanted to make a readability score made for web pages, they found 550 documents, each marked to a certain reading level grade by the website authors.</li>
   <li>use a variant on a naive bayes classifier to predict the “class” (the reading grade level) based on the presence of certain words. Since each word in a document is considered without it’s surrounding context, i.e. one word at a time, the authors call it a unigram model.</li>
@@ -417,7 +425,7 @@ Due to the high number of features, these methods need to be trained on specific
 <h2 id="specific-target-audiences">Specific Target Audiences</h2>
 
 <p>All of the above readability scores try to target their output to the most people possible.
-However, not everyone struggles with reading comprehension for the same reasons. 
+However, not everyone struggles with reading comprehension for the same reasons.
 Grade school students have different challenges with reading than people who are learning english as a second or third language, and people with intellectual disabilities have different challenges than either of those groups.
 Lumping these groups together to try to predict a single readability score isn’t going to be the most accurate for the groups individually. The next few scores, despite using different methods (counts vs multi-feature), target one of these subpopulations.</p>
 
@@ -437,10 +445,10 @@ It’s based on the idea that English learners have more trouble with clusters o
 <h3 id="multi-feature-scores-for-efl-learners">Multi-Feature Scores for EFL Learners</h3>
 
 <p>The <a href="https://aclanthology.org/2020.nlptea-1.3/">LXPER Index 2.0</a> is a “text readability assessment model”, built to work for non-native language learners (specifically Korean), similarly
-to the McAlipne EFLAW score above. However, it’s specifically targeted at texts in “foreign English language training curriculums”. The reading levels are targeted to grade levels so that texts will properly challenge students and improve their language learning. Additionally, it takes into account that student’s primary interaction with the language they are learning is through the curriculum. 
+to the McAlipne EFLAW score above. However, it’s specifically targeted at texts in “foreign English language training curriculums”. The reading levels are targeted to grade levels so that texts will properly challenge students and improve their language learning. Additionally, it takes into account that student’s primary interaction with the language they are learning is through the curriculum.
 Word lists like Dale-Chall and other readability scores assume that the reader will have broad and diverse exposure to the target language, but foreign language learners not immersed in the language will have a much more limited exposure.</p>
 
-<p>This method is a <a href="#multi-feature-methods">multi-feature readability score</a>. Several dozen different text features, including many of the ones mentioned in other readability scores like average words per sentence and percentage of “complicated” words are all included, as well as more detailed features such as the average number of verb phrases and other grammatical structures in the text, the number of entities and lexical chains in the text, and the number of pre-graded vocabulary words. 
+<p>This method is a <a href="#multi-feature-methods">multi-feature readability score</a>. Several dozen different text features, including many of the ones mentioned in other readability scores like average words per sentence and percentage of “complicated” words are all included, as well as more detailed features such as the average number of verb phrases and other grammatical structures in the text, the number of entities and lexical chains in the text, and the number of pre-graded vocabulary words.
 All of these features are used in a logistic regression model, which is trained on pre-graded text samples.</p>
 
 <h3 id="intellectual-disabilities">Intellectual Disabilities</h3>
@@ -448,7 +456,7 @@ All of these features are used in a logistic regression model, which is trained 
 <p>Some more advanced scores attempt to find more features that are directly correlated
 to readability, like <a href="https://aclanthology.org/E09-1027/">Feng, Elhadad, and Huenerfauth</a>. Those authors focus on readability for people with intellectual disabilities, which gives some valuable insights into the actual process of readability that most readers subconsciously work with each time they read.</p>
 
-<p>Notable from the above paper is that entity density is important. Entity density is the number of things mentioned in a sentence, and how many times they were mentioned; essentially, how much your working memory is used when reading. 
+<p>Notable from the above paper is that entity density is important. Entity density is the number of things mentioned in a sentence, and how many times they were mentioned; essentially, how much your working memory is used when reading.
 Earlier studies with the intellectually disabled population showed that “these users are better at decoding words than at comprehending text meaning.” So reading longer words isn’t super hard, but trying to create a “cohesive representation of discourse” can be. They also found was that “texts designed for children may not always lead to accurate models of the readability of texts for other groups of low-literacy users”. That insight is important for readability scores in general: most were made specifically for children grade levels!</p>
 
 <h2 id="misc-readability-scores">Misc Readability scores</h2>
@@ -489,7 +497,7 @@ programming.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote
 
 <p>The final criteria has been tricky though: what the world needs. It was most certainly been a blind spot in
 my choice of career for a long time. I got some internships at Google in undergrad, and started researching and pursuing a Master’s Degree in the robotics,
-not because I thought the world really needed it, but because I liked the work. 
+not because I thought the world really needed it, but because I liked the work.
 Robotics has a real geometry and permanence to it that other software focuses like web design or databases lack, and still has some incredibly interesting and hard problems.</p>
 
 <p>However once I graduated with my Master’s, moved to Boston, and started working for a robotics startup, I had a bit more time on my hands. Slowly, I started feeling the itch of “what the world needs.”</p>
@@ -497,48 +505,48 @@ Robotics has a real geometry and permanence to it that other software focuses li
 <h2 id="robotics-and-what-the-world-needs">Robotics and What the World Needs</h2>
 
 <p>I always found robotics to be a morally strange field. There are red-herring moral arguments about “Terminator/Robot uprising” situations, but we’re still pretty far away from the general AI needed for a Terminator situation.
-“The robots are going to take our jobs” is another common refrain. It might be true, but there’s a chance that it’s overhyped and the amount of people displaced by robotic workers will be much lower than expected, at least in the near (10-20 year) future.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>
+“The robots are going to take our jobs” is another common refrain. It might be true, but there’s a chance that it’s over-hyped and the amount of people displaced by robotic workers will be much lower than expected, at least in the near (10-20 year) future.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>
 I’m not trying to determine if it’s true however, so let’s assume for now that it’s not.
 There are also more reasonable arguments, such as “Search and Rescue” projects just being “Search and Destroy,” a whole lot of surveillance issues, and, the biggest one to me, who do robots actually help?</p>
 
 <p>At this point it might be useful to take a step back, and note that this is all my subjective experience and opinion, and really only focused on my experience, not anyone else’s.</p>
 
-<p>What the world needs is a pretty philosophical, and usually political, question. It depends on what you mean by “the world,” on what you mean by “need,” and on the context to those two answers.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> 
+<p>What the world needs is a pretty philosophical, and usually political, question. It depends on what you mean by “the world,” on what you mean by “need,” and on the context to those two answers.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>
 In my opinion, “the world” shouldn’t mean the entire world, as untargeted reforms don’t seem to help many people,
 and not understanding enough about the context and the community that you’re trying to help means you won’t really help them at all.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup></p>
 
-<p>There’s enough info about <a href="https://web.stanford.edu/~chadj/IdeaPF.pdf">productivity from scientific research slowing down</a>, likely because we just have really hard problems now. 
-I don’t think I’m going to become the next Ada Lovelace or Alexander Fleming and invent something as world changing as the generalized programming or penicillin. 
+<p>There’s enough info about <a href="https://web.stanford.edu/~chadj/IdeaPF.pdf">productivity from scientific research slowing down</a>, likely because we just have really hard problems now.
+I don’t think I’m going to become the next Ada Lovelace or Alexander Fleming and invent something as world changing as the generalized programming or penicillin.
 So, it’s a much better bet to find a community, listen to their problems and try to understand those problems from their perspective.
-I also hold that most people will improve things for themselves if given the chance and ability. 
-The <a href="https://www.codeforamerica.org/news/filing-taxes-for-economic-justice/">Earned Income Tax Credit</a> is a good example of that. 
+I also hold that most people will improve things for themselves if given the chance and ability.
+The <a href="https://www.codeforamerica.org/news/filing-taxes-for-economic-justice/">Earned Income Tax Credit</a> is a good example of that.
 In short, I think that helping people help themselves is a good philosophy.</p>
 
 <p>For most robotic projects in industry, the answer to “who do these robots actually help” is <a href="https://harvardmagazine.com/2016/05/who-owns-the-robots-rules-the-world">the rich</a>.
 I tried to subvert that in a few ways. Over one summer, I designed a curriculum for a robotics class at a day camp for late elementary to early middle schoolers.
 While the program was reasonably successful (the instructor we hired to teach the class stayed on with the org running the camp to do more robotics classes), it didn’t satisfy me as much as I had hoped, partially because I wasn’t able to actually teach it. I imagine I’d feel more fulfilled if I had the opportunity to see the curriculum come to life in the classroom.</p>
 
-<p>I have also tried diving heavily into open source software. I was a maintainer with MoveIt for a while, and mentored a Google Summer of Code student for the project. 
-I had a general vision of software for most robots being free, or close to free. But even in a perfect world, where the software we wrote was easy to use and understand, was bug free, and had all of the features general people wanted, not just robotic specialists, who would actually have access to useful robots? 
-Even most robotic arms are tens of thousands of dollars, and while there’s some progress being made with <a href="https://www.berkeleyopenarms.org/">Berkeley’s Open Arms</a>, I don’t think there are good incentives for useful robots to be made at consumer level costs. 
+<p>I have also tried diving heavily into open source software. I was a maintainer with MoveIt for a while, and mentored a Google Summer of Code student for the project.
+I had a general vision of software for most robots being free, or close to free. But even in a perfect world, where the software we wrote was easy to use and understand, was bug free, and had all of the features general people wanted, not just robotic specialists, who would actually have access to useful robots?
+Even most robotic arms are tens of thousands of dollars, and while there’s some progress being made with <a href="https://www.berkeleyopenarms.org/">Berkeley’s Open Arms</a>, I don’t think there are good incentives for useful robots to be made at consumer level costs.
 This makes it difficult to justify to myself that robots can be used and controlled by the masses, and not just by the subset of people with the funds to own robots as capital.
 That might be fine with some people, but like I outlined above, it doesn’t align with what I would consider what the world needs.</p>
 
-<p>Like I mentioned earlier, I wrote this post only for myself; what sort of positions my skills and situation would lead me too. 
-To be clear, I think robotics can be a morally good field, and I would highly encourage anyone reading this to consider a career in robotics if you are interested. 
-There are applications in space travel like at <a href="https://www.nasa.gov/topics/technology/robotics/index.html">NASA</a> (or other orgs doing space travel that’s not rooted in a desire to escape earth), disaster technology, like the robots deployed to help with <a href="https://www.wired.com/story/fukushima-robot-cleanup/">Fukishima cleanup</a>, and wearables and exoskeletons (check out the <a href="https://biorob2020nyc.org/program/">BiRob2020 proceedings</a> if you’re interested in stuff like this). 
+<p>Like I mentioned earlier, I wrote this post only for myself; what sort of positions my skills and situation would lead me too.
+To be clear, I think robotics can be a morally good field, and I would highly encourage anyone reading this to consider a career in robotics if you are interested.
+There are applications in space travel like at <a href="https://www.nasa.gov/topics/technology/robotics/index.html">NASA</a> (or other orgs doing space travel that’s not rooted in a desire to escape earth), disaster technology, like the robots deployed to help with <a href="https://www.wired.com/story/fukushima-robot-cleanup/">Fukushima cleanup</a>, and wearables and exoskeletons (check out the <a href="https://biorob2020nyc.org/program/">BiRob2020 proceedings</a> if you’re interested in stuff like this).
 There are other robotic applications that focus on sustainability and food generation, but the line between allowing businesses to exploit workers and helping the world gets blurry, and, more importantly, there are plenty of other <a href="https://ironox.com/">capable people</a> in robotics working on those goals, so it’s not necessarily neglected.
-If you are interested in any of those above fields, I’d also encourage you to be aware of the effects, both positive and negative, that your work actually has. 
-If you’re in academia, see who’s citing you, and who’s using your open-source projects. 
-If you’re a practitioner, think about the effects your company and industry has on the rest of the world, and the communities around you. 
+If you are interested in any of those above fields, I’d also encourage you to be aware of the effects, both positive and negative, that your work actually has.
+If you’re in academia, see who’s citing you, and who’s using your open-source projects.
+If you’re a practitioner, think about the effects your company and industry has on the rest of the world, and the communities around you.
 Know how you’re perceived, and don’t brush it off as “they don’t understand.”
 Know that to fix societal issues, you <em>need</em> a <a href="https://medium.com/civic-tech-thoughts-from-joshdata/so-you-want-to-reform-democracy-7f3b1ef10597">deep understanding of those issues</a>.</p>
 
 <h2 id="whats-next">What’s Next</h2>
 
-<p>Where does that leave us? Staying in robotics really doesn’t seem to mesh philosophically with what I think is good for society, despite how much I like it. 
-It’s a hard situation, and I have a lot of trouble trying to explain to friends and colleagues why exactly I wanted to change careers. 
-It’s the main reason that I wrote this post. 
+<p>Where does that leave us? Staying in robotics really doesn’t seem to mesh philosophically with what I think is good for society, despite how much I like it.
+It’s a hard situation, and I have a lot of trouble trying to explain to friends and colleagues why exactly I wanted to change careers.
+It’s the main reason that I wrote this post.
 Robotics is hot right now, and will be for a long time.
 But “what the world needs” still dogged at me.</p>
 
@@ -547,7 +555,7 @@ But “what the world needs” still dogged at me.</p>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p>I heard about Ikigai from <a href="https://www.npr.org/2020/10/04/920080747/6-tips-for-making-a-career-change-from-someone-who-has-done-it">an episode</a> of NPR’s Lifekit. I really don’t know any of the cultural background of the term, or whether it’s actually a common way of thinking in Japan, but I like it, and feel like it applies to me. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>I heard about Ikigai from <a href="https://www.npr.org/2020/10/04/920080747/6-tips-for-making-a-career-change-from-someone-who-has-done-it">an episode</a> of NPR’s Life Kit. I really don’t know any of the cultural background of the term, or whether it’s actually a common way of thinking in Japan, but I like it, and feel like it applies to me. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:2" role="doc-endnote">
       <p>I may have been socially pressured to choose engineering; I group up in a very STEM-centric world, with a general “Engineering is the way” mentality. But I do like to think that I exercised a small amount of free will by choosing programming specifically. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
@@ -562,7 +570,7 @@ But “what the world needs” still dogged at me.</p>
       <p>A great example of this is the failed collaboration between Boston Public Schools and MIT to <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3333212">redesign the bus schedule</a>. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="civic" /><category term="career" /><summary type="html"><![CDATA[There’s an Japanese concept about one’s purpose in life called Ikigai.1 It’s built on four criteria: I heard about Ikigai from an episode of NPR’s Lifekit. I really don’t know any of the cultural background of the term, or whether it’s actually a common way of thinking in Japan, but I like it, and feel like it applies to me. &#8617;]]></summary></entry><entry><title type="html">Choosing New Colors for my Website</title><link href="https://brycestevenwilley.github.io/2020/09/choosing_colors" rel="alternate" type="text/html" title="Choosing New Colors for my Website" /><published>2020-09-30T21:50:49-04:00</published><updated>2020-09-30T21:50:49-04:00</updated><id>https://brycestevenwilley.github.io/2020/09/choosing_colors</id><content type="html" xml:base="https://brycestevenwilley.github.io/2020/09/choosing_colors"><![CDATA[<p>I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049 was
+</div>]]></content><author><name></name></author><category term="civic" /><category term="career" /><summary type="html"><![CDATA[There’s an Japanese concept about one’s purpose in life called Ikigai.1 It’s built on four criteria: I heard about Ikigai from an episode of NPR’s Life Kit. I really don’t know any of the cultural background of the term, or whether it’s actually a common way of thinking in Japan, but I like it, and feel like it applies to me. &#8617;]]></summary></entry><entry><title type="html">Choosing New Colors for my Website</title><link href="https://brycestevenwilley.github.io/2020/09/choosing_colors" rel="alternate" type="text/html" title="Choosing New Colors for my Website" /><published>2020-09-30T21:50:49-04:00</published><updated>2020-09-30T21:50:49-04:00</updated><id>https://brycestevenwilley.github.io/2020/09/choosing_colors</id><content type="html" xml:base="https://brycestevenwilley.github.io/2020/09/choosing_colors"><![CDATA[<p>I never quite understood how to use colors. I can appreciate them when used well; Blade Runner 2049 was
 my favorite movie for a while because of its striking palettes. La La Land still is my favorite for the same reason. But if you asked me
 to come up with my own palettes, I’d either be baffled, or would choose the loudest combinations you’ve seen.</p>
 
@@ -602,19 +610,19 @@ I first started deciding on colors to use in my ‘brand’ in some <a href="htt
   <li>“Colour palette could do better. Blue and yellow remind me of IKEA”</li>
 </ul>
 
-<p>At first I brushed it off for the same reasons: it’s my project, I can do what I want! And that’s a perfectly valid response! I could have just left it. 
+<p>At first I brushed it off for the same reasons: it’s my project, I can do what I want! And that’s a perfectly valid response! I could have just left it.
 But in the back of my head, I knew that I choose these colors knowing completely nothing about color theory, or even just the basics outside of RGB. I had no idea what HSV was, and my main color choosing method was the Material design website and fiddling with hex values.</p>
 
-<p>After coming across <a href="https://www.youtube.com/watch?v=FTKP0Y9MVus">several</a> 
+<p>After coming across <a href="https://www.youtube.com/watch?v=FTKP0Y9MVus">several</a>
   <a href="https://blog.datawrapper.de/beautifulcolors">great</a> <a href="https://blog.datawrapper.de/colorguide">articles</a> and <a href="https://www.youtube.com/watch?v=cPeqyGig0vQ">videos</a>,
 I got the motivation push to actually put some effort into my colors this time.</p>
 
 <h2 id="the-actual-work">The Actual Work</h2>
 
-<p>I wanted to keep the same amount of fun with my new color choice, while being a little easier to read and just a simge more serious. 
+<p>I wanted to keep the same amount of fun with my new color choice, while being a little easier to read and just a simge more serious.
 I found the idea of <a href="https://blog.datawrapper.de/colorguide/#4">copying palettes from Movies</a> particularly interesting, so I skipped through some movies/TV shows on Netflix to scenes I remembered being striking, and grabbed a few screenshots <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
-<p>I threw all of the screen shots into a collage, and was surprised with the results. I thought I had grabbed more scenes with blues in them, but the only one present was a scene from Neon Genisis: Evangelion.</p>
+<p>I threw all of the screen shots into a collage, and was surprised with the results. I thought I had grabbed more scenes with blues in them, but the only one present was a scene from Neon Genesis: Evangelion.</p>
 
 <p><img src="/assets/blogs/colors/film_collage.jpg" alt="A collage of screenshots from my favorite films" /></p>
 
@@ -643,7 +651,7 @@ But the direct sample from the image was <span style="color:#a5884f;">⬤</span>
   <li>A blue grey <span style="color:#d4e0e3;">⬤</span> background</li>
   <li>A green <span style="color:#367026;">⬤</span> and variant <span style="color:#000000;">⬤</span> for links (before and after visiting)</li>
   <li>A dark purple <span style="color:#3e154f;">⬤</span> for the nav bar and body text</li>
-  <li>A lighter fuscia <span style="color:#e4b8da;">⬤</span> for nav bar text</li>
+  <li>A lighter fuchsia <span style="color:#e4b8da;">⬤</span> for nav bar text</li>
 </ul>
 
 <p>I also made the header images grayscale to make them smaller (faster load times) and to blend better with the grey background.</p>

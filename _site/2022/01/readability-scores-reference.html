@@ -169,6 +169,7 @@ sometimes rounded to the closest whole number.</p>
 <p>Once you have a readability score, you have to verify that it is actually “correct”, that it predicts what it says it does.
 Most readability scores predict the grade level of a particular text, i.e. the earliest grade level at which you might expect a child to be able to read that text (which I do have some problems with, but that’s all in <a href="/2022/02/readability-scores-obs">the next post</a>).
 So, to verify the score most researchers do one of three things:</p>
+
 <ul>
   <li>grade texts using actual readers; if &gt; 50% of a sample of 4th graders can read and correctly answer comprehension questions about the text, then that text is considered to be at a 4th grade reading level. Researchers then adjust the readability scores until it scores those texts to also be at a 4th grade level.</li>
   <li>make experts (teachers, learning professionals, book publishers) guess the grade level of texts, and adjust the readability score until it matches the guesses</li>
@@ -176,6 +177,7 @@ So, to verify the score most researchers do one of three things:</p>
 </ul>
 
 <p>Since most of these scores are <em>equations</em>, here are definitions of some commonly used variables in the scores:</p>
+
 <ul>
   <li>$ words $ is the total number of words in the whole text</li>
   <li>$ sents $ is the total number of sentences in the whole text</li>
@@ -196,7 +198,7 @@ It was developed by Dr. Rudolf Flesch in the <a href="https://web.archive.org/we
 <p>Most readability scores around in the 40’s were intended for use with children.
 Teachers would use scores to decide if a text was the appropriate grade for a child: challenging but not disheartening. Flesch however developed his score to be used for adults. He tested it using the <a href="https://www.google.com/books/edition/Standard_Test_Lessons_in_Reading/DdCgAAAAMAAJ?hl=en&amp;gbpv=1&amp;printsec=frontcover">McCall-Crabbs Standard Test Lessons in Reading</a>, which were passages graded by how well sample groups of children answered comprehension questions at the end of each passage.</p>
 
-<p>Interestingly, at one point Flesh used the number of personal pronouns (I, you, etc.) and the number of affixes to words (“anti-“ in “antitoxin” and “-able” and “-ity” in “readability”) to compute the score. 
+<p>Interestingly, at one point Flesh used the number of personal pronouns (I, you, etc.) and the number of affixes to words (“anti-“ in “antitoxin” and “-able” and “-ity” in “readability”) to compute the score.
 However, the people computing the score on new texts disregarded those features and only computed sentence length.
 As a result, Flesch split the score into two parts, the one known today, and another one known as the “human interest” score, which focused on the number of personal pronouns.</p>
 
@@ -222,7 +224,7 @@ It was co-developed by Flesch and J. Peter Kincaid in the 70’s for the US Navy
 <p>Kincaid himself has some interesting thoughts on readability scores, particularly that they shouldn’t be over applied by writers, given how easy it is to game most of them.</p>
 
 <blockquote>
-  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones. 
+  <p>If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones.
 This kind of chopping will indeed lower the readability level, but it’s often counter­ productive.</p>
 
   <ul>
@@ -238,7 +240,7 @@ The score’s equation is:</p>
 
 \[0.4 \frac{words}{sents} + 100 \frac{complex\_words}{sents}\]
 
-<p>The output is the grade level of the text. 
+<p>The output is the grade level of the text.
 Complex words are words that have more than 3 syllables, not including several common syllables such as -ing.</p>
 
 <p>It requires a minimum of 100 words in the text when calculating the score.
@@ -309,6 +311,7 @@ Assuming that any word not on the list is considered to be a <em>hard word</em>,
 
 <p>These methods were generally used <em>before</em> the above counting methods were invented, and besides for Dale-Chall, they aren’t talked about much anymore.
 Some criticism of them were that:</p>
+
 <ul>
   <li>the lists were too long to use by hand, which is a valid argument in 1940. Reading through an 8 page list for every word in the text is very tiresome (though I can’t tell how long some of those word lists got to be). Nowadays, this argument is less useful, as there’s no meaningful performance difference on modern computers between doing O(N) set existence queries vs simple counts.</li>
   <li>the lists were very influenced by what materials the words were counted from. This is a valid point, and one that is still important today.</li>
@@ -317,13 +320,13 @@ Some criticism of them were that:</p>
 
 <h2 id="multi-feature-methods">Multi-feature Methods</h2>
 
-<p>It might stand out that all of the readability scores above were created a while back: the latest is the Flesch-Kincaid score, from 1975. 
-Computing power, especially with regards to text and natural language processing (NLP), has significantly increased since the 70’s, as has the prevalence of personal computers. 
+<p>It might stand out that all of the readability scores above were created a while back: the latest is the Flesch-Kincaid score, from 1975.
+Computing power, especially with regards to text and natural language processing (NLP), has significantly increased since the 70’s, as has the prevalence of personal computers.
 With the development of NLP as a field in artificial intelligence, new methods have been used to compute readability scores.
 For the purposes of naming them, we’ll call these methods <strong>multi-feature methods</strong>.</p>
 
 <p>The key difference between multi-feature methods and the methods above are that multi-feature methods generally rely on many more features of the text. While scores like Dale-Chall and SMOG rely on 2 or 3 different features of the text like the number of sentences and the complexity of each word, multi-feature methods
-rely on many more features, including grammatical analysis, named entity counts, and deep-learned features. 
+rely on many more features, including grammatical analysis, named entity counts, and deep-learned features.
 Due to the high number of features, these methods need to be trained on specific datasets, sometimes called a corpus. This allows them to be more specific to a particular type of text, like texts from the healthcare or legal industries, though <a href="https://en.wikipedia.org/wiki/Overfitting">overfitting</a> should be avoided.</p>
 
 <p>Training on specific corpuses can get around a lot of the downsides mentioned in the <a href="#word-lists">word lists</a> section. The lists can’t get too long; that complexity is handled by the algorithm.</p>
@@ -331,6 +334,7 @@ Due to the high number of features, these methods need to be trained on specific
 <h3 id="collins-thompson-callan-score">Collins-Thompson Callan Score</h3>
 
 <p>The Collins-Thompson-Callan score, introduced in 2004 in <a href="http://www.cs.cmu.edu/~callan/Papers/hlt04-kct.pdf">this paper</a>, outlined the basic gist of a multi-feature readability score algorithm:</p>
+
 <ul>
   <li>gather a specific corpus of texts. Since the authors of this paper wanted to make a readability score made for web pages, they found 550 documents, each marked to a certain reading level grade by the website authors.</li>
   <li>use a variant on a naive bayes classifier to predict the “class” (the reading grade level) based on the presence of certain words. Since each word in a document is considered without it’s surrounding context, i.e. one word at a time, the authors call it a unigram model.</li>
@@ -340,7 +344,7 @@ Due to the high number of features, these methods need to be trained on specific
 <h2 id="specific-target-audiences">Specific Target Audiences</h2>
 
 <p>All of the above readability scores try to target their output to the most people possible.
-However, not everyone struggles with reading comprehension for the same reasons. 
+However, not everyone struggles with reading comprehension for the same reasons.
 Grade school students have different challenges with reading than people who are learning english as a second or third language, and people with intellectual disabilities have different challenges than either of those groups.
 Lumping these groups together to try to predict a single readability score isn’t going to be the most accurate for the groups individually. The next few scores, despite using different methods (counts vs multi-feature), target one of these subpopulations.</p>
 
@@ -360,10 +364,10 @@ It’s based on the idea that English learners have more trouble with clusters o
 <h3 id="multi-feature-scores-for-efl-learners">Multi-Feature Scores for EFL Learners</h3>
 
 <p>The <a href="https://aclanthology.org/2020.nlptea-1.3/">LXPER Index 2.0</a> is a “text readability assessment model”, built to work for non-native language learners (specifically Korean), similarly
-to the McAlipne EFLAW score above. However, it’s specifically targeted at texts in “foreign English language training curriculums”. The reading levels are targeted to grade levels so that texts will properly challenge students and improve their language learning. Additionally, it takes into account that student’s primary interaction with the language they are learning is through the curriculum. 
+to the McAlipne EFLAW score above. However, it’s specifically targeted at texts in “foreign English language training curriculums”. The reading levels are targeted to grade levels so that texts will properly challenge students and improve their language learning. Additionally, it takes into account that student’s primary interaction with the language they are learning is through the curriculum.
 Word lists like Dale-Chall and other readability scores assume that the reader will have broad and diverse exposure to the target language, but foreign language learners not immersed in the language will have a much more limited exposure.</p>
 
-<p>This method is a <a href="#multi-feature-methods">multi-feature readability score</a>. Several dozen different text features, including many of the ones mentioned in other readability scores like average words per sentence and percentage of “complicated” words are all included, as well as more detailed features such as the average number of verb phrases and other grammatical structures in the text, the number of entities and lexical chains in the text, and the number of pre-graded vocabulary words. 
+<p>This method is a <a href="#multi-feature-methods">multi-feature readability score</a>. Several dozen different text features, including many of the ones mentioned in other readability scores like average words per sentence and percentage of “complicated” words are all included, as well as more detailed features such as the average number of verb phrases and other grammatical structures in the text, the number of entities and lexical chains in the text, and the number of pre-graded vocabulary words.
 All of these features are used in a logistic regression model, which is trained on pre-graded text samples.</p>
 
 <h3 id="intellectual-disabilities">Intellectual Disabilities</h3>
@@ -371,7 +375,7 @@ All of these features are used in a logistic regression model, which is trained 
 <p>Some more advanced scores attempt to find more features that are directly correlated
 to readability, like <a href="https://aclanthology.org/E09-1027/">Feng, Elhadad, and Huenerfauth</a>. Those authors focus on readability for people with intellectual disabilities, which gives some valuable insights into the actual process of readability that most readers subconsciously work with each time they read.</p>
 
-<p>Notable from the above paper is that entity density is important. Entity density is the number of things mentioned in a sentence, and how many times they were mentioned; essentially, how much your working memory is used when reading. 
+<p>Notable from the above paper is that entity density is important. Entity density is the number of things mentioned in a sentence, and how many times they were mentioned; essentially, how much your working memory is used when reading.
 Earlier studies with the intellectually disabled population showed that “these users are better at decoding words than at comprehending text meaning.” So reading longer words isn’t super hard, but trying to create a “cohesive representation of discourse” can be. They also found was that “texts designed for children may not always lead to accurate models of the readability of texts for other groups of low-literacy users”. That insight is important for readability scores in general: most were made specifically for children grade levels!</p>
 
 <h2 id="misc-readability-scores">Misc Readability scores</h2>

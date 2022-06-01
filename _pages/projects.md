@@ -19,7 +19,7 @@ Here are some of my current and past personal projects, both software and non-so
 * At [ITC 2022](https://www.lsc.gov/events/events/lscs-innovations-technology-conference) I partnered with [Quinten Steenhuis](https://www.nonprofittechy.com/), [Matt Newsted](https://www.illinoislegalaid.org/about/our-people/staff), and [Amanda Brown](https://lagniappelawlab.org/personnel/amanda-brown/) to talk about [our e-filing work](https://www.lsc.gov/2022-innovations-technology-conference-schedule)
 * At [docacon 2021](https://docacon.com/), I talked about my work with e-filing in docassemble [(slides)](/docacon-slides)
 
-## Software Projects 
+## Software Projects
 
 These are in reverse-chronological order (newest to oldest).
 
@@ -27,11 +27,10 @@ These are in reverse-chronological order (newest to oldest).
 
 I do a handful of smaller things that aren't worth making full repos or blogs for. Sometimes I'll tweet about them, and try to list them all here:
 
-* A [python script](https://gist.github.com/BryceStevenWilley/15782cdb064991d383df076cf947dd92) to find the furthest location within a given area from a Dunkin Donuts ([Tweetthread](https://twitter.com/wowitisbryce/status/1432094270224220172))
+* A [python script](https://gist.github.com/BryceStevenWilley/15782cdb064991d383df076cf947dd92) to find the furthest location within a given area from a Dunkin Donuts ([Tweet-thread](https://twitter.com/wowitisbryce/status/1432094270224220172))
 * A [python script](https://gist.github.com/BryceStevenWilley/45570af2138b744e8e28ec0fd7421345) that emails all of the participants of a Murder Mystery party who is guilty and who is innocent, so that
   everyone can play without someone knowing secret identity of the murder! Keeps a record of the emails sent later. It's useful for anything that needs to randomly and secretly assign roles to a group
   of people, without anyone knowing any one else's role.
-
 
 ### Visioning Texts
 
@@ -74,7 +73,7 @@ However, since I don't own a Rift, I had to [port the game to Mac][forest-repo]!
 
 ### Android Apps
 
-For earlier Hackathons, my teams and I made several android apps. They're all a little old,
+For earlier hackathons, my teams and I made several android apps. They're all a little old,
 so I don't know if they build for versions of android newer than L.
 
 * [Pacer][pacer-repo], an app that chooses music based on your running pace at the moment.
@@ -115,7 +114,7 @@ Some of my favorites are below, and you can also view the [entire collection](/i
       <div class="pictureBox">
         <div class="innerBox">
           <a href="{{ site.baseurl }}{{ image.path }}">
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="some dogs that were in BARC">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="a picture of a dogs from BARC">
           </a>
         </div>
       </div>

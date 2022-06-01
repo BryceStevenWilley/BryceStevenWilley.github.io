@@ -146,12 +146,12 @@ This post was originally a <a href="https://twitter.com/wowitisbryce/status/1515
 I've added more details and background explanations where possible, and rewritten it for the blog format.
 </aside>
 
-<p>I love solving random bugs on the internet! 
+<p>I love solving random bugs on the internet!
 Recently, I’ve gotten more comfortable with browser development tools.
-Sometimes I’ll be on a website and realize, “Hey, I can open this up and see how it works!” 
+Sometimes I’ll be on a website and realize, “Hey, I can open this up and see how it works!”
 As a result, I’ve had a lot of fun finding bugs on random websites and figuring out why they happen.</p>
 
-<p>This post’s target bug is getting the landing page demo of <a href="https://fpt.ai/tts">FPT’s text-to-speech service</a> to play a mashup of Notorious B.I.G’s “Juicy” and the xx’s “VCR”. I’ll walk through all of the steps I took, explaining each the best I can. 
+<p>This post’s target bug is getting the landing page demo of <a href="https://fpt.ai/tts">FPT’s text-to-speech service</a> to play a mashup of Notorious B.I.G’s “Juicy” and the xx’s “VCR”. I’ll walk through all of the steps I took, explaining each the best I can.
 You shouldn’t need to know Javascript or web technologies to follow along. As long as you know the general ideas of what a web page is (and that Javascript is just the code that handles interactions on a web page) you’ll be good.</p>
 
 <h2 id="how-i-found-the-site-in-the-first-place">How I found the site in the first place</h2>
@@ -174,6 +174,7 @@ To make flash cards for vocabulary, I need the Vietnamese word, its English tran
 <h2 id="mystery-1-why-biggie">Mystery 1: Why Biggie?</h2>
 
 <p>First thing I always do when something unexpected happens on a website is to go to the dev tools! The keyboard shortcut to get there in either Firefox or Chrome is F12 or Control-Shift-J. There’s a whole lot going on in browser dev tools, but we’re only going to need 3 tabs:</p>
+
 <ul>
   <li>Console: shows any logs from the webpage, let’s you type Javascript to run</li>
   <li>Debugger (called “Sources” in Chrome): shows you all of the page’s Javascript code</li>
@@ -184,7 +185,7 @@ To make flash cards for vocabulary, I need the Vietnamese word, its English tran
 
 <p><img src="/assets/biggie-tts/https-warning.png" alt="A console log line that says: &quot;Loading mixed (insecure) display content “http://kolber.github.io/audiojs/demos/mp3/juicy.mp3” on a secure page&quot;" /></p>
 
-<p>This warning tells us that the audio playing is being served over HTTP, not HTTPS. Decomposing the jargon, HTTP (which stands for HyperText Transfer Protocol) is what the web runs on. Any time you visit a page on a website, your browser uses HTTP to ask the website for that specific page, and the website uses HTTP to send the page back to you. 
+<p>This warning tells us that the audio playing is being served over HTTP, not HTTPS. Decomposing the jargon, HTTP (which stands for HyperText Transfer Protocol) is what the web runs on. Any time you visit a page on a website, your browser uses HTTP to ask the website for that specific page, and the website uses HTTP to send the page back to you.
 HTTPS uses asymmetric key encryption to keep those pages secret from any one in the middle who might be listening.</p>
 
 <aside>
@@ -225,13 +226,14 @@ code itself is playing it. To answer this, we’d need to be able to search thro
 
 <h2 id="mystery-2-why-dạ">Mystery 2: Why “dạ”</h2>
 
-<p>We aren’t quite done yet: why did the input “dạ” trigger the bug, but not anything else? To figure this out, click over to the “Network” tab of the dev tools. 
+<p>We aren’t quite done yet: why did the input “dạ” trigger the bug, but not anything else? To figure this out, click over to the “Network” tab of the dev tools.
 This tab lets you look at all of the information going between your browser and the website your visiting (or other sites).
 When you get to the tab, refresh the page, wait for everything to load, then click the Trash can icon (in Chrome it’s the 🚫 icon) to clear up all of the irrelevant requests. Then, copy “dạ” in, and click “Generate Audio”. You’ll get a few new requests pop up.</p>
 
 <p><img src="/assets/biggie-tts/network-firefox.png" alt="The network tab of Firefox. There are three network requests, one to `kolber.github.io`, one to `www.google.com`, and one to `demo.fpt.ai`" />.</p>
 
 <p>I have an ad blocker on my browser; without it you’ll probably see a few more requests going to tracking sites and Facebook. These are the important ones:</p>
+
 <ul>
   <li>a GET for the <code class="language-plaintext highlighter-rouge">juicy.mp3</code> that starts playing. From our previous sleuthing that, we know this happens immediately when the button is clicked.</li>
   <li>a POST to <code class="language-plaintext highlighter-rouge">www.google.com</code>. We can see that the initiator is <code class="language-plaintext highlighter-rouge">recaptcha__en.js</code>. <a href="https://developers.google.com/recaptcha/">reCAPTCHA</a> is the “I’m not a robot” checkbox you see on a lot of pages, and in this case is here to make sure that we’re not a bot taking advantage of FPT’s API without making an account first.</li>
