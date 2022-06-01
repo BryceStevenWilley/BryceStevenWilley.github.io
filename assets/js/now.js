@@ -53,8 +53,8 @@ function addLinkToEvent(url, linkText, titleElem) {
 fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
   .then(response => response.json())
   .then(function (j){
-    console.log('%o', j);
     resp = j[0];
+    console.log('%o', resp);
     let event_repo = document.querySelector('#event-repo');
     event_repo.textContent = resp.repo.name;
     const http_url = 'https://github.com/' + resp.repo.name;

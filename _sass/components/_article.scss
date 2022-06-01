@@ -21,6 +21,11 @@
     text-decoration: underline;
   }
 
+  /* TODO: maybe consider adding a different, more readable Atari font for h2 - h4. */
+  h1 {
+    @include ff--header(500);
+  }
+
   blockquote {
     margin-left: -2.2rem;
     width: calc(100% + 4.4rem);

@@ -5,15 +5,20 @@
 // Font families
 
 $base-font-size: 1.7rem;
-$on-palm:   535px !default;
+$on-palm:   600px !default;
 
 @mixin ff--sans-serif($font-weight: normal) {
-  font-family: 'Orbitron', sans-serif;
+  font-family: sans-serif;
   font-weight: $font-weight;
 }
 
 @mixin ff--mono($font-weight: normal) {
-  font-family: 'Orbitron', monospace;
+  font-family: monospace;
+  font-weight: $font-weight;
+}
+
+@mixin ff--header($font-weight: normal) {
+  font-family: 'Atari-Fancy37', sans-serif;
   font-weight: $font-weight;
 }
 

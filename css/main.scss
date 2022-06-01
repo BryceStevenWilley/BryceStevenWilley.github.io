@@ -27,8 +27,11 @@
 
 // Themes
 @import
-  'themes/blue';
+  'themes/theme';
 
 // Vendor
 @import
   'vendor/syntax-highlighting';
+
+@import
+  'custom_fonts';

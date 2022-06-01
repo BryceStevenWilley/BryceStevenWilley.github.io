@@ -32,7 +32,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-themeColor: 'blue' # green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /:year/:month/:title

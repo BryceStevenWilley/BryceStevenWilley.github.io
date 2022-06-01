@@ -12,7 +12,7 @@
 
 .c-header__title {
   position: relative;
-  @include ff--sans-serif(500);
+  @include ff--header(500);
   @include fs--title;
   color: $c__white;
 

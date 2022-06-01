@@ -32,4 +32,5 @@ I used to be a volunteer photographer at [BARC](http://www.houstontx.gov/barc/),
 
 This website is built using Jekyll, and the
 [base material theme](https://github.com/alexcarpenter/material-jekyll-theme) was made by [Alex Carpenter](https://alexcarpenter.me/).
+The header font is Atari-Fancy37, from [Eight Bit Atari Fonts](https://github.com/TheRobotFactory/EightBit-Atari-Fonts).
 The photos of me are from my friends [Yena Han](https://yenahan.squarespace.com) and [Grant Raun](https://www.grantraun.com).

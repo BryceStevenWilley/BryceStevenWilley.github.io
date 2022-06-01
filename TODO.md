@@ -5,11 +5,8 @@
   * One about my photo editing process for BARC (and currently)
   * use the presentation for 640
   * The Industrial Robotics talk into a post?
-  * Why I changed careers
 
-
-* Figure out the aria-required-child-element error:
-  * https://web.dev/aria-required-children/?utm_source=lighthouse&utm_medium=devtools
+* Figure out the [aria-required-child-element error](https://web.dev/aria-required-children/):
   * Happening in blogs where there are footnotes
   * I'm not the only one dealing with it in Jekyll, but the issue seems to be in Kramdown: https://github.com/jekyll/jekyll/issues/8625
     * the linked Kramdown one I think is wrong and won't fix it: need to check: https://github.com/gettalong/kramdown/pull/693
@@ -20,7 +17,6 @@
     * the actual code that runs the check in aXe core
   * https://www.w3.org/WAI/standards-guidelines/act/rules/aria-required-owned-element-bc4a75/#background claims that actually `doc-endnotes` has issues with their use of role inheritance and all have no required owned elements
   * might be the right one: https://github.com/gettalong/kramdown/pull/723
-
 
 * Deep dive on reading speed:
   * Is it really just 200 wpm? Does it vary based on reading level? Display? How much time do images add? Seems like there are deeper problems that no one talks about, and online calculators want to hide the complexity of

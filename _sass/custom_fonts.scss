@@ -1,47 +1,7 @@
-/*
-  'Orbitron'
-  https://www.theleagueofmoveabletype.com/orbitron
-  Copyright (c) 2009, Matt McInerney <matt@pixelspread.com>,
-  with Reserved Font Name: "Orbitron".
-  This Font Software is licensed under the SIL Open Font License, Version 1.1.
-  http://scripts.sil.org/OFL
-*/
-@font-face {
-  font-family: 'Orbitron';
-  font-weight: 300; /* Light */
-  src: url('../assets/Orbitron/webfonts/orbitron-light-webfont.eot');
-  src: url('../assets/Orbitron/webfonts/light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/Orbitron/webfonts/light-webfont.woff') format('woff'),
-       url('../assets/Orbitron/webfonts/light-webfont.ttf')  format('truetype'),
-       url('../assets/Orbitron/webfonts/light-webfont.svg#webfontZHiKantU') format('svg');
-}
 
 @font-face {
-  font-family: 'Orbitron';
-  font-weight: 500; /* Medium */
-  src: url('../assets/Orbitron/webfonts/medium-webfont.eot');
-  src: url('../assets/Orbitron/webfonts/medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/Orbitron/webfonts/medium-webfont.woff') format('woff'),
-       url('../assets/Orbitron/webfonts/medium-webfont.ttf')  format('truetype'),
-       url('../assets/Orbitron/webfonts/medium-webfont.svg#webfontD7xceb3L') format('svg');
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  font-weight: 700; /* Bold */
-  src: url('../assets/Orbitron/webfonts/bold-webfont.eot');
-  src: url('../assets/Orbitron/webfonts/bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/Orbitron/webfonts/bold-webfont.woff') format('woff'),
-       url('../assets/Orbitron/webfonts/bold-webfont.ttf')  format('truetype'),
-       url('../assets/Orbitron/webfonts/bold-webfont.svg#webfontMOSYtX6m') format('svg');
-}
-
-@font-face {
-  font-family: 'Orbitron';
-  font-weight: 900; /* Black */
-  src: url('../assets/Orbitron/webfonts/black-webfont.eot');
-  src: url('../assets/Orbitron/webfonts/black-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/Orbitron/webfonts/black-webfont.woff') format('woff'),
-       url('../assets/Orbitron/webfonts/black-webfont.ttf')  format('truetype'),
-       url('../assets/Orbitron/webfonts/black-webfont.svg#webfontqMYZ91Rj') format('svg');
+  font-family: 'Atari-Fancy37';
+  font-weight: 500;
+  src: url('../assets/EightBit-Atari-Fancy37/EightBit-Atari-Fancy37.woff') format('woff'),
+       url('../assets/EightBit-Atari-Fancy37/EightBit-Atari-Fancy37.ttf') format('truetype');
 }
