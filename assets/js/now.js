@@ -3,6 +3,13 @@ function addIndividualLines(textStr, toElem) {
   while(toElem.firstChild) {
     toElem.removeChild(toElem.firstChild);
   }
+
+  if (textStr === null || textStr === '') {
+    toElem.setAttribute('hidden', '');
+    return;
+  } else {
+    toElem.removeAttribute('hidden'); 
+  }
   
   let lines = textStr.split('\n');
 
@@ -62,13 +69,15 @@ fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
 
     let event_title = document.querySelector('#event-title');
     let event_desc = document.querySelector('#event-desc');
+    addIndividualLines('', event_desc);
     if (resp.type === 'PushEvent') {
       commit = resp.payload.commits[resp.payload.commits.length - 1];
       let url = http_url + '/commit/' + commit.sha; 
       addLinkToEvent(url, 'Pushed a commit', event_title); 
       addIndividualLines(commit.message, event_desc);
     } else if (resp.type === 'CreateEvent') {
-      addLinkToEvent(null, 'Created the ' + resp.payload.ref + ' ' + resp.payload.ref_type, event_title);
+      let url = http_url + '/tree/' + resp.payload.ref;
+      addLinkToEvent(url, 'Created the ' + resp.payload.ref + ' ' + resp.payload.ref_type, event_title);
     } else if (resp.type === 'DeleteEvent') {
       addLinkToEvent(null, 'Deleted the ' + resp.payload.ref + ' ' + resp.payload.ref_type, event_title);
     } else if (resp.type === 'ForkEvent') {

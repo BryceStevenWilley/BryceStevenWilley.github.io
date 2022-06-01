@@ -5,27 +5,25 @@ front-page: true
 permalink: /now/
 ---
 
-## What is this? 
+## What is this?
 
 It's a now page: what I'm focused on at the moment, both professionally and personally.
 It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated at least monthly.
 
-Last updated May 9th, 2022.
+Last updated June 1st, 2022.
 
 ## Professional
 
 ### Work Stuff
 
 Still at [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/), working on court form software.
-My main focus right now is to get our [efile-proxy](https://github.com/SuffolkLITLab/EfileProxyServer) (and corresponding [docassemble library](https://github.com/SuffolkLITLab/docassemble-EFSPIntegration)) ready for a 1.0 release. That means I need to review and redo CI for testing, documentation, and some final security audits.
+My main focus right now is to get our [efile-proxy](https://github.com/SuffolkLITLab/EfileProxyServer) (and corresponding [docassemble library](https://github.com/SuffolkLITLab/docassemble-EFSPIntegration)) ready for a 1.0 release. At this point it just means getting access to the production court software, so I'm polishing all that I can while we wait for that.
 
-It also means making sure that [docassemble](https://docassemble.org) and our guided interviews built on top of it are accessible. I've been reading up and using on a lot of accessibility standards and tools, and am starting to write a blog post about that experience.
+It also means making sure that [docassemble](https://docassemble.org) and our guided interviews built on top of it are accessible. I've done a lot of work there, and will likely do a full (non-expert) audit myself soon, and hopefully can finish my blog post about that experience.
 
 ### Latest Github Activity
-
-[//]: make an API call to see latest event and just display it
 
 <span id="if-updated"><span>
 
@@ -43,23 +41,26 @@ It also means making sure that [docassemble](https://docassemble.org) and our gu
 </li>
 </ul>
 
-
 ### Long Term Career Stuff
 
 My position at the LIT Lab is grant funded, and ends in Q3 2023, so I'll be
-looking for a new gig around then! I have a variety of different
-tech skill sets, and am not concerned about developing a few more, and am more interested in making sure
-that I work at a place [helps under-served communities help themselves]({% post_url 2021-06-20-new_job %}).
+looking for a new gig around then! I have a variety of different tech skill sets,
+and am not concerned about developing a few more. But I am more interested in making sure
+that I work at a place [helps under-served communities help themselves]({% post_url 2021-06-20-new_job %}),
+and developing the skills to do that well.
 
 ## Personal
 
 ### Doing
 
-Exploring [Mastodon/Fediverse](https://weirder.earth/@brycew/), trying to figure out a way to enjoy social media.
+Planning a wedding and trying to find a new apartment takes up most of my free time.
 
 ### Listening To
 
-Not listening to anything super deeply right now, but am listening to a lot of bangers.
+Listened to Kendrick Lamar's latest album, Mr. Morale and the Big Steppers, a few times, and thought about it a lot. It is a well-made
+album, I have a lot of conflicting thoughts about it, but it's definitely the first time in a while I've engaged with music this deeply.
+
+Have also been listening to a mix of 90's hip hop and some classic J-pop.
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -73,43 +74,50 @@ Not listening to anything super deeply right now, but am listening to a lot of b
   </thead>
   <tbody>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d0000485180c6db47e75d58e25b72f2ca" alt="The album cover for King Gizzard and the Lizard Wizard's Omnium Gatherum"></td>
-      <td>The Dripping Tap</td>
-      <td><a href="https://open.spotify.com/artist/6XYvaoDGE0VmRt83Jss9Sn?si=91b63edc20d34603">King Gizzard &amp; The Lizard Wizard</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d0000b273f30764d5fa1e439ad6a7742f" alt="The album cover for Kendrick Lamar's Mr. Morale and the Big Steppers"></td>
+      <td>United in Grief</td>
+      <td><a href="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg?si=s6Gj7qgcTx--9IcTL_Fr6w">Kendrick Lamar</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d0000b273f30764d5fa1e439ad6a7742f" alt="The album cover for Kendrick Lamar's Mr. Morale and the Big Steppers"></td>
+      <td>Mother I Sober (feat. Beth Gibbons of Portishead)</td>
+      <td><a href="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg?si=s6Gj7qgcTx--9IcTL_Fr6w">Kendrick Lamar</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851db09958534ac66f9a90d3cf7" alt="The album cover for The Notorious B.I.G.'s Ready to Die"></td>
+      <td>Things Done Changed - 2005 Remaster</td>
+      <td><a href="https://open.spotify.com/artist/5me0Irg2ANcsgc93uaYrpb?si=heSEOt8uSKaWxMmXb6Q6NQ">The Notorious B.I.G.</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851dc20397b139223620af148f6" alt="Album cover for Portishead's Dummy"></td>
+      <td>Mysterons</td>
+      <td><a href="https://open.spotify.com/artist/6liAMWkVf5LH7YR9yfFy1Y?si=IbNSGy1-Rrm7tnnOquk9UQ">Portishead</a></td>
+    </tr>
+    <tr>
+      <td><img src="https://i.scdn.co/image/ab67616d000048512deb0d919a11d1ef5e12daae" alt="The album cover for the Anri's Bi Ki Ni"></td>
+      <td>Good Bye Boogie Dance</td>
+      <td><a href="https://open.spotify.com/artist/0xGtOrmB2hnrNRLG3vhpSo?si=DYZNcoW8QSGuBNDX2ySr4g">Anri</a></td>
     </tr>
     <tr>
       <td><img src="https://i.scdn.co/image/ab67616d00004851d8041a531487d0e0e4cfb41f" alt="Album cover for Mitski's Laurel Hell"></td>
       <td>Love Me More</td>
       <td><a href="https://open.spotify.com/artist/2uYWxilOVlUdk4oV9DvwqK?si=8641909275fb4a83">Mitski</a></td>
     </tr>
-    <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d0000485122b9cdd0c4ce8cee5857f6a4" alt="The album cover for Tame Impala's The Slow Rush B-Sides and Remixes"></td>
-      <td>The Boat I Row</td>
-      <td><a href="https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb?si=bd2a61bbd9844fdf">Tame Impala</a></td>
-    </tr>
-    <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d00004851f7ffbe10773c3f572b532cab" alt="The album cover for dodie's Build A Problem"></td>
-      <td>Guiltless (Bonus)</td>
-      <td><a href="https://open.spotify.com/artist/21TinSsF5ytwsfdyz5VSVS?si=d148f531f33348a3">dodie</a></td>
-    </tr>
-    <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d00004851adc69b1d4a910591f079fb0b" alt="Album cover for King Gizzard's Fishing for Fishies"></td>
-      <td>Plastic Boogie</td>
-      <td><a href="https://open.spotify.com/artist/6XYvaoDGE0VmRt83Jss9Sn?si=51867452463c43a6">King Gizzard &amp; The Lizard Wizard</a></td>
-    </tr>
-    <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d000048514ab2520c2c77a1d66b9ee21d" alt="The album cover for the Weeknd's Dawn FM"></td>
-      <td>Sacrifice</td>
-      <td><a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ?si=420af17231784596">The Weeknd</a></td>
-    </tr>
   </tbody>
 </table>
 
-## Gaming
+### Gaming
 
-Currently playing through Red Dead Redemption 2. Not my normal type of game, but I'm
-going through a list of all of the great games I've heard about on PS4.
+Playing a lot of the new Mario Kart 8 Deluxe tracks. Ninja Hideaway is pretty fun.
 
-Played [minit](https://minitgame.com/) recently. It was pretty short, has a neat gimmick, and was fun for the length 
-(beat it in about 90 minutes with 58% completion).
+Playing through "It Takes Two" from Hazelight and EA with my fiance, and it's really good so far! The story is wacky, but
+the gameplay is a great balance, challenging but not frustrating.
 
+On and off playing through Red Dead Redemption 2. Parts can be fun, but hasn't hooked me enough to try to trudge through
+the story.
+
+### Watching
+
+The movie "Everything Everywhere All at Once" is a gem, go see it.
+
+Stranger Things 4 part 1 is really good, definitely got me excited for part 2 after not particularly loving season 3.
