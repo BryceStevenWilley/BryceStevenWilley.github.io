@@ -26,5 +26,3 @@
 * ~Add Analytics~:
   * Tried [Plasuible](https://github.com/plausible/analytics/), worked fine but it doesn't tell me much besides "ooh, numbers go up when post".  Could get
     more info, but would be creepy.
-
-* consider a cooler font for headers: https://github.com/TheRobotFactory/EightBit-Atari-Fonts
