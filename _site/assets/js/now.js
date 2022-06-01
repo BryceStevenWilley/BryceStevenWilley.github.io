@@ -53,8 +53,8 @@ function addLinkToEvent(url, linkText, titleElem) {
 fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
   .then(response => response.json())
   .then(function (j){
-    console.log('%o', j);
     resp = j[0];
+    console.log('%o', resp);
     let event_repo = document.querySelector('#event-repo');
     event_repo.textContent = resp.repo.name;
     const http_url = 'https://github.com/' + resp.repo.name;
@@ -63,8 +63,9 @@ fetch('https://api.github.com/users/brycestevenwilley/events?per_page=1')
     let event_title = document.querySelector('#event-title');
     let event_desc = document.querySelector('#event-desc');
     if (resp.type === 'PushEvent') {
-      event_title.textContent = 'Pushed a commit';
       commit = resp.payload.commits[resp.payload.commits.length - 1];
+      let url = http_url + '/commit/' + commit.sha; 
+      addLinkToEvent(url, 'Pushed a commit', event_title); 
       addIndividualLines(commit.message, event_desc);
     } else if (resp.type === 'CreateEvent') {
       addLinkToEvent(null, 'Created the ' + resp.payload.ref + ' ' + resp.payload.ref_type, event_title);
