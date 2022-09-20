@@ -12,15 +12,20 @@ It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated at least monthly.
 
-Last updated July 7th, 2022.
+Last updated September 19th, 2022.
 
 ## Professional
 
 ### Work Stuff
 
 Still at [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/), working on court form software.
-My main focus right now is to get our [efile-proxy](https://github.com/SuffolkLITLab/EfileProxyServer) (and corresponding [docassemble library](https://github.com/SuffolkLITLab/docassemble-EFSPIntegration)) ready for a 1.0 release. At this point it just means getting access to the production court software, so I'm polishing all that I can while we wait for that. It also means trying to get an API that makes sense in docassemble, a thing that I'm
-finding a bit difficult to do well.
+I'm pushing hard to make three user-facing [guided legal forms](https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/#our-work) e-fileable:
+* an [Appearance form in Illinois](https://github.com/SuffolkLITLab/docassemble-AppearanceEfile), working with [Illinois Legal Aid Online](https://www.illinoislegalaid.org/),
+* a [Motion to Stay Eviction](https://github.com/SuffolkLITLab/docassemble-MotionToStayEviction/tree/new_efiling) for the Massachusetts Appeals Court, and
+* the Massachusetts [Affidavit of Indigency Supplement](https://github.com/SuffolkLITLab/docassemble-AffidavitOfIndigencySupplement/pull/46)
+  * this form also has me working a lot with our [income question library](https://github.com/SuffolkLITLab/docassemble-ALToolbox/blob/main/docassemble/ALToolbox/al_income.py), improving our API and reusable questions there
+
+There's nothing between us and the release, so I'm trying to make sure these webapps are polished and [helpful to users](https://suffolklitlab.org/legal-tech-class/docs/legal-tech-overview/maturity-model/#quick-summary) before they get put out into the real world.
 
 Trying to find time to start implementing our "LIT Styler" tool, which will put into effect a lot of thinking I've already done about form "completion ease" and readability.
 
@@ -56,12 +61,12 @@ and developing the skills to do that well (like partnership building).
 
 ### Doing
 
-Planning a wedding and getting ready to move apartments takes up most of my free time. Took a week long vacation that was just vacation, not
-traveling to see family or anything, and it was pretty fun.
+Planning a wedding and unpacking my new apartment takes up most of my free time. Starting to run, training for
+a half-marathon for the first time in ~5 or so years.
 
 ### Listening To
 
-Have shifted hard into jazz/jazz-fusion and vaporwave/future-funk recently. Sometimes you just need some bops
+Listening to whatever I want to, nothing directed really.
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -76,51 +81,49 @@ Have shifted hard into jazz/jazz-fusion and vaporwave/future-funk recently. Some
   <tbody>
     <tr>Lets Play
       <td><img src="https://f4.bcbits.com/img/a1046494527_7.jpg" alt="The album cover for 8-bit & The Single Player's " height="71" width="71"></td>
-      <td>Perplexing Pool (from "Pikmin 2")</td>
-      <td><a href="https://8bitmt.bandcamp.com/track/perplexing-pool-from-pikmin-2">8-bit & The Single Players</a></td>
+      <td>Crashed Ship Frigate Orpheon (from "Metroid Prime")</td>
+      <td><a href="https://8bitmt.bandcamp.com/track/crashed-ship-frigate-orpheon-from-metroid-prime">8-bit & The Single Players</a></td>
     </tr>
     <tr>
-      <td><img src="https://f4.bcbits.com/img/a1957926096_7.jpg" alt="The album cover for Macroblank's 痛みの永遠" height="71" width="71"></td>
-      <td>あなたを許すのは難しい</td>
-      <td><a href="https://macroblank.bandcamp.com/track/--302">Macroblank</a></td>
+      <td><img src="https://f4.bcbits.com/img/a2759567734_16.jpg" alt="The album cover for Scruffy's Animal Crossing: Taking Root" height="71" width="71"></td>
+      <td>11 AM</td>
+      <td><a href="https://scruffymusic.bandcamp.com/track/11-am">Scruffy</a></td>
     </tr>
     <tr>
-      <td><img src="https://f4.bcbits.com/img/a4170428978_16.jpg" alt="The album cover for Neoncity Records' Neoncity Cruise" height="71" width="71"></td>
-      <td>Big City Nights</td>
-      <td><a href="https://neoncityrecords.bandcamp.com/track/macross-82-99-big-city-nights">Macross 82-99</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00001e02ae2b34857b6576ed82dcb1b8" alt="The album cover for Pond's 9 (Deluxe Edition)" height="71" width="71"></td>
+      <td>Hang a Cross on Me</td>
+      <td><a href="https://open.spotify.com/album/1OPNyMf1xQGDLE1PEwdkgs">Pond, Cowboy John</a></td>
     </tr>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d00004851648478cb25e3e302454e40e1" alt="Album cover for CASIOPEA's CASIOPEA"></td>
-      <td>スワロー</td>
-      <td><a href="https://open.spotify.com/artist/0lRXEutklZUeNdWIJA1NI0">CASIOPEA</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00001e028364d54057a38c8a10a95a57" alt="Ugly Side Up's This is a Robbery" height="71" width="71"></td>
+      <td>Does Everyone Always Feel Like This?</td>
+      <td><a href="https://open.spotify.com/album/3UtNxdx6R4pd75O5XjRF0f">Ugly Side Up</a></td>
     </tr>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d0000485153d13c60cbf8496025e414e8" alt="The album cover for the Tsegue-Maryam Guebrou's Ethiopiques, vol. 21: Emahoy (Piano Solo)"></td>
-      <td>The Homeless Wanderer</td>
-      <td><a href="https://open.spotify.com/album/4OYhJgrDTR74Yo4SE8Exdk">Tsegue-Maryam Guebrou</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d000048516d0a13a643d83342430c07da" alt="The album cover for the Mumford & Sons' Sigh No More" height="71" width="71"></td>
+      <td>Little Lion Man</td>
+      <td><a href="https://open.spotify.com/album/6w5W6ZGTvDsppKUOiGMuMo">Mumford & Sons</a></td>
     </tr>
     <tr>
-      <td><img src="https://www.sputnikmusic.com/images/albums/144523.jpg" alt="Album cover for Chuck Person's Eccojams Vol. 1" height="71" width="71"></td>
-      <td>Eccojams B4</td>
-      <td><a href="https://www.youtube.com/watch?v=unN7QvSWSTo&t=2613s">Chuck Person</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d0000485180c6db47e75d58e25b72f2ca" alt="Album cover for King Gizzard & the Lizzard Wizard's Omnium Gatherum" height="71" width="71"></td>
+      <td>Magenta Mountain</td>
+      <td><a href="https://open.spotify.com/album/4tuqA7qbVsPukqsYPPrcF7">King Gizzard & the Lizard Wizard</a></td>
     </tr>
   </tbody>
 </table>
 
 ### Gaming
 
-Slowly making my way through the [Bundle for Ukraine](https://itch.io/b/1316/bundle-for-ukraine) that I snagged a few months ago.
-Some favorites that I've tried so far:
+Replayed some of Hades while I was mid-move and had most of my consoles packed up. It's just as fun to replay every now and then IMO.
 
-* [Speed Dating for Ghosts](https://copychaser.itch.io/speeddatingforghosts): really well written, funny but surprisingly poignant
-* [BOTOLO](https://auren-snyder.itch.io/botolo): an interesting multiplayer game with great visuals. The single player AI is pretty good too (or I just suck, who knows)
-* [Baba Is You](https://hempuli.itch.io/baba): deserves it's acclaim, it's hard, but not too hard, and the logic system is just really fun to play around with
+Making my way through Bloodbourne, which is my first From Software game. Very hard, but very rewarding, and loving the aesthetics and lore so far.
 
 ### Watching
 
-Stranger Things 4 overall is great IMO. Corny at times, but it's Stranger Things, what are you expecting?
-
-Watchmen (2019) is a great little series if you enjoyed the comic.
-
-Currently watching The West Wing for the first time, it's super well written and funny, but the serious parts are just
+Slowly continuing The West Wing, it's super well written and funny, but the serious parts are just
 too pompous and make me laugh every time.
+
+Started High School Musical: The Musical: The Series. To prepare, I had to watch all 3 High School Musicals, and while the first two are
+pretty good for what they are, 3 didn't bother to add a script, it's just some good songs and dances.
+
+HMSTMTS is surprisingly funny though, and (dare I say) more cleverly written than its predecessors.
