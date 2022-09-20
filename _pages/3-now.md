@@ -64,6 +64,14 @@ and developing the skills to do that well (like partnership building).
 Planning a wedding and unpacking my new apartment takes up most of my free time. Starting to run, training for
 a half-marathon for the first time in ~5 or so years.
 
+Have been playing around with Stable Diffusion locally, using the 16 bit floating point model (I don't have a big
+enough GPU for the full sized thing). Not sure what my ultimate goal is, but likely just for personal use.
+My favorite image generated so far: 
+
+> Mario and Luigi dancing in High School Musical 2. Photograph
+
+<img alt="An AI-generated image of a human-sized Mario in green overalls dancing on what seems to be a high school theatre set, with extras in the background. Legs and hands point in clearly the wrong directions" src="../assets/1008.jpeg">
+
 ### Listening To
 
 Listening to whatever I want to, nothing directed really.
