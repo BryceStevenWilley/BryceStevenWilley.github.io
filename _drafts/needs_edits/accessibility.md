@@ -19,7 +19,7 @@ of people (who's population size would likely surprise you) that _can't_ interac
 
 Accessibility, sometimes shortened to a11y (because there are 11 letters between the starting 'a' and ending 'y'), is making technology flexible enough to be interacted with any way. That's it. The hard part is in the details of what that means though.
 
-![Illustration with labeled graphics of boxes, content, and people. At the top center is a pie chart, an image, a form, and text, labeled “content”. coming up from the bottom left, a line connects “developers” through “authoring tools” and “evaluation tools” to “content” at the top. coming up from the bottom right, a line connects “users” to “browsers, media players” and “assistive technologies” to “content” at the top.](/assets/accessibility/relate.png)
+![Illustration with labeled graphics of boxes, content, and people. At the top center is a pie chart, an image, a form, and text, labeled “content”. coming up from the bottom left, a line connects “developers” through “authoring tools” and “evaluation tools” to “content” at the top. coming up from the bottom right, a line connects “users” to “browsers, media players” and “assistive technologies” to “content” at the top.](/assets/blogs/accessibility/relate.png)
 
 Web accessibility is a bit more focused; to view web content (say, this blog post), you're probably using a web browser like Chrome or Firefox. However people also use other software, called assistive technologies or "user agents" in the standards, to help them view the content. Those technologies range from things like screen readers, Braille displays, and [auto-captioning tools](https://blog.google/products/android/live-caption/), to eye trackers, voice recognition, and on-screen keyboards.
 These assistive technologies use the accessibility interface exposed by operating systems
@@ -52,7 +52,11 @@ WCAG are the standards themselves, the bible. Though, you probably shouldn't sta
 
 There are several versions of WCAG. You should probably use the latest, but it helps to understand that each version expanded to incorporate the technologies of the time it was written and new groups of people with disabilities. For example, WCAG 2.0 came out in 2008 (think early Youtube and Facebook years), so it emphasizes "dynamic Web pages... including 'pages' that can present entire virtual interactive communities." WCAG 2.1 came out in 2018, so the technical focus is on mobile devices, but also emphasizes cognitive disabilities and low vision. There's some ongoing (as of May 2022) work on a WCAG 3.0, which focuses much more on user-centered research and testing, but isn't quite finished yet.
 
-You'll also see A, AA, and AAA. These are conformance levels. I like to think of them as mission rankings in Sonic. [sonic screenshot here](). Essentially, WCAG is broken up into individual testable statements, and how hard it's considered to do what those statements say is the grade: A for the easiest, and AAA for the more difficult ones. WCAG itself says that <q>it is not possible to satisfy all Level AAA Success Criteria for some content</q>.
+You'll also see A, AA, and AAA. These are conformance levels. I like to think of them as mission rankings in Sonic.
+
+![A screenshot of a sonic level, with an "A" rank](/assets/blogs/accessibility/SonicAdventure2_DC_ResultsScreen.png)
+
+Essentially, WCAG is broken up into individual testable statements, and how hard it's considered to do what those statements say is the grade: A for the easiest, and AAA for the more difficult ones. WCAG itself says that <q>it is not possible to satisfy all Level AAA Success Criteria for some content</q>.
 
 The documents that you'll be referencing a lot are:
 
@@ -62,10 +66,10 @@ The documents that you'll be referencing a lot are:
 <aside>
 If you're in the US, you may also come across Section 508. Section 508 is a law for federal orgs and orgs receiving federal funding. While WCAG is only a "recommendation" from
 W3C, i.e. "if you create content on the web, you should do this", Section 508 is a law, and specifically requires you to conform or face consequences.
-However, a recent update to Section 508 [explicitly links the two together](https://www.access-board.gov/ict/#E207.2):
+However, a recent update to Section 508 <a href="https://www.access-board.gov/ict/#E207.2">explicitly links the two together</a>:
 <boxquote cite="https://www.access-board.gov/ict/#E207.2">User interface components, as well as the content of platforms and applications, shall
 conform to Level A and Level AA Success Criteria and Conformance requirements in WCAG 2.0</boxquote>
-In my non expert opinion, parts of section 508 ([501.1 specifically](https://www.access-board.gov/ict/#501.1)) seem to imply that there are additional 
+In my non expert opinion, parts of section 508 (<a href="https://www.access-board.gov/ict/#501.1">501.1 specifically</a> ) seem to imply that there are additional
 requirements for software in the law beyond WCAG 2.0, but it's not clear, i.e. WCAG is necessary but might not sufficient.
 </aside>
 
@@ -82,7 +86,7 @@ ARIA has 3 key parts: roles, states and properties.
 
 Roles let you literally apply HTML element semantics to completely different elements. For example, you can include `<div role="paragraph">` in a
 page, and the accessibility interface to the page will treat it like it was a `<p>` instead. Sometimes ARIA roles lets you be more specific than existing
-HTML elements (like with `role="tree"`, or TODO), but the idea is the same. In fact, the existence of ARIA is supposed to encourage the development
+HTML elements (like with `role="tree"`, or TODO(brycew)), but the idea is the same. In fact, the existence of ARIA is supposed to encourage the development
 of new, more semantic host language features. Once a role is assigned to an element, it cannot be changed: you have to instead delete the whole element
 from the DOM and create a new one with the role that you want it to have.
 
@@ -92,7 +96,7 @@ the main idea is that states are things that are expected to change often, and p
 properties can change more than states, so the distinction is sometimes ignored.
 
 An important aspect of properties is that they set the accessible names for elements, using `aria-label`, `aria-labelledby`, and `aria-describedby`.
-TODO: more description here.
+TODO(brycew): more description here.
 
 If you aren't writing full widgets yourself, the most useful thing to know about ARIA is just the terms and general idea. You'll likely run into it when doing automated a11y audits, if another developer didn't follow the rules for roles and states correctly. For example, if an automated accessibility checker
 sends you to the Deque University site for an [issues with the presentation role](https://dequeuniversity.com/rules/axe/4.4/presentation-role-conflict), or an
@@ -131,14 +135,13 @@ did something wrong off authors, but doesn't remove the need for a person to mak
 
 ## Start Manually
 
-A thing that I did when starting out (and that I'd recommend) is to use a browser extension to check for accessibility issues. 
-I suggest it because it gets you more intimately familiar with WCAG violations than an automated tool; you get the error (and most tools will 
+A thing that I did when starting out (and that I'd recommend) is to use a browser extension to check for accessibility issues.
+I suggest it because it gets you more intimately familiar with WCAG violations than an automated tool; you get the error (and most tools will
 point out the element to you on the screen as well), you can see and interact with
 the element and page right in front of you, and you can also inspect element to try out fixes quickly without having to reload the page.
 
-I started out with
-https://squizlabs.github.io/HTML_CodeSniffer/ is a very lightweight bookmarklet (meaning you don't have to install an extension, you just click on a browser bookmark while on a page), but it can be wrong, and not recognize that things like `display: none` take elements out of the accessibility tree. I haven't used 
-[WAVE](https://wave.webaim.org/) as much but it's very snazzy and seems to not fall for the same fall positives that Code Sniffer does.
+I started out with [HTML CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/), a very lightweight bookmarklet (meaning you don't have to install an extension, you just click on a browser bookmark while on a page). However, I ran into several issues where CodeSniffer was wrong; it didn't recognize that CSS like `display: none` takes elements out of the accessibility tree.
+I haven't used [WAVE](https://wave.webaim.org/) as much but it's very snazzy and seems to not fall for the same fall positives that Code Sniffer does.
 
 ## Move to an automated checker
 
@@ -148,6 +151,8 @@ take a list of pages and an option to crawl each page for other links. Docassemb
 testing ALKiln framework already knows how to progress through a docassemble interview, and all we need to do is to add a step that says to "check the page for accessibility issues".
 
 ## A full audit
+
+TL;DR: a full audit is much more intensive than automated checks, and involve going through each of WCAG's 77 success criteria manually over most of the site.
 
 ### WCAG-EM
 
@@ -176,31 +181,33 @@ You should get the types of web pages, their functionality, and web technologies
 
 #### Select a representative sample
 
-TODO: continue [here](https://www.w3.org/TR/WCAG-EM/#expertise).
-
+TODO(brycew): continue [here](https://www.w3.org/TR/WCAG-EM/#expertise).
 
 
 ### Actually Doing the Audit
 
 You have several options here:
 
-* https://www.w3.org/WAI/eval/report-tool/
-* https://www.a11yproject.com/checklist/
-* https://web.dev/how-to-review/
-* https://not-checklist.intopia.digital/
+* [WAI Report generating tool](https://www.w3.org/WAI/eval/report-tool/)
+* [The A11y Project's checklist](https://www.a11yproject.com/checklist/)
+* [Web.dev's how to do an accessibility review document](https://web.dev/how-to-review/)
+* [An accessibility 'Not-Checklist'](https://not-checklist.intopia.digital/)
 
 ## Writing resources
 
-* https://www.w3.org/TR/WCAG21/#parsing
-* https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=111
-* https://www.w3.org/TR/accname/
-* https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/#intro
-* https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/examples/
-* https://www.w3.org/WAI/WCAG21/Techniques/failures/F3.html
-* https://www.w3.org/WAI/WCAG21/Techniques/html/H32
-* https://www.w3.org/WAI/WCAG21/Techniques/html/H91
-* https://www.w3.org/WAI/WCAG21/Techniques/general/G164.html
-* https://www.w3.org/WAI/WCAG21/Techniques/failures/F40
-* https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable
-* https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4
-* https://www.w3.org/WAI/WCAG21/Techniques/failures/F92
+* [Parsing](https://www.w3.org/TR/WCAG21/#parsing)
+* [Quickref](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=111)
+* [Accessible Names](https://www.w3.org/TR/accname/)
+* [ARIA Practices: Intro](https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/#intro)
+* [ARIA Practices: examples](https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/examples/)
+* [Timing Adjustable](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable)
+
+### WCAG Techinques
+
+* [F3 Failure](https://www.w3.org/WAI/WCAG21/Techniques/failures/F3.html)
+* [H32](https://www.w3.org/WAI/WCAG21/Techniques/html/H32)
+* [H91](https://www.w3.org/WAI/WCAG21/Techniques/html/H91)
+* [G164](https://www.w3.org/WAI/WCAG21/Techniques/general/G164.html)
+* [Failure F40](https://www.w3.org/WAI/WCAG21/Techniques/failures/F40)
+* [ARIA4](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4)
+* [Failure F92](https://www.w3.org/WAI/WCAG21/Techniques/failures/F92)
