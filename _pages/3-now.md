@@ -12,7 +12,7 @@ It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated at least monthly.
 
-Last updated September 19th, 2022.
+Last updated October 29th, 2022.
 
 ## Professional
 
@@ -25,9 +25,11 @@ I'm pushing hard to make three user-facing [guided legal forms](https://suffolkl
 * the Massachusetts [Affidavit of Indigency Supplement](https://github.com/SuffolkLITLab/docassemble-AffidavitOfIndigencySupplement/pull/46)
   * this form also has me working a lot with our [income question library](https://github.com/SuffolkLITLab/docassemble-ALToolbox/blob/main/docassemble/ALToolbox/al_income.py), improving our API and reusable questions there
 
-There's nothing between us and the release, so I'm trying to make sure these webapps are polished and [helpful to users](https://suffolklitlab.org/legal-tech-class/docs/legal-tech-overview/maturity-model/#quick-summary) before they get put out into the real world.
+I've also done some more accessibility work: I improved the [accessibility of docassemble's combobox](https://github.com/jhpyle/docassemble/pull/581), and I've also started guiding some [Suffolk Law students](https://suffolklitlab.org/courses/fellows/) in putting together a full WCAG 2.1 audit of our docassemble systems, which is exciting.
 
-Trying to find time to start implementing our "LIT Styler" tool, which will put into effect a lot of thinking I've already done about form "completion ease" and readability.
+<!--There's nothing between us and the release, so I'm trying to make sure these webapps are polished and [helpful to users](https://suffolklitlab.org/legal-tech-class/docs/legal-tech-overview/maturity-model/#quick-summary) before they get put out into the real world.-->
+
+<!--Trying to find time to start implementing our "LIT Styler" tool, which will put into effect a lot of thinking I've already done about form "completion ease" and readability.-->
 
 <!-- It also means making sure that [docassemble](https://docassemble.org) and our guided interviews built on top of it are accessible. I've done a lot of work there, and will likely do a full (non-expert) audit myself soon, and hopefully can finish my blog post about that experience. -->
 
@@ -61,20 +63,12 @@ and developing the skills to do that well (like partnership building).
 
 ### Doing
 
-Planning a wedding and unpacking my new apartment takes up most of my free time. Starting to run, training for
-a half-marathon for the first time in ~5 or so years.
-
-Have been playing around with Stable Diffusion locally, using the 16 bit floating point model (I don't have a big
-enough GPU for the full sized thing). Not sure what my ultimate goal is, but likely just for personal use.
-My favorite image generated so far: 
-
-> Mario and Luigi dancing in High School Musical 2. Photograph
-
-<img alt="An AI-generated image of a human-sized Mario in green overalls dancing on what seems to be a high school theatre set, with extras in the background. Legs and hands point in clearly the wrong directions" src="../assets/1008.jpeg">
+Planning a wedding and holiday traveling takes up most of my free time. I did play around with docsets a bit, and [made one for docassemble](https://brycewilley.xyz/assets/Docassemble.xml). I also [tweeted about it](https://twitter.com/wowitisbryce/status/1579576617198059520) because Personal Branding.
 
 ### Listening To
 
 Listening to whatever I want to, nothing directed really.
+In a spooky mood, because I'm playing [Bloodborne](#gaming).
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -87,51 +81,50 @@ Listening to whatever I want to, nothing directed really.
     </tr>
   </thead>
   <tbody>
-    <tr>Lets Play
-      <td><img src="https://f4.bcbits.com/img/a1046494527_7.jpg" alt="The album cover for 8-bit & The Single Player's " height="71" width="71"></td>
-      <td>Crashed Ship Frigate Orpheon (from "Metroid Prime")</td>
-      <td><a href="https://8bitmt.bandcamp.com/track/crashed-ship-frigate-orpheon-from-metroid-prime">8-bit & The Single Players</a></td>
+    <tr>
+      <td><img src="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14" alt="The album cover for SIE Sound Team's Bloodborne Original Soundtrack" height="71" width="71"></td>
+      <td>Cleric Beast</td>
+      <td><a href="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14">SIE Sound Team</a></td>
     </tr>
     <tr>
-      <td><img src="https://f4.bcbits.com/img/a2759567734_16.jpg" alt="The album cover for Scruffy's Animal Crossing: Taking Root" height="71" width="71"></td>
-      <td>11 AM</td>
-      <td><a href="https://scruffymusic.bandcamp.com/track/11-am">Scruffy</a></td>
+      <td><img src="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14" alt="The album cover for SIE Sound Team's Bloodborne Original Soundtrack" height="71" width="71"></td>
+      <td>Darkbeast</td>
+      <td><a href="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14">SIE Sound Team</a></td>
     </tr>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d00001e02ae2b34857b6576ed82dcb1b8" alt="The album cover for Pond's 9 (Deluxe Edition)" height="71" width="71"></td>
-      <td>Hang a Cross on Me</td>
-      <td><a href="https://open.spotify.com/album/1OPNyMf1xQGDLE1PEwdkgs">Pond, Cowboy John</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851912cc8fe2e9a53d328757a41" alt="The album cover for Nujabes's Modal Soul" height="71" width="71"></td>
+      <td>World's end Rhapsody</td>
+      <td><a href="https://open.spotify.com/album/6nVACH6a27eOWiumAJhDWS?si=f51f44a9275141e0">Nujabes</a></td>
     </tr>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d00001e028364d54057a38c8a10a95a57" alt="Ugly Side Up's This is a Robbery" height="71" width="71"></td>
-      <td>Does Everyone Always Feel Like This?</td>
-      <td><a href="https://open.spotify.com/album/3UtNxdx6R4pd75O5XjRF0f">Ugly Side Up</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851b0a48655a55e6d5b499e3d92" alt="The album cover for Alvvays's Antisocialites" height="71" width="71"></td>
+      <td>Saved By A Waif</td>
+      <td><a href="https://open.spotify.com/album/7CCwkPweMxKq8yWkVerH6T?si=f2be9f43744e4c6a">Alvvays</a></td>
     </tr>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d000048516d0a13a643d83342430c07da" alt="The album cover for the Mumford & Sons' Sigh No More" height="71" width="71"></td>
-      <td>Little Lion Man</td>
-      <td><a href="https://open.spotify.com/album/6w5W6ZGTvDsppKUOiGMuMo">Mumford & Sons</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851fda889bb57058a4a1b88edcd" alt="The album cover for the Gorillaz' New Gold Single" height="71" width="71"></td>
+      <td>New Gold (feat. Tame Impala and Bootie Brown)</td>
+      <td><a href="https://open.spotify.com/track/64dLd6rVqDLtkXFYrEUHIU?si=2a60f1cf0e304bb5">Gorillaz, Tame Impala, Bootie Brown</a></td>
     </tr>
     <tr>
-      <td><img src="https://i.scdn.co/image/ab67616d0000485180c6db47e75d58e25b72f2ca" alt="Album cover for King Gizzard & the Lizzard Wizard's Omnium Gatherum" height="71" width="71"></td>
-      <td>Magenta Mountain</td>
-      <td><a href="https://open.spotify.com/album/4tuqA7qbVsPukqsYPPrcF7">King Gizzard & the Lizard Wizard</a></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00004851d29b9ead409a2ce8833831a1" alt="Album cover for King Gizzard & the Lizzard Wizard's Ice, Death, Planets, Lungs, Mushrooms and Lava" height="71" width="71"></td>
+      <td>Ice V</td>
+      <td><a href="https://open.spotify.com/album/2nPbslvl01lfELsFHTKp0s?si=fdb34d3ab44a412c">King Gizzard & the Lizard Wizard</a></td>
     </tr>
   </tbody>
 </table>
 
 ### Gaming
 
-Replayed some of Hades while I was mid-move and had most of my consoles packed up. It's just as fun to replay every now and then IMO.
-
-Making my way through Bloodbourne, which is my first From Software game. Very hard, but very rewarding, and loving the aesthetics and lore so far.
+Pretty far into Bloodbourne now, which is my first From Software game. I absolutely love it, the boss and enemy design is amazing, challenging, but not frustrating, and I've gotten to the point where I understand you are rewarded for being persistent against difficult bosses and sections of levels. The world is super interesting too, super weird, in a good way (trying to avoid spoilers, lol).
 
 ### Watching
 
-Slowly continuing The West Wing, it's super well written and funny, but the serious parts are just
-too pompous and make me laugh every time.
+Lots of spooky movies.
 
-Started High School Musical: The Musical: The Series. To prepare, I had to watch all 3 High School Musicals, and while the first two are
-pretty good for what they are, 3 didn't bother to add a script, it's just some good songs and dances.
-
-HMSTMTS is surprisingly funny though, and (dare I say) more cleverly written than its predecessors.
+* Last Night in Soho: worth a watch, not my favorite though
+* Beetlejuice: holds up good
+* Hocus Pocus 2: eh, not really worth it
+* Clue: incredible, it's a perfect farce
+* The Witch: also very good, great October movie
+* Origin: SPirits of the Past: wishes it was Princess Mononoke, but the story definitely wasn't
