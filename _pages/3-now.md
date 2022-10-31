@@ -82,12 +82,12 @@ In a spooky mood, because I'm playing [Bloodborne](#gaming).
   </thead>
   <tbody>
     <tr>
-      <td><img src="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14" alt="The album cover for SIE Sound Team's Bloodborne Original Soundtrack" height="71" width="71"></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00001e022472601180911ff89445cbc8" alt="The album cover for SIE Sound Team's Bloodborne Original Soundtrack" height="71" width="71"></td>
       <td>Cleric Beast</td>
       <td><a href="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14">SIE Sound Team</a></td>
     </tr>
     <tr>
-      <td><img src="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14" alt="The album cover for SIE Sound Team's Bloodborne Original Soundtrack" height="71" width="71"></td>
+      <td><img src="https://i.scdn.co/image/ab67616d00001e022472601180911ff89445cbc8" alt="The album cover for SIE Sound Team's Bloodborne Original Soundtrack" height="71" width="71"></td>
       <td>Darkbeast</td>
       <td><a href="https://open.spotify.com/album/5nRwiGsiEtrFN847UULpzL?si=8aeb26c2dd674b14">SIE Sound Team</a></td>
     </tr>
