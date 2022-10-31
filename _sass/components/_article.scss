@@ -92,6 +92,20 @@
       padding-bottom: 5px;
       padding-top: 5px;
     }
+
+    img {
+      width: auto;
+      height: auto;
+    }
+
+    @media only screen and (max-width : 480px)
+    {
+        /* Smartphone view: 1 tile */
+        td
+        {
+        font-size: $base-font-size * 0.7;
+        }
+    }
   }
 }
 
