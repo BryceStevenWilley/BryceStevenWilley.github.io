@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Accessibility in the Assembly Line Project" 
+title: "Web Accessibility Standards"
 tags: accessibility civic a2j equity software standards
 #date: 2022-01-16 08:12:49 -0500
 ---
@@ -24,10 +24,10 @@ Web accessibility is a bit more focused; to view web content (say, this blog pos
 These assistive technologies use the accessibility interface exposed by operating systems
 and browsers to transform web page content into something that can be perceivable and operable by those tools' target audience.
 
-Given the varying technologies interacting with the same content (authors, web tech, browsers, and assistive technologies), the best way for all of them to work together is [by using standards](https://www.w3.org/WAI/fundamentals/components/). When we're talking about web accessibility in this post, we're talking about web accessibility standards.
+Given the varying technologies interacting with the same content (authors, web tech, browsers, and assistive technologies), the best way for all of them to work together is [by using standards](https://www.w3.org/WAI/fundamentals/components/). In this post I try to distinguish when I can, but when I say "accessibility", I'm talking about web accessibility standards.
 However, don't forget about the root purpose of those standards: the users. Standards are the result of general accessibility user testing over lots of different types of web apps.
-However, your website can still be perfectly coded to web accessibility standards, but not really be usable to a specific group of people.
-Specific user testing with your specific web app is the only way to find and fix those gaps.
+However, your website can still be perfectly coded to web accessibility standards, but still not be accessible.
+User testing with your specific web app is the only way to find and fix those gaps.
 
 ### What are all the acronyms?
 
@@ -56,11 +56,11 @@ If you are a developer interested in making accessible web content however, you 
 
 I.e., reading WCAG doesn't really help you _write_ accessible web content; it tells you what your final website should do, but not how to get there. You have to read the "other documents" for that, which we'll get to soon.
 
-There are several versions of WCAG. You should probably use the latest, but it helps to understand that each version expanded to incorporate the technologies of the time it was written and new groups of people with disabilities. For example, WCAG 2.0 came out in 2008 (think early Youtube and Facebook years), so it emphasizes "dynamic Web pages... including 'pages' that can present entire virtual interactive communities." WCAG 2.1 came out in 2018, so the technical focus is on mobile devices, but also emphasizes cognitive disabilities and low vision. There's some ongoing (as of November 2022) work on a WCAG 2.2, which includes additional parts on focus and authentication, and a much more redical change in WCAG 3.0, which focuses much more on user-centered research and testing, but isn't quite finished yet.
+There are several versions of WCAG. You should probably use the latest, but it helps to understand that each version expanded to incorporate the technologies of the time it was written and new groups of people with disabilities. For example, WCAG 2.0 came out in 2008 (think early Youtube and Facebook years), so it emphasizes "dynamic Web pages... including 'pages' that can present entire virtual interactive communities." WCAG 2.1 came out in 2018, so the technical focus is on mobile devices, but also emphasizes cognitive disabilities and low vision. There's some ongoing (as of November 2022) work on a WCAG 2.2, which includes additional parts on focus and authentication, and a much more radical change in WCAG 3.0, which focuses much more on user-centered research and testing, but isn't quite finished yet.
 
-Each succcess criterion also has a conformance level, either A, AA, and AAA. The conformance levels are how hard it's considered to do what those statements say: A for the easiest statements, and AAA for the more difficult statements. WCAG itself says that <q>it is not possible to satisfy all Level AAA Success Criteria for some content</q>.
+Each success criterion also has a conformance level, either A, AA, and AAA. The conformance levels are how hard it's considered to do what those statements say: A for the easiest statements, and AAA for the more difficult statements. WCAG itself says that <q>it is not possible to satisfy all Level AAA Success Criteria for some content</q>.
 
-I like to think of conformance levels as mission rankings in Sonic. 
+I like to think of conformance levels as mission rankings in Sonic.
 
 ![A screenshot of a sonic level, with an "A" rank](/assets/blogs/accessibility/SonicAdventure2_DC_ResultsScreen.png)
 
@@ -86,7 +86,7 @@ requirements for software in the law beyond WCAG 2.0, but it's not clear, i.e. W
 To understand accessibility, you need to have a good understanding of the DOM and the accessibility tree.
 
 The DOM stands for "Domain object model", which in my opinion is a garbage name. It's a way to describe, access, and modify XML and HTML documents.
-It's a tree of nodes, which for HTML directly map to HTML elements like `<body>` or `<div>`. 
+It's a tree of nodes, which for HTML directly map to HTML elements like `<body>` or `<div>`.
 (TODO(brycew): describe in a little bit more detail, give a visual example, and maybe a bit more about what it's used for in accessibility.)
 The HTML DOM narrows down DOM things a little bit,
 giving specific meaning to some attributes (`class`, `id`, etc.), and defining what's valid DOM, like requiring all children of an unordered list, `<ul>`,
@@ -94,29 +94,32 @@ to be list items, `<li>`.
 
 ### ARIA
 
-Accessible rich internet applications (ARIA) occupy a strange place in accessibility technologies. ARIA is a standard that essentially gives you full control over how accessibility technologies read and understand a web page. 
+Accessible rich internet applications (ARIA) occupy a strange place in accessibility technologies. ARIA is a standard that essentially gives you full control over how accessibility technologies read and understand a web page.
 It gives you so much control that in several places in the ARIA standard itself,
 you are warned against using it: <a href="https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/"><q>no ARIA is better than bad ARIA</q></a>. However, given how much web development is a series of `div`s and `span`s,
 it's still necessary if you are writing anything interactive.
 
-ARIA gets it's strength by directly influncing the accessibility tree. The accessibility tree is a parallel copy of the HTML DOM. By using [ARIA](#ARIA, this copy of the tree can be modified to 
-assist with accessibility of certain features and widges. For example, an element with `role="presentation"`, or `aria-hidden="true"` won't be available to the accessibility API and thus aren't visible to screen readers and keyboard users.
+ARIA gets it's strength by directly influencing the accessibility tree. The accessibility tree is a parallel copy of the HTML DOM. By using [ARIA](#ARIA),
+this copy of the tree can be modified to
+assist with accessibility of certain features and widgets. For example, an element with `role="presentation"`, or `aria-hidden="true"` won't be available to the accessibility API and thus aren't visible to screen readers and keyboard users.
 
 ARIA has 3 key parts: roles, states and properties.
 
 Roles apply HTML element semantics to completely different elements. For example, you can include `<div role="paragraph">` in a
-page, and the accessibility interface to the page will treat it like it was a `<p>` instead. Sometimes there are ARIA roles that don't exist as HTML elements, like `role="tree"`, or TODO(brycew). They work the same as native HTML elements though. In fact, the existence of ARIA is supposed to encourage the development
-of new, more semantic host language features. Once a role is assigned to an element, it cannot be changed; you have to delete the element (and all of it's children) from the DOM and create a new element with the role that you want it to have.
+page, and the accessibility interface to the page will treat it like it was a `<p>` instead. Sometimes there are ARIA roles that don't exist as HTML elements, like `role="progressbar"` or `role="tree"`[^2].
+Roles also give hierarchial and contextual information about the element (for example, `role="listitem"` are in `role="list"`), and also determines which state and properties that the element can have. Once a role is assigned to an element, it cannot be changed; you have to delete the element (and all of it's children) from the DOM and create a new element with the role that you want it to have.
 
 State and properties both let people know what elements might change or be updated on the page.
 The standard itself mentions that states and properties are a bit difficult to distinguish, but
-the main idea is that states are expected to change often, and properties are expected to change less often. 
+the main idea is that states are expected to change often, and properties are expected to change less often.
 However, in practice, properties can change more than states, so the distinction is sometimes ignored.
 
-An important aspect of properties is that they set the accessible names for elements, using `aria-label`, `aria-labelledby`, and `aria-describedby`.
-TODO(brycew): more description here.
+<!--An important aspect of properties is that they set the accessible names for elements, using `aria-label`, `aria-labelledby`, and `aria-describedby`.
+Maybe add more description here, but likely a smaller blog post
+* [Accessible Names](https://www.w3.org/TR/accname/)
+-->
 
-If you aren't writing full widgets yourself, the most useful things to know about ARIA are the general idea and its terms. 
+If you aren't writing full widgets yourself, the most useful things to know about ARIA are the general idea and its terms.
 You'll likely run into ARIA in the wild when doing automated accessibility audits if another developer didn't follow the rules for roles and states correctly. For example, using the aXe automated accessibility checker
 can send you to the Deque University site for an [issues with the presentation role](https://dequeuniversity.com/rules/axe/4.4/presentation-role-conflict), or an
 [issue with the accessible name for a progress bar](https://dequeuniversity.com/rules/axe/4.4/aria-progressbar-name).
@@ -126,46 +129,66 @@ That's the most practical way to learn the details of ARIA.
 ### Real-life Example: Comboboxes in Docassemble
 
 Since my biggest obstacle when learning about accessibility standards was actually figuring out how to apply them when writing
-web pages, I thought I'd give an example of when I used them often: improving the built-in combobox widget in docassemble.
+web pages, I thought I'd give an example of when I used them often: [improving the built-in combobox widget in docassemble](https://github.com/jhpyle/docassemble/pull/581).
 
-Comboboxes are a combination of a text box and a drop down. It looks like a text box, but when you start typing into the box, a list of possible options that match what you've typed so far appears below it. You can select one of those options, or you can type your own option that isn't available in the textbox, and submit a different value. This aspect is important in docassemble, because you 
+Comboboxes are a combination of a text box and a drop down. It looks like a text box, but when you start typing into the box, a list of possible options that match what you've typed so far appears below it. You can select one of those options, or you can type your own option that isn't available in the textbox, and submit a different value. This aspect is important in docassemble, because you
 otherwise need to implement such a feature with two separate fields, a dropdown with an "other" option, and a text box that appears only if "other" is selected. It also adds additional complexity to the docassemble code on the backend.
 
 Such a widget would need focus on a few accessibility key points:
 * keyboard controls would need to be consistent
 * accessibility tools would need to be alerted when the list of matching items first appears and when it's contents change
 
-Docassemble uses a modified version of [this jquery plugin](), that unfortunately lacked attention to both of those accessibility
-key points. It didn't use much ARIA at all, and completely inaccessible to screen readers. The example at [The ARIA site]() goes a long way to remedying these issues. Before, the generated HTML of a combo box would look like this:
+Docassemble uses a modified version of [this bootstrap plugin](https://github.com/danielfarrell/bootstrap-combobox), that unfortunately lacked attention to both of those accessibility key points.
+It didn't use much ARIA at all, and completely inaccessible to screen readers. [The ARIA design pattern example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html) goes a long way to remedying these issues, and was the basis of this change (it also has other fairly good examples)
+
+Before, the generated HTML of a combo box would look like this:
 
 ```html
-
+(TODO(brycew): 1.4.12 should be the pre patch version)
 ```
 
-Now, after fixing some of the accessibily issues, the HTML looks like
+Now, after fixing some of the accessibly issues, the HTML looks like
 
 ```html
+<div class="input-group">
+  <input type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-activedescendant="option-Cathedral Ward" autocomplete="off" id="combobox" aria-controls="combobox-menu" aria-owns="combobox-menu" placeholder="Select one" required="required" aria-invalid="false">
+    <ul role="listbox" id="combobox-menu">
+      <li role="option" aria-label="Cathedral Ward" id="option-Cathedral Ward" aria-selected="true">Cath<b>e</b>dral Ward</li>
+      <li role="option" aria-label="Byrgenwerth" id="option-Byrgenwerth">Byrg<b>e</b>nw<b>e</b>rth</li>
+      <li role="option" aria-label="Mensis" id="option-Mensis">M<b>e</b>nsis</li>
+    </ul> 
+    <div class="input-group-append">
+      <button type="button" tabindex="-1" aria-expanded="false" aria-controls="combobox-menu">
+        <svg data-icon="caret-down">...</svg>
+        <svg data-icon="xmark">...</svg>
+      </button>
+    </div>
+  </div>
 ```
 
-### Techniques and Failures
+Going through each accessibility changes:
 
-## Writing resources
+* using `role="combobox"` gives the element the semantics we want; specifically that it is a text input box that controls an associated listbox.
+    It also defines the states and properties that the element can have (i.e. the rest of the attributes mentioned below).
+* `aria-autocomplete="list"` marks that this combobox is predicting the user's input, and that the predictions will be put in a list. Note that there is
+  also an `autocomplete="off"`, which is a different feature (it prevents the browser from suggesting inputs, like saved passwords and addresses).
+* `aria-expanded` is a state that marks whether the associated listbox is expanded, or visible.
+  It's a state since it's expected to change often in normal operation.
+  `aria-controls` and `aria-owns` both contain the id of the element that `aria-expanded` refers to.
+* `aria-activedescendant` identifies the current choice of the user, while keeping the browser focus on the combobox itself.
+* `aria-selected` marks the specific element that is the current choice, which most screen readers will read out directly.
+* Each option has an `aria-label`. To show the users why a specific item is predicted, the letters it shares with the input so far a bolded. Even though we can
+  used `<b>` instead of `<strong>` to indicate that the text is only formatted and not semantically separate from it's surrounding text, some screen readers think that
+  the text inside the bold tag is a different word, and will split up to the word to be incomprehensible. Adding an `aria-label` that is directly the text of the
+  item prevents this issue.
+* `<button ... tabindex="-1">` indicates that the button should be taken out of the tab order of the page. Since the button's only functionality (to open and close the listbox) is redundant to keyboard controls implemented in javascript on the text input, we can remove it.
 
-* [Parsing](https://www.w3.org/TR/WCAG21/#parsing)
-* [Quickref](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=111)
-* [Accessible Names](https://www.w3.org/TR/accname/)
-* [ARIA Practices: Intro](https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/#intro)
-* [ARIA Practices: examples](https://www.w3.org/TR/2019/NOTE-wai-aria-practices-1.1-20190814/examples/)
-* [Timing Adjustable](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable)
+## A Whole-lotta details
 
-### WCAG Techinques
+Knowing the low level details of accessibility standards and trying to apply them to every single page of your website are very different tasks.
+How to actually do an audit, and some smaller steps you can do to improve your website's accessibility will be in another post, coming soon.
 
-* [F3 Failure](https://www.w3.org/WAI/WCAG21/Techniques/failures/F3.html)
-* [H32](https://www.w3.org/WAI/WCAG21/Techniques/html/H32)
-* [H91](https://www.w3.org/WAI/WCAG21/Techniques/html/H91)
-* [G164](https://www.w3.org/WAI/WCAG21/Techniques/general/G164.html)
-* [Failure F40](https://www.w3.org/WAI/WCAG21/Techniques/failures/F40)
-* [ARIA4](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4)
-* [Failure F92](https://www.w3.org/WAI/WCAG21/Techniques/failures/F92)
 
-[^1]: Asseccisibilty is sometimes shortened to `a11y`, because there are 11 letters between the starting 'a' and ending 'y'. You might see a similar shortening of internationalization to `i18n`.
+[^1]: Accessibility is sometimes shortened to `a11y`, because there are 11 letters between the starting 'a' and ending 'y'. You might see a similar shortening of internationalization to `i18n`.
+
+[^2]: In fact, the existence of ARIA is supposed to [encourage the development of new, more semantic host language features](https://www.w3.org/TR/wai-aria-1.1/#co-evolution) in HTML and SVG.
