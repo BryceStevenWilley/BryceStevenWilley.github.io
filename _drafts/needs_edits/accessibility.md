@@ -8,7 +8,7 @@ tags: accessibility civic a2j equity software standards
 Over the past 6 months or so, I've been leading a lot of work to make [docassemble](https://docassemble.org) and [our e-filing guided interviews](https://courtformsonline.org) more accessible. To do it I had to read a lot of different specs, which was really confusing at first. Here are the tools I used, and some summaries of the standards, because standards suck.
 
 <aside>
-Big disclaimer here: I am not an accessibility expert. I've long been an observer of accessibility, but have only gotten deep into it in the past year. I am still building my knowledge on the subject. If anything I say here goes against what disabled people or accessibility experts say about accessibility, listen to them (and let me know so I can correct anything here).
+Big disclaimer here: I am not an accessibility expert. I only started studying web accessibility in the past year, and I'm still building my knowledge on the subject. If anything I say here goes against what disabled people or accessibility experts say about accessibility, listen to them (and let me know so I can correct anything here).
 </aside>
 
 ## What is accessibility?
@@ -18,7 +18,13 @@ of people (who's population size would likely surprise you) that _can't_ interac
 
 Accessibility [^1] is making technology flexible enough to be interacted with many different ways. That's it. The hard part is in the details of what that means though.
 
-![Illustration with labeled graphics of boxes, content, and people. At the top center is a pie chart, an image, a form, and text, labeled “content”. From the bottom left, a line connects “developers” through “authoring tools” and “evaluation tools” to “content” at the top. From the bottom right, a line connects “users” to “browsers, media players” and “assistive technologies” to “content” at the top.](/assets/blogs/accessibility/relate.png)
+<figure>
+  <!-- TODO: wtf to do with long alt text? longdesc is dead, Would rather leave it in that have a very short text, but not sure -->
+  <img src="/assets/blogs/accessibility/relate.png" alt="Graphic of labeled boxes, content, and people. The top center box contains website elements and is labeled “content”. From the left, a path connects 'developers' to 'content', through 'authoring tools' and 'evaluation tools'. From the right, a path connects 'users' to 'content', through 'browsers, media players' and 'assistive technologies' Accessibility guidelines and technical specifications are listed."/>
+  <footer><small>
+   Photo by Michael Duffy, from <a href="https://www.w3.org/WAI/fundamentals/components/#guidelines">Essential Components of Web Accessibility</a>.
+  </small></footer>
+</figure>
 
 Web accessibility is a bit more focused; to view web content (say, this blog post), you're probably using a web browser like Chrome or Firefox. However people also use other software, called assistive technologies or "user agents" in the standards, to help them view the content. Those technologies range from things like screen readers, Braille displays, and [auto-captioning tools](https://blog.google/products/android/live-caption/), to eye trackers, voice recognition, and on-screen keyboards.
 These assistive technologies use the accessibility interface exposed by operating systems
@@ -126,47 +132,45 @@ can send you to the Deque University site for an [issues with the presentation r
 You'd need to know what a role is, what the presentation and progressbar roles are, and how to properly name an accessible element.
 That's the most practical way to learn the details of ARIA.
 
-### Real-life Example: Comboboxes in Docassemble
+## Real-life Example: Comboboxes
 
 Since my biggest obstacle when learning about accessibility standards was actually figuring out how to apply them when writing
-web pages, I thought I'd give an example of when I used them often: [improving the built-in combobox widget in docassemble](https://github.com/jhpyle/docassemble/pull/581).
+web pages, I thought I'd give an example of when I used them often: [improving the built-in combobox widget in docassemble](https://github.com/jhpyle/docassemble/pull/581) [^3].
 
-Comboboxes are a combination of a text box and a drop down. It looks like a text box, but when you start typing into the box, a list of possible options that match what you've typed so far appears below it. You can select one of those options, or you can type your own option that isn't available in the textbox, and submit a different value. This aspect is important in docassemble, because you
-otherwise need to implement such a feature with two separate fields, a dropdown with an "other" option, and a text box that appears only if "other" is selected. It also adds additional complexity to the docassemble code on the backend.
+<video muted autoplay loop controls width="720">
+  <source src="/assets/blogs/accessibility/combobox.mp4" type="video/mp4"
+      alt="A demonstration of a combobox's functionalities, including button expansion, type to search, and keyboard selection">
+</video>
 
-Such a widget would need focus on a few accessibility key points:
-* keyboard controls would need to be consistent
-* accessibility tools would need to be alerted when the list of matching items first appears and when it's contents change
+Comboboxes are a combination of a text box and a drop down. It looks like a text box, but when you start typing into the box, a list of possible options that match what you've typed so far appears below it. You can select one of those options, or you can type your own option that isn't available in the textbox, and submit a different value [^4].
 
-Docassemble uses a modified version of [this bootstrap plugin](https://github.com/danielfarrell/bootstrap-combobox), that unfortunately lacked attention to both of those accessibility key points.
-It didn't use much ARIA at all, and completely inaccessible to screen readers. [The ARIA design pattern example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html) goes a long way to remedying these issues, and was the basis of this change (it also has other fairly good examples)
+Comboboxes need to focus on a few accessibility key points:
+* keyboard controls need to be consistent
+* accessibility tools need to be alerted when the list of matching items first appears and when it's contents change
 
-Before, the generated HTML of a combo box would look like this:
+Unfortunately, the existing implementation lacked attention to both of those accessibility key points.
+It didn't use much ARIA at all, and was completely inaccessible to screen readers. [The ARIA design pattern example](https://www.w3.org/WAI/ARIA/apg/example-index/combobox/combobox-autocomplete-list.html) goes a long way to remedying these issues, and was the basis of this change.
 
-```html
-(TODO(brycew): 1.4.12 should be the pre patch version)
-```
+Let's break down each part of the new combobox and its improvement.
 
-Now, after fixing some of the accessibly issues, the HTML looks like
+### The Textbox
+
+First, we have the text input itself:
 
 ```html
 <div class="input-group">
-  <input type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-activedescendant="option-Cathedral Ward" autocomplete="off" id="combobox" aria-controls="combobox-menu" aria-owns="combobox-menu" placeholder="Select one" required="required" aria-invalid="false">
-    <ul role="listbox" id="combobox-menu">
-      <li role="option" aria-label="Cathedral Ward" id="option-Cathedral Ward" aria-selected="true">Cath<b>e</b>dral Ward</li>
-      <li role="option" aria-label="Byrgenwerth" id="option-Byrgenwerth">Byrg<b>e</b>nw<b>e</b>rth</li>
-      <li role="option" aria-label="Mensis" id="option-Mensis">M<b>e</b>nsis</li>
-    </ul> 
-    <div class="input-group-append">
-      <button type="button" tabindex="-1" aria-expanded="false" aria-controls="combobox-menu">
-        <svg data-icon="caret-down">...</svg>
-        <svg data-icon="xmark">...</svg>
-      </button>
-    </div>
-  </div>
+  <input type="text" id="combobox" autocomplete="off" 
+      required="required" placeholder="Select one"
+      role="combobox"
+      aria-autocomplete="list" 
+      aria-expanded="false" 
+      aria-activedescendant="opt-Cathedral Ward" 
+      aria-controls="combobox-menu" 
+      aria-owns="combobox-menu" 
+      aria-invalid="false">
+  ...
+</div>
 ```
-
-Going through each accessibility changes:
 
 * using `role="combobox"` gives the element the semantics we want; specifically that it is a text input box that controls an associated listbox.
     It also defines the states and properties that the element can have (i.e. the rest of the attributes mentioned below).
@@ -176,14 +180,55 @@ Going through each accessibility changes:
   It's a state since it's expected to change often in normal operation.
   `aria-controls` and `aria-owns` both contain the id of the element that `aria-expanded` refers to.
 * `aria-activedescendant` identifies the current choice of the user, while keeping the browser focus on the combobox itself.
+
+
+### The Listbox
+
+```html
+<div class="input-group">
+  ...
+  <ul role="listbox" id="combobox-menu">
+    <li id="opt-Cathedral Ward" 
+        role="option" aria-label="Cathedral Ward" 
+        aria-selected="true">
+      <b>C</b>athedral Ward
+    </li>
+    ...
+  </ul> 
+  ...
+</div>
+```
+
 * `aria-selected` marks the specific element that is the current choice, which most screen readers will read out directly.
 * Each option has an `aria-label`. To show the users why a specific item is predicted, the letters it shares with the input so far a bolded. Even though we can
-  used `<b>` instead of `<strong>` to indicate that the text is only formatted and not semantically separate from it's surrounding text, some screen readers think that
-  the text inside the bold tag is a different word, and will split up to the word to be incomprehensible. Adding an `aria-label` that is directly the text of the
-  item prevents this issue.
-* `<button ... tabindex="-1">` indicates that the button should be taken out of the tab order of the page. Since the button's only functionality (to open and close the listbox) is redundant to keyboard controls implemented in javascript on the text input, we can remove it.
+  used `<b>` instead of `<strong>` to indicate that the text is only formatted and not semantically separate from it's surrounding text,
+  some screen readers think that the text inside the bold tag is a different word,
+  and will split up to the word to be incomprehensible.
+  Adding an `aria-label` that is directly the text of the item prevents this issue.
 
-## A Whole-lotta details
+### The Button
+
+The last part of the combobox is the button. This is important for people who primarily want to navigate the
+widget without typing, just with a mouse, and can open and close the listbox. It's HTML looks like:
+
+```html
+<div class="input-group">
+  ...
+  <div class="input-group-append">
+    <button type="button" 
+        tabindex="-1" 
+        aria-expanded="false" 
+        aria-controls="combobox-menu">
+      <svg data-icon="caret-down">...</svg>
+    </button>
+  </div>
+</div>
+```
+
+Since you can already accomplish the main purpose of the button with keyboard controls, it doesn't make sense to include it when navigating the
+page with only keyboard controls. We set `tabindex` to `-1` to take it out of the tab order of the page.
+
+## A Big List of Details
 
 Knowing the low level details of accessibility standards and trying to apply them to every single page of your website are very different tasks.
 How to actually do an audit, and some smaller steps you can do to improve your website's accessibility will be in another post, coming soon.
@@ -192,3 +237,7 @@ How to actually do an audit, and some smaller steps you can do to improve your w
 [^1]: Accessibility is sometimes shortened to `a11y`, because there are 11 letters between the starting 'a' and ending 'y'. You might see a similar shortening of internationalization to `i18n`.
 
 [^2]: In fact, the existence of ARIA is supposed to [encourage the development of new, more semantic host language features](https://www.w3.org/TR/wai-aria-1.1/#co-evolution) in HTML and SVG.
+
+[^3]: If you read the description of the pull request I made to Docassemble, these improvements are still lacking on certain OS and browser combinations. So be warned.
+
+[^4]: The fact that comboboxes let you type in any value, not just the suggested options, is important in docassemble. To implement a feature like that without a combobox takes two separate fields: a dropdown with an "other" option, and a text box that appears only if "other" is selected. It's yet another field the form user, and it also adds additional complexity to the docassemble code on the backend.

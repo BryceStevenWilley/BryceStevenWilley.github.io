@@ -114,7 +114,10 @@ hr {
 
 /* Code Blocks */
 
-pre { overflow: auto; }
+pre { 
+  /* overflow: auto; Actually didn't like it */
+  white-space: pre-wrap;
+}
 
 code, pre {
 
