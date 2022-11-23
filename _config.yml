@@ -21,13 +21,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://brycestevenwilley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: BryceStevenWilley
 twitter_username: wowitisbryce
-mastodon_instance: weirder.earth
+mastodon_instance: mastodon.publicinterest.town
 mastodon_username: brycew
 gpg_keys: assets/gpg_key.gpg.txt
 show_rss: True
 
 # Build settings
 markdown: kramdown
+kramdown:
+  footnote_prefix: "footnote"
+  footnote_backlink: "[go back to reference]"
 #theme: minima
 plugins:
   - jekyll-feed
