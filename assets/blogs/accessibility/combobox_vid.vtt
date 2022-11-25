@@ -1,0 +1,19 @@
+WEBVTT
+
+1
+00:00.000 --> 00:03.000
+The video shows a sample combobox, with a button.
+
+2
+00:03.001 --> 00:07.000
+When the button is pressed, 5 options are shown in a listbox below the combobox input,
+and one is selected directly by a mouse.
+
+3
+00:07.001 --> 00:08.000
+Pressing the button then clears the input.
+
+4
+00:08.001 --> 00:21.00
+Finally, something in directly typed into the combobox, and only the options that contain the letters typed so far are shown.
+"Yharnam" is typed, and the options "Central Yharnam" and "Old Yharnam" are shown, followed by "Cath", which shows "Cathedral Ward".
