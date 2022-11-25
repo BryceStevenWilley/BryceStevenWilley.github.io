@@ -2,7 +2,7 @@
 layout: post
 title: "Web Accessibility Standards"
 tags: accessibility civic a2j equity software standards
-date: 2022-11-27 08:11:49 -0500
+date: 2022-11-25 15:11:49 -0500
 ---
 
 Over the past 6 months or so, I've been leading a lot of work to make [docassemble](https://docassemble.org) and [our e-filing guided interviews](https://courtformsonline.org) more accessible. To do it I had to read a lot of different standards, which were really confusing at first.
