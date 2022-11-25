@@ -38,6 +38,44 @@
     background: $c__light-grey;
   }
 
+  aside blockquote {
+    /* margin-left: -2.2rem; */
+    width: calc(100% - 4.4rem);
+    padding: 2.25rem;
+    background: $c__light-grey;
+    margin: 1rem 1rem;
+  }
+
+  figure {
+    border-style: double;
+    border-color: $t-headerTheme;
+    border-width: 4px;
+    background: $c__light-grey;
+  }
+
+  /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#try_it */
+  
+  details {
+      border: 1px solid $t-headerTheme;
+      border-radius: 4px;
+      padding: .5em .5em 0;
+  }
+
+  summary {
+      font-weight: bold;
+      margin: -.5em -.5em 0;
+      padding: .5em;
+  }
+
+  details[open] {
+    padding: 0.5em;
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid $t-headerTheme;
+    margin-bottom: 0.5em;
+  }
+
   code {
     font-family: monospace,monospace;
   }
@@ -113,4 +151,24 @@ blockquote {
   border-style: double;
   border-color: $t-headerTheme;
   border-width: 4px;
+}
+
+figure .highlight {
+  margin-left: 0rem;
+  width: auto;
+  padding: 2.5rem;
+  background: $c__light-grey;
+}
+
+.two-parter {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1:target, h2:target, h3:target {
+  border: solid;
+}
+
+h1 {
+  word-break: break-word;
 }

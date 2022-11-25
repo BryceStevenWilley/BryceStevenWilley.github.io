@@ -5,10 +5,10 @@
   margin-left: -2.5rem;
   width: calc(100% + 5rem);
   padding: 2.5rem;
-  background: $c__light-grey;
+  background: white; // $c__light-grey;
 
   .highlighter-rouge & {
-    background: #eef;
+    background: #fff;
   }
 
     .c     { color: #998; font-style: italic } // Comment
@@ -70,4 +70,9 @@
     .vg    { color: #008080 } // Name.Variable.Global
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
+}
+
+div.highlight {
+  margin-left: 0;
+  padding: 0;
 }

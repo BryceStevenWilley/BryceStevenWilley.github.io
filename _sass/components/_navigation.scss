@@ -14,7 +14,6 @@
   justify-content: space-around;
 }
 
-
 .c-navigation {
   position: absolute;
   top: 0;
@@ -39,14 +38,11 @@
     will-change: transform;
   }
 
-
-  .nav-trigger {
-    display: none;
+  #nav-trigger:focus ~ label,
+  #nav-trigger:active ~ label {
+    outline: blue medium auto;
   }
 
-  .menu-icon {
-    display: none;
-  }
 }
 
 .c-navigation__item {
@@ -80,7 +76,23 @@
   }
 }
 
-// Hide the page drawer we're noting using it.
+// Hide the page drawer when we're not using it.
+#nav-trigger {
+  display: none;
+}
+
+nav label {
+  display: none;
+}
+
+nav {
+  flex-direction: row;
+}
+
+nav a {
+  display: initial;
+}
+
 
 // Handle the page nav drawer.
 @include media-query($on-palm) {
@@ -108,23 +120,28 @@
       }
     }
 
-    input ~ .trigger {
+    #nav-trigger {
+      display: block;
+    }
+
+    #nav-trigger ~ .trigger {
       clear: both;
       display: none;
     }
 
-    input:checked ~ .trigger {
+    #nav-trigger:checked ~ .trigger {
       display: block;
       padding-bottom: 5px;
     }
-
 }
 
-.only-screen-readers {
-  /* https://stackoverflow.com/a/26032207/11416267 */
-  position: absolute !important; /* Outside the DOM flow */
-  height: 1px; width: 1px; /* Nearly collapsed */
+/* from https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
-  clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
