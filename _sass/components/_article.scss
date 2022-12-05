@@ -86,12 +86,13 @@
 
   .post-list {
     margin-left: 0;
-    list-style: none;
+    list-style-position: inside;
+    line-height: 1.5;
   }
 
   .post-link {
-    display: block;
-    @include relative-font-size(1.4);
+    //display: block;
+    @include relative-font-size(1.2);
   }
 
   table.listening-to {

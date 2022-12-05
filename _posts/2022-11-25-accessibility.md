@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web Accessibility Standards"
-tags: accessibility civic a2j equity software standards
+tags: accessibility civic a2j equity software standards polished long
 date: 2022-11-25 15:11:49 -0500
 ---
 

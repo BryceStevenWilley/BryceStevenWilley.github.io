@@ -2,7 +2,7 @@
 layout: post
 title: "Mystery Internet Bug: Text-to-Speech and The Notorious B.I.G."
 description: Solving random bugs on the internet with Browser Dev Tools
-tags: software bug-hunt web javascript
+tags: software bug-hunt web javascript rough long
 date: 2022-04-20 21:00:00 -0500
 headerImg: 
   src: /assets/headers/biggie-tts.png
