@@ -14,6 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Bryce Willey
+
+author:
+  name: "Bryce Willey"
+  nick: "brycew"
+  email: "bryce.steven.willey@gmail.com"
+  image: "https://brycewilley.xyz/assets/site-logo.png"
+  social:
+    Mastodon: "https://mastodon.publicinterest.town/@brycew"
+    Github: "https://github.com/BryceStevenWilley"
+    LinkedIn: "https://www.linkedin.com/in/bryce-willey-2a867989/"
 email: bryce.steven.willey@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Bryce Willey- Access to Justice, Software for Humans
