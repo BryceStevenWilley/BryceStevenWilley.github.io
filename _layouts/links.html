@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<article class="c-article">
+  <header class="c-header c-article__header">
+    <div class="u-container">
+    <h1 class="c-header__title">
+      {{ page.title }}
+    </h1>
+    </div>
+    <a href="/foaf.rdf" class="rss-link" title="Download My FOAF RDF data"><span class="icon fas fa-rss"></span></a>
+  </header>
+  <div class="c-article__main">
+    {{ page.content }}
+    <br>
+    {% for entry in site.data.links %}
+      <article class="post-multiple vcard">
+        <header class="post-header hoverable">
+          <h3 class="post-title">
+            <a href="{{ entry.url }}" class="url fn"
+              {% if post.url contains 'http' %}{% else %}up-follow{% endif %}>
+                {{ entry.name }}
+            </a>
+          </h3>
+        </header>
+        <section class="post-content">
+          {% if entry.image %}
+            <p class="featured-image-box">
+              <img src="{{ entry.image }}" class="featured-image" alt="Image of {{ post.name }}">
+            </p>
+          {% endif %}
+          <p>
+            {{ entry.tags | join: ', ' }}
+          </p>
+        </section>
+      </article>
+    {% endfor %}
+  </div>
+  </section>
+</article>

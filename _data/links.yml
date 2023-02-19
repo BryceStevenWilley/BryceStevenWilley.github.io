@@ -1,0 +1,20 @@
+- name: David Colarusso
+  url: http://www.davidcolarusso.com/
+  tags: [a2j, legal tech, legal ai]
+- name: Quinten Steenhuis
+  url: https://www.nonprofittechy.com/
+  tags: [a2j, legal tech, legal ai]
+- name: Bill Hunt
+  url: https://billhunt.dev/
+  tags: [public interest, civic tech]
+- name: Christa Hartsock
+  url: https://christa.town/
+  tags: [public interest, tech, ruby]
+- name: Dan Luu
+  url: https://danluu.com/
+  tags: [software, backend]
+  notmutual: true
+- name: Julia Evans
+  url: https://jvns.ca/
+  tags: [software, tech work]
+  notmutual: true

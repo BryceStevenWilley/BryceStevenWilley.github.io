@@ -12,7 +12,9 @@ headerImg:
 ---
 
 I'm Bryce, a clinical fellow at the [Suffolk LIT Lab](https://suffolklitlab.org/), living in Boston, MA.
-My mission is to make technology that works better for people.  
+My mission is to make technology that works better for people.
+
+You can find [my resumé here](assets/bryce_willey_resume.pdf).
 
 I received a BS in Computer Science and a BA in Theatre in 2017 and defended my [Master's Thesis](/academic) in August 2018, all at Rice University.
 My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)

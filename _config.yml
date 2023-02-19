@@ -23,7 +23,7 @@ github_username: BryceStevenWilley
 # twitter_username: wowitisbryce
 mastodon_instance: mastodon.publicinterest.town
 mastodon_username: brycew
-gpg_keys: assets/gpg_key.gpg.txt
+# gpg_keys: assets/gpg_key.gpg.txt
 show_rss: True
 
 # Build settings
