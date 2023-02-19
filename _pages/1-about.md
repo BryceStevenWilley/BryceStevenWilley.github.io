@@ -26,11 +26,12 @@ I worked as a [Bluebonnet Data Fellow](https://www.bluebonnetdata.org/) with [An
 I then started a Fellowship with Suffolk LIT Lab, working on the [Document Assembly Line Project](https://suffolklitlab.org/doc-assembly-line/).
 I've been involved with [Code for Boston](https://www.codeforboston.org/) and [Code for America](https://www.codeforamerica.org/), specifically [GetYourRefund's](https://www.codeforamerica.org/programs/getyourrefund) volunteer experiment team.
 
-I run, read, bike, and advocate with [Dotbike](http://dotbike.org), the Dorchester Biking Club (I setup and designed their website).
+I run, read, bike, play video games, and take my pup, Jackie for lots of long walks.
 
-I used to be a volunteer photographer at [BARC](http://www.houstontx.gov/barc/), and take my own pup, Jackie, for lots of long walks.
+I used to advocate with [Dotbike](http://dotbike.org), the Dorchester Biking Club (I setup and designed their website), but activity has died down there recently.
+I used to be a volunteer photographer at [BARC](http://www.houstontx.gov/barc/).
 
-<img src="/assets/Jackie.jpg" alt="Jackie Boy" style="width: 50%; display:block; margin-left:auto; margin-right:auto;"/>
+<img src="/assets/Jackie.jpg" alt="Jackie Boy. He is a brown and black small dog, with long fur and floppy ears. The camera is situated above him, and he is looking up with his tongue hanging out." style="width: 50%; display:block; margin-left:auto; margin-right:auto;"/>
 
 This website is built using Jekyll, and the
 [base material theme](https://github.com/alexcarpenter/material-jekyll-theme) was made by [Alex Carpenter](https://alexcarpenter.me/).
