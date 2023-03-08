@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Phases of the Bug solving"
+title: "Phases of Bug Solving"
 tags: python uwsgi docassemble pip software bug-hunt rough
 date: 2022-03-22 17:00:0 -0500
 ---
@@ -29,10 +29,10 @@ This process works best in combination with some other advice about debugging, i
 I'll use the same example throughout this post, a recent bug that I ran into involving python and uWSGI.
 
 For context, I work with guided interviews on [docassemble](docassemble.org), a platform that uses python and YAML to ask a user questions, screen by screen. The team I'm on, the Suffolk LIT Lab, is trying to make writing those interviews easier by automatically generating them from input PDFs that someone might have to fill out to go to court.
-We've been improving the automatic generation part, and recently started work on the [FormFyxer](https://github.com/SuffolkLITLab/FormFyxer), which ingests PDFs and uses some NLP to predict what semantically each field in the PDF is supposed to be, like a litigant's name, their address, the court name, etc.
+We've been improving the automatic generation part, and recently started work on the [FormFyxer](https://github.com/SuffolkLITLab/FormFyxer), which ingests PDFs and uses some natural language processing (NLP) to predict what each field in the PDF is supposed to be semantically, like a litigant's name, their address, the court name, etc.
 
-FormFyxer uses `spacy`, a common NLP package for python. However, to use `spacy`, it needs some extra model files that aren't installed with the standard `pip install spacy`. The docs suggest that you run [`spacy download`](https://spacy.io/usage/models#download), but that's not desirable for a few reasons:
-1. it'd would be annoying to have to login to the AWS lightsail server and manually run the `spacy download` command inside of the running docker container to actually install it.
+FormFyxer uses `spacy`, a common NLP package for python. However, to use `spacy`, it needs some extra model files that aren't installed with the standard `pip install spacy`. The docs suggest that you run [`spacy download`](https://spacy.io/usage/models#download), but that's not desirable because you would have to  login to the AWS lightsail server and manually run the `spacy download` command inside of the running docker container to actually install it. This is bad because:
+1. it's just annoying to do
 2. for non-technical people (a lot of whom do run docassemble servers), the above step is extremely difficult, if not impossible to do. You have to know ssh, how to enter a running docker container, how to source a python environment, and then the exact `spacy` command to run.
 
 The most reliable way to make sure those extra files get installed is to attempt to load them, catch any errors thrown, hardcode in a download command and try to download the files through python, then try to load the files again. Since `spacy download ...` just calls a function in the spacy library, we can call [that function too](https://github.com/SuffolkLITLab/FormFyxer/blob/0b2ed81ac958b35ee4acc5972a6f6bc24b1138d6/formfyxer/lit_explorer.py#L38).
