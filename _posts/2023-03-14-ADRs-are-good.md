@@ -2,6 +2,7 @@
 layout: post
 title: Why Architecture Decision Records (ADRs) are Good
 tags: civic software project management architecture rough
+date: 2023-03-14 20:00:00 -0500
 ---
 
 I'm coming up on 2 years of working on my [EfileProxyServer project](https://github.com/SuffolkLITLab/EfileProxyServer),
