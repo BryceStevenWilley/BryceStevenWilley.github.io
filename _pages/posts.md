@@ -17,9 +17,9 @@ permalink: /blogs/
     <span class="post-meta">({{ post.date | date: date_format }})</span>
   </li>
 </ul>
-  {% endfor %} 
+  {% endfor %}
   <h2>Sketch posts</h2>
-  <p>These posts are generally shorter and either unedited, unfocused, or simply unfinished.</p>
+  <p>These posts are generally shorter and a bit less focused.</p>
   {% assign sketch_date_format = site.date_format | default: "%Y %b" %}
   {% assign unpolished = site.posts | where_exp: "item", "item.tags contains 'rough'" %}
   {% for post in unpolished %}
