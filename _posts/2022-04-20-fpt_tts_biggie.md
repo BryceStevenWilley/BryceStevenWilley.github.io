@@ -14,8 +14,8 @@ headerImg:
 ---
 
 <aside>
-This post was originally a <a href="https://twitter.com/wowitisbryce/status/1515794042444996610">tweet thread</a>.
-I've added more details and background explanations where possible, and rewritten it for the blog format.
+This post was originally a tweet thread. I'd link to it, but I deleted my twitter.
+In this version, I've added more details and background explanations where possible, and rewritten it for the blog format.
 </aside>
 
 I love solving random bugs on the internet!

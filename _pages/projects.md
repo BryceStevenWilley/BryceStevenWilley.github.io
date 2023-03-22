@@ -25,9 +25,10 @@ These are in reverse-chronological order (newest to oldest).
 
 ### Misc Smaller Projects
 
-I do a handful of smaller things that aren't worth making full repos or blogs for. Sometimes I'll tweet about them, and try to list them all here:
+I do a handful of smaller things that aren't worth making full repos or blogs for. Sometimes I'll post about them, and try to list them all here:
 
-* A [python script](https://gist.github.com/BryceStevenWilley/15782cdb064991d383df076cf947dd92) to find the furthest location within a given area from a Dunkin Donuts ([Tweet-thread](https://twitter.com/wowitisbryce/status/1432094270224220172))
+<!-- ([Tweet-thread](https://twitter.com/wowitisbryce/status/1432094270224220172)) -->
+* A [python script](https://gist.github.com/BryceStevenWilley/15782cdb064991d383df076cf947dd92) to find the furthest location within a given area from a Dunkin Donuts
 * A [python script](https://gist.github.com/BryceStevenWilley/45570af2138b744e8e28ec0fd7421345) that emails all of the participants of a Murder Mystery party who is guilty and who is innocent, so that
   everyone can play without someone knowing secret identity of the murder! Keeps a record of the emails sent later. It's useful for anything that needs to randomly and secretly assign roles to a group
   of people, without anyone knowing any one else's role.

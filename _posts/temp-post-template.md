@@ -3,7 +3,7 @@
 #title:  "Welcome to Jekyll!"
 #description: "A short tagline to be shown in social meta tags
 #date:   2017-10-21 22:50:49 -0500
-#categories: jekyll update
+#tags: jekyll update
 #headerImg:
   #src: /assets/path/to/img.png
   #narrow: /assets/path/to/mobile.png
