@@ -15,9 +15,65 @@ Here are some of my current and past personal projects, both software and non-so
 
 ## Talks
 
-* At the [LIT Lookahead event](https://suffolklitlab.org/events/lookahead/), I gave a summary of the LIT Lab's work from 2020-2022 [(slides)](/litlookahead-slides)
-* At [ITC 2022](https://www.lsc.gov/events/events/lscs-innovations-technology-conference) I partnered with [Quinten Steenhuis](https://www.nonprofittechy.com/), [Matt Newsted](https://www.illinoislegalaid.org/about/our-people/staff), and [Amanda Brown](https://lagniappelawlab.org/personnel/amanda-brown/) to talk about [our e-filing work](https://www.lsc.gov/2022-innovations-technology-conference-schedule)
-* At [docacon 2021](https://docacon.com/), I talked about my work with e-filing in docassemble [(slides)](/docacon-slides)
+<table class="talks">
+  <thead>
+    <tr>
+      <th>Venue</th>
+      <th>Summary</th>
+      <th>Partners</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><a href="https://docacon.com/">Docacon 2023</a></td>
+    <td>How to <span class="hacker">hack</span> on Docassemble's internal code</td>
+    <td>Solo</td>
+    <td><a href="/docacon23-slides">slides</a>, <a href="https://www.youtube.com/watch?v=TcLFA9a1bHs&t=1390s">video</a>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://www.lsc.gov/events/events/lscs-innovations-technology-conference">ITC 23</a></td>
+    <td>Evaluating completion ease of forms, and tips to improve them</td>
+    <td>Quinten Steenhuis, Margaret Hagan, and Laurie Garber</td>
+    <td><a href="https://docs.google.com/presentation/d/1dMKzyFIWJ_ILFJxhatGFx9lwtWE4OFSeSpb1ZItDbrQ/edit?usp=sharing">slides</a>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://e-courts.org/conference-info/">eCourts 2022</a></td>
+    <td>
+    How the Appeals Court and Suffolk worked together for access to justice
+    </td>
+    <td>Quinten Steenhuis and Paul Tuttle</td>
+    <td><a href="https://docs.google.com/presentation/d/1tJ74Ip_fSNEIYu6Xu18j4ljYP4S1XBj83TloQ0cMd64/edit?usp=sharing">slides</a>, <a href="https://vimeo.com/780581207/3fda6a41a3?embedded=true&source=vimeo_logo&owner=11964368">video</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://suffolklitlab.org/events/lookahead/">LIT Lookahead (2022)</a></td>
+    <td>Summary of the LIT Lab's work from 2020-2022</td>
+    <td>Solo</td>
+    <td><a href="/litlookahead-slides">slides</a>, <a href="https://youtu.be/jog3gxZc090?t=2322">video</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.lsc.gov/events/events/lscs-innovations-technology-conference">ITC 22</a></td>
+    <td>
+    E-filing with Open Source Tools
+    </td>
+    <td>Quinten Steenhuis, Matt Newsted, and Amanda Brown</td>
+    <td><a href="https://dcs.google.com/presentation/d/1RrYLfxn9rCMbTI5KIfOysaVtidAaSrMt2-aQ_stJzA8/edit?usp=sharing">slides</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://docacon.com/2021/index.html">docacon 2021</a></td>
+    <td>
+    E-filing in Docassemble
+    </td>
+    <td>Solo</td>
+    <td><a href="/docacon-slides">slides</a>, <a href="https://youtu.be/YB-e-MGtLgI?t=2165">video</a></td>
+  </tr>
+</tbody>
+</table>
+
+For presentations I've made about my previous robotics work, see [my academic work](/academic).
+
 
 ## Software Projects
 
