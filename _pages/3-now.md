@@ -10,27 +10,18 @@ permalink: /now/
 It's a now page: what I'm focused on at the moment, both professionally and personally.
 It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
-Trying to keep it updated at least monthly.
+Trying to keep it updated every 3 months or so.
 
-Last updated January 10th, 2023.
+Last updated May 4th, 2023.
 
 ## Professional
 
 ### Work Stuff
 
-Still at [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/), working on court form software, particularly [e-filing](https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/#our-work).
-Last month I released an [e-fileable Appearance form](https://github.com/SuffolkLITLab/docassemble-AppearanceEfile) in Illinois, working with [Illinois Legal Aid Online](https://www.illinoislegalaid.org/)! It's the result of a lot of work over the past 2 years, and I'm really happy
-to see it out in the world.
-I'm also pushing hard to have our other [Motion to Stay Eviction](https://github.com/SuffolkLITLab/docassemble-MotionToStayEviction/tree/new_efiling) for the Massachusetts Appeals Court go live, gotta wait on bureaucracy now though.
+Still at [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/), working on court form software.
 
-I just did a conference talk at [eCourts 2022](https://vimeo.com/780581207/3fda6a41a3?embedded=true&source=vimeo_logo&owner=11964368) (we got [an article in GovTech](https://www.govtech.com/gov-experience/how-tech-court-teamed-up-to-fight-evictions-via-smartphone) too), with my colleague [Quinten Steenhuis](https://www.nonprofittechy.com/) and our partner in the Massachusetts Appeals Court, [Paul Tuttle](https://www.linkedin.com/in/paul-tuttle-0b211914a), on the work we've done together. I had hoped to have the e-filing app live by the time the talk happened, but eh <span aria-label="shruggie emoticon">¯\\_(ツ)\_/¯</span>.
-
-
-I've also done some more [accessibility work]({% post_url 2022-11-25-accessibility %}): I improved the [accessibility of docassemble's combobox](https://github.com/jhpyle/docassemble/pull/581), and I've also started guiding some [Suffolk Law students](https://suffolklitlab.org/courses/fellows/) in putting together a full WCAG 2.1 audit of our docassemble systems, which is exciting.
-
-<!--There's nothing between us and the release, so I'm trying to make sure these webapps are polished and [helpful to users](https://suffolklitlab.org/legal-tech-class/docs/legal-tech-overview/maturity-model/#quick-summary) before they get put out into the real world.-->
-
-<!--Trying to find time to start implementing our "LIT Styler" tool, which will put into effect a lot of thinking I've already done about form "completion ease" and readability.-->
+Only update here is that we have published our paper about Form complexity! ["Beyond Readability with RateMyPDF: a combined rule-based and machine learning approach to improving court forms"](https://suffolklitlab.org/docassemble-AssemblyLine-documentation/assets/files/Beyond%20Readability%20with%20RateMyPDF-96e42df12b1b4fce13d6a9c059cd0fbf.pdf) is a paper written by my colleague Quinten Steenhuis, myself, and David Colarusso about our work on [ratemypdf.com](https://ratemypdf.com/), a tool that we created to evaluate court PDF forms, attempting to estimate how long it takes to
+fill them out, and how complex they are. Check it out!
 
 ### Latest Github Activity
 
@@ -62,13 +53,11 @@ and developing the skills to do that well (like partnership building).
 
 ### Doing
 
-Planning a wedding and house-hunting takes up most of my free time. I've moved my mastodon account to the new [public interest instance](https://mastodon.publicinterest.town/@brycew), which I recommend. It's a bit small now, but the community is growing, and I'm seeing lots of interesting new people.
-
-I'm also reading about and playing around with [live coding](https://livecodingbook.toplap.org/). I've on and off tried [Sonic-pi](https://sonic-pi.net) for a while ,but I'm taking the idea of starting with nothing and trying to implement something in a small time frame more seriously (15-30 minutes, a "live coding set" in that I am coding the whole time, even if I spend 10 minutes debugging). I'm also trying to learn [SuperCollider](https://supercollider/github.io/) and [Tidal Cycles](https://tidalcycles.org/) (in the form of [Strudel](https://strudel.tidalcycles.org/learn/getting-started/)), and I am reading [The Theory and Techniques of Electronic Music](http://msp.ucsd.edu/techniques.htm).
+Planning a wedding and unpacking takes up most of my free time. When I get some free time, it's been spent building up my federal resume. I've moved my mastodon account to the new [public interest instance](https://mastodon.publicinterest.town/@brycew), which I recommend.
 
 ### Listening To
 
-Last month was my favorite time of year: Spotify wrapped. I absolutely love seeing what all of my friends have been listening to, and breaking out of my own musical bubble. I have a [Spotify playlist](https://open.spotify.com/playlist/6NxH6L5jNfwMRThWiPI85E?si=14c89550af4d4742) that has a song or two from all of the wrapped posts that I saw. I'll list some of my favorites from it below.
+Bunch of random stuff. Prepping for going to Boston Calling in a few weeks.
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -81,23 +70,15 @@ Last month was my favorite time of year: Spotify wrapped. I absolutely love seei
     </tr>
   </thead>
   <tbody>
-    {% song_table --song="Sister Sister" --album="Sister Sister" --artist="Mtbrd" --img_id=ab67616d000048515340a2d93cee5436c54cc3f1 %}
-    {% song_table --song="Universal Sound" --artist="Tyler Childers" --album="Purgatory" --img_id=ab67616d000048515a38bd36056b909ed607689d %}
-    {% song_table --song="Angel" --artist="Placid Angles" --album="First Blue Sky" --img_id=ab67616d00004851ca46b2cae57b6e6e4074e62c %}
-    {% song_table --song="Everything's Electric" --artist="Liam Gallagher" --img_id=ab67616d00004851042e36a10bb80151ed47d7af %}
-    {% song_table --song="Unholy (feat. Kim Petras)" --artist="Sam Smith, Kim Petras"  --img_id=ab67616d00004851a935e4689f15953311772cc4 %}
-    {% song_table --song="Slumber Party (feat. Princess Nokia)" --artist="Ashnikko, Princess Nokia" --album="DEMIDEVIL" --img_id=ab67616d0000485111b63834a1a557cc77403458 %}
+    {% song_table --song="SCARING THE HOES" --album="SCARING THE HOES" --artist="JPEGMAFIA, Danny Brown" --img_id=ab67616d00001e028cf4c85912fdeb106707fb4c %}
+    {% song_table --song="ISLAND" --artist="JIMSAKU" --album="DISPENSATION" --img_id=ab67616d00001e02fdee033379f7781f013f15a4 %}
+    {% song_table --song="Everybody Knows That You're Insane" --artist="Queens of the Stone Age" --album="Lullabies to Paralyze" --img_id=ab67616d00001e029fbc395aa3944da173e69fda %}
+    {% song_table --bandcamp --song="Sunset Skating" --artist="Louie Zong" --album="Cartoon Funk" --song_url=https://louiezong.bandcamp.com/track/sunset-skating  --img_id=https://f4.bcbits.com/img/a1689585732_10.jpg %}
+    {% song_table --bandcamp --song="Late Afternoon" --artist="ann annie" --album="By Morning" --song_url=https://annannie.bandcamp.com/album/by-morning --img_id=https://f4.bcbits.com/img/a3664421650_16.jpg %}
+    {% song_table --bandcamp --song="Gondii" --artist="King Gizzard & The Lizard Wizard" --album="Changes" --song_url=https://kinggizzard.bandcamp.com/track/gondii --img_id=https://f4.bcbits.com/img/a1890146474_16.jpg %}
   </tbody>
 </table>
 
 ### Gaming
 
-I finished Bloodborne, which is my first From Software game. I absolutely loved it, 100% would recommend.
-
-I started and stopped playing Horizon: Zero Dawn. I have mixed feelings about it; at times I liked the combat and the world building, but then I'd get tired of having to fight 20 robots every 5 feet, and just got to the point where I played all of the story that I could. I wasn't impressed with the writing, though the vocal performances were fine.
-
-I'm about 1/2 way through Uncharted 4: Thieves End. Really liking revisiting the characters after playing through the first 3 games in high school. The writing, the little one liners and the character arcs are great so far.
-
-### Watching
-
-Re-watched [Knives Out](https://en.wikipedia.org/wiki/Knives_Out), and despite the fact that it is very in the moment of 2019, it's aged very well, and still is funny and riveting. I also watched the sequel, [Glass Onion](https://en.wikipedia-org/wiki/Glass_Onion:_A_Knives_Out_Mystery), which is great in different ways; it's not really a mystery in the same way, but it's just as funny IMO.
+I about 50 hours in Elden Ring, and really liking it. The core game loop is really fun; it's engaging and challenging in the same way that Bloodborne was for me, but I haven't (yet, though I heard the last 3rd of the game is grindy) had to get stuck at a single boss; if I lose more than 5 times, I just go do something else, get stronger, comeback and have a much better time. The story IMO isn't as engaging as Bloodborne's was, but the exploration is really fascinating, both for the same reason: the world is just so big. It's great to get lost in all of the corners and get a sense of something larger, but it makes for a weaker narrative, since everything is so spread out. I've never been the biggest fan of NPC interactions in From Software games, and Elden Ring has the same sort of stiff NPCs that don't seem to do anything, so it can feel big, but a bit hollow.

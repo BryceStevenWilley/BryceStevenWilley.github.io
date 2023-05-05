@@ -12,6 +12,9 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       super
       @location = :spotify
+      if text=~ /--bandcamp/i
+        @location = :bandcamp
+      end
       if text =~ /--song="([^"]+)"/i
         @song_name = text.match(/--song="([^"]+)"/i)[1]
       end
@@ -23,6 +26,9 @@ module Jekyll
       end
       if text =~ /--img_id=(\S+)/i
         @img_id = text.match(/--img_id=(\S+)/i)[1]
+      end
+      if text =~ /--song_url=(\S+)/i
+        @song_url = text.match(/--song_url=(\S+)/i)[1]
       end
       if text =~ /--song_url=(\S+)/i
         @song_url = text.match(/--song_url=(\S+)/i)[1]
@@ -46,15 +52,15 @@ module Jekyll
         if @song_url != nil
           source += %{  <td><a href="https://open.spotify.com/#{@song_url}">#{@artist}</a></td>\n }
         else
-          source += %{  <td><a href="https://open.spotify.com/search/#{CGI.escape(@artist + " " + @song_name)}">#{@artist}</a></td>\n }
+          source += %{  <td><a href="https://open.spotify.com/search/#{@artist} #{@song_name}">#{@artist}</a></td>\n }
         end
       elsif @location == :bandcamp
         source += %{  <td><img src="#{@img_id}" alt="The album cover for #{@artist}'s #{@album_name}" height="71" width="71"></td>\n}
         source += "  <td>#{@song_name}</td>\n"
         if @song_url != nil
-          source += %{  <td><a href="#{@song_url}"> #{@artist}</a></td>\n}
+          source += %{  <td><a href="#{@song_url}">#{@artist}</a></td>\n}
         else
-          source += %{  <td><a href="https://bandcamp.com/search?q=#{CGI.escape(@artist + " " + @song_name)}">#{artist}</a></td>\n}
+          source += %{  <td><a href="https://bandcamp.com/search?q=#{CGI.escape(@artist + " " + @song_name)}">#{@artist}</a></td>\n}
         end
       end
       source += "</tr>\n"

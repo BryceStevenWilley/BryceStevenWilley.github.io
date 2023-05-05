@@ -17,10 +17,9 @@ I used to work at [Realtime Robotics](https://rtr.ai), as a motion planning soft
 we used, adding a lot of extra profiling and tracing features that we
 used to specifically optimize motion planning compared to which
 collision methods we were able to use, and adding mission critical features, like being able to autonomously and safely move the robots
-back to their starting positions after system failures. I also wrote a lot of what I call glue work; adding internationalization to our first App, adding
+back to their starting positions after system failures. I also wrote a lot of what I call glue work; adding internationalization to our first app, adding
 linting tools like clang-tidy and clang-format to the code base,
-and writing low-level communications between our application and
-Siemens simulation program, Tecnomatix.
+and writing low-level communications between [our application and Siemens simulation program, Tecnomatix](https://rtr.ai/realtime-robotics-partners-with-siemens-to-accelerate-the-integration-of-industrial-robotic-workcells/).
 
 I was also one of the lead developers on their autonomous driving
 projects, doing a lot of simulations and analysis for our hardware development; that project doesn't seem to have lasted after I left though.
