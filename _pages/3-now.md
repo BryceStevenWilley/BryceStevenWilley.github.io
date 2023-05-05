@@ -70,7 +70,7 @@ Bunch of random stuff. Prepping for going to Boston Calling in a few weeks.
     </tr>
   </thead>
   <tbody>
-    {% song_table --song="SCARING THE HOES" --album="SCARING THE HOES" --artist="JPEGMAFIA, Danny Brown" --img_id=ab67616d00001e028cf4c85912fdeb106707fb4c %}
+    {% song_table --song="Northern Attitude" --album="Stick Season" --artist="Noah Kahan" --img_id=ab67616d00001e026ee35072df1af802cca09918 %}
     {% song_table --song="ISLAND" --artist="JIMSAKU" --album="DISPENSATION" --img_id=ab67616d00001e02fdee033379f7781f013f15a4 %}
     {% song_table --song="Everybody Knows That You're Insane" --artist="Queens of the Stone Age" --album="Lullabies to Paralyze" --img_id=ab67616d00001e029fbc395aa3944da173e69fda %}
     {% song_table --bandcamp --song="Sunset Skating" --artist="Louie Zong" --album="Cartoon Funk" --song_url=https://louiezong.bandcamp.com/track/sunset-skating  --img_id=https://f4.bcbits.com/img/a1689585732_10.jpg %}
