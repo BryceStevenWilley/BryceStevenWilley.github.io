@@ -20,6 +20,55 @@ layout: default
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
+  <p>You might be looking for <span id="four-oh-four-suggestion"></span></p>
   <p>The requested page could not be found.</p>
   <p>Feel free to email me and let me know if a link is broken!</p>
 </div>
+
+<!--
+  The MIT License (MIT)
+
+Copyright (c) 2016 Ben Balter
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+From https://github.com/benbalter/retlab/blob/main/js/script.ts
+-->
+
+<script type="text/javascript" src="/assets/js/fastest-levenshtein.js"></script>
+<script>
+  const div = document.getElementById('four-oh-four-suggestion');
+  if (div) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+       const xml = xhr.responseXML;
+        const urls = Array.from(xml.querySelectorAll('urlset > url > loc')).map((el) => el.textContent);
+        const url = new URL(closest(window.location.href, urls));
+        div.innerHTML = `<a href="${url.href}">${url.pathname}</a>`;
+      } else {
+        div.innerHTML = '<a href="/">/</a>';
+      }
+    };
+
+    xhr.open('GET', `${window.location.protocol}//${window.location.host}/sitemap.xml`);
+    xhr.send(); 
+  }
+</script>
