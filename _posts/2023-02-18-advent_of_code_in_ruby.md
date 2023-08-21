@@ -15,9 +15,9 @@ headerImg:
 [Advent of Code](https://adventofcode.com) is series of 25 different programming challenges,
 released one a day from December 1st to 25th.
 I got through 16 this year, which is the farthest I've gotten [^1].
-I'm not letting it stop me from writing about it though, because I accomplished what I wanted out of it: to become "conversational" in Ruby.
+I'm still writing about the experience though, because I accomplished what I wanted out of it: to become "conversational" in Ruby.
 
-By conversational, I mean I want to:
+By conversational, I mean that I want to:
 * be able to write quick scripts in it. Not that I'll end up writing a lot of scripts in Ruby, but for me it's a good metric of if I know enough.
 * know the basic structures and their general rules, i.e. what makes Ruby unique? I knew nothing about blocks or procs going in, and had only read a little bit about features like symbols.
 * be able to read a local bit of code and understand it. This is the most useful criteria, since it's what you end up doing a lot when you program, but (spoiler for the rest of the post) it's a bit harder to measure with Advent of Code, since you don't read a lot of code.
@@ -79,10 +79,10 @@ I did want to avoid a problem that I'd describe as "using 5 langs like one lang"
 
 Is there a better way to use advent of code? idk. I've seen several really interesting projects in advent of code, but I didn't feel like I would get much out of them:
 
-* Matt Might did [one language a day](https://matt.might.net/articles/26-languages-part1/), similar to mine, but much more ambitious. I definitely couldn't pull that off without "using 26 languages like on lang", if I could do it at all.
+* Matt Might used [a different language each day](https://matt.might.net/articles/26-languages-part1/), with a similar goal to me, but much more ambitious. If I tried that, I think I would end up "using 26 languages like one lang". 
 * Ben Visness did [the challenges in Dreams](https://bvisness.me/advent-of-dreams/), a Playstation game-making game. Definitely more a fun, light-hearted challenge
 
-Advent of code is great, since there are so many older years that I could go back and do in other languages for some coding practice if I wanted to. If I do it this year, I might go for a more fun challenge, something not really practical, but would be really interesting, like:
+Advent of code is great, since there are so many older years that I could go back and do in other languages for some coding practice if I wanted to. If I do it again in 2023, I might go for a more fun challenge, something not really practical, but would be really interesting, like:
 
 * writing it in assembly, x86 or [uxn](https://100r.co/site/uxn.html)
 * doing it by hand. Would definitely take forever, but would be an incredible flex
