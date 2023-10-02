@@ -11,7 +11,7 @@ headerImg:
   alt: A picture of Bryce, exploring NYC
 ---
 
-I'm Bryce, a clinical fellow at the [Suffolk LIT Lab](https://suffolklitlab.org/), living in Boston, MA.
+I'm Bryce, a freelance docassemble and full-stack [docassemble](https://docassemble.org) developer, living in Boston, MA.
 My mission is to make technology that works better for people.
 
 You can find [my resumé here](assets/bryce_willey_resume.pdf).
@@ -23,7 +23,7 @@ on autonomous robotic motion planning algorithms. I then moved up to Boston and 
 
 In the Summer of 2020, with the George Floyd protests and COVID-19 exposing deficiencies in our social systems, I reevaluated my career path, and decided to pivot.
 I worked as a [Bluebonnet Data Fellow](https://www.bluebonnetdata.org/) with [Anthia Owens Carter](https://ballotpedia.org/Anthia_Carter) for Georgia, House District 47.
-I then started a Fellowship with Suffolk LIT Lab, working on the [Document Assembly Line Project](https://suffolklitlab.org/doc-assembly-line/).
+I then started a Fellowship with [Suffolk LIT Lab](https://suffolklitlab.org), working on the [Document Assembly Line Project](https://suffolklitlab.org/doc-assembly-line/).
 I've been involved with [Code for Boston](https://www.codeforboston.org/) and [Code for America](https://www.codeforamerica.org/), specifically [GetYourRefund's](https://www.codeforamerica.org/programs/getyourrefund) volunteer experiment team.
 
 I run, read, bike, play video games, and take my pup, Jackie for lots of long walks.
