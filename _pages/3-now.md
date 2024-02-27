@@ -12,23 +12,21 @@ It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated every 3 months or so.
 
-Last updated September 22nd, 2023.
+Last updated February 26th, 2024.
 
 ## Professional
 
 ### Work Stuff
 
-I'm leaving [Suffolk Law School's Legal Innovation and Technology (LIT) Lab](https://suffolklitlab.org/) after about 3 years!
-It's been a wonderful experience, and I've learned an incredible amount about access to justice, and the courts.
-I am not leaving the docassemble and legal tech field however, as I'll be contracting with a few organizations:
+It's actually been a few weeks since I started, but I'm working at the IRS now! I'm on the Taxpayer Experience Shared Services team,
+working on improving common web services for the IRS, stream lining efforts and improving code quality.
 
-* I'll be working with Michigan Legal Help on their docassemble efforts, doing lots more docassemble interview crafting and e-filing work.
-* I'll continue consulting with [Lemma Legal](https://lemmalegal.com/) on their many efforts.
-* technically, I'm not even leaving the LIT Lab, as I'll be still working with them to improve judicial e-filing
+Now that I have a solid footing in my career, I'm gonna focus on developing a lot of connections, working on networking and how to best
+socialize technical proposals and changes around a lot of different groups that I might not work closely with.
 
-Luckily, I was able to launch Massachusetts' first third-party EFSP before I left!
-We are now the first organization that isn't Tyler Technologies that can file into the Massachusetts courts!
-This has been a big push in a lot of different ways, and much of the behind the scenes work is thanks to Paul Tuttle at the Massachusetts Appeals Court, as well as my colleagues David Colarusso and Quinten Steenhuis.
+I waited a while to post so I understood what exactly I could talk about. And I think I'll keep quite about most of it for the moment.
+But I still plan on posting here, it'll just be about more of what I do in my free time outside the IRS. Still technical content, but
+might mix in some fun posts now and then.
 
 ### Latest Github Activity
 
@@ -48,23 +46,18 @@ This has been a big push in a lot of different ways, and much of the behind the 
 </li>
 </ul>
 
-### Long Term Career Stuff
-
-I don't plan on contracting / consulting forever; I am still actively looking for full time work in the civic and public interest tech space!
-I'm looking for a solid team, where I'd be able to hone more of my technical skills, and grow in new ways.
-
 ## Personal
 
 ### Doing
 
-Wedding planning is now is full gear, and takes up most of my free time.
-I recently hacked on an old rotary phone, using cell2jack to let it make calls, and it'll serve as the guest book for our wedding!
+I got married! It was wonderful, and I love my wife. :) That's all. [Here's a few pics from our photographer](https://www.channingjohnson.com/blog/2023/11/20/olio-peabody-wedding).
+
+<img src="https://images.squarespace-cdn.com/content/v1/52d903b2e4b05a02fb81a590/1700510190341-NATJPRK7W411R8V3ROY5/olio-peabody-wedding-0025.JPG?format=1000w"
+alt="myself and my wife dancing at our wedding! There is a band playing in the background, and purple lights reflecting of a disco ball all around us">
 
 ### Listening To
 
-Lots of jazz fusion!
-I recently got my hands on a cheap saxophone, so I've been learning to play that, and have been polishing my piano playing skills as well, which means I'm listening to a lot
-of my favorite sub-genre of jazz, jazz fusion.
+Weird shit. One of spotify's recent recommended playlists for me was called "Rollerblading", and I absolutely love it.
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -77,16 +70,26 @@ of my favorite sub-genre of jazz, jazz fusion.
     </tr>
   </thead>
   <tbody>
-    {% song_table --song="YYZ" --album="Moving Pictures (2011 Remaster)" --artist="Rush" --img_id=ab67616d00001e0272833c1ae3343cbfb4617073 %}
-    {% song_table --song="Elegant People" --artist="Black Market" --album="Weather Report" --img_id=ab67616d00001e02f733433f86d4acd857c4cbc2 %}
-    {% song_table --song="TRAVELERS" --artist="T-SQUARE" --album="ADVENTURES" --img_id=ab67616d00001e022eaaafa220a507d7bb60bec8 %}
-    {% song_table --song="Topaz" --artist="Journey" --album="Journey" --img_id=ab67616d00001e0232e0eceec3aa14996428af51 %}
-    {% song_table --bandcamp --song="Work This Time" --artist="King Gizzard & The Lizard Wizard" --album="Live at Bonnaroo '22" --song_url=https://kinggizzard.bandcamp.com/track/work-this-time-live-at-bonnaroo-22  --img_id=https://f4.bcbits.com/img/a3121529005_10.jpg %}
-    {% song_table --bandcamp --song="Supercell" --artist="King Gizzard & The Lizard Wizard" --album="PetroDragonic Apocalypse; or, Dawn of Eternal Night: An Annihilation of Planet Earth and the Begnning of Merciless Damnation" --song_url=https://kinggizzard.bandcamp.com/track/supercell --img_id=https://f4.bcbits.com/img/a2805471381_16.jpg %}
+    {% song_table --song="Sneakman" --album="Jet Set Radio SEGA Original Tracks" --artist="Hideki Naganuma" --img_id=ab67616d00001e02d80af40b8062a9d0eaf671dd %}
+    {% song_table --song="Waters of Nazareth" --artist="Justice" --album="Justice" --img_id=ab67616d00001e021c0bcf8b536295438d26c70d %}
+    {% song_table --song="Let There Be Light" --artist="Justice" --album="Justice" --img_id=ab67616d00001e021c0bcf8b536295438d26c70d %}
+    {% song_table --song="Doritos & Fritos" --artist="100 gecs" --album="10,000 gecs" --img_id=ab67616d00001e0223c7a7224c1378fc3e6427cb %}
+    {% song_table --bandcamp --song="Traffic Jam" --artist="Louie Zong" --album="RAT TAXI" --song_url=https://louiezong.bandcamp.com/track/traffic-jam --img_id=https://f4.bcbits.com/img/a3758298176_16.jpg %}
+    {% song_table --bandcamp --song="Run" --artist="Blank Banshee" --album="4D" --song_url=https://blankbanshee.bandcamp.com/track/run --img_id=https://f4.bcbits.com/img/a2876132581_16.jpg %}
   </tbody>
 </table>
 
 ### Gaming
 
-I finished Pikmin 4, which was an absolute treat. The visuals, the sound design, the atmosphere, and the little dandori challenges were all super fun to play. The post game lasts such as long time as well, and really makes it all worth it.
+* Legend of Zelda: Tears of the Kingdom. While I did put 60 hours into it and had a pretty good time, I felt conflicted about it. I think it just boiled down to me not gelling with the
+  new mechanics as much as I did in Breath of the Wild. Absolutely a great game though, well worth it's slightly steeper price.
+* [Inscryption](https://www.inscryption.com/). I'm not usually a deck-building game person, but the core gameplay of a rougelike deck-builder was extremely satisfying. Understanding the deck mechanics and slowly figuring out how to build power decks consistently was the most fun I've had in a rougelike outside of Hades. Play it, and play it blind.
+* [South Scrimshaw](https://nomarsh.itch.io/scrimshaw), a wonderful little nature-documentary / visual novel. A wonderful premise, had me hooked with the world building and characterization immediately. I love it.
 
+### Reading
+
+* [The Overstory](https://en.wikipedia.org/wiki/The_Overstory): incledible work of fiction, wonderfully evocative prose, compelling narative, and subtle weaving and intersecting of stories, theme, and structure in a way that I still think about every day (my roman empire).
+* [Hack Your Bureaucracy](https://www.hackyourbureaucracy.com/): one of the more useful and immediately applicable books I've read about working in an organization with > 30 people. I've literally
+  already used several of the hacks in my few weeks at the IRS (notably, "Try the normal way first", and "Pilot is the password") to great effect.
+* [The Three-Body Problem](https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)): everyone really seems to love this one, ([including Obama](https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)#cite_ref-20), lol), but I was more conflicted on it. At the worst of times, it's like reading a Less Wrong post (derogatory). However, I'm still invested enough that I want to read the remainder of the trilogy.
+* [How High We Go in the Dark](https://www.sequoianagamatsu.com/how-high-we-go-in-the-dark): I went in thinking it was going to be a science fiction Overstory, and while it was still wonderfully written, the stories didn't intersect as much as I expected them to. Which is my fault! Don't make my mistake! Treat this as a series of short stories all in the same world, and you'll absolutely love it.
