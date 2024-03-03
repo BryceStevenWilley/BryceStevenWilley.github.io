@@ -88,7 +88,7 @@ Weird shit. One of spotify's recent recommended playlists for me was called "Rol
 
 ### Reading
 
-* [The Overstory](https://en.wikipedia.org/wiki/The_Overstory): incledible work of fiction, wonderfully evocative prose, compelling narative, and subtle weaving and intersecting of stories, theme, and structure in a way that I still think about every day (my roman empire).
+* [The Overstory](https://en.wikipedia.org/wiki/The_Overstory): incredible work of fiction, wonderfully evocative prose, compelling narative, and subtle weaving and intersecting of stories, theme, and structure in a way that I still think about every day (my roman empire).
 * [Hack Your Bureaucracy](https://www.hackyourbureaucracy.com/): one of the more useful and immediately applicable books I've read about working in an organization with > 30 people. I've literally
   already used several of the hacks in my few weeks at the IRS (notably, "Try the normal way first", and "Pilot is the password") to great effect.
 * [The Three-Body Problem](https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)): everyone really seems to love this one, ([including Obama](https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)#cite_ref-20), lol), but I was more conflicted on it. At the worst of times, it's like reading a Less Wrong post (derogatory). However, I'm still invested enough that I want to read the remainder of the trilogy.
