@@ -12,6 +12,12 @@
     height: auto;
 }
 
+.headerImgW.max250 img {
+    border-radius: 50%;
+    object-fit: contain;
+    max-height: 250px;
+}
+
 .headerImgW img.no-radius {
     border-radius: 0%;
 }
