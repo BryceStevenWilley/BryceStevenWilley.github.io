@@ -59,7 +59,7 @@ Here are some of my current and past personal projects, both software and non-so
     E-filing with Open Source Tools
     </td>
     <td>Quinten Steenhuis, Matt Newsted, and Amanda Brown</td>
-    <td><a href="https://dcs.google.com/presentation/d/1RrYLfxn9rCMbTI5KIfOysaVtidAaSrMt2-aQ_stJzA8/edit?usp=sharing">slides</a></td>
+    <td><a href="https://docs.google.com/presentation/d/1RrYLfxn9rCMbTI5KIfOysaVtidAaSrMt2-aQ_stJzA8/edit?usp=sharing">slides</a></td>
   </tr>
   <tr>
     <td><a href="https://docacon.com/2021/index.html">docacon 2021</a></td>

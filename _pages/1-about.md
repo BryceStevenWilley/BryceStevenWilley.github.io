@@ -14,7 +14,7 @@ headerImg:
 I'm Bryce, a full-stack software engineer, living in Boston, MA. I currently work for the IRS.
 My mission is to make technology that works better for people.
 
-You can find [my resumé here](assets/bryce_willey_resume.pdf).
+You can find [my resumé here](/assets/bryce_willey_resume.pdf).
 
 I received a BS in Computer Science and a BA in Theatre in 2017 and defended my [Master's Thesis](/academic) in August 2018, all at Rice University.
 My thesis is based on work in the [Kavraki Lab](http://www.kavrakilab.org/)
@@ -37,3 +37,7 @@ This website is built using Jekyll, and the
 [base material theme](https://github.com/alexcarpenter/material-jekyll-theme) was made by [Alex Carpenter](https://alexcarpenter.me/).
 The header font is Atari-Fancy37, from [Eight Bit Atari Fonts](https://github.com/TheRobotFactory/EightBit-Atari-Fonts).
 The photos of me are from my friends [Yena Han](https://yenahan.squarespace.com) and [Grant Raun](https://www.grantraun.com).
+
+<a id="dontsueme"></a>This blog was written by Bryce Willey in his personal capacity. The opinions expressed on this website are my own, and do not reflect the view of the Internal Revenue Service, the Treasury Department, or the United States government.
+
+<!-- This disclaimer is based on the NIH disclaimer: https://ethics.od.nih.gov/using-disclaimer -->

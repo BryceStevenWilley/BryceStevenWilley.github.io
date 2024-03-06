@@ -66,7 +66,7 @@ There are also a ridiculous number of acronyms that you'll see going through the
 * [WCAG-EM](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/): WCAG Evaluation Methodology, how to systematically apply WCAG to your website ([I'll cover this in a different post](#ending-thoughts))
 * [W3C](https://www.w3.org/): World Wide Web Consortium, the group that develops these accessibility standards, like WCAG and ARIA, and other web standards, like CSS
 * [WAI](https://www.w3.org/WAI/): Web Accessibility Initiative, the group responsible for developing all of the W3C's accessibility standards and documents
-* [WHATWG](https://wtatwg.org/faq#what-is-the-whatwg): Web Hypertext Application Technology Working Group, a separate group that just makes the HTML standard
+* [WHATWG](https://whatwg.org/faq#what-is-the-whatwg): Web Hypertext Application Technology Working Group, a separate group that just makes the HTML standard
 * [TR](https://www.w3.org/2015/Process-20150901/#requirements-and-definitions): Technical Reports, it's in most of the web standards' URLs
 * [ATAG](https://www.w3.org/WAI/standards-guidelines/atag/): Authoring Tool Accessibility Guidelines, the standard for authoring tools to generate accessible
   content. Authoring tools are any tool that helps you, the author, generate web content, from what-you-see-is-what-you-get HTML editors, to social media post editors.

@@ -24,7 +24,7 @@ working on improving common web services for the IRS, stream lining efforts and 
 Now that I have a solid footing in my career, I'm gonna focus on developing a lot of connections, working on networking and how to best
 socialize technical proposals and changes around a lot of different groups that I might not work closely with.
 
-I waited a while to post so I understood what exactly I could talk about. And I think I'll keep quite about most of it for the moment.
+I waited a while to post so I understood [what exactly I could talk about](/about#dontsueme). And I think I'll keep quite about most of it for the moment.
 But I still plan on posting here, it'll just be about more of what I do in my free time outside the IRS. Still technical content, but
 might mix in some fun posts now and then.
 

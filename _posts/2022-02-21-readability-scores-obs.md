@@ -64,7 +64,7 @@ However, there are a lot of issues with the actual labeling of a text as "4th gr
 
 * they were validated on 4th graders in 1975 (or whenever the score was last updated), not 4th graders today.
 * it implies that you need to write like you're talking to a 9 year old, which implies that you need to dumb it down. You don't need to dumb down your writing!
-  A great point that my colleague [Caroline Robinson](https://www.mlri.org/staff-member/caroline-robinson/) has made is that **a reading grade level isn't a thinking grade level**: an adult who reads at a lower than average grade level can talk about complicated topics and ideas.
+  A great point that my colleague [Caroline Robinson](https://www.linkedin.com/in/caroline-robinson-34708a3) has made is that **a reading grade level isn't a thinking grade level**: an adult who reads at a lower than average grade level can talk about complicated topics and ideas.
   Additionally, people are often able to read above their average readability ! The [original Flesch score]({% post_url 2022-01-16-readability-scores-reference %}#flesch-reading-ease) tried to consider interest and appeal in the article topic into account in the score.
 * it implies that everyone who does read above a 4th grade level will be able to read the text.
   People also often read below their readability score. Not everything that a college reading grade level person reads will be at a 13th grade level.

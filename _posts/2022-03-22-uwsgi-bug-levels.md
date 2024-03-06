@@ -86,7 +86,7 @@ def application(env, start_response):
 
 ```
 
-Now, again, I was so close, but couldn't see it. "Just print `sys.executable`!" But I did know a bit more about the problem I was looking at: it was specifically about uWSGI and running `subprocess.Popen` (or `subprocess.run`, they're the same thing essentially). With that, I had the right search term: "uWSGI and subprocess", which brought me to straight to the answer [`sys.executable` isn't python, it's uWSGI](https://dev-qa.com/146753/what-is-happening-in-uwsgi-with-subprocess-popen).
+Now, again, I was so close, but couldn't see it. "Just print `sys.executable`!" But I did know a bit more about the problem I was looking at: it was specifically about uWSGI and running `subprocess.Popen` (or `subprocess.run`, they're the same thing essentially). With that, I had the right search term: "uWSGI and subprocess", which brought me to straight to the answer [`sys.executable` isn't python, it's uWSGI](https://dev-qa.com/146753/what-is-happening-in-uwsgi-with-subprocess-popen) (unfortunately that link died, and wasn't archived :/ )
 
 My assumptions were what made this problem take longer that I expected. There were a few that are useful to unpack.
 
