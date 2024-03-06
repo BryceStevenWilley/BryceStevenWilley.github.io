@@ -74,7 +74,7 @@ Kincaid himself has some interesting thoughts on readability scores, particularl
 > If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones.
 > This kind of chopping will indeed lower the readability level, but it's often counter­ productive.
 >
-> - [Dr. J Peter Kincaid](https://www.semanticscholar.org/paper/Readability-formulas%3A-Useful-or-useless-McClure/7c5a5c88214ead4552eded309ec26995013faac9)
+> -[Dr. J Peter Kincaid](https://www.semanticscholar.org/paper/Readability-formulas%3A-Useful-or-useless-McClure/7c5a5c88214ead4552eded309ec26995013faac9)
 
 ### Gunning Fog index
 

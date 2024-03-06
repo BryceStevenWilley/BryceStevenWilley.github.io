@@ -51,7 +51,7 @@ scores, they're talking about one of those.
 As the previous paragraph shows, most readability scores were designed to be easier to compute; the fewer things to count and calculate, the better.
 Arguably, they are much too simple. While McLaughlin is right that "It is not essential that the variables in a prediction formula should have direct causal connection with the quantity that is being predicted," if you're trying to use a readability score to improve writing, it is almost always true that your method of improvement should have a causal connection.
 
-Another things that is lacking from standard readability scores is that they are validated on novel or article-like text. Those types of text miss a huge type of writing that many of do nowadays: website and social media writing. For example, readability of websites was the main goal of [Collins-Thompson and Callan](#Collins-Thompson-Callan-Score) when they introduced their unigram model. We can get a bit more qualitative data on real users from [Jacob and Uitdenborgerd (2019)](https://aclanthology.org/U19-1003/). They looked at the readability of tweets on Twitter. On twitter, it's difficult to grade short content as readable or not, partially because of the social media and
+Another things that is lacking from standard readability scores is that they are validated on novel or article-like text. Those types of text miss a huge type of writing that many of do nowadays: website and social media writing. For example, readability of websites was the main goal of [Collins-Thompson and Callan]({% post_url 2022-01-16-readability-scores-reference %}#Collins-Thompson-Callan-Score) when they introduced their unigram model. We can get a bit more qualitative data on real users from [Jacob and Uitdenborgerd (2019)](https://aclanthology.org/U19-1003/). They looked at the readability of tweets on Twitter. On twitter, it's difficult to grade short content as readable or not, partially because of the social media and
 conversationality ("Slang, wrongly written and uncommon words seem to lower the readability"), and partially because of Twitter's exceptionally short length.
 They also hint that there seems to be only so much you can do to increase readability in short form text, given that readability is more dependent of demographics. Also that familiarity to the medium is important: all your efforts to make something readable will be in vain if that person has never used a modern website before.
 
@@ -109,7 +109,7 @@ words with shorter synonyms, and expect it to actually read easier.
 > If the read­ing level is too high, the easiest fix is to divide long sentences into shorter ones.
 > This kind of chopping will indeed lower the readability level, but it's often counter­ productive.
 >
-> - [Dr. J Peter Kincaid](https://www.semanticscholar.org/paper/Readability-formulas%3A-Useful-or-useless-McClure/7c5a5c88214ead4552eded309ec26995013faac9)
+> -[Dr. J Peter Kincaid](https://www.semanticscholar.org/paper/Readability-formulas%3A-Useful-or-useless-McClure/7c5a5c88214ead4552eded309ec26995013faac9)
 
 So, for the majority of your writing effort, you likely don't want a readability score; you want a readability tool.
 
