@@ -18,10 +18,10 @@ Here are some of my current and past personal projects, both software and non-so
 <table class="talks">
   <thead>
     <tr>
-      <th>Venue</th>
-      <th>Summary</th>
-      <th>Partners</th>
-      <th>Links</th>
+      <th style="width:17%">Venue</th>
+      <th style="width:32%">Summary</th>
+      <th style="width:27%">Partners</th>
+      <th style="width:17%">Links</th>
     </tr>
   </thead>
   <tbody>

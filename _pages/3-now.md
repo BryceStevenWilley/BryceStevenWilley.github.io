@@ -64,9 +64,9 @@ Weird shit. One of spotify's recent recommended playlists for me was called "Rol
 <table class="listening-to">
   <thead>
     <tr>
-      <th>&nbsp;</th>
-      <th>Song</th>
-      <th>Artist</th>
+      <th style="width: 10%">&nbsp;</th>
+      <th style="width: 40%">Song</th>
+      <th style="width: 50%">Artist</th>
     </tr>
   </thead>
   <tbody>
