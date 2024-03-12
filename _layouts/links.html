@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="c-article">
-  <header class="c-header c-article__header">
+  <header>
     <div class="u-container">
     <h1 class="c-header__title">
       {{ page.title }}
@@ -10,7 +10,7 @@ layout: default
     </div>
     <a href="/foaf.rdf" class="rss-link" title="Download My FOAF RDF data"><span class="icon fas fa-rss"></span></a>
   </header>
-  <div class="c-article__main">
+  <div class="article-main">
     {{ page.content }}
     <br>
     {% for entry in site.data.links %}

@@ -2,12 +2,11 @@
    Header
    ========================================================================== */
 
-.c-header {
-  padding-top: 14.1rem; // 75px
-  padding-bottom: 3rem; // 30px
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
-  background: $t-headerTheme;
+article header {
+  /* top, right, bottom, left */
+  // 14.1rem ~= 75px, 3rem ~= 30px
+  padding: 14.1rem 2.5rem 3rem 2.5rem;
+  background: $t-background;
 }
 
 .c-header__title {

@@ -6,7 +6,7 @@
     <nav class="c-navigation spread">
       <a href="{{ "/" | prepend: site.baseurl }}">
         <img src="/assets/site-logo.png" alt="Bryce's Website Logo" width="56px" height="40px" />
-        <div class="c-navigation__item {% if page.url == '/' %}is-active{% endif %}">{{site.title | escape}}</div>
+        <div class="c-nav__item {% if page.url == '/' %}is-active{% endif %}">{{site.title | escape}}</div>
       </a>
       <div class="spacer"></div>
       <input type="checkbox" id="nav-trigger" class="nav-trigger visually-hidden" />
@@ -24,12 +24,12 @@
           {% assign my_page = site.pages | where: "path", path | first %}
           {% if my_page.front-page %}
                {% if my_page.title %}
-              <a class="c-navigation__item {% if page.url == my_page.url %}is-active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              <a class="c-nav__item {% if page.url == my_page.url %}is-active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               {% endif %}
           {% endif %}
         {% endfor %}
-        <!--a class="c-navigation__item" href="{{ site.baseurl | relative_url }}/assets/bryce_willey_resume.pdf">Resumé</a-->
-        <a class="c-navigation__item" href="{{ site.baseurl | relative_url }}/links">Links</a>
+        <!--a class="c-nav__item" href="{{ site.baseurl | relative_url }}/assets/bryce_willey_resume.pdf">Resumé</a-->
+        <a class="c-nav__item" href="{{ site.baseurl | relative_url }}/links">Links</a>
       </div>
     </nav>
     {% endif %}
