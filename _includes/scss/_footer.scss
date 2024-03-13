@@ -2,13 +2,12 @@
    Footer
    ========================================================================== */
 
-.c-footer {
-  padding-top: 1.5rem; // 75px
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+footer {
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
   width: 100%;
   height: 50px;
-  background: $t-bodyTheme;
+  background: $t-background;
+  color: $t-bodyText;
 
   p {
     @include fs--meta;
@@ -28,7 +27,7 @@
   }
 }
 
-.c-footer__container {
+.footer-container {
   display: -webkit-box;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;

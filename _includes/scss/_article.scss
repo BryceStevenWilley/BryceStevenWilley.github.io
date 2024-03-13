@@ -1,6 +1,9 @@
 /* ==========================================================================
    Article
    ========================================================================== */
+html {
+  background: $t-background;
+}
 
 .headerImgW {
   border-radius: 50%;
@@ -14,6 +17,7 @@
   border-radius: 50%;
   object-fit: contain;
   height: auto;
+  border: 1px solid $t-background;
 }
 
 .headerImgW.max250 img {
@@ -35,10 +39,20 @@
   position: absolute;
   top: 0;
   left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba($c__white, 0) 50%,
+    $t-background 90%,
+    $t-background 100%
+  );
 }
 
 .headerImgW.no-radius {
   border-radius: 0%;
+}
+
+.headerImgW.no-radius:after {
+  background: none;
 }
 
 .article-main {
@@ -54,8 +68,22 @@
     color: rgba($c__black, 0.7);
   }
 
+  p,
+  section,
+  li,
+  h2,
+  h3,
+  h1 {
+    color: $t-bodyText;
+  }
+
   a:not(.c-btn) {
     text-decoration: underline;
+    color: $t-accent;
+  }
+
+  a:visited {
+    color: $t-accent-off;
   }
 
   /* TODO: maybe consider adding a different, more readable Atari font for h2 - h4. */
@@ -132,7 +160,7 @@
   }
 }
 
-table.listening-to {
+table.listening {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
@@ -152,9 +180,7 @@ table.listening-to {
 
   th:nth-child(1),
   td:nth-child(1) {
-    padding: 0px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 0px;
   }
 
   img {
@@ -191,9 +217,7 @@ table.talks {
 
   th:nth-child(1),
   td:nth-child(1) {
-    padding: 0px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 0px;
   }
 
   img {

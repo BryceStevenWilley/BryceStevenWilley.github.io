@@ -2,6 +2,7 @@
 layout: page
 title: Image Gallery
 front-page: false
+has_gallery: true
 permalink: /image-gallery
 headerImg:
   src: /assets/headers/Melody-header.jpg
