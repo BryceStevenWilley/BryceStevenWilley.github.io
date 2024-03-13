@@ -179,6 +179,6 @@ Some of my favorites are below, and you can also view the [entire collection](/i
 </div>
 
 Please please please, if you are living in the Houston area and are considering adopting a dog, go give the
-good pups at BARC a chance. [Check them out!](http://barcly.houstonbarcfoundation.org/#!/home)
+good pups at BARC a chance. [Check them out!](https://www.houstontx.gov/barc/)
 
 [//]: # (TODO: Add Theatre to personal projects: Put key points from Theatre resume here: Sound Design, Projection, etc)

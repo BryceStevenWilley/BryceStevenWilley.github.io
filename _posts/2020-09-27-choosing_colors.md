@@ -66,7 +66,7 @@ I played around for a long time in [colorizer](http://colorizer.org/) and [coolo
 
 ![The first redesign](/assets/blogs/colors/redesign_v3_0.png)
 
-Which wasn't the worst, but still seemed disjoint. It clicked after someone pointed out to me that the individual images didn't have that much in common. I was hoping that I'd just get colors that I liked by putting the images into a collage, but that wasn't the main point of choosing new colors.
+Which wasn't the worst, but still seemed disjoint. It clicked after my girlfriend pointed out to me that the individual images didn't have that much in common. I was hoping that I'd just get colors that I liked by putting the images into a collage, but that wasn't the main point of choosing new colors.
 
 I then just made color pallets of each individual image in the collage and came across a second issue of taking colors from stills of films: the [checkered shadow illusion](https://en.wikipedia.org/wiki/Checker_shadow_illusion): the actual color values in the image aren't colors that your brain is interpreting.
 For example, the bright yellow rain coat in Dark is a staple in the series. In my mind, it always seemed so bright, the only bold color in a sea of washed out grays.
