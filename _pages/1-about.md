@@ -36,7 +36,7 @@ I run, read, bike, play video games, and take my pup, Jackie for lots of long wa
 This website is built using Jekyll, and the
 [base material theme](https://github.com/alexcarpenter/material-jekyll-theme) was made by [Alex Carpenter](https://alexcarpenter.me/).
 The header font is Atari-Fancy37, from [Eight Bit Atari Fonts](https://github.com/TheRobotFactory/EightBit-Atari-Fonts).
-The photos of me are from my friends [Yena Han](https://yenahan.squarespace.com) and [Grant Raun](https://www.grantraun.com).
+The photos of me are from my wife, and my friends, [Yena Han](https://yenahan.squarespace.com) and [Grant Raun](https://www.grantraun.com).
 
 <a id="dontsueme"></a>This blog was written by Bryce Willey in his personal capacity. The opinions expressed on this website are my own, and do not reflect the view of the Internal Revenue Service, the Treasury Department, or the United States government.
 
