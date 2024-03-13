@@ -33,18 +33,15 @@
   {% if page.has_gallery %}
   {% include scss/_gallery.scss %}
   {% endif %}
-  {% include scss/_theme.scss %}
   {% include scss/custom_fonts.scss %}
+  {% if page.use_highlight %}
+  {% include scss/_syntax-highlighting.scss %}
+  {% endif %}
   {% endcapture %}
 
   <style>
     {{ styles | scssify }}
   </style>
-  <!--link rel="stylesheet" href="{{ "/css/gallery.css" | prepend: site.baseurl }}"-->
-  <!--link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"-->
-  {% if page.use_highlight%}
-  <link ref="stylesheet" href="{{ "/css/syntax-highlighting.css | prepend: site.baseurl }}">
-  {% endif %}
   <link rel="icon"  type="image/png" href="/favicon.png">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">

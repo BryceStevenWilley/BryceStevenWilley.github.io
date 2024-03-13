@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 front-page: true
+has_gallery: true
 permalink: /projects/
 headerImg:
   src: /assets/headers/projects.png

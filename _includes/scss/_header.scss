@@ -13,7 +13,7 @@ article header {
   position: relative;
   @include ff--header(500);
   @include fs--title;
-  color: $c__white;
+  color: $t-titleText;
 
   &:after {
     margin-left: .5rem;
@@ -30,7 +30,7 @@ article header {
   position: relative;
   @include ff--sans-serif(500);
   @include fs--subtitle;
-  color: $c__white;
+  color: $t-titleText;
 
   &:after {
     margin-left: .5rem;

@@ -61,7 +61,7 @@ Weird shit. One of spotify's recent recommended playlists for me was called "Rol
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
-<table class="listening-to">
+<table class="listening">
   <thead>
     <tr>
       <th style="width: 10%">&nbsp;</th>
