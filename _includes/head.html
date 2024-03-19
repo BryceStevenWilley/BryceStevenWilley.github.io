@@ -1,25 +1,10 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0090EA">
 
   {% if page.use_math %}
   {% include _mathjax_support.html %}
   {% endif %}
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endif %}">
-
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="{% if page.headerImg.src %}{{ page.headerImg.src | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/site-logo.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% if page.headerImg.alt %}<meta property="og:image:alt" content="{{page.headerImg.alt}}" />{% endif %}
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@WowItIsBryce" />
 
   {% capture styles %}
   {% include scss/_variables.scss %}
@@ -39,9 +24,25 @@
   {% endif %}
   {% endcapture %}
 
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
   <style>
     {{ styles | scssify }}
   </style>
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endif %}">
+
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{% if page.headerImg.src %}{{ page.headerImg.src | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/site-logo.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.headerImg.alt %}<meta property="og:image:alt" content="{{page.headerImg.alt}}" />{% endif %}
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@WowItIsBryce" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0090EA">
   <link rel="icon"  type="image/png" href="/favicon.png">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
