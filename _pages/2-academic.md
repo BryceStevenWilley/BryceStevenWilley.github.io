@@ -6,8 +6,8 @@ permalink: /academic/
 headerImg:
   src: /assets/headers/sampling_optimization.png
   narrow: /assets/headers/sampling_optimization-narrow.png
-  width: "500px"
-  height: "346px"
+  width: "500"
+  height: "346"
   alt: A Barrett WAM robot, with a visualization of multiple motion plans 
 ---
 

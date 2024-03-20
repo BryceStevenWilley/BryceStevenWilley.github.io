@@ -6,8 +6,8 @@ permalink: /about/
 headerImg:
   src: /assets/headers/jack-silly.jpg
   narrow: /assets/headers/jack-silly.jpg
-  width: "438px"
-  height: "315px"
+  width: "438"
+  height: "315"
   alt: A picture of me, Bryce, holding my dog jackie next to a statue of a dog's head, all of us looking in the same direction
 ---
 

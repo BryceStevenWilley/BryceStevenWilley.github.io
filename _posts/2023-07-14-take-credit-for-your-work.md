@@ -7,7 +7,7 @@ headerImg:
   src: /assets/blogs/credit/eht-warren2.jpg
   narrow: /assets/blogs/credit/eht-warren.jpg
   class: no-radius
-  height: "300px"
+  height: "300"
   alt: "A rendered image of a black hole from the Event Horizon Telescope project. At the center is the logo of Rockstar, the game company, and swirling into it are the words 'Created by Warren Robinett'"
 ---
 

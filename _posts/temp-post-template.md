@@ -7,8 +7,8 @@
 #headerImg:
   #src: /assets/path/to/img.png
   #narrow: /assets/path/to/mobile.png
-  #width: 123px
-  #height: 456px  
+  #width: 123
+  #height: 456
   #alt: "the alt text for the image"
 #---
 

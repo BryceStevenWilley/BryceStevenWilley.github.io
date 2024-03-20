@@ -6,8 +6,8 @@ date: 2023-05-04 19:00:00 -0500
 headerImg:
   src: /assets/headers/man-dancing_ahhhh.png
   narrow: /assets/headers/man-dancing_ahhhh.png
-  width: "150px"
-  height: "200px"
+  width: "150"
+  height: "200"
   class: no-radius
   alt: "The man-dancing emoji, with the python logo poorly photoshopped as the dancer's head."
 
@@ -37,7 +37,7 @@ To start, I did the tests manually:
 * Went through once while watching cpu usage with `top`. `pdftoppm` does seem to take up some cpu time, but not a ton.
 * Went through again 4 times, and 3 of them got a 502 error from nginx immediately. There's this in the logs:
 
-```
+```txt
 terminate called after throwing an instance of 'std::runtime_error'
   what():  pybind11_object_dealloc(): Tried to deallocate unregistered instance!
 DAMN ! worker 1 (pid: 570254) died, killed by signal 6 :( trying respawn ...
@@ -48,7 +48,7 @@ That doesn't seem like I'd be able to find and fix it. Hopefully it's a one-off 
 
 `top` now shows this at rest:
 
-```
+```txt
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
  570184 www-data  20   0 1382508 722812  67940 S   0.0   2.9   0:06.79 celery
  570185 www-data  20   0 1382512 722736  67924 S   0.0   2.9   0:06.91 celery
@@ -83,7 +83,7 @@ cd ..
 
 At this point I saw something in the logs that I thought was useful:
 
-```
+```txt
   Traceback (most recent call last):
   ...
   File "/usr/share/docassemble/local3.10/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 747, in do_execute
@@ -106,7 +106,7 @@ I'd seen an error like this before, and Googling led to [a blogs post](https://v
 
 Looking around a bit more, this line appears right before the above stack trace:
 
-```
+```txt
 terminate called after throwing an instance of 'std::runtime_error'
   what():  pybind11_object_dealloc(): Tried to deallocate unregistered instance!
 DAMN ! worker 1 (pid: 666329) died, killed by signal 6 :( trying respawn ...
@@ -116,7 +116,7 @@ Respawned uWSGI worker 1 (new pid: 683455)
 So the new theory of what's happening is that:
 * docassemble creates SQL alchemy connections in the main app
 * something is throwing a `std:runtime_error`. It has to be from C++, the only language with that syntax and runtime error.
-* after respawing, the new uWSGI worker is reusing the same SQL alchemy connection, which causes the above error, and crashes until docassemble can recover 
+* after respawning, the new uWSGI worker is reusing the same SQL alchemy connection, which causes the above error, and crashes until docassemble can recover
 
 I tried with no avail to try to track down where the C++ error could be coming from; I couldn't find where pybind was being used in uWSGI at all.
 

@@ -7,8 +7,8 @@ date: 2022-04-20 21:00:00 -0500
 headerImg: 
   src: /assets/headers/biggie-tts.png
   narrow: /assets/headers/biggie-tts.png
-  width: "500px"
-  height: "250px"
+  width: "500"
+  height: "250"
   class: no-radius
   alt: "A diagram of a 3 step plan. Step 1: text-to-speech (represented by an audio icon). Step 2: ???? Step 3: Biggie Smalls in the shape of an X"
 ---

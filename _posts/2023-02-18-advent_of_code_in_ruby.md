@@ -6,8 +6,8 @@ date: 2023-02-18 20:00:00 -0500
 headerImg: 
   src: /assets/headers/ruby-tree.png
   narrow: /assets/headers/ruby-tree.png
-  width: "200px"
-  height: "250px"
+  width: "200"
+  height: "250"
   class: no-radius
   alt: "Hacker-terminal green-text on black background ASCII art of a christmas tree, with copies of the Ruby project logo image hanging on the tree as ornaments"
 ---
@@ -79,7 +79,7 @@ I did want to avoid a problem that I'd describe as "using 5 langs like one lang"
 
 Is there a better way to use advent of code? idk. I've seen several really interesting projects in advent of code, but I didn't feel like I would get much out of them:
 
-* Matt Might used [a different language each day](https://matt.might.net/articles/26-languages-part1/), with a similar goal to me, but much more ambitious. If I tried that, I think I would end up "using 26 languages like one lang". 
+* Matt Might used [a different language each day](https://matt.might.net/articles/26-languages-part1/), with a similar goal to me, but much more ambitious. If I tried that, I think I would end up "using 26 languages like one lang".
 * Ben Visness did [the challenges in Dreams](https://bvisness.me/advent-of-dreams/), a Playstation game-making game. Definitely more a fun, light-hearted challenge
 
 Advent of code is great, since there are so many older years that I could go back and do in other languages for some coding practice if I wanted to. If I do it again in 2023, I might go for a more fun challenge, something not really practical, but would be really interesting, like:

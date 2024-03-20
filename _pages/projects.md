@@ -7,8 +7,8 @@ permalink: /projects/
 headerImg:
   src: /assets/headers/projects.png
   narrow: /assets/headers/projects-narrow.jpg
-  width: "500px"
-  height: "314px"
+  width: "500"
+  height: "314"
   alt: A collection of the different projects Bryce has made
 ---
 
