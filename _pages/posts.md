@@ -18,8 +18,8 @@ permalink: /blogs/
   {% endfor %}
 </ul>
 
-<h2>Sketch posts</h2>
-<p>These posts are generally shorter and a bit less focused.</p>
+<h2>Other posts</h2>
+<p>These posts are generally shorter but still technical.</p>
   {% assign sketch_date_format = site.date_format | default: "%Y %b" %}
   {% assign unpolished = site.posts | where_exp: "item", "item.tags contains 'rough'" %}
 <ul>

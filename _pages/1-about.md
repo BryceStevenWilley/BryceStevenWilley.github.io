@@ -11,7 +11,7 @@ headerImg:
   alt: A picture of me, Bryce, holding my dog jackie next to a statue of a dog's head, all of us looking in the same direction
 ---
 
-I'm Bryce, a full-stack software engineer, living in Boston, MA. I currently work for the IRS.
+I'm Bryce, a full-stack software engineer, living in Boston, MA. I currently work for the IRS in the Applications Development office, Customer Service Domain.
 My mission is to make technology that works better for people.
 
 You can find [my resumé here](/assets/bryce_willey_resume.pdf).
@@ -29,7 +29,7 @@ I've been involved with [Code for Boston](https://www.codeforboston.org/) and [C
 I used to advocate with [Dotbike](http://dotbike.org), the Dorchester Biking Club (I setup and designed their website), but activity has died down there recently.
 I used to be a volunteer photographer at [BARC](http://www.houstontx.gov/barc/).
 
-I run, read, bike, play video games, and take my pup, Jackie for lots of long walks.
+I run, read, bike, play video games, and take my pup, Jackie, for lots of long walks.
 
 <img src="/assets/jack-chad.jpg" alt="Jackie Boy. He is a brown and black small dog, with long fur and floppy ears. He's looking seriously into the camera, maybe thinking you could give him a little treat." style="width: 50%; display:block; margin-left:auto; margin-right:auto;"/>
 
