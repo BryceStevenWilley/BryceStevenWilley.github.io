@@ -17,7 +17,7 @@ Nintendo is (to the first of my knowledge) the first major games company/publish
 
 ## The App, as is
 
-The service is free with a Nintendo online subscription, and practically, it works a lot like Spotify or Apple Music. I won't mention feature that work the same as they do in those services (i.e. downloads, repeat vs shuffle, etc.).
+The service is free with a Nintendo online subscription, and practically, it works a lot like Spotify or Apple Music. I won't mention features that work the same as they do in those services (i.e. downloads, repeat vs shuffle, etc.).
 
 <img style="width:70%;" src="../../assets/nintendo-music/main-screen.png"/>
 
