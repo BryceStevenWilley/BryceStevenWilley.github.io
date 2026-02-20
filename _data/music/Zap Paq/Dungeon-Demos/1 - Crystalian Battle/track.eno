@@ -1,0 +1,66 @@
+title: Crystalian Battle
+
+-- synopsis
+Written and recorded in January 2021 in Sonic-Pi with additional performed tracks.
+
+A battle track that I made during an encounter with a crystal golem.
+-- synopsis
+
+-- more
+The sonic-pi code:
+
+```ruby
+c_arpeg = [:C3, :E3, :G3]
+fmin_arpeg = [:C3, :F3, :Ab3]
+gmin_arpeg = [:C3, :G3, :Bb3]
+octaves = [0, 1, 2, 3]
+
+define :play_octaves do |array|
+  octaves.each do |oct|
+    array.each do |x|
+      play x + 12 * oct, amp: 1 - 0.21 * oct
+      sleep 0.15
+    end
+  end
+end
+
+use_synth(:pretty_bell)
+
+play_octaves(c_arpeg)
+play_octaves(fmin_arpeg)
+play_octaves(gmin_arpeg)
+play_octaves(fmin_arpeg)
+
+live_loop :bells do
+  play_octaves(c_arpeg)
+  play_octaves(fmin_arpeg)
+  play_octaves(gmin_arpeg)
+  play_octaves(fmin_arpeg)
+end
+
+live_loop :rhythm do
+  4.times do
+    3.times do
+      sample :drum_snare_soft
+      sleep 0.3
+      sample :drum_snare_soft
+      sleep 0.15
+    end
+
+    sample :drum_snare_soft
+    sleep 0.15
+    sample :drum_snare_soft
+    sleep 0.15
+    sample :drum_snare_soft
+    sleep 0.15
+  end
+end
+
+#live_loop :midi_piano do
+#  use_real_time
+#  note, velocity = sync "/midi:oxygen_49_mkv_oxygen_49_mkv_midi_1_28_0:1/note_on"
+#  sample :ambi_choir, rate: note, amp: velocity /127.0
+#end
+use_synth(:pretty_bell)
+```
+-- more

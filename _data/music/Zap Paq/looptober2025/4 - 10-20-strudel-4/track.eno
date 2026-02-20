@@ -1,0 +1,39 @@
+title: 4 - October 20th
+
+--synopsis
+4th and last track, written in Strudel.
+
+Tried to focus more on melodies + harmonies this time, but getting used to 0-indexed scale tones is going to break my brain.
+--synopsis
+
+--more
+Strudel code:
+
+```js
+samples('bubo:waveforms')
+
+setcpm(90/6)
+
+let chords = chord("<F- F- F F G A C#-7 Ab9>");
+let scales = "<F:minor F:minor F:major F:major G:major A:major C#:minor Ab:major>";
+
+_$: n("[-7, -14] - -5 -10 -4 -").scale(scales)
+//note("[f2, f1] - <ab2 ab2 a2 a2 a2> c2 bb2 -").log() // also supports freq
+.s("z_tan")
+.orbit("2")
+.attack(0.05)
+.decay(2.0)
+.sustain(.1)
+.release(.1)
+.zcrush(slider(0.066, 0, 1)) // bit crush 0 - 1
+.gain(0.4) // change volume
+._pianoroll()
+
+$: n("<5 5 5b 5b 5b 5b 5 5b> 4 3 2 7 @").scale(scales)
+     //note("db4 c4 bb4 <ab4 ab4 a4 a4 a4> f5 @")
+  .s('sawtooth').velocity(0.3).room(2).release(0.01).cutoff("<500 1000 2000 4000>")._pianoroll();
+
+_$: chords.anchor("<F3>").struct("x - - x - -").voicing().sound("piano").lpf(choose(200, 800))._pianoroll();
+```
+--more
+

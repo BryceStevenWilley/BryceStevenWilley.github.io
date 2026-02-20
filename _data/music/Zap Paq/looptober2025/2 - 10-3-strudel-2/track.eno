@@ -1,0 +1,20 @@
+title: 2 - October 3rd
+
+--synopsis
+2nd track, written in Strudel
+
+Kinda maybe getting better? Idk really, it's been hard to do focused learning lately.
+--synopsis
+
+--more
+Strudel code:
+
+```js
+setcpm(128/4)
+$: n("<0 0 0 0, - 2 - 2,[- <- 3>] [- 3] 3 [- [- <3 [3 3]>]], - - 4 -> * 4").sound("jazz")
+$: n("5 6 7 8").sound("wind").room(rand.range(1, 4)).gain(rand.range(0.4, 0.7))
+$: note("<gb1 g1> * 0.5").sound("gm_synth_strings_1")
+$: note("<gb3 a3 c4 eb4 f4> * 16").sound("sine").gain(0.4).sometimes(x => x.rev())
+```
+--more
+

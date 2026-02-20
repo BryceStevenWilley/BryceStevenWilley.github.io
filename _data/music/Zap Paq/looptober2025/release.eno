@@ -1,0 +1,22 @@
+title: Looptober 2025
+permalink: zappack-looptober-2025
+date: 2025-10-31
+
+cover:
+description = Cursive writing spelling out "Looptober" with a circle looping from the last letter to the first.
+file = cover.jpg
+
+theme:
+base = light
+dynamic_range = 30
+base_chroma = 30
+base_hue = 263
+accent_hue = 112
+accent_chroma = 84
+accent_brightening = 80
+
+--synopsis
+Tracks that I wrote for last year's Looptober. 
+
+Fairly low amount of tracks, but it's the most I've made in a short amount of time in a long time.
+--synopsis

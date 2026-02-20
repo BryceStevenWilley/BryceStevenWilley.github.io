@@ -4,3 +4,6 @@ vendor
 .vscode/**
 .jekyll-cache/**
 _site/
+
+**/.faircamp_build
+**/.faircamp_cache

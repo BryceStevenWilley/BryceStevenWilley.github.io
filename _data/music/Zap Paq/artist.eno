@@ -1,0 +1,12 @@
+name: Zap Paq
+aliases:
+- Zapp Paq
+
+image:
+description = 
+file = 
+
+--more
+Zap Paq is a more recent project, and includes most of my forays into dungeon synth and
+live coding, both in Sonic Pi and Strudel.
+-- more

@@ -1,0 +1,39 @@
+title: Bryce's Music
+language: en
+
+link:
+label = Blog
+url = https://brycewilley.xyz
+
+base_url: https://brycewilley.xyz/music
+
+release_downloads:
+- opus
+- mp3
+
+theme:
+base = light
+dynamic_range = 60
+accent_brightening = 50
+accent_chroma = 50
+accent_hue = 282
+base_chroma = 10
+base_hue = 192
+
+-- synopsis
+A good chunk of the music I've made and recorded throughout my life.
+-- synopsis
+
+-- more
+Most of this music I never 'released' in any official capacity, I've just made
+and posted on Mastodon or shared with friends and family. But I'm finally going to 
+post / share most of this, even if it's pretty amateur.
+
+The various "artists" are all still me:
+
+* Bryce Willey is obviously me
+* DDT is my middle school band where I originally started writing and recording songs for.
+* Zap🌩Pack is what I'm putting my forays into dungeon synth and live coding under.
+-- more
+
+

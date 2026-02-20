@@ -1,0 +1,54 @@
+title: Tales from Another Broken Home
+permalink: ddt-tales-from-another-broken-home
+date: 2010-05-31
+
+release_artist: DDT
+
+cover:
+description = A burned down house in the aftermath of Hurricane Ike, 2008.
+file = cover.jpg
+
+theme:
+base = light
+dynamic_range = 40
+base_chroma = 90
+base_hue = 230
+accent_hue = 25
+accent_chroma = 84
+accent_brightening = 42
+
+-- synopsis
+DDT was my middle school garage band. We performed live exactly once at a talent show (not recorded),
+but I wrote and recorded some original songs myself, and some covers with the drummer, Adrian.
+-- synopsis
+
+--more
+Adrian moved away in 2011 and despite meeting up a few times, we
+never got to re-record any of these. He passed in 2023. I miss him.
+
+Track notes:
+
+1. Armagedon
+   * Composed by me in 2008, recorded in 2009
+   * Vocals, Guitar, and Bass (i.e. a guitar low E string) by Bryce Willey
+   * Drums from Garage Band samples
+2. Unknown Love
+   * Composed and recorded by me in 2009
+   * Vocals, Guitar, Bass by Bryce Willey
+   * Drums from Garage Band samples
+3. Stars (Demo)
+   * Composed and recorded by me in 2009
+   * Guitar and Bass by Bryce Willey
+   * Drums from Garage Band samples
+4. Know Your Enemy (Demo)
+   * Composed by Green Day, recorded in 2010
+   * Vocals, Drums, and Bass by Adrian Borden
+   * Guitar and backing vocals by Bryce Willey
+5. 21 Guns (Demo)
+   * Composed by Green Day, recorded in 2010
+   * Vocals, Bass by Adrian Borden
+   * Guitar by Bryce Willey
+   * Drums from Garage Band samples
+
+Cover photo by Barry Willey, Galveston, TX, 2008.
+-- more
