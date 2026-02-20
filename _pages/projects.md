@@ -146,7 +146,7 @@ Just some neat web-based drawing demos written in Angular2 and Dart.
 * [Fractals with the Logo Turtle](/dart-projects/#/logo)
 
 [bodhi-repo]: https://github.com/BryceStevenWilley/JTTW
-[visioning_texts_page]: https://BryceWilley.xyz/visioning_texts
+[visioning_texts_page]: [/visioning_texts](/visioning_texts)
 [forest-repo]: https://github.com/BryceStevenWilley/forest_game
 [pacer-repo]: https://github.com/jemitk/Pacer
 [pandora-repo]: https://github.com/BryceStevenWilley/PandorasPantry
@@ -155,14 +155,14 @@ Just some neat web-based drawing demos written in Angular2 and Dart.
 
 ### 3d Art
 
-I used to play around with [Blender](https://www.blender.org/), a 3D modeling software. When I make something good, I'll post it here in [my gallery](/image-gallery).
+I used to play around with [Blender](https://www.blender.org/), a 3D modeling software. When I make something good, I'll post it here in [my gallery](/image-gallery.html).
 
 ![A low-poly scene of a desert](/assets/blender/desert_low_poly.jpg)
 
 ### Photography
 
 I used to be a volunteer photographer at [BARC](https://www.houstontx.gov/barc/), the City of Houston animal shelter, and I gathered a ton of beautiful pictures of some gorgeous pups.
-Some of my favorites are below, and you can also view the [entire collection](/image-gallery#dog-pictures).
+Some of my favorites are below, and you can also view the [entire collection](/image-gallery.html#dog-pictures).
 
 <div class="gallery-wrap">
   {% for image in site.static_files %}
