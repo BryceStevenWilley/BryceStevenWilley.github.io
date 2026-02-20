@@ -119,7 +119,7 @@ Related to the above discussion of variants of the same song, a lot of games use
 
 ### Simple improvements
 
-* How did they get away with not crediting the composer? I know it's standard (the aforementioned Smash Ultimate music library also rarely includes composer or arranger information), but it's still insane, [give them credit now](https://brycewilley.xyz/2023/07/take-credit-for-your-work).
+* How did they get away with not crediting the composer? I know it's standard (the aforementioned Smash Ultimate music library also rarely includes composer or arranger information), but it's still insane, [give them credit now](/2023/07/take-credit-for-your-work).
 * There's a known issue with playback on Android (I think it's after the app is suspended, it'll crash when starting a song), and a lot of crackly static if you download a playlist while listening to something (they messed up something with thread priorities there). For an initial launch these are pretty manageable bugs, but they can still be annoying.
 
 ## Why does this exist anyway?
