@@ -1,0 +1,17 @@
+title: 1 - October 1st
+
+--synopsis
+1st track, written in Strudel
+--synopsis
+
+--more
+Strudel code:
+
+```ruby
+$: sound("[<bd [bd hh]> hh <sd mt> <hh [hh hh]>] * 2").dec(.8)
+$: sound("- rim rim - rim rim - rim rim - rim rim - rim rim -").dec(.1)
+$: n("[0 2 <4 3> 2]*1").scale("C:dorian").sound("piano")
+$: n("0@3 <-3 -5>").scale("C:dorian").sound("gm_synth_bass_1").lpf(900)
+```
+--more
+

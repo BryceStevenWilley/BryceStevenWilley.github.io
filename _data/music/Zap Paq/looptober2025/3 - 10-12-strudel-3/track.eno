@@ -1,0 +1,46 @@
+title: 3 - October 12th
+
+--synopsis
+3rd track, written in Strudel
+
+Actually tried to learn some new strudel stuff before this one by watching some [Switch Angel videos](https://www.youtube.com/@Switch-Angel).
+--synopsis
+
+--more
+Strudel code:
+
+```js
+_$: stack(
+  s("sbd!5").duck("2:3:4").duckattack(0.1).duckdepth(0.4),
+  s("[- - rim rim]!5").gain(0.7).hpf(2000),
+  n("[- 0]!5").s("cabasa").distort("4:0.7")
+)._punchcard({width:600})
+
+_$: note("c2 eb2 f2 g2 ab2").seg(10) // also supports freq
+.s("z_square")
+.orbit("2")
+.attack(0.05)
+.decay(0.1)
+.sustain(.3)
+.release(.1)
+.zcrush(slider(0.091, 0, 1)) // bit crush 0 - 1
+.gain(1) // change volume
+
+
+_$: note(irand(6).seg(20).scale("c:minor").rib(4, 1)).s("z_tan")
+  .slide(0.03)
+  .orbit("3")
+  .zmod(0.3)
+  .gain(0.6)
+  ._pianoroll()
+_$: note(`
+        [[eb5, eb6] d6 c6 bb5]
+        [d6 c6 bb5 ab5]
+        [c6 bb5 ab5 g5]
+        [bb5 ab5 g5 f5] 
+        [ab5 g5 [f5,f6] [eb5, eb6]]
+        `
+       ).sound("z_sine").orbit("4").room("2").rsize(3).gain(0.8)
+```
+--more
+

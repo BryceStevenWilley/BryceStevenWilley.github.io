@@ -1,0 +1,54 @@
+title: Dark
+
+--synopsis
+Live-coded and recorded in November 2022. Written in Sonic-Pi
+--synopsis
+
+--more
+Sonic-pi code:
+
+```ruby
+beat_s = 0.48
+
+live_loop :foo do
+  sample :drum_bass_hard
+  sleep beat_s / 2
+  sample :drum_cymbal_closed
+  sleep beat_s / 2
+end
+
+
+low_amp = 0.3
+high_amp = 0.8
+
+amps = [low_amp, high_amp]
+
+notes = [57, 64, 65, 68]
+
+drones = [33, 34, 35, 34]
+
+live_loop :bar do
+  use_synth :subpulse
+  sync :foo
+  note_idx = rrand_i(0, notes.length-1)
+  amp_idx = rrand_i(0, amps.length-1)
+  if amp_idx != 0
+    play notes[note_idx] + 12, amp: amps[amp_idx]
+  elsif
+    play notes[note_idx], amp: amps[amp_idx]
+    play notes[note_idx] + 7, amp: amps[amp_idx]
+  end
+  sleep beat_s -0.01
+end
+
+live_loop :ddd do
+  sync :foo
+  use_synth :dark_ambience
+  drones.each do | it |
+    play it + 12, amp: 4.0, sustain: beat_s * 3, release: beat_s * 5
+    sleep beat_s * 8
+  end
+end
+```
+--more
+

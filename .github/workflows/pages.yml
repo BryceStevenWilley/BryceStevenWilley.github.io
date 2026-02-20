@@ -32,6 +32,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Install deps
+        run: sudo apt install --fix-missing ffmpeg libvips42
+      - name: Install Faircamp
+        run: |
+          wget -O ${{ runner.temp }}/faircamp.deb https://simonrepp.com/faircamp/packages/faircamp_0.13.0-1+deb12_amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/faircamp.deb
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -46,6 +52,8 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Build faircamp
+        run: cd _data/music && faircamp && mv .faircamp_build ../../_site
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
