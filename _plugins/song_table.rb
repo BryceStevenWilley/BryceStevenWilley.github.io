@@ -15,6 +15,9 @@ module Jekyll
       if text=~ /--bandcamp/i
         @location = :bandcamp
       end
+      if text=~ /--tidal/i
+        @location = :tidal
+      end
       if text =~ /--song="([^"]+)"/i
         @song_name = text.match(/--song="([^"]+)"/i)[1]
       end
@@ -61,6 +64,14 @@ module Jekyll
           source += %{  <td><a href="#{@song_url}">#{@artist}</a></td>\n}
         else
           source += %{  <td><a href="https://bandcamp.com/search?q=#{CGI.escape(@artist + " " + @song_name)}">#{@artist}</a></td>\n}
+        end
+      elsif @location == :tidal
+        source += %{  <td><img src="#{@img_id}" alt="The album cover for #{@artist}'s #{@album_name}" height="71" width="71"></td>\n}
+        source += "  <td>#{@song_name}</td>\n"
+        if @song_url != nil
+          source += %{  <td><a href="#{@song_url}">#{@artist}</a></td>\n}
+        else
+          source += %{  <td><a href="https://tidal.com/search?q=#{CGI.escape(@artist + " " + @song_name)}">#{@artist}</a></td>\n}
         end
       end
       source += "</tr>\n"
