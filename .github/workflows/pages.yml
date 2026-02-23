@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Install deps
-        run: sudo apt install --fix-missing ffmpeg libvips42
+        run: sudo apt update && sudo apt install --fix-missing ffmpeg libvips42
       - name: Install Faircamp
         run: |
           wget -O ${{ runner.temp }}/faircamp.deb https://simonrepp.com/faircamp/packages/faircamp_0.13.0-1+deb12_amd64.deb \
