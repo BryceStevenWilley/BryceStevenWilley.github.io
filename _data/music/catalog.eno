@@ -1,6 +1,9 @@
 title: Bryce's Music
 language: en
 
+label_mode
+show_support_artists
+
 link:
 label = Blog
 url = https://brycewilley.xyz
@@ -33,7 +36,7 @@ The various "artists" are all still me:
 
 * Bryce Willey is obviously me
 * DDT is my middle school band where I originally started writing and recording songs for.
-* Zap🌩Pack is what I'm putting my forays into dungeon synth and live coding under.
+* bryce.avx is what I'm putting my forays into live coding and dungeon synth under.
 -- more
 
 

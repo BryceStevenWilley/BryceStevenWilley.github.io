@@ -1,0 +1,22 @@
+name: bryce.avx
+permalink: bryceavx
+aliases:
+- bryce avx
+
+image:
+description = the text 'bryce.avx' on an image that has been intentionally corrupted 
+file = bitmap-glitched.png
+
+theme:
+base = light
+dynamic_range = 30
+base_chroma = 55
+base_hue = 277
+accent_hue = 110
+accent_chroma = 43
+accent_brightening = 80
+
+--more
+bryce.avx is a more recent project, and includes most of my forays into live coding and dungeon synth,
+both in Strudel and Sonic Pi.
+-- more
