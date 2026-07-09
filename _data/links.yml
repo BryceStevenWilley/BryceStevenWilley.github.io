@@ -10,11 +10,14 @@
 - name: Christa Hartsock
   url: https://christa.town/
   tags: [public interest, tech, ruby]
-- name: Dan Luu
-  url: https://danluu.com/
-  tags: [software, backend]
-  notmutual: true
 - name: Julia Evans
   url: https://jvns.ca/
   tags: [software, tech work]
+  notmutual: true
+- name: The Digital Antiquarian
+  url: https://www.filfre.net/
+  tags: [video games, history]
+- name: Dan Luu
+  url: https://danluu.com/
+  tags: [software, backend]
   notmutual: true
