@@ -2,6 +2,10 @@ name: bryce.avx
 permalink: bryceavx
 aliases:
 - bryce avx
+- bryce_avx
+link:
+url = https://social.toplap.org/@bryce_avx
+verification = rel-me
 
 image:
 description = the text 'bryce.avx' on an image that has been intentionally corrupted 
@@ -19,4 +23,6 @@ accent_brightening = 80
 --more
 bryce.avx is a more recent project, and includes most of my forays into live coding and dungeon synth,
 both in Strudel and Sonic Pi.
+
+
 -- more

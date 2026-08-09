@@ -38,6 +38,7 @@
   <meta property="og:image" content="{% if page.headerImg.src %}{{ page.headerImg.src | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/assets/site-logo.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% if page.headerImg.alt %}<meta property="og:image:alt" content="{{page.headerImg.alt}}" />{% endif %}
+  {% if page.masto_attrib %}<meta name="fediverse:creator" content="{{ page.masto_attrib }}">{% endif %}
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#0090EA">

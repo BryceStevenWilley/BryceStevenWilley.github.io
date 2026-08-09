@@ -12,67 +12,32 @@ It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated every 3 months or so.
 
-Last updated Feburuary 22nd, 2026.
+Last updated August 8th, 2026.
 
-## Professional
+## Performing
 
-### Work Stuff
+I live-code now! I performed at ["No Recipe"](https://livecode.boston/events/2026-08-7-no-recipe/), a show were every set was improvised, both the visuals and audio. The lead up was a little nerve wracking and stressful, but the show itself went great, and everyone did amazing, and made some incredible bangers.
 
-It's been a while.
+I'm leaning into the live coding stuff a lot now, tbh; it's so fun, and the Boston community around it is so incredible. I split off a bunch of my socials to be centered around this stuff, all of them are "bryce.avx":
 
-I left the IRS voluntarily last year during what was unarguably a shit time for federal employees.
-I might write about my federal experience at some point, but there's not much to say that hasn't
-already been said [^1].
-
-Either way, I'm back at the Suffolk LIT Lab, at my same old role, which coincidentally opened back
-up right before I decided to leave the IRS last year (and definitely played a part in that decision).
-Working on a lot of the same work there, which is better recorded at [it's blog](https://suffolklitlab.org/blog/).
-
-It's fine.
-
-### Latest Github Activity
-
-<span id="if-updated"><span>
-
-<script type="text/javascript" src="/assets/js/now.js"></script>
-
-<ul>
-<li>
-<p><span id="event-title">Made a pull request</span> in the <a id="event-repo" href="https://github.com/SuffolkLITLab/docassemble-ALToolbox">SuffolkLITLab/docassemble-ALToolbox</a> repo.</p>
-
-<blockquote id="event-desc"><p>Correct `aria-controls` to reference correct id</p><p></p><p>Issue was caught by aXe-core testing: https://dequeuniversity.com/rules/axe/4.4/aria-valid-attr-value?application=axe-puppeteer
-</p><p>
-</p><p>The issue happened because `tag_group_name` was added to the beginning of each id / href, but not to aria-controls.
-</p><p>The `tab_id` was never used individually, so I just updated it to include both `tab_group_name` and `tab_id`,
-</p><p>and then replaced its used in the tabs and tab panels.</p></blockquote>
-</li>
-</ul>
+* [Personal Music Site](https://brycewilley.xyz/music/), all of my music, both as "bryce.avx" (includes older stuff I wrote in live-coding langs) and not. Nothing really worth putting on Bandcamp yet though, so just self-hosted.
+* [Instagram](https://www.instagram.com/bryce.avx/)
+* [Mastodon](https://social.toplap.org/@bryce_avx), gonna try to post there about new stuff I'm learning and working on
+* [YouTube](https://www.youtube.com/@bryce-avx), for screen recordings, maybe eventually show recordings (if I can remember to get a recording set up somehow).
 
 ## Personal
 
 ### Doing
 
-I dropped Spotify, and after a brief stint with Tidal, am just self-hosting [Jellyfin](https://jellyfin.org/)
-as a Music streaming service, which is great. It just runs on my desktop, and I download whatever albums
-I'm listening to at the moment to FinAmp on my phone. It just works. It's gotten me listening to my
-older music library at lot more. 
-
-Upgraded to PopOS! 24.04 recently. It's fine, but the desktop environment, Cosmic, kinda sucks. It's
-really buggy, and just doesn't work like it should. Switched to Gnome, and it's fine.
-
-I've become a bit of a home improvement DIY-er, painting my living room and working on making wall-to-wall shelves above the TV. Still in progress, maybe I'll post pics when I'm done with that.
+I mentioned [in my last update](2026/02/update#doing) that I've been self hosting Jellyfin and using FinAmp on my phone.
+Mostly confirming that it's still going great. Have been purchasing a lot of music through Bandcamp and Quboz, for little bit more than I would be paying for Spotify. Hearing new pop releases might be a little harder than normal, and I can't keep up with everything, but I never really did anyway.
 
 ### Listening To
 
-A ton of great stuff since I last updated. Some favs:
-
-* [Fat Dog](https://fatdogfatdogfatdog.bandcamp.com/album/woof) is my favorite new band, followed closely by [Touchdown Jesus](https://touchdownjesus.bandcamp.com/album/it-s-all-feast-or-famine).
-* As is tradition, listened to a lot of Bad Bunny before and after his Superbowl performance.
-* Graham Kartna has been around a while, but I only recently listened to his full length albums,
-  ["For Your Safety and the Safety of Others"](https://grahamkartna.bandcamp.com/album/for-your-safety-and-the-safety-of-others), and it's incredibly catchy and surprisingly good
-  song writing and lyricism.
-* I'm about 7 years late, but Persona 5 has the best game soundtrack of all time. Been listening
-  a lot to the [Silksong Soundtrack](https://christopherlarkin.bandcamp.com/album/hollow-knight-silksong-original-soundtrack) recently too.
+* Inferno, by Boards of Canada. This had been vaguely floating around my peripheral when it came out, but hearing it in the end credits of the Backrooms cemented the fact that I needed to get it. Definitely my favorite album from this year so far.
+* Music, Fasion, Film, by Charli xcx. I really liked Brat, and even saw her mockumentary "The Moment" earlier this year. This new album
+  feels like a natural extension of those two. The vibes are lower key, but I still like the sound and themes. No One Lasts Forever hits hard.
+* Tako Tsubo, by L'Impératrice. Super funky and groovy. I'd heard some of their later stuff with Maggie Rodgers, but hadn't istened through this whole album until recently.
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -85,34 +50,32 @@ A ton of great stuff since I last updated. Some favs:
     </tr>
   </thead>
   <tbody>
-    {% song_table --tidal --song="BAILE INoLVIDABLE" --album="DeBÍ TiRAR MáS FOToS" --artist="Bad Bunny" --img_id=https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png%}
-    {% song_table --bandcamp --song="Lace" --artist="Christopher Larkin" --album="Hollow Knight: Silksong (Original Soundtrack)" --song_url=https://christopherlarkin.bandcamp.com/track/lace-2 --img_id=https://f4.bcbits.com/img/a2085224863_16.jpg %}
-    {% song_table --bandcamp --song="I Love My Wife" --artist="Touchdown Jesus" --album="It's All Feast Or Famine" --song_url=https://touchdownjesus.bandcamp.com/track/i-love-my-wife --img_id=https://f4.bcbits.com/img/a0372447363_16.jpg %}
-    {% song_table --bandcamp --song="King of the Slugs" --artist="Fat Dog" --album="WOOF." --song_url=https://fatdogfatdogfatdog.bandcamp.com/track/king-of-the-slugs-1 --img_id=https://f4.bcbits.com/img/a0287207445_16.jpg %}
-    {% song_table --bandcamp --song="Folds Like Origami" --artist="Kainalu" --album="Lotus Gate"  --song_url=https://kainalu.bandcamp.com/track/folds-like-origami --img_id=https://f4.bcbits.com/img/a2394464159_16.jpg %}
+    {% song_table --bandcamp --song="Age of Capricorn" --artist="Boards of Canada" --album="Inferno" --song_url=https://boardsofcanada.bandcamp.com/track/age-of-capricorn --img_id=https://f4.bcbits.com/img/a3190407865_2.jpg %}
+    {% song_table --bandcamp --song="Fuck My Computer" --artist="Ninajirachi" --album="I Love My Computer" --song_url=https://ninajirachi.bandcamp.com/track/fuck-my-computer-2 --img_id=https://f4.bcbits.com/img/a0649909828_2.jpg %}
+    {% song_table --bandcamp --song="I Want To Be" --artist="Glossing" --album="Music I Made In Code 001" --song_url=https://glossing.bandcamp.com/track/i-want-to-be --img_id=https://f4.bcbits.com/img/a2832980584_2.jpg %}
+    {% song_table --tidal --song="Magic Metal Montana" --album="Music, Fashion, Film" --artist="Charli xcx" --img_id=https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Music%2C_Fashion%2C_Film_by_Charli_XCX.jpeg/250px-Music%2C_Fashion%2C_Film_by_Charli_XCX.jpeg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail%}
+    {% song_table --tidal --song="Fou" --album="Tako Tsubo" --artist="L'Impératrice" --song_url=https://l-imperatrice.bandcamp.com/track/fou --img_id=https://f4.bcbits.com/img/a3916252710_2.jpg%}
   </tbody>
 </table>
 
-### Gaming
-
-I happened to break my leg after getting hit by a car on my bike last year, so I had a lot
-of time to play games and got through a good chunk of my backlog.
-
-* Balatro: fun game, but didn't keep me sucked in for more than a few days.
-* Outer Wilds: amazing game. Go in blind.
-* Persona 5: As mentioned above, incredible soundtrack. The gameplay I enjoyed less though, and it got extremely repetitive / grindy in the endgame.
-* Read Dead Redemption 2: Similar complaints to Persona 5; the gameplay is fine, but gets so grindy by
-  the end. But despite that, it tells a great story, and can't really be separated from all of that grind.
-* Silksong: Good game, but idk, it crosses the line into not fun because of the boss difficulty. Set it down
-  multiple times for like a month at a time when I got stuck on bosses, and just gave up at the Act 3 final boss.
 
 ### Reading
 
-Read embarissingly little this last year.
+* I finished House of Leaves. It somehow is still growing on me. I might want to re-read it again.
+* "The Queen of the Damned", the third book in the "Interview with a Vampire" series. A great find in a bag of 40 paperbacks I got for $20 a few years back. I haven't even ready any of the other books in the series, but it didn't matter and this book was still so good, superbly written, with such interesting characters. Makes we want to read the other books in the series.
+* I joined a book club, and they've got great taste and are great at discussing books. Read:
+    * The Employees, Olga Ravn: Sci-fi fill-in-the-gap reading, very poetic at times.
+    * The Hour of the Star, Clarice Lispector: wasn't my cup of tea, but had the most interesting discussion about it.
 
-* I did get through the entirety of Berserk, through the last Miura chapters. It's good, gorgeous, and has somehow affected even more of the media I consume that I thought it had.
-* Getting through House of Leaves now, I like it, and enjoy the complexity, but storywise, I'm halfway through
-  and feel like I've got it, I don't know what else they could do.
+### Watching
 
+* Backrooms: I hadn't seen any of Kane Parson's earlier videos, or really cared about the Backrooms as a concept. It just seemed like an interesting concept after finishing House of Leaves. This movie is truely great IMO, in its story telling, its film-making, and its themes. I'm just gonna keep thinking about it again and again.
+* If I Had Legs I'd Kick You: Great movie, never watching it again.
 
-[^1]: For clarity, Fuck Trump, Fuck ICE, and Fuck Musk.
+### Gaming
+
+Not really playing that much this year. Replayed SSX: On Tour, my first (and only) introduction to the snowboarding series on the Gamecube, it was pretty fun, and also replayed Zoobminis, a silly kids game from my childhood, with some neat logic puzzles (not worth playing as an adult though, lol).
+
+## Work Stuff
+
+Not really much new here that I want to talk about. Same old, same old.
