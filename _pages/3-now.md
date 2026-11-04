@@ -8,36 +8,39 @@ permalink: /now/
 ## What is this?
 
 It's a now page: what I'm focused on at the moment, both professionally and personally.
-It's what I'd tell on old co-worker if we met up for a 30 minute lunch.
 Inspired by [Derek Sivers](https://sive.rs/nowff).
 Trying to keep it updated every 3 months or so.
 
-Last updated August 8th, 2026.
+Last updated November 3rd, 2026.
 
 ## Performing
 
-I live-code now! I performed at ["No Recipe"](https://livecode.boston/events/2026-08-7-no-recipe/), a show were every set was improvised, both the visuals and audio. The lead up was a little nerve wracking and stressful, but the show itself went great, and everyone did amazing, and made some incredible bangers.
+Still live-coding! (i.e. making music and visual with code in front of an audience, live!) I performed at ["HEX"](https://livecode.boston/events/2026-10-02-hex/) in October, which was super fun. I did a set with both visuals and audio, and did visuals alongside BUNNY_KICK (Screen recording of a practice session for my solo set is [on Youtube](https://www.youtube.com/watch?v=rs3Nzm6H3IY)).
+
+I also just finished up "Looptober", which is a challenge to write one loop (i.e. short, mainly instrumental piece) a day for each day in October.
+I actually did all 31 days, which I'm really proud of. Was able to really experiment with a lot of new ideas and techniques, and got to try out
+brand new stuff like microtones and chiptune tracking on the Gameboy. All of the pieces I wrote this year are hosted here [on my music site](https://brycewilley.xyz/music/bryceavx-looptober-2026/index.html).
+For a good chunk of the pieces, I also did a short visual to go along with most of them, and those are all on [my Instagram](https://www.instagram.com/bryce.avx).
+I hadn't written that much in that short of a time period since I did February Album Writing
+Month back in High School, and even that was only 14 songs in 28 days, not 31 individual ideas!
+
+I did get burned out by the end, I think the only thing I'd change if I do it again (strong chance I don't ever do 31 songs in a month in my life, lol) is not posting to Instagram. Definitely liked doing the visual part, but that app is The Devil, and it's really hard to avoid getting
+caught up in the slot machine aspect of "how should I tweak my next post to do better". Feedback in general is good, but Insta and gamifying it just sucks.
 
 I'm leaning into the live coding stuff a lot now, tbh; it's so fun, and the Boston community around it is so incredible. I split off a bunch of my socials to be centered around this stuff, all of them are "bryce.avx":
 
 * [Personal Music Site](https://brycewilley.xyz/music/), all of my music, both as "bryce.avx" (includes older stuff I wrote in live-coding langs) and not. Nothing really worth putting on Bandcamp yet though, so just self-hosted.
 * [Instagram](https://www.instagram.com/bryce.avx/)
-* [Mastodon](https://social.toplap.org/@bryce_avx), gonna try to post there about new stuff I'm learning and working on
-* [YouTube](https://www.youtube.com/@bryce-avx), for screen recordings, maybe eventually show recordings (if I can remember to get a recording set up somehow).
+* [Mastodon](https://social.toplap.org/@bryce_avx)
+* [YouTube](https://www.youtube.com/@bryce-avx), for screen recordings, maybe eventually show recordings (if I can get recording during a show to actually work).
 
 ## Personal
 
-### Doing
-
-I mentioned [in my last update](2026/02/update#doing) that I've been self hosting Jellyfin and using FinAmp on my phone.
-Mostly confirming that it's still going great. Have been purchasing a lot of music through Bandcamp and Quboz, for little bit more than I would be paying for Spotify. Hearing new pop releases might be a little harder than normal, and I can't keep up with everything, but I never really did anyway.
-
 ### Listening To
 
-* Inferno, by Boards of Canada. This had been vaguely floating around my peripheral when it came out, but hearing it in the end credits of the Backrooms cemented the fact that I needed to get it. Definitely my favorite album from this year so far.
-* Music, Fasion, Film, by Charli xcx. I really liked Brat, and even saw her mockumentary "The Moment" earlier this year. This new album
-  feels like a natural extension of those two. The vibes are lower key, but I still like the sound and themes. No One Lasts Forever hits hard.
-* Tako Tsubo, by L'Impératrice. Super funky and groovy. I'd heard some of their later stuff with Maggie Rodgers, but hadn't istened through this whole album until recently.
+* Alien Metal, by King Gizzard & The Lizard Wizard. I've been a big King Gizzard fan for a while, and I actually like their electronic excursions (at least more than their metal albums), so I've had a good chunk of this album on repeat since it came out. Top songs are definitely "Superheavy, Supercritical" and "Level 5". 
+* CITY GIRL, by gabi belle. Gabi is mainly a youtuber, and I watched her video about [the making of the album](https://www.youtube.com/watch?v=U9YtX3SxTpE), and was mainly hooked by City Pop, which I do really enjoy. It's been a routine spin since then, chill but energtic vibes, and fun song writing. Elevator Ride is my fav.
+* Misc live coding songs from [Switch Angel](https://jaderose.bandcamp.com/), [Glossing](https://glossing.bandcamp.com/), [DJ Dave](https://djdave.bandcamp.com/album/hardcore-software), and [encryptd.whispers](https://encryptedwhispers.bandcamp.com/). It all goes pretty hard.
 
 [//]: steps for gathering: next time, just copy the album links (ctrl-shift-right click to inspect) and type info directly, lolW
 
@@ -50,31 +53,24 @@ Mostly confirming that it's still going great. Have been purchasing a lot of mus
     </tr>
   </thead>
   <tbody>
-    {% song_table --bandcamp --song="Age of Capricorn" --artist="Boards of Canada" --album="Inferno" --song_url=https://boardsofcanada.bandcamp.com/track/age-of-capricorn --img_id=https://f4.bcbits.com/img/a3190407865_2.jpg %}
-    {% song_table --bandcamp --song="Fuck My Computer" --artist="Ninajirachi" --album="I Love My Computer" --song_url=https://ninajirachi.bandcamp.com/track/fuck-my-computer-2 --img_id=https://f4.bcbits.com/img/a0649909828_2.jpg %}
+    {% song_table --bandcamp --song="Superheavy, Supercritical" --artist="King Gizzard & The Lizzard Wizard" --album="Alien Metal" --song_url=https://kinggizzard.bandcamp.com/track/superheavy-supercritical --img_id=https://f4.bcbits.com/img/a2759728592_2.jpg %}
+    {% song_table --bandcamp --song="ELEVATOR RIDE" --artist="gabi belle" --album="CITY GIRL" --song_url=https://gabibelle.bandcamp.com/track/elevator-ride --img_id=https://f4.bcbits.com/img/a0158716704_2.jpg %}
+    {% song_table --bandcamp --song="Destroy! Destroy!" --artist="Switch Angel" --album="Coding Trance (Album)" --song_url=https://jaderose.bandcamp.com/track/destroy-destroy-2 --img_id=https://f4.bcbits.com/img/a2426713209_2.jpg %}
     {% song_table --bandcamp --song="I Want To Be" --artist="Glossing" --album="Music I Made In Code 001" --song_url=https://glossing.bandcamp.com/track/i-want-to-be --img_id=https://f4.bcbits.com/img/a2832980584_2.jpg %}
-    {% song_table --tidal --song="Magic Metal Montana" --album="Music, Fashion, Film" --artist="Charli xcx" --img_id=https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Music%2C_Fashion%2C_Film_by_Charli_XCX.jpeg/250px-Music%2C_Fashion%2C_Film_by_Charli_XCX.jpeg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail%}
-    {% song_table --tidal --song="Fou" --album="Tako Tsubo" --artist="L'Impératrice" --song_url=https://l-imperatrice.bandcamp.com/track/fou --img_id=https://f4.bcbits.com/img/a3916252710_2.jpg%}
+    {% song_table --bandcamp --song="Forget" --artist="DJ_Dave" --album="Hardcore Software" --song_url=https://djdave.bandcamp.com/track/forget --img_id=https://f4.bcbits.com/img/a1690933507_2.jpg %}
+    {% song_table --bandcamp --song="in wolf's clothing" --artist="encrypted.whispers" --song_url=https://encryptedwhispers.bandcamp.com/track/in-wolfs-clothing --img_id=https://f4.bcbits.com/img/a3920101462_2.jpg %}
   </tbody>
 </table>
 
 
-### Reading
-
-* I finished House of Leaves. It somehow is still growing on me. I might want to re-read it again.
-* "The Queen of the Damned", the third book in the "Interview with a Vampire" series. A great find in a bag of 40 paperbacks I got for $20 a few years back. I haven't even ready any of the other books in the series, but it didn't matter and this book was still so good, superbly written, with such interesting characters. Makes we want to read the other books in the series.
-* I joined a book club, and they've got great taste and are great at discussing books. Read:
-    * The Employees, Olga Ravn: Sci-fi fill-in-the-gap reading, very poetic at times.
-    * The Hour of the Star, Clarice Lispector: wasn't my cup of tea, but had the most interesting discussion about it.
-
 ### Watching
 
-* Backrooms: I hadn't seen any of Kane Parson's earlier videos, or really cared about the Backrooms as a concept. It just seemed like an interesting concept after finishing House of Leaves. This movie is truely great IMO, in its story telling, its film-making, and its themes. I'm just gonna keep thinking about it again and again.
-* If I Had Legs I'd Kick You: Great movie, never watching it again.
+* Resident Evil: A fun romp, I liked it.
+* You Can See Everything: a great movie, don't get me wrong. Strong contender for Movie of the year. I don't know if I understand it being the best movie of all time though, feels midly overhyped in that regard. Still good though.
 
 ### Gaming
 
-Not really playing that much this year. Replayed SSX: On Tour, my first (and only) introduction to the snowboarding series on the Gamecube, it was pretty fun, and also replayed Zoobminis, a silly kids game from my childhood, with some neat logic puzzles (not worth playing as an adult though, lol).
+Have been slowly replaying Dragon Age: Orgins since early this year. I do appreciate the story, but the gameplay kinda sucked IMO, and just got in the way. Wasn't the biggest fan of actually playing it, even though it was fun to revisit the world.
 
 ## Work Stuff
 
