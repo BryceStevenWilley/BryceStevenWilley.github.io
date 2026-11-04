@@ -1,0 +1,119 @@
+[HEADS UP] Clean urls are now opt-in
+
+Internal page links now by default use the offline-viewable,
+longterm-archiving-friendly "my-album/index.html" form rather
+than "my-album/". If you previously used the --no-clean-urls flag for
+your builds, you can stop doing so – it's now the default. If you
+want to opt (back) in to clean urls, enable the "clean_urls" setting
+in your global site settings/manifest.
+
+- Documentation (in-depth): https://faircamp.org/docs/2.0.0/reference/site/index.html#site.clean_urls
+- Changelog entry (shorter): https://faircamp.org/changes/2.0.0/#clean-urls-are-now-opt-in
+
+------
+
+[HEADS UP] The "date" setting was replaced by "released" (with additional options "published"/"updated")
+
+The (sort-only, never shown on the site) "date" setting was replaced
+with the (sort-relevant, potentially shown on the site) "released",
+and somewhat related "published" and "updated" setting.
+
+You might want to make adjustments as your previous "date" values
+might now be shown on the site.
+
+- Documentation for "released": https://faircamp.org/docs/2.0.0/reference/multitrack/index.html#multitrack.released
+- Documentation for "published": https://faircamp.org/docs/2.0.0/reference/multitrack/index.html#multitrack.published
+- Documentation for "updated": https://faircamp.org/docs/2.0.0/reference/multitrack/index.html#multitrack.updated
+
+Origin(s) of this notice:
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/DDT/Tales from Another Broken Home/release.eno (Line 3)
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/bryceavx/looptober2025/release.eno (Line 3)
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/bryceavx/looptober2026/release.eno (Line 3)
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/bryceavx/Dungeon-Demos/release.eno (Line 3)
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/Bryce Willey/2014-2024/release.eno (Line 3)
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/Bryce Willey/Bostreal/release.eno (Line 3)
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/Bryce Willey/SchoolProjects 2009-2013/release.eno (Line 3)
+------
+
+[INFO] Ignoring hidden directory .faircamp_cache
+------
+
+[INFO] Ignoring hidden directory .faircamp_build
+------
+
+[HEADS UP] Your rel-me link to https://social.toplap.org/@bryce_avx has been automatically migrated to use the site.metadata setting
+
+(Links have been simplified to just label/target use.)
+
+Documentation:
+- artist.links https://faircamp.org/docs/2.0.0/reference/artist/index.html#artist.links
+- site.metadata https://faircamp.org/docs/2.0.0/reference/site/index.html#site.metadata
+
+Origin(s) of this notice:
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/bryceavx/artist.eno (Line 6)
+------
+
+[IMPORTANT] (manual action might be required): label_mode (with its related settings) has been replaced with an explicit, simple approach in 2.0:
+
+All artists that should have their own page must be explicitly declared with
+their own artist directory and manifest. Please do this for all artists that
+were previously covered by label_mode (if you still would like them to have
+their own pages).
+
+Origin(s) of this notice:
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/catalog.eno (Line 4)
+------
+
+[IMPORTANT] (manual action might be required): show_support_artists has been removed in favor of a simple approach:
+
+If all artists of a release should always be shown with it, make them all the
+(main/"album") release artists. Conversely: If they aren't as important to be listed
+with the release itself, it's probably fine for them to only be listed
+alongside their respective tracks. If needed, please add artists to the
+(main/"album") artists of releases where show_support_artists previously covered their
+presentation (through tags or through faircamp's settings).
+
+Related links:
+- multitrack.artists https://faircamp.org/docs/2.0.0/reference/multitrack/index.html#multitrack.artists
+- track.artists https://faircamp.org/docs/2.0.0/reference/track/index.html#track.artists
+
+Origin(s) of this notice:
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/catalog.eno (Line 5)
+------
+
+[HEADS UP] Link previews (using opengraph metadata) were previously opt-in, but are now enabled by default.
+
+You have not explicitly configured opengraph, so link previews are now enabled.
+
+Documentation links for the new, related platform_integration setting in 2.0:
+- artist.platform_integration https://faircamp.org/docs/2.0.0/reference/artist/index.html#artist.platform_integration
+- catalog.platform_integration https://faircamp.org/docs/2.0.0/reference/catalog/index.html#catalog.platform_integration
+- multitrack.platform_integration https://faircamp.org/docs/2.0.0/reference/multitrack/index.html#multitrack.platform_integration
+- track.platform_integration https://faircamp.org/docs/2.0.0/reference/track/index.html#track.platform_integration
+- *.platform_integration https://faircamp.org/docs/2.0.0/reference/universal/index.html#universal.platform_integration
+
+------
+
+[HEADS UP] Your 1.x catalog manifest has been automatically split and converted into a catalog and site manifest
+
+a) A site(.eno) manifest at the root of the site directory (containing site-wide settings)
+b) A catalog(.eno) manifest in its own subdirectory (representing the homepage of your site)
+
+In 2.0 you can also make artist, multitrack and track pages the homepage – this
+might be preferable if (e.g.) you only present a single artist/band or a single release on it.
+Note that this is not done automatically by the migration because it's rather complicated
+to make that decision correctly on an automated basis – and you as the site owner know best.
+In short: Feel free to merge your 'homepage catalog' data/settings into another page and make
+that the homepage instead!
+
+Documentation links:
+- Catalog settings: https://faircamp.org/docs/2.0.0/reference/catalog/index.html
+- Site settings: https://faircamp.org/docs/2.0.0/reference/site/index.html
+- Homepage setting:
+ * artist.homepage https://faircamp.org/docs/2.0.0/reference/artist/index.html#artist.homepage
+ * catalog.homepage https://faircamp.org/docs/2.0.0/reference/catalog/index.html#catalog.homepage
+ * multitrack.homepage https://faircamp.org/docs/2.0.0/reference/multitrack/index.html#multitrack.homepage
+ * track.homepage https://faircamp.org/docs/2.0.0/reference/track/index.html#track.homepage
+
+Origin(s) of this notice:
+- /home/bryce/Developer/BryceStevenWilley.github.io/_data/music/catalog.eno

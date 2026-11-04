@@ -1,0 +1,40 @@
+title: Demos of the Dungeon
+
+permalink: bryceavx-demos
+
+released: 2022-11-30
+
+published: 2026-02-23T01:03:00-05:00
+
+cover_description: A CG render of a collection of multisided dice
+
+cover: cover.png
+
+*.theme.mode: dark
+
+*.theme.dark:
+dynamic_range = 30
+base_chroma = 30
+base_hue = 62
+accent_hue = 53
+accent_chroma = 84
+accent_brightening = 80
+
+-- synopsis
+Demos I've written about (and during, sorry DM) Dungeons & Dragons campaigns. Not enough
+for a full album or concept though.
+-- synopsis
+
+--more
+Tracklist
+
+1. Crystalian Battle
+   * Written and recorded in January 2021
+   * Written in [Sonic-Pi](https://sonic-pi.net/) with additional performed tracks
+2. A Single Question
+   * Written and recorded in December 2021
+   * Performed on a [ZynAddSubFX synth](https://zynaddsubfx.sourceforge.io/), the "DolcePiano_01" in the "cormi_Sound" instrument bank
+3. Dark
+   * Live-coded and recorded in November 2022
+   * Written in [Sonic-Pi](https://sonic-pi.net/)
+--more

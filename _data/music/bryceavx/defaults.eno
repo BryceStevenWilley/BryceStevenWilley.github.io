@@ -1,0 +1,9 @@
+*.theme.mode: light
+
+*.theme.light:
+dynamic_range = 30
+base_chroma = 55
+base_hue = 277
+accent_hue = 110
+accent_chroma = 43
+accent_brightening = 80

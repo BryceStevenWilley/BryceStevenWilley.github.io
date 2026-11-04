@@ -1,10 +1,10 @@
 title: 4 - October 20th
 
---synopsis
+-- synopsis
 4th and last track, written in Strudel.
 
 Tried to focus more on melodies + harmonies this time, but getting used to 0-indexed scale tones is going to break my brain.
---synopsis
+-- synopsis
 
 --more
 Strudel code:
@@ -36,4 +36,3 @@ $: n("<5 5 5b 5b 5b 5b 5 5b> 4 3 2 7 @").scale(scales)
 _$: chords.anchor("<F3>").struct("x - - x - -").voicing().sound("piano").lpf(choose(200, 800))._pianoroll();
 ```
 --more
-

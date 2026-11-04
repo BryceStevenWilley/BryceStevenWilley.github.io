@@ -1,0 +1,24 @@
+-- metadata
+<link href="https://social.toplap.org/@bryce_avx" rel="me"/>
+<meta name="fediverse:creator" content="@bryce_avx@social.toplap.org"/>
+-- metadata
+
+title: Bryce's Music
+
+language: en
+
+base_url: https://brycewilley.xyz/music
+
+multitrack.download_formats:
+- opus_128
+- mp3
+
+*.theme.mode: light
+
+*.theme.light:
+dynamic_range = 60
+accent_brightening = 50
+accent_chroma = 50
+accent_hue = 282
+base_chroma = 10
+base_hue = 192

@@ -1,10 +1,10 @@
 title: 3 - October 12th
 
---synopsis
+-- synopsis
 3rd track, written in Strudel
 
 Actually tried to learn some new strudel stuff before this one by watching some [Switch Angel videos](https://www.youtube.com/@Switch-Angel).
---synopsis
+-- synopsis
 
 --more
 Strudel code:
@@ -43,4 +43,3 @@ _$: note(`
        ).sound("z_sine").orbit("4").room("2").rsize(3).gain(0.8)
 ```
 --more
-

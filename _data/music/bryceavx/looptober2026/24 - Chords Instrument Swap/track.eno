@@ -1,0 +1,16 @@
+title: 24 - Chords Instrument Swap
+
+cover_description: The title text sits at the top, over a gameboy interface with a light blue background
+
+cover: cover.jpg
+
+-- synopsis
+Chiptune where I used the same pattern for multiple instruments (i.e. on a square wave and a noise channel).
+
+(See downloads for the Strudel code).
+-- synopsis
+
+--more
+LSDJ lets you make a pattern for one instrument like the noise channel,
+but then also lets you put it on any other instrument. Sometimes it's weird, but I thought it popped off this time (put the drum breakdown on the pulse channel). 
+--more
