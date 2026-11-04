@@ -1,0 +1,11 @@
+title: 9 - Mystery Box
+
+cover_description: The title text with a faint white glow behind it. It and the song's code is overlaid on an orange and black glowy scene
+
+cover: cover.jpg
+
+-- synopsis
+It took me until now to discover that you can loop things across cycles with `{7 0 -7}%16`, and it just goes. Could have used that in some shows.
+
+(See downloads for the Strudel code).
+-- synopsis

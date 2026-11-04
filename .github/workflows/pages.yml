@@ -36,7 +36,7 @@ jobs:
         run: sudo apt update && sudo apt install --fix-missing ffmpeg libvips42
       - name: Install Faircamp
         run: |
-          wget -O ${{ runner.temp }}/faircamp.deb https://simonrepp.com/faircamp/packages/faircamp_1.7.0-1+deb12_amd64.deb \
+          wget -O ${{ runner.temp }}/faircamp.deb https://faircamp.org/packages/faircamp_cli_2.0.1-1+deb12_amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/faircamp.deb
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -53,7 +53,7 @@ jobs:
         env:
           JEKYLL_ENV: production
       - name: Build faircamp
-        run: cd _data/music && faircamp && cp -r .faircamp_build ../../_site/music
+        run: cd _data/music && faircamp-cli build && cp -r .faircamp_build ../../_site/music
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4

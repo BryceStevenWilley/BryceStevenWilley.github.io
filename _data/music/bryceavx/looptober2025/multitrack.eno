@@ -1,0 +1,31 @@
+title: Looptober 2025
+
+permalink: bryceavx-looptober-2025
+
+released: 2025-10-31
+
+published: 2026-02-23T01:05:00-05:00
+
+cover_description: Cursive writing spelling out "Looptober" with a circle looping from the last letter to the first.
+
+cover: cover.jpg
+
+extra_downloads: bundled+separate
+
+track.extra_downloads: bundled+separate
+
+*.theme.mode: light
+
+*.theme.light:
+dynamic_range = 30
+base_chroma = 30
+base_hue = 263
+accent_hue = 112
+accent_chroma = 84
+accent_brightening = 80
+
+-- synopsis
+Tracks that I wrote for last year's Looptober. 
+
+Fairly low amount of tracks, but it's the most I've made in a short amount of time in a long time.
+-- synopsis

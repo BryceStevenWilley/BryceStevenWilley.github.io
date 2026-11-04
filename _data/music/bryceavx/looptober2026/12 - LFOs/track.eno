@@ -1,0 +1,17 @@
+title: 12 - LFOs
+
+cover_description: Beige pyramids in a row, extending off into the distance, on a black background. A dark blue sphere looms above.
+
+cover: cover.jpg
+
+-- synopsis
+Strudel piece that makes strong use of Low Frequency Oscillators (LFOs)
+
+(See downloads for the Strudel code).
+-- synopsis
+
+--more
+At this point, I gave up on actual titles, and stuck with just describing the thing I focused on the most in the piece.
+This one I prepped by going through Glossing's "You can modulate everything" tutorial,
+which really did help, the reference isn't as useful for those functions because they're so different from the rest of strudel.
+--more

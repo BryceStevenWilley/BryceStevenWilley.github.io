@@ -1,0 +1,48 @@
+title: Looptober 2026
+
+permalink: bryceavx-looptober-2026
+
+released: 2026-11-03
+
+published: 2026-11-03T21:00:00-05:00
+
+cover_description: A screenshot of a grid of videos of each piece's live code visuals
+
+cover: cover.jpg
+
+track.extra_downloads: disabled
+
+extra_downloads: bundled+separate
+
+extras_label: Code
+
+track.download_formats:
+- mp3
+- opus_48
+
+*.theme.mode: dark
+
+*.theme.dark:
+dynamic_range = 30
+base_chroma = 0
+base_hue = 10
+accent_hue = 20
+accent_chroma = 84
+accent_brightening = 80
+
+-- synopsis
+Tracks that I wrote for Looptober in 2026, made using Strudel or LSDJ, a Gameboy tracker.
+
+Code for all pieces is available clicking the "Download" button at the top, in the "Extras" section.
+-- synopsis
+
+--more
+Looptober is a self-imposed challenge to write one "loop" (any short, mainly instrumental music piece)
+a day, every day in the month of October. I've dabbled a bit the last few years, but had only made a
+few each year. I had the time and energy this year, so I decided to commit and do all 31 days.
+
+All pieces were made using either Strudel or LSDJ, a Gameboy-based tracker for making songs on the Gameboy's
+sound chip. Each piece also has a video that I made with it; those are all posted to [Instagram](https://www.instagram.com/bryce.avx).
+
+Code for all pieces is available clicking the "Download" button at the top, in the "Code" section.
+--more
